@@ -89,9 +89,7 @@ h6 {
 
 .app {
 	color: white;
-	display: flex;
 	min-height: 100vh;
-	flex-direction: column;
 }
 
 .hero {
