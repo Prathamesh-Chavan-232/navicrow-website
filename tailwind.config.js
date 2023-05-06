@@ -13,6 +13,9 @@ export default {
 				"light-gray": "#f1efec",
 				"olive-green": "#293a2c",
 			},
+			fontFamily: {
+				"font-fancy": "",
+			},
 		},
 	},
 	plugins: [],

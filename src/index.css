@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -93,15 +93,15 @@ h6 {
 }
 
 .hero {
-	background-image: url("/assets/landscapes/mountains.jpg");
-	background-position: center;
+	background-image: url("/assets/landscapes/mountains3.jpg"),
+		linear-gradient(rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0.2));
 	background-size: cover;
 	background-repeat: no-repeat;
-	box-shadow: 10px 10px 5px #ccc;
+	box-shadow: 10px 10px 5px #333;
 }
 
 .font-fancy {
-	font-family: "Abhaya Libre", serif;
+	font-family: "Playfair Display", serif;
 }
 
 /* Spinning Border Animations */

@@ -1,13 +1,18 @@
 export const Hero = () => {
+	const style = {
+		zIndex: 6,
+	};
 	return (
 		<div className="w-screen h-screen flex flex-col justify-between">
 			<div className="py-60 flex flex-col items-center justify-center">
-				<div className="pb-8 text-lg ">
+				<div className="pb-8 text-xl" style={style}>
 					Connecting your journey with purpose
 				</div>
-				<h1 className="text-6xl font-fancy">Unforgettable travel</h1>
-				<h1 className="text-6xl font-fancy">experiences with</h1>
-				<h1 className="text-6xl font-fancy">
+				<h1 className="text-8xl font-fancy" style={style}>
+					Unforgettable travel
+				</h1>
+				<h1 className="text-8xl font-fancy">experiences with</h1>
+				<h1 className="text-8xl font-fancy">
 					a <span className="italic font-thin">positive</span> impact
 				</h1>
 			</div>
