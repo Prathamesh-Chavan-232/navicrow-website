@@ -1,13 +1,14 @@
 export const Navbar = () => {
+	function handleEnquire() {}
 	return (
-		<nav className="hidden mx-auto py-6 relative container lg:block">
-			{/* Flex container */}
+		<nav className="mx-auto px-4 py-6 relative container">
+			{/* Desktop Flex container */}
 			<div className="flex items-center justify-between">
 				<div className="logo">
 					<img src="/vite.svg" alt="" />
 				</div>
 				{/* nav links */}
-				<div className="space-x-16">
+				<div className="hidden space-x-16 md:block">
 					<a href="" className="text-sm">
 						DESTINATIONS
 					</a>
@@ -17,17 +18,17 @@ export const Navbar = () => {
 					<a href="" className="text-sm">
 						ABOUT US
 					</a>
-					<a href="" className="text-sm">
-						STORIES
-					</a>
 				</div>
-				{/* Add A dropdown */}
-				<div className="space-x-6">
-					<span>$ USD</span>
-					<button className="px-8 py-3 bg-green-600 rounded-full baseline hover:bg-red-600">
-						Enquire
-					</button>
-				</div>
+				{/* Mobile Enquire */}
+				<a href="" onClick={handleEnquire} className="md:hidden">
+					Enquire
+				</a>
+				{/* Mobile Menu Hamburger */}
+
+				{/* Desktop Enquire */}
+				<button className="hidden px-8 py-3 bg-green-600 rounded-full baseline  md:block hover:bg-red-600">
+					Enquire
+				</button>
 			</div>
 		</nav>
 	);

@@ -93,11 +93,52 @@ h6 {
 }
 
 .hero {
-	background-image: url("/assets/landscapes/mountains3.jpg"),
-		linear-gradient(rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0.2));
+	background: linear-gradient(
+			rgba(0, 0, 0, 0.6),
+			rgba(0, 0, 0, 0.3),
+			rgba(0, 0, 0, 0.6)
+		),
+		url("/assets/landscapes/mountains3.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	box-shadow: 10px 10px 5px #333;
+	/* -webkit-animation: fade 5s ease;
+	-moz-animation: fade 5s ease;
+	animation: fade 5s linear infinite; */
+}
+
+@-webkit-keyframes fade {
+	0% {
+		background-position: 0% 53%;
+	}
+	50% {
+		background-position: 100% 48%;
+	}
+	100% {
+		background-position: 0% 53%;
+	}
+}
+@-moz-keyframes fade {
+	0% {
+		background-position: 0% 53%;
+	}
+	50% {
+		background-position: 100% 48%;
+	}
+	100% {
+		background-position: 0% 53%;
+	}
+}
+@keyframes fade {
+	0% {
+		background-position: 0% 53%;
+	}
+	50% {
+		background-position: 100% 48%;
+	}
+	100% {
+		background-position: 0% 53%;
+	}
 }
 
 .font-fancy {
@@ -124,7 +165,7 @@ h6 {
 }
 
 .circle-wrapper:hover .circle {
-	animation: spin 3s linear infinite;
+	animation: spin 5s linear infinite;
 }
 
 .success {
@@ -160,7 +201,7 @@ h6 {
 }
 
 .circle-wrapper:hover .circle {
-	animation: spin 3s linear infinite;
+	animation: spin 5s linear infinite;
 }
 
 .success {
@@ -202,7 +243,7 @@ h6 {
 }
 
 .circle-wrapper2:hover .circle2 {
-	animation: spin1 3s linear infinite;
+	animation: spin1 5s linear infinite;
 }
 
 .success2 {
