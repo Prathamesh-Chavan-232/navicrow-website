@@ -26,7 +26,7 @@ export const Navbar = () => {
 				{/* Mobile Menu Hamburger */}
 
 				{/* Desktop Enquire */}
-				<button className="hidden px-8 py-3 bg-green-600 rounded-full baseline  md:block hover:bg-red-600">
+				<button className="hidden px-8 py-3 bg-olive-green rounded-full baseline  md:block hover:bg-red-600">
 					Enquire
 				</button>
 			</div>
