@@ -12,6 +12,7 @@ export default {
 			colors: {
 				"light-gray": "#f1efec",
 				"olive-green": "#293a2c",
+				"gray-green": "#d9dec5",
 				// Red / Orangish
 				brightRed: "hsl(12,88%,59%)",
 				brightRedLight: "hsl(12,88%,69%)",

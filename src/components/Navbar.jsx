@@ -8,7 +8,7 @@ export const Navbar = () => {
 					<img src="/vite.svg" alt="" />
 				</div>
 				{/* nav links */}
-				<div className="hidden space-x-16 md:block">
+				<div className="hidden space-x-16 md:block font-semibold">
 					<a href="" className="text-sm">
 						DESTINATIONS
 					</a>
@@ -26,7 +26,7 @@ export const Navbar = () => {
 				{/* Mobile Menu Hamburger */}
 
 				{/* Desktop Enquire */}
-				<button className="hidden px-8 py-3 bg-olive-green rounded-full baseline  md:block hover:bg-red-600">
+				<button className="hidden px-8 py-3 bg-olive-green text-white rounded-full baseline  md:block hover:bg-brightRed">
 					Enquire
 				</button>
 			</div>
