@@ -61,23 +61,23 @@ export const Footer = () => {
 					</div>
 					{/* Button */}
 					<div className="p-8 flex items-center justify-center">
-						<button className="hidden px-8 py-3 bg-olive-green rounded-full baseline text-white md:block hover:bg-red-600">
-							Enquire
+						<button className="hidden px-8 py-3 bg-transparent text-olive-green rounded-full baseline hover:text-white md:block hover:bg-olive-green">
+							Subscribe
 						</button>
 					</div>
 				</div>
 			</div>
 			<footer>
-				<div className="bg-gray-green text-olive-green py-40 px-64 flex flex-col items-center lg:flex-row lg:justify-around">
+				<div className="bg-gray-green text-olive-green py-40 flex flex-col space-y-16 items-center justify-center lg:flex-row lg:space-y-0 lg:space-x-16">
 					{/* Contact a Travel Researcher  */}
 					<div>
-						<h2 className="text-4xl text-center font-fancy lg:text-left">
+						<h2 className="text-6xl text-center font-fancy lg:text-left lg:text-4xl">
 							Contact a Travel
 						</h2>
-						<h2 className="text-4xl text-center font-fancy lg:text-left">
+						<h2 className="text-6xl text-center font-fancy lg:text-left lg:text-4xl">
 							Researcher
 						</h2>
-						<h3 className="text-lg text-center font-thin lg:text-left">
+						<h3 className="text-xl text-center font-thin lg:text-left lg:text-lg">
 							We always aim to respond within 24 hours
 						</h3>
 					</div>
