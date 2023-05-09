@@ -1,5 +1,5 @@
 import React from "react";
-import { RotatingBorder } from "../../components/RotatingBorder";
+import { RotatingBorder } from "/src/components/utlis/RotatingBorder";
 
 export const Destinations = () => {
 	return (

@@ -132,7 +132,7 @@ h6 {
 }
 
 .circle-wrapper:hover .circle {
-	animation: spin 5s linear infinite;
+	animation: spin 10s linear infinite;
 }
 
 .icon {
@@ -148,7 +148,7 @@ h6 {
 	padding: 0.1rem;
 	border-radius: 50%;
 	background-clip: content-box;
-	animation: spin 10s linear infinite;
+	animation: spin 30s linear infinite;
 }
 
 .circle-wrapper {

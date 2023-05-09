@@ -5,7 +5,7 @@ export const RotatingBorder = () => {
 		<div>
 			<div className="circle-wrapper">
 				<div className="btn circle"></div>
-				<div className="icon text-black">B14</div>
+				<div className="icon text-black">Call us</div>
 			</div>
 		</div>
 	);

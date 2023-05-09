@@ -1,5 +1,5 @@
 import { TextField } from "./utlis/TextField";
-
+import { RotatingBorder } from "./utlis/RotatingBorder";
 export const Footer = () => {
 	return (
 		<div id="footer" className="footer">
@@ -68,20 +68,33 @@ export const Footer = () => {
 				</div>
 			</div>
 			<footer>
-				<div className="bg-gray-green text-olive-green p-40">
+				<div className="bg-gray-green text-olive-green py-40 px-64 flex flex-col items-center lg:flex-row lg:justify-around">
 					{/* Contact a Travel Researcher  */}
-					<h2 className="text-4xl font-fancy">Contact a Travel</h2>
-					<h2 className="text-4xl font-fancy">Researcher</h2>
-					<h3 className="text-lg font-thin">
-						We always aim to respond within 24 hours
-					</h3>
-
+					<div>
+						<h2 className="text-4xl text-center font-fancy lg:text-left">
+							Contact a Travel
+						</h2>
+						<h2 className="text-4xl text-center font-fancy lg:text-left">
+							Researcher
+						</h2>
+						<h3 className="text-lg text-center font-thin lg:text-left">
+							We always aim to respond within 24 hours
+						</h3>
+					</div>
+					<div className="flex flex-col lg:flex-row">
+						<RotatingBorder />
+						<RotatingBorder />
+					</div>
+				</div>
+				<div className="p-64 bg-olive-green">
 					{/* div 1 */}
 					{/* Destinations */}
+					<div>
+						<h3>Destinations</h3>
+					</div>
 					{/* div 2 */}
 					{/* div 3 */}
 				</div>
-				<div className="p-64 bg-olive-green"></div>
 			</footer>
 		</div>
 	);
