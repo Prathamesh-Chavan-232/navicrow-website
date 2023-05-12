@@ -2,7 +2,7 @@ import React from "react";
 
 export const WhyUs = () => {
 	return (
-		<div className="px-12 py-16 flex flex-col items-center space-y-12 bg-olive-green lg:flex-row-reverse lg:justify-center">
+		<div className="px-12 py-16 flex flex-col items-center space-y-12 bg-olive-green lg:flex-row lg:justify-center">
 			{/* Why niarra & Elephant */}
 			<div className="flex flex-col justify-center items-center p-24 space-y-8 text-center">
 				<h2 className="text-lg">WHAT MAKES US DIFFERENT</h2>
