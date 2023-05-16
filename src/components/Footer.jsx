@@ -1,5 +1,7 @@
 import { TextField } from "./utlis/TextField";
 import { RotatingBorder } from "./utlis/RotatingBorder";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faReact } from "@fortawesome/free-solid-svg-icons";
 export const Footer = () => {
 	return (
 		<div id="footer" className="footer">
@@ -49,26 +51,32 @@ export const Footer = () => {
 							label={"Last Name (required)"}
 							placeholder={"Enter your Last Name"}
 						/>
+
 						<TextField
 							label={"Email (required)"}
-							placeholder={"Enter your Email"}
+							placeholder={"Enter your First Name"}
 						/>
+						<TextField
+							label={"Phone no."}
+							placeholder={"Enter your Phone no."}
+						/>
+
 						{/* Checkbox with text */}
-						<div className="flex space-x-3">
+						<div className="flex items-center gap-3">
 							<input type="checkbox" />
-							<span>I'm happy to receive emails from Niarra Travel *</span>
+							<span>I'm happy to receive emails from Navicrow Travels *</span>
 						</div>
 					</div>
 					{/* Button */}
 					<div className="p-8 flex items-center justify-center">
-						<button className="hidden px-8 py-3 bg-transparent text-olive-green rounded-full baseline hover:text-white md:block hover:bg-olive-green">
+						<button className="hidden px-8 py-3 border border-olive-green bg-transparent text-olive-green rounded-full baseline transition-color duration-200 hover:text-white md:block hover:bg-olive-green">
 							Subscribe
 						</button>
 					</div>
 				</div>
 			</div>
 			<footer>
-				<div className="bg-gray-green text-olive-green py-40 flex flex-col space-y-16 items-center justify-center lg:flex-row lg:space-y-0 lg:space-x-16">
+				<div className="py-40 bg-gray-green text-olive-green flex flex-col space-y-16 items-center justify-center lg:flex-row lg:space-y-0 lg:space-x-16">
 					{/* Contact a Travel Researcher  */}
 					<div>
 						<h2 className="text-6xl text-center font-fancy lg:text-left lg:text-4xl">
@@ -86,16 +94,57 @@ export const Footer = () => {
 						<RotatingBorder />
 					</div>
 				</div>
-				<div className="p-64 bg-olive-green">
+				<div className="p-20 bg-olive-green flex flex-col space-y-20 lg:flex-row lg:items-center lg:justify-center lg:gap-32 lg:space-y-0">
 					{/* div 1 */}
-					{/* Destinations */}
-					<div>
-						<h3>Destinations</h3>
+					<div className="flex flex-col">
+						<h3 className="py-6 text-md text-text-green lg:py-2 lg:text-sm">
+							DESTINATIONS
+						</h3>
+						<div>
+							<p className="font-fancy text-2xl">Africa</p>
+							<p className="font-fancy text-2xl">Asia</p>
+							<p className="font-fancy text-2xl">Australasia</p>
+							<p className="font-fancy text-2xl">Europe</p>
+							<p className="font-fancy text-2xl">Latin America</p>
+						</div>
 					</div>
 					{/* div 2 */}
+					<div className="flex flex-col space-y-6">
+						<div className="">
+							<h3 className="py-6 text-md text-text-green  lg:py-2 lg:text-sm">
+								CALL US
+							</h3>
+							<div>
+								<p className="font-fancy text-2xl">+1 (332) 334 0501</p>
+							</div>
+						</div>
+						<div className="">
+							<h3 className="py-6 text-md  text-text-green  lg:py-2 lg:text-sm">
+								EMAIL-US
+							</h3>
+							<div>
+								<p className="font-fancy text-2xl">explore@niarratravel.com</p>
+							</div>
+						</div>
+					</div>
 					{/* div 3 */}
+					<div className="flex flex-col">
+						<h3 className="py-6 text-md text-text-green lg:py-2 lg:text-sm">
+							CONTACT US
+						</h3>
+						<div>
+							{/* <FontAwesomeIcon icon={faReact} /> */}
+							<p className="font-fancy text-2xl">Facebook</p>
+							<p className="font-fancy text-2xl">Instagram</p>
+							<p className="font-fancy text-2xl">Whatsapp</p>
+						</div>
+					</div>
 				</div>
 			</footer>
 		</div>
 	);
 };
+
+// Niarra Travel
+
+// A proud Travel Partner

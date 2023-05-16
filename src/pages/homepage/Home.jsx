@@ -3,6 +3,16 @@ import { Navbar } from "../../components/Navbar";
 import { WhyUs } from "./components/WhyUs";
 import { useEffect, useState } from "react";
 
+// TODO NOW:
+// [ ]: Why Us Section
+// [ ]: About Us Page
+// [ ]: Navbar Page Transition
+// [ ]: Enquire Form Page Transition
+// [ ]: About Us Page
+// [ ]: Carousel
+// [ ]: Inspiring Stories
+// [ ]:
+
 // TODO:
 // [ ] - Basic Layout
 // [ ] - Proper Layout
