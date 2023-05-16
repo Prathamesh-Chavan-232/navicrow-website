@@ -11,7 +11,7 @@ import { Destinations } from "./pages/destinations/Destinations";
 import { Home } from "./pages/homepage/Home";
 import { ErrorPage } from "./pages/ErrorPage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Footer } from "./components/Footer";
+import { Footer } from "./components/footer/Footer";
 function App() {
 	const router = createBrowserRouter([
 		{
