@@ -56,7 +56,7 @@ export const About = () => {
 			{/* Section 1 - Navbar + Hero */}
 			<Header />
 			<Main />
-			<section className="flex flex-col items-center justify-center gap-6">
+			<section className="p-20 flex flex-col items-center justify-center gap-6">
 				<p className="w-96 text-justify">
 					In 2014, Niarra founder Byron Thomas tagged annual leave onto a work
 					trip to visit Africa's oldest national park, Virunga, in the DRC.
