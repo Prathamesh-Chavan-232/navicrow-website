@@ -8,44 +8,48 @@ import { far } from "@fortawesome/free-regular-svg-icons";
 
 import { Destinations } from "./pages/Destinations";
 import { Home } from "./pages/Home";
-import { ErrorPage } from "./pages/ErrorPage";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Footer } from "./components/footer/Footer";
 import { About } from "./pages/About";
 import { AnimatePresence } from "framer-motion";
 import { TravelStyle } from "./pages/TravelStyle";
 
 function App() {
-	const router = createBrowserRouter([
-		{
-			path: "/",
-			element: <Home />,
-			errorElement: <ErrorPage />,
-		},
-		{
-			path: "/destinations",
-			element: <Destinations />,
-			errorElement: <ErrorPage />,
-		},
-		{
-			path: "/travel-styles",
-			element: <TravelStyle />,
-			errorElement: <ErrorPage />,
-		},
-		,
-		{
-			path: "/about",
-			element: <About />,
-			errorElement: <ErrorPage />,
-		},
-	]);
 	return (
 		<div className="app">
-			<RouterProvider router={router} />
-			<Footer />
+			<BrowserRouter>
+				<AnimatePresence mode="wait">
+					<Routes location={location} key={location.pathname}>
+						<Route path="/" element={<Home />} />
+						<Route path="/destinations" element={<Destinations />} />
+						<Route path="/travel-styles" element={<TravelStyle />} />
+						<Route path="/about" element={<About />} />
+					</Routes>
+				</AnimatePresence>
+			</BrowserRouter>
 		</div>
 	);
 }
 
 export default App;
 library.add(fab, fas, far);
+
+// TODO NOW:
+// [ x ]: Basic Carousel
+// [ x ]: Footer
+// [ x ]: About Us Page
+// [ x ]: Navbar Page Transition
+// [ ]: Destination Page
+// [ ]: Travel Style Page
+// [ ]: Travel Styles
+// [ ]: Why Us Section
+// [ ]: Enquire Form Page Transition
+
+// TODO:
+// [ ] - Basic Layout
+// [ ] - Proper Layout
+// [ ] - Drop downs, Carousels
+// [ ] - Check all Fonts, Sizes, Heading tags, html tags.
+// [ ] - Animations & Other Fancy stuff
+// [ ] - Optimization, Better Separation of components, code spiltting, etc
+// [ ] - (Optional if Loading is good) - Switch to Next & pnpm

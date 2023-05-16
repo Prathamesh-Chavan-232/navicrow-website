@@ -1,4 +1,47 @@
-export const Navbar = (clr = "transparent") => {
+// header component
+import { motion as m } from "framer-motion";
+import useScrollDirection from "/src/hooks/scrollDirection";
+export function Header() {
+	const scrollDirection = useScrollDirection();
+
+	const content = {
+		animate: {
+			transition: { staggerChildren: 10, delayChildren: 0.7 },
+		},
+	};
+
+	const nav = {
+		initial: { y: -20, opacity: 0 },
+		animate: {
+			y: 0,
+			opacity: 1,
+			transition: {
+				duration: 0.8,
+				ease: [0.6, -0.05, 0.01, 0.99],
+			},
+		},
+	};
+
+	return (
+		<div
+			className={`sticky nav ${
+				scrollDirection === "down" ? "-top-24" : "top-0"
+			} h-24 transition-all duration-200`}
+		>
+			<m.div
+				initial="initial"
+				animate="animate"
+				variants={content}
+				className="space-y-12"
+			>
+				<m.div variants={nav}>
+					<Navbar />
+				</m.div>
+			</m.div>
+		</div>
+	);
+}
+const Navbar = (clr = "transparent") => {
 	function handleEnquire() {}
 	return (
 		<nav className={`bg-transparent mx-auto px-4 py-6 relative container`}>

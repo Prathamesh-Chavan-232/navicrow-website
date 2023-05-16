@@ -1,6 +1,6 @@
 export const Hero = () => {
 	return (
-		<div className="flex flex-col items-center justify-between">
+		<div className="w-screen h-screen flex flex-col items-center justify-between">
 			<div className="px-8 py-60 flex flex-col items-center justify-center">
 				<div className="pb-8 text-xl text-center">
 					Connecting your journey with purpose

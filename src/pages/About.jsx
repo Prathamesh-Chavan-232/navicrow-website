@@ -1,51 +1,10 @@
 import React from "react";
 import { Main } from "../components/about/Main";
-import { Navbar } from "../components/navbar/Navbar";
-import { useEffect, useState } from "react";
+import { Header } from "../components/navbar/Header";
+import { Footer } from "../components/footer/Footer";
 import { motion as m } from "framer-motion";
 
 export const About = () => {
-	// scroll direction hook
-	function useScrollDirection() {
-		const [scrollDirection, setScrollDirection] = useState(null);
-
-		useEffect(() => {
-			let lastScrollY = window.scrollY;
-
-			const updateScrollDirection = () => {
-				const scrollY = window.scrollY;
-				const direction = scrollY > lastScrollY ? "down" : "up";
-				if (
-					direction !== scrollDirection &&
-					(scrollY - lastScrollY > 5 || scrollY - lastScrollY < -5)
-				) {
-					setScrollDirection(direction);
-				}
-				lastScrollY = scrollY > 0 ? scrollY : 0;
-			};
-			window.addEventListener("scroll", updateScrollDirection); // add event listener
-			return () => {
-				window.removeEventListener("scroll", updateScrollDirection); // clean up
-			};
-		}, [scrollDirection]);
-
-		return scrollDirection;
-	}
-
-	// header component
-	function Header() {
-		const scrollDirection = useScrollDirection();
-
-		return (
-			<div
-				className={`sticky nav ${
-					scrollDirection === "down" ? "-top-10" : "top-0"
-				} h-10 transition-all duration-500`}
-			>
-				<Navbar />
-			</div>
-		);
-	}
 	return (
 		<m.main
 			initial={{ opacity: 0 }}
@@ -97,6 +56,8 @@ export const About = () => {
 					time.
 				</p>
 			</section>
+			<section></section>
+			<Footer />
 		</m.main>
 	);
 };

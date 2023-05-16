@@ -1,10 +1,12 @@
-import React from "react";
-import { Navbar } from "../components/navbar/Navbar";
+import { Header } from "../components/navbar/Header";
+import { PageTransition } from "./PageTransition";
+import { motion as m } from "framer-motion";
 
 export const Destinations = () => {
 	return (
-		<div className="h-screen w-screen text-black">
-			<Navbar />
-		</div>
+		<m.div exit={{ opacity: 0 }}>
+			<PageTransition />
+			<Header />
+		</m.div>
 	);
 };

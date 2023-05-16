@@ -1,12 +1,13 @@
 import React from "react";
-import { Navbar } from "../components/navbar/Navbar";
-
+import { Header } from "../components/navbar/Header";
+import { Footer } from "../components/footer/Footer";
 export const TravelStyle = () => {
 	return (
 		<div>
 			<div className="h-screen w-screen text-black">
-				<Navbar />
+				<Header />
 			</div>
+			<Footer />
 		</div>
 	);
 };
