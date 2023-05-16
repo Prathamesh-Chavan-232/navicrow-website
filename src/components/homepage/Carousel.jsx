@@ -1,5 +1,5 @@
 import Flickity from "react-flickity-component";
-import { RoundedTransparent } from "../../../components/utlis/buttons/RoundedTransparent";
+import { RoundedTransparent } from "../utlis/RoundedTransparent";
 export const Carousel = () => {
 	return (
 		<Flickity>

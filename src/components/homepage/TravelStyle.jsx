@@ -1,6 +1,6 @@
 import React from "react";
 
-export const TravelStyles = () => {
+export const TravelStyle = () => {
 	return (
 		<div className="text-olive-green">
 			<div className="py-40 bg-white"></div>

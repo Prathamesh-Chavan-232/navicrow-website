@@ -6,12 +6,15 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { far } from "@fortawesome/free-regular-svg-icons";
 
-// import { Footer } from "./components/footer";
-import { Destinations } from "./pages/destinations/Destinations";
-import { Home } from "./pages/homepage/Home";
+import { Destinations } from "./pages/Destinations";
+import { Home } from "./pages/Home";
 import { ErrorPage } from "./pages/ErrorPage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Footer } from "./components/footer/Footer";
+import { About } from "./pages/About";
+import { AnimatePresence } from "framer-motion";
+import { TravelStyle } from "./pages/TravelStyle";
+
 function App() {
 	const router = createBrowserRouter([
 		{
@@ -22,6 +25,17 @@ function App() {
 		{
 			path: "/destinations",
 			element: <Destinations />,
+			errorElement: <ErrorPage />,
+		},
+		{
+			path: "/travel-styles",
+			element: <TravelStyle />,
+			errorElement: <ErrorPage />,
+		},
+		,
+		{
+			path: "/about",
+			element: <About />,
 			errorElement: <ErrorPage />,
 		},
 	]);

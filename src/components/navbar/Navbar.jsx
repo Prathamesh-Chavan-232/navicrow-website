@@ -1,7 +1,7 @@
-export const Navbar = () => {
+export const Navbar = (clr = "transparent") => {
 	function handleEnquire() {}
 	return (
-		<nav className="mx-auto px-4 py-6 relative container">
+		<nav className={`bg-transparent mx-auto px-4 py-6 relative container`}>
 			{/* Desktop Flex container */}
 			<div className="flex items-center justify-between">
 				<div className="logo">
@@ -9,10 +9,10 @@ export const Navbar = () => {
 				</div>
 				{/* nav links */}
 				<div className="hidden space-x-16 md:block font-semibold">
-					<a href="" className="text-sm">
+					<a href="/destinations" className="text-sm">
 						DESTINATIONS <i className="down arrow mx-1"></i>
 					</a>
-					<a href="" className="text-sm">
+					<a href="/travel-styles" className="text-sm">
 						TRAVEL STYLES <i className="down arrow mx-1"></i>
 					</a>
 					<a href="/about" className="text-sm">

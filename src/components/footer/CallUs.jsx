@@ -1,5 +1,5 @@
 import React from "react";
-import { RotatingBorder } from "../../utlis/buttons/RotatingBorder";
+import { RotatingBorder } from "../utlis/RotatingBorder";
 export const CallUs = () => {
 	return (
 		<div className="py-40 bg-gray-green text-olive-green flex flex-col space-y-16 items-center justify-center lg:flex-row lg:space-y-0 lg:space-x-16">

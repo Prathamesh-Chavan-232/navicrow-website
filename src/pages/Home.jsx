@@ -1,10 +1,10 @@
-import { Hero } from "./components/Hero";
+import { Hero } from "../components/homepage/Hero";
 import { Navbar } from "/src/components/navbar/Navbar";
-import { WhyUs } from "./components/WhyUs";
+import { WhyUs } from "../components/homepage/WhyUs";
 import { useEffect, useState } from "react";
-import { Carousel } from "./components/Carousel";
-import { TravelStyles } from "./components/TravelStyles";
-
+import { Carousel } from "../components/homepage/Carousel";
+import { TravelStyle } from "../components/homepage/TravelStyle";
+import { motion as m } from "framer-motion";
 // TODO NOW:
 // [ x ]: Carousel
 // [ x ]: Footer
@@ -67,7 +67,11 @@ export const Home = () => {
 	}
 	return (
 		// Hero Section
-		<div className="home">
+		<m.main
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			transition={{ duration: 0.75, ease: "easeOut" }}
+		>
 			{/* Section 1 - Navbar + Hero */}
 			<div className="hero">
 				<Header />
@@ -78,7 +82,7 @@ export const Home = () => {
 			{/* Section 3 - Carousel */}
 			<Carousel />
 			{/* Section 4 - Travel Styles */}
-			<TravelStyles />
-		</div>
+			<TravelStyle />
+		</m.main>
 	);
 };

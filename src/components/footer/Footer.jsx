@@ -1,6 +1,6 @@
-import { ContactForm } from "./components/ContactForm";
-import { CallUs } from "./components/CallUs";
-import { RotatingBorder } from "../utlis/buttons/RotatingBorder";
+import { ContactForm } from "./ContactForm";
+import { CallUs } from "./CallUs";
+import { RotatingBorder } from "../utlis/RotatingBorder";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export const Footer = () => {
 	return (
