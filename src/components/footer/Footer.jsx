@@ -73,7 +73,7 @@ export const Footer = () => {
 						</div>
 					</div>
 
-					<div className="mt-auto p-20 flex flex-col gap-20 lg:items-center lg:justify-center lg:gap-64 lg:py-3 lg:px-0">
+					<div className="mt-auto p-20 flex flex-col gap-20 lg:flex-row lg:items-center lg:justify-center lg:gap-64 lg:py-3 lg:px-0">
 						<h2>Navicrow Travel </h2>
 						<h2>A proud Travel Partner</h2>
 					</div>
