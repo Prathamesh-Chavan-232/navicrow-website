@@ -1,7 +1,6 @@
 import { TextField } from "./utlis/TextField";
 import { RotatingBorder } from "./utlis/RotatingBorder";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faReact } from "@fortawesome/free-solid-svg-icons";
 export const Footer = () => {
 	return (
 		<div id="footer" className="footer">
@@ -76,8 +75,8 @@ export const Footer = () => {
 				</div>
 			</div>
 			<footer>
+				{/* Contact a Travel Researcher  */}
 				<div className="py-40 bg-gray-green text-olive-green flex flex-col space-y-16 items-center justify-center lg:flex-row lg:space-y-0 lg:space-x-16">
-					{/* Contact a Travel Researcher  */}
 					<div>
 						<h2 className="text-6xl text-center font-fancy lg:text-left lg:text-4xl">
 							Contact a Travel
@@ -94,10 +93,13 @@ export const Footer = () => {
 						<RotatingBorder />
 					</div>
 				</div>
+				<div className="p-40 bg-olive-green"></div>
+				<hr className="bg-gray-green" />
+				{/* Footer */}
 				<div className="p-20 bg-olive-green flex flex-col space-y-20 lg:flex-row lg:items-center lg:justify-center lg:gap-32 lg:space-y-0">
 					{/* div 1 */}
 					<div className="flex flex-col">
-						<h3 className="py-6 text-md text-text-green lg:py-2 lg:text-sm">
+						<h3 className="py-6 text-md text-light-green font-semibold lg:py-2 lg:text-sm">
 							DESTINATIONS
 						</h3>
 						<div>
@@ -111,7 +113,7 @@ export const Footer = () => {
 					{/* div 2 */}
 					<div className="flex flex-col space-y-6">
 						<div className="">
-							<h3 className="py-6 text-md text-text-green  lg:py-2 lg:text-sm">
+							<h3 className="py-6 text-md text-light-green  font-semibold lg:py-2 lg:text-sm">
 								CALL US
 							</h3>
 							<div>
@@ -119,7 +121,7 @@ export const Footer = () => {
 							</div>
 						</div>
 						<div className="">
-							<h3 className="py-6 text-md  text-text-green  lg:py-2 lg:text-sm">
+							<h3 className="py-6 text-md  text-light-green  font-semibold lg:py-2 lg:text-sm">
 								EMAIL-US
 							</h3>
 							<div>
@@ -128,15 +130,24 @@ export const Footer = () => {
 						</div>
 					</div>
 					{/* div 3 */}
-					<div className="flex flex-col">
-						<h3 className="py-6 text-md text-text-green lg:py-2 lg:text-sm">
-							CONTACT US
-						</h3>
-						<div>
-							{/* <FontAwesomeIcon icon={faReact} /> */}
-							<p className="font-fancy text-2xl">Facebook</p>
-							<p className="font-fancy text-2xl">Instagram</p>
-							<p className="font-fancy text-2xl">Whatsapp</p>
+					<div className="flex flex-col space-y-12">
+						<div className="h-12 w-24 bg-white"></div>
+						<div className="flex gap-8">
+							<FontAwesomeIcon
+								icon="fa-brands fa-instagram"
+								size="xl"
+								className="text-light-green hover:text-white"
+							/>
+							<FontAwesomeIcon
+								icon="fa-brands fa-facebook-f"
+								size="xl"
+								className="text-light-green hover:text-white"
+							/>
+							<FontAwesomeIcon
+								icon="fa-brands fa-whatsapp"
+								size="xl"
+								className="text-light-green hover:text-white"
+							/>
 						</div>
 					</div>
 				</div>

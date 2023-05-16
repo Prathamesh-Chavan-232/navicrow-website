@@ -15,7 +15,7 @@ export const Hero = () => {
 					a <span className="italic font-thin">positive</span> impact
 				</h1>
 			</div>
-			<div className="p-32">
+			<div className="hidden p-32">
 				<a>Open Video</a>
 			</div>
 		</div>
