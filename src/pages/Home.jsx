@@ -19,10 +19,10 @@ import { motion as m } from "framer-motion";
 // [ ] - Basic Layout
 // [ ] - Proper Layout
 // [ ] - Drop downs Carousels
-// [ ] - Responsive
-// [ ] - Fonts
+// [ ] - Check all Fonts, Sizes, Heading tags, html tags.
 // [ ] - Animations & Other Fancy stuff
 // [ ] - Optimization, Better Separation of components, code spiltting, etc
+// [ ] - (Optional if Loading is good) - Switch to Next & pnpm
 export const Home = () => {
 	// scroll direction hook
 	function useScrollDirection() {
