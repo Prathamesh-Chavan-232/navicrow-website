@@ -10,13 +10,13 @@ export const Navbar = () => {
 				{/* nav links */}
 				<div className="hidden space-x-16 md:block font-semibold">
 					<a href="" className="text-sm">
-						DESTINATIONS
+						DESTINATIONS <i className="down arrow mx-1"></i>
 					</a>
 					<a href="" className="text-sm">
-						TRAVEL STYLES
+						TRAVEL STYLES <i className="down arrow mx-1"></i>
 					</a>
 					<a href="" className="text-sm">
-						ABOUT US
+						ABOUT US <i className="down arrow mx-1"></i>
 					</a>
 				</div>
 				{/* Mobile Enquire */}

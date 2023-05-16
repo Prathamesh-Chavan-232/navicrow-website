@@ -28,6 +28,10 @@ export default {
 				// Gray
 				veryLightGray: "hsl(0, 0%, 98%)",
 			},
+			backgroundImage: {
+				"carousel-1": "url('/assets/landscapes/mountains.jpg')",
+				"carousel-2": "url('/assets/landscapes/mountains2.jpg')",
+			},
 			fontFamily: {
 				"font-fancy": "",
 			},

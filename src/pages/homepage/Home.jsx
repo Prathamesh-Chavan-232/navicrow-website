@@ -2,6 +2,8 @@ import { Hero } from "./components/Hero";
 import { Navbar } from "../../components/Navbar";
 import { WhyUs } from "./components/WhyUs";
 import { useEffect, useState } from "react";
+import { Carousel } from "./components/Carousel";
+import { TravelStyles } from "./components/TravelStyles";
 
 // TODO NOW:
 // [ ]: Why Us Section
@@ -73,6 +75,10 @@ export const Home = () => {
 			</div>
 			{/* Section 2 - About us (Why Niarra?) */}
 			<WhyUs />
+			{/* Section 3 - Carousel */}
+			<Carousel />
+			{/* Section 4 - Travel Styles */}
+			<TravelStyles />
 		</div>
 	);
 };

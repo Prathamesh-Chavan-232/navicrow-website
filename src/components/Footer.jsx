@@ -93,8 +93,8 @@ export const Footer = () => {
 						<RotatingBorder />
 					</div>
 				</div>
-				<div className="p-40 bg-olive-green"></div>
-				<hr className="bg-gray-green" />
+				{/* <div className="p-40 bg-olive-green"></div>
+				<hr className="bg-gray-green" /> */}
 				{/* Footer */}
 				<div className="p-20 bg-olive-green flex flex-col space-y-20 lg:flex-row lg:items-center lg:justify-center lg:gap-32 lg:space-y-0">
 					{/* div 1 */}
