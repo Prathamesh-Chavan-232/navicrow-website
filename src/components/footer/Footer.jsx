@@ -4,7 +4,7 @@ import { RotatingBorder } from "../utlis/RotatingBorder";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export const Footer = () => {
 	return (
-		<div id="footer" className="footer">
+		<div id="footer" className="footer text-white">
 			<footer>
 				<ContactForm />
 
@@ -22,11 +22,21 @@ export const Footer = () => {
 								DESTINATIONS
 							</h3>
 							<div>
-								<p className="font-fancy text-2xl">Africa</p>
-								<p className="font-fancy text-2xl">Asia</p>
-								<p className="font-fancy text-2xl">Australasia</p>
-								<p className="font-fancy text-2xl">Europe</p>
-								<p className="font-fancy text-2xl">Latin America</p>
+								<p className="font-fancy text-2xl hover:text-light-green">
+									Africa
+								</p>
+								<p className="font-fancy text-2xl hover:text-light-green">
+									Asia
+								</p>
+								<p className="font-fancy text-2xl hover:text-light-green">
+									Australasia
+								</p>
+								<p className="font-fancy text-2xl hover:text-light-green">
+									Europe
+								</p>
+								<p className="font-fancy text-2xl hover:text-light-green">
+									Latin America
+								</p>
 							</div>
 						</div>
 						{/* div 2 */}
@@ -36,7 +46,9 @@ export const Footer = () => {
 									CALL US
 								</h3>
 								<div>
-									<p className="font-fancy text-2xl">+1 (332) 334 0501</p>
+									<p className="font-fancy text-2xl hover:text-light-green">
+										+1 (332) 334 0501
+									</p>
 								</div>
 							</div>
 							<div className="">
@@ -44,7 +56,7 @@ export const Footer = () => {
 									EMAIL-US
 								</h3>
 								<div>
-									<p className="font-fancy text-2xl">
+									<p className="font-fancy text-2xl hover:text-light-green">
 										explore@niarratravel.com
 									</p>
 								</div>

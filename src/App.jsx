@@ -18,7 +18,7 @@ function App() {
 	return (
 		<div className="app">
 			<BrowserRouter>
-				<AnimatePresence mode="wait">
+				<AnimatePresence mode={"wait"}>
 					<Routes location={location} key={location.pathname}>
 						<Route path="/" element={<Home />} />
 						<Route path="/destinations" element={<Destinations />} />

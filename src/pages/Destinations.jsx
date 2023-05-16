@@ -1,11 +1,16 @@
 import { Header } from "../components/navbar/Header";
-import { PageTransition } from "./PageTransition";
 import { motion as m } from "framer-motion";
 
 export const Destinations = () => {
 	return (
-		<m.div exit={{ opacity: 0 }}>
-			<PageTransition />
+		<m.div
+			initial={{ y: "100vh" }}
+			animate={{ y: "0%" }}
+			transition={{ duration: 1.2, ease: "easeOut" }}
+			exit={{ opacity: 1 }}
+			className="absolute top-0 left-0 h-full w-full bg-gray-green"
+		>
+			{/* <PageTransition /> */}
 			<Header />
 		</m.div>
 	);

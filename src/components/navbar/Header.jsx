@@ -1,12 +1,13 @@
 // header component
 import { motion as m } from "framer-motion";
 import useScrollDirection from "/src/hooks/scrollDirection";
+import { Link } from "react-router-dom";
 export function Header() {
 	const scrollDirection = useScrollDirection();
 
 	const content = {
 		animate: {
-			transition: { staggerChildren: 10, delayChildren: 0.7 },
+			transition: { staggerChildren: 10, delayChildren: 1.2 },
 		},
 	};
 
@@ -54,15 +55,15 @@ const Navbar = (clr = "transparent") => {
 				</div>
 				{/* nav links */}
 				<div className="hidden space-x-16 md:block font-semibold">
-					<a href="/destinations" className="text-sm">
+					<Link to="/destinations" className="text-sm">
 						DESTINATIONS <i className="down arrow mx-1"></i>
-					</a>
-					<a href="/travel-styles" className="text-sm">
+					</Link>
+					<Link to="/travel-styles" className="text-sm">
 						TRAVEL STYLES <i className="down arrow mx-1"></i>
-					</a>
-					<a href="/about" className="text-sm">
+					</Link>
+					<Link to="/about" className="text-sm">
 						ABOUT US <i className="down arrow mx-1"></i>
-					</a>
+					</Link>
 				</div>
 				{/* Mobile Enquire */}
 				<a href="" onClick={handleEnquire} className="md:hidden">
