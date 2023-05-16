@@ -1,18 +1,18 @@
 import { Hero } from "./components/Hero";
-import { Navbar } from "../../components/Navbar";
+import { Navbar } from "/src/components/navbar/Navbar";
 import { WhyUs } from "./components/WhyUs";
 import { useEffect, useState } from "react";
 import { Carousel } from "./components/Carousel";
 import { TravelStyles } from "./components/TravelStyles";
 
 // TODO NOW:
+// [ x ]: Carousel
+// [ x ]: Footer
 // [ ]: Why Us Section
 // [ ]: About Us Page
 // [ ]: Navbar Page Transition
 // [ ]: Enquire Form Page Transition
-// [ ]: About Us Page
-// [ ]: Carousel
-// [ ]: Inspiring Stories
+// [ ]: Travel Styles
 // [ ]:
 
 // TODO:
