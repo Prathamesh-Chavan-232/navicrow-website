@@ -5,7 +5,9 @@ export const Navbar = (clr = "transparent") => {
 			{/* Desktop Flex container */}
 			<div className="flex items-center justify-between">
 				<div className="logo">
-					<img src="/vite.svg" alt="" />
+					<a href="/">
+						<img src="/vite.svg" alt="" />
+					</a>
 				</div>
 				{/* nav links */}
 				<div className="hidden space-x-16 md:block font-semibold">

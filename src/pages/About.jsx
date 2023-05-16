@@ -39,8 +39,8 @@ export const About = () => {
 		return (
 			<div
 				className={`sticky nav ${
-					scrollDirection === "down" ? "-top-24" : "top-0"
-				} h-24 transition-all duration-500`}
+					scrollDirection === "down" ? "-top-10" : "top-0"
+				} h-10 transition-all duration-500`}
 			>
 				<Navbar />
 			</div>
@@ -57,11 +57,11 @@ export const About = () => {
 			<Header />
 			<Main />
 			<section className="p-8 flex flex-col items-center justify-center gap-6">
-				<p className="lg:px-24 lg:w-[32rem] text-xl">
+				<p className=" lg:w-[40rem] text-xl">
 					In 2014, Niarra founder Byron Thomas tagged annual leave onto a work
 					trip to visit Africa's oldest national park, Virunga, in the DRC.
 				</p>
-				<p className="lg:px-24 lg:w-[32rem]">
+				<p className=" lg:w-[40rem]">
 					It was there, trekking into the forest with armed guards and rangers
 					like Innocent Mburanumwe, that Byron first appreciated the phenomenal
 					investment that goes into critical, large-scale conservation projects.
@@ -70,7 +70,7 @@ export const About = () => {
 					protect it, as seen in the Virunga documentary released at a similar
 					time.
 				</p>
-				<p className="lg:px-24 lg:w-[32rem]">
+				<p className=" lg:w-[40rem]">
 					On that trip, it soon became evident that community buy-in and shared
 					value is vital for the long-term protection of the natural world. The
 					trip planted a seed that positive impact travel treads an incredibly
@@ -78,7 +78,7 @@ export const About = () => {
 					nature, and our planet's health. 
 				</p>
 
-				<p className="lg:px-24 lg:w-[32rem]">
+				<p className=" lg:w-[40rem]">
 					It was there, trekking into the forest with armed guards and rangers
 					like Innocent Mburanumwe, that Byron first appreciated the phenomenal
 					investment that goes into critical, large-scale conservation projects.
@@ -87,7 +87,7 @@ export const About = () => {
 					protect it, as seen in the Virunga documentary released at a similar
 					time.
 				</p>
-				<p className="lg:px-24 lg:w-[32rem]">
+				<p className=" lg:w-[40rem]">
 					It was there, trekking into the forest with armed guards and rangers
 					like Innocent Mburanumwe, that Byron first appreciated the phenomenal
 					investment that goes into critical, large-scale conservation projects.
