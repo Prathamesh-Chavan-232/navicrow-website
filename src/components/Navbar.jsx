@@ -15,7 +15,7 @@ export const Navbar = () => {
 					<a href="" className="text-sm">
 						TRAVEL STYLES <i className="down arrow mx-1"></i>
 					</a>
-					<a href="" className="text-sm">
+					<a href="/about" className="text-sm">
 						ABOUT US <i className="down arrow mx-1"></i>
 					</a>
 				</div>
