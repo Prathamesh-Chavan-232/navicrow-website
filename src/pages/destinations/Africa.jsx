@@ -3,6 +3,7 @@ import { Header } from "../../components/navbar/Header";
 import { WhyUs } from "../../components/homepage/WhyUs";
 import { Footer } from "../../components/footer/Footer";
 import { motion as m } from "framer-motion";
+import { Main } from "../../components/Main";
 
 export const Africa = () => {
 	return (
@@ -17,21 +18,7 @@ export const Africa = () => {
 				{/* Section 1 - Navbar + Hero */}
 				<div className="travel-destination">
 					<Header />
-					<div className="w-screen h-screen flex flex-col justify-between">
-						<div className="px-8 flex flex-col gap-8 text-white items-center justify-center">
-							<div className="text-xl text-center">
-								LUXURY SAFARIS AND PRIVATE ADVENTURES
-							</div>
-							<h1 className="text-5xl lg:text-8xl text-center font-fancy">
-								Africa
-							</h1>
-						</div>
-						<div className="mx-8 my-40 lg:mx-56 text-white">
-							<div>
-								<span>Borona, Kenya</span>
-							</div>
-						</div>
-					</div>
+					<Main />
 				</div>
 				{/* Section 2 - About us (Why Niarra?) */}
 				<WhyUs />

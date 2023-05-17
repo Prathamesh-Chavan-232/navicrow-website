@@ -18,7 +18,7 @@ export const Footer = () => {
 					<div className="p-20 flex flex-col space-y-20 lg:flex-row lg:items-center lg:justify-center lg:gap-32 lg:space-y-0">
 						{/* div 1 */}
 						<div className="flex flex-col">
-							<h3 className="py-6 text-md text-light-green font-semibold lg:py-2 lg:text-sm">
+							<h3 className="py-6 text-md text-light-green font-semibold lg:py-2 lg:text-xs">
 								DESTINATIONS
 							</h3>
 							<div>
@@ -42,7 +42,7 @@ export const Footer = () => {
 						{/* div 2 */}
 						<div className="flex flex-col space-y-6">
 							<div className="">
-								<h3 className="py-6 text-md text-light-green  font-semibold lg:py-2 lg:text-sm">
+								<h3 className="py-6 text-md text-light-green  font-semibold lg:py-2 lg:text-xs">
 									CALL US
 								</h3>
 								<div>
@@ -52,8 +52,8 @@ export const Footer = () => {
 								</div>
 							</div>
 							<div className="">
-								<h3 className="py-6 text-md  text-light-green  font-semibold lg:py-2 lg:text-sm">
-									EMAIL-US
+								<h3 className="py-6 text-md  text-light-green  font-semibold lg:py-2 lg:text-xs">
+									E-MAIL US
 								</h3>
 								<div>
 									<p className="font-fancy text-2xl hover:text-light-green">
