@@ -41,7 +41,7 @@ export const Home = () => {
 			{/* Section 2 - About us (Why Niarra?) */}
 			<WhyUs />
 			{/* Section 3 - Carousel */}
-			<Carousel />
+			{/* <Carousel /> */}
 			{/* Section 4 - Travel Styles */}
 			<TravelStyle />
 			<Footer />
