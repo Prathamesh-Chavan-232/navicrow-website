@@ -35,7 +35,7 @@ export const Home = () => {
 		>
 			{/* Section 1 - Navbar + Hero */}
 			<div className="hero">
-				<Header />
+				<Header clr="red" />
 				<Hero />
 			</div>
 			{/* Section 2 - About us (Why Niarra?) */}
@@ -43,7 +43,7 @@ export const Home = () => {
 			{/* Section 3 - Carousel */}
 			{/* <Carousel /> */}
 			{/* Section 4 - Travel Styles */}
-			<TravelStyle />
+			{/* <TravelStyle /> */}
 			<Footer />
 		</m.main>
 	);

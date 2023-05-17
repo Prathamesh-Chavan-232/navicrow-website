@@ -6,13 +6,16 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { far } from "@fortawesome/free-regular-svg-icons";
 
+// npm packages
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+// Routes
 import { Destinations } from "./pages/Destinations";
 import { Home } from "./pages/Home";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Footer } from "./components/footer/Footer";
 import { About } from "./pages/About";
 import { AnimatePresence } from "framer-motion";
 import { TravelStyle } from "./pages/TravelStyle";
+import { Africa } from "./pages/destinations/Africa";
 
 function App() {
 	return (
@@ -21,9 +24,10 @@ function App() {
 				<AnimatePresence mode={"wait"}>
 					<Routes location={location} key={location.pathname}>
 						<Route path="/" element={<Home />} />
-						<Route path="/destinations" element={<Destinations />} />
+						<Route path="/destinations" element={<Africa />} />
 						<Route path="/travel-styles" element={<TravelStyle />} />
 						<Route path="/about" element={<About />} />
+						<Route path="/africa" element={<Africa />} />
 					</Routes>
 				</AnimatePresence>
 			</BrowserRouter>

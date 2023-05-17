@@ -23,19 +23,19 @@ export const Footer = () => {
 							</h3>
 							<div>
 								<p className="font-fancy text-2xl hover:text-light-green">
-									Africa
+									<a href="/africa">Africa</a>
 								</p>
 								<p className="font-fancy text-2xl hover:text-light-green">
-									Asia
+									<a href="/africa">Asia</a>
 								</p>
 								<p className="font-fancy text-2xl hover:text-light-green">
-									Australasia
+									<a href="/africa">Australasia</a>
 								</p>
 								<p className="font-fancy text-2xl hover:text-light-green">
-									Europe
+									<a href="/africa">Europe</a>
 								</p>
 								<p className="font-fancy text-2xl hover:text-light-green">
-									Latin America
+									<a href="/africa">Latin America</a>
 								</p>
 							</div>
 						</div>
@@ -85,9 +85,11 @@ export const Footer = () => {
 						</div>
 					</div>
 
-					<div className="mt-auto p-20 flex flex-col gap-20 lg:flex-row lg:items-center lg:justify-center lg:gap-64 lg:py-3 lg:px-0">
-						<h2>Navicrow Travel </h2>
-						<h2>A proud Travel Partner</h2>
+					<div className="mt-auto p-20 flex flex-col gap-20 text-sm lg:flex-row lg:items-center lg:justify-center lg:gap-64 lg:py-3 lg:px-0">
+						<h2 className="text-xs underline">
+							<a href="/">Navicrow Travel </a>
+						</h2>
+						<h2 className="text-xs underline">A proud Travel Partner</h2>
 					</div>
 				</div>
 			</footer>
