@@ -2,7 +2,8 @@
 import { motion as m } from "framer-motion";
 import useScrollDirection from "/src/hooks/scrollDirection";
 import { Link } from "react-router-dom";
-export function Header(clr = "transparent") {
+
+export function Header() {
 	const scrollDirection = useScrollDirection();
 
 	const content = {
@@ -42,7 +43,7 @@ export function Header(clr = "transparent") {
 		</div>
 	);
 }
-const Navbar = (clr = "transparent") => {
+const Navbar = () => {
 	function handleEnquire() {}
 	return (
 		<nav className={`mx-auto px-8 py-6 relative container`}>
@@ -50,7 +51,7 @@ const Navbar = (clr = "transparent") => {
 			<div className="flex items-center justify-between">
 				<div className="logo">
 					<a href="/">
-						<img src="/vite.svg" alt="" />
+						<img src="NH.png" alt="" className="h-10 w-10" />
 					</a>
 				</div>
 				{/* nav links */}

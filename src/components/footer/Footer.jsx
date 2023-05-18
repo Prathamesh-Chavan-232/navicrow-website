@@ -57,7 +57,9 @@ export const Footer = () => {
 								</h3>
 								<div>
 									<p className="font-fancy text-2xl hover:text-light-green">
-										explore@niarratravel.com
+										<a href="mailtomailto:navicrowholidayswebsite@gmail.com">
+											navicrowholidayswebsite@gmail.com
+										</a>
 									</p>
 								</div>
 							</div>
