@@ -9,7 +9,7 @@ export const Destinations = () => {
 			animate={{ y: "0%" }}
 			transition={{ duration: 1.2, ease: "easeOut" }}
 			exit={{ opacity: 1 }}
-			className="absolute top-0 left-0 h-full w-full bg-gray-green"
+			className="absolute top-0 left-0 h-full w-full bg-gray-green text-white"
 		>
 			{/* <PageTransition /> */}
 			<Header />

@@ -64,7 +64,7 @@ export const ContactForm = () => {
 				</div>
 				{/* Button */}
 				<div className="p-8 flex items-center justify-center">
-					<button className="hidden px-8 py-3 border border-olive-green bg-transparent text-olive-green rounded-full baseline transition-color duration-200 hover:text-white md:block hover:bg-olive-green">
+					<button className="px-8 py-3 border border-olive-green bg-transparent text-olive-green rounded-full baseline transition-color duration-200 hover:text-white hover:bg-olive-green">
 						Subscribe
 					</button>
 				</div>

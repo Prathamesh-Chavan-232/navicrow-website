@@ -46,7 +46,7 @@ export function Header() {
 const Navbar = () => {
 	function handleEnquire() {}
 	return (
-		<nav className={`mx-auto px-8 py-6 relative container`}>
+		<nav className={`mx-auto px-8 py-6 text-white relative container`}>
 			{/* Desktop Flex container */}
 			<div className="flex items-center justify-between">
 				<div className="logo">
