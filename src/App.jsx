@@ -19,12 +19,12 @@ import { Africa } from "./pages/destinations/Africa";
 
 function App() {
 	return (
-		<div className="app">
+		<div className="app overflow-x-hidden">
 			<BrowserRouter>
 				<AnimatePresence mode={"wait"}>
 					<Routes location={location} key={location.pathname}>
 						<Route path="/" element={<Home />} />
-						<Route path="/destinations" element={<Destinations />} />
+						<Route path="/destinations" element={<Africa />} />
 						<Route path="/travel-styles" element={<TravelStyle />} />
 						<Route path="/about" element={<About />} />
 						<Route path="/africa" element={<Africa />} />
@@ -41,12 +41,9 @@ library.add(fab, fas, far);
 // TODO NOW:
 // [ x ]: Navbar Page Transition
 // [ ]: Travel Styles Section
-// [ ]: Travel Stories Section
 // [ ]: Destinations & Travel Style Menus
 // [ ]: Enquire Form Hamburger
-// [ ]: Transition Menu Fix
 // [ ]: Scrolling Animations
-// [ ]: Adding Proper Content & Images
 
 // TODO:
 // [ ] - Proper Layout
@@ -55,3 +52,5 @@ library.add(fab, fas, far);
 // [ ] - Animations & Other Fancy stuff
 // [ ] - Optimization, Better Separation of components, code spiltting, etc
 // [ ] - (Optional if Loading is good) - Switch to Next & pnpm
+
+// [ ]: Travel Stories Blog
