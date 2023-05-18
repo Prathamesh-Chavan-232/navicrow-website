@@ -56,7 +56,7 @@ export const Footer = () => {
 									E-MAIL US
 								</h3>
 								<div>
-									<p className="font-fancy text-2xl hover:text-light-green">
+									<p className="font-fancy text-2xl break-words hover:text-light-green">
 										<a href="mailtomailto:navicrowholidayswebsite@gmail.com">
 											navicrowholidayswebsite@gmail.com
 										</a>

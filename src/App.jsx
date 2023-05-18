@@ -39,18 +39,16 @@ export default App;
 library.add(fab, fas, far);
 
 // TODO NOW:
-// [ x ]: Basic Carousel
-// [ x ]: Footer
-// [ x ]: About Us Page
 // [ x ]: Navbar Page Transition
-// [ ]: Destination Page
-// [ ]: Travel Style Page
-// [ ]: Travel Styles
-// [ ]: Why Us Section
-// [ ]: Enquire Form Page Transition
+// [ ]: Travel Styles Section
+// [ ]: Travel Stories Section
+// [ ]: Destinations & Travel Style Menus
+// [ ]: Enquire Form Hamburger
+// [ ]: Transition Menu Fix
+// [ ]: Scrolling Animations
+// [ ]: Adding Proper Content & Images
 
 // TODO:
-// [ ] - Basic Layout
 // [ ] - Proper Layout
 // [ ] - Drop downs, Carousels
 // [ ] - Check all Fonts, Sizes, Heading tags, html tags.
