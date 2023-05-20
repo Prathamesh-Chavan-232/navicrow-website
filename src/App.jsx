@@ -16,6 +16,7 @@ import { About } from "./pages/About";
 import { AnimatePresence } from "framer-motion";
 import { TravelStyle } from "./pages/TravelStyle";
 import { Africa } from "./pages/destinations/Africa";
+import { Dev } from "./pages/Dev";
 
 function App() {
 	return (
@@ -24,6 +25,7 @@ function App() {
 				<AnimatePresence mode={"wait"}>
 					<Routes location={location} key={location.pathname}>
 						<Route path="/" element={<Home />} />
+						<Route path="/dev" element={<Dev />} />
 						<Route path="/destinations" element={<Africa />} />
 						<Route path="/travel-styles" element={<TravelStyle />} />
 						<Route path="/about" element={<About />} />

@@ -58,8 +58,10 @@ export const ContactForm = () => {
 
 					{/* Checkbox with text */}
 					<div className="flex items-center gap-3">
-						<input type="checkbox" />
-						<span>I'm happy to receive emails from Navicrow Travels *</span>
+						<input type="checkbox" id="contact" className="" />
+						<label htmlFor="contact">
+							I'm happy to receive emails from Navicrow Travels *
+						</label>
 					</div>
 				</div>
 				{/* Button */}

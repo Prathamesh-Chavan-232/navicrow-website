@@ -1,7 +1,8 @@
 // header component
-import { motion as m } from "framer-motion";
 import useScrollDirection from "/src/hooks/scrollDirection";
+import { motion as m } from "framer-motion";
 import { Link } from "react-router-dom";
+import { HamburgerMenu } from "./HamburgerMenu";
 
 export function Header() {
 	const scrollDirection = useScrollDirection();
@@ -55,7 +56,7 @@ const Navbar = () => {
 					</a>
 				</div>
 				{/* nav links */}
-				<div className="hidden space-x-16 md:block font-normal">
+				<div className="hidden space-x-16 lg:block font-normal">
 					<Link to="/destinations" className="text-xs">
 						DESTINATIONS <i className="down arrow"></i>
 					</Link>
@@ -67,15 +68,19 @@ const Navbar = () => {
 					</Link>
 				</div>
 				{/* Mobile Enquire */}
-				<a href="" onClick={handleEnquire} className="md:hidden font-semibold">
+				<a href="" onClick={handleEnquire} className="lg:hidden font-semibold">
 					Enquire
 				</a>
-				{/* Mobile Menu Hamburger */}
 
 				{/* Desktop Enquire */}
-				<button className="hidden px-8 py-3 bg-olive-green text-white text-sm rounded-full baseline  md:block hover:bg-brightRed">
+				<button
+					onClick={handleEnquire}
+					className="hidden px-8 py-3 bg-olive-green text-white text-sm rounded-full baseline  lg:block hover:bg-brightRed"
+				>
 					Enquire
 				</button>
+				{/* Mobile Menu Hamburger */}
+				<HamburgerMenu />
 			</div>
 		</nav>
 	);
