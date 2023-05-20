@@ -23,7 +23,8 @@ export const Home = () => {
 				<Hero />
 			</div>
 			{/* Section 2 - About us (Why Niarra?) */}
-			<WhyUs />
+			<WhyUs clr="green" />
+
 			{/* Section 3 - Carousel */}
 			<Carousel />
 			{/* Section 4 - Travel Styles */}

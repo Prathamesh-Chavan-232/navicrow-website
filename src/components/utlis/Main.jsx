@@ -9,7 +9,7 @@ export const Main = () => {
 						LUXURY SAFARIS AND WILDLIFE ADVENTURES
 					</div>
 					<h1 className="text-5xl lg:text-8xl text-center font-fancy">
-						<a href="/africa">Family Travel</a>
+						Africa
 					</h1>
 				</div>
 				<div className="mx-8 lg:mx-56 text-white">

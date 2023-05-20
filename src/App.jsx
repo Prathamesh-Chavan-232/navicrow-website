@@ -26,10 +26,12 @@ function App() {
 					<Routes location={location} key={location.pathname}>
 						<Route path="/" element={<Home />} />
 						<Route path="/dev" element={<Dev />} />
-						<Route path="/destinations" element={<Africa />} />
-						<Route path="/travel-styles" element={<TravelStyle />} />
+						<Route path="/destinations/africa" element={<Africa />} />
+						<Route
+							path="/travel-styles/family-travel"
+							element={<TravelStyle />}
+						/>
 						<Route path="/about" element={<About />} />
-						<Route path="/africa" element={<Africa />} />
 					</Routes>
 				</AnimatePresence>
 			</BrowserRouter>
@@ -42,17 +44,23 @@ library.add(fab, fas, far);
 
 // TODO NOW:
 // [ x ]: Navbar Page Transition
-// [ ]: Travel Styles Section
+// [ x ]: Travel Styles Section
+// [ x ]: Enquire Form Hamburger
 // [ ]: Destinations & Travel Style Menus
-// [ ]: Enquire Form Hamburger
+// [ ]: Fullpage Carousel, Image Carousel
+
+// [ ]: Grid View - Destinations
+// [ ]: Package Page
 // [ ]: Scrolling Animations
 
 // TODO:
 // [ ] - Proper Layout
 // [ ] - Drop downs, Carousels
+// [ ] - Check all Padding & Layouts
 // [ ] - Check all Fonts, Sizes, Heading tags, html tags.
-// [ ] - Animations & Other Fancy stuff
-// [ ] - Optimization, Better Separation of components, code spiltting, etc
+// [ ] - Animations, Smooth Scrolling & Other Fancy stuff
+// [ ] - Image Loading, Lazy Loading
+// [ ] - Optimization, code spiltting, etc
 // [ ] - (Optional if Loading is good) - Switch to Next & pnpm
 
 // [ ]: Travel Stories Blog

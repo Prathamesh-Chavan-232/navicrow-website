@@ -1,8 +1,14 @@
 import React from "react";
 
-export const WhyUs = () => {
+export const WhyUs = ({ clr }) => {
 	return (
-		<div className="px-12 py-20 flex flex-col items-center gap-12 text-center bg-olive-green text-white lg:py-40">
+		<div
+			className={`${
+				clr === "green"
+					? "bg-olive-green text-white "
+					: "bg-light-gray text-black "
+			} px-12 py-20 flex flex-col items-center gap-12 text-center lg:py-40`}
+		>
 			{/* Why niarra & Elephant */}
 			<div>
 				<h2 className="text-lg">WHAT MAKES US DIFFERENT</h2>

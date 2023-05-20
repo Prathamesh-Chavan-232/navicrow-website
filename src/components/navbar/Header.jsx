@@ -52,15 +52,15 @@ const Navbar = () => {
 			<div className="flex items-center justify-between">
 				<div className="logo">
 					<a href="/">
-						<img src="NH.png" alt="" className="h-10 w-10" />
+						<img src="/assets/NH.png" alt="" className="h-10 w-10" />
 					</a>
 				</div>
 				{/* nav links */}
 				<div className="hidden space-x-16 lg:block font-normal">
-					<Link to="/destinations" className="text-xs">
+					<Link to="/destinations/africa" className="text-xs">
 						DESTINATIONS <i className="down arrow"></i>
 					</Link>
-					<Link to="/travel-styles" className="text-xs">
+					<Link to="/travel-styles/family-travel" className="text-xs">
 						TRAVEL STYLES <i className="down arrow"></i>
 					</Link>
 					<Link to="/about" className="text-xs">
