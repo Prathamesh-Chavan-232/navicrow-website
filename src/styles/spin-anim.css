@@ -1,0 +1,30 @@
+/* Spinning Border Animations */
+.circle {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-clip: content-box;
+	animation: spin 10s linear infinite;
+}
+
+.circle-wrapper {
+	position: relative;
+}
+
+.circle-wrapper:hover .circle {
+	animation: spin 1s linear infinite;
+}
+
+.btn-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+	0% {
+		transform: rotateZ(360deg);
+	}
+}

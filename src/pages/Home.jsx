@@ -7,23 +7,6 @@ import { Footer } from "../components/footer/Footer";
 
 import { motion as m } from "framer-motion";
 
-const content = {
-	animate: {
-		transition: { staggerChildren: 10.1, delayChildren: 0.6 },
-	},
-};
-const nav = {
-	initial: { y: -20, opacity: 0 },
-	animate: {
-		y: 0,
-		opacity: 1,
-		transition: {
-			duration: 0.8,
-			ease: [0.6, -0.05, 0.01, 0.99],
-		},
-	},
-};
-
 export const Home = () => {
 	return (
 		// Hero Section
@@ -32,6 +15,7 @@ export const Home = () => {
 			animate={{ opacity: 1 }}
 			exit={{ opacity: 1 }}
 			transition={{ duration: 0.75, ease: "easeOut" }}
+			className="text-white"
 		>
 			{/* Section 1 - Navbar + Hero */}
 			<div className="hero">

@@ -68,18 +68,7 @@ const Navbar = () => {
 					</Link>
 				</div>
 				{/* Mobile Enquire */}
-				<a href="" onClick={handleEnquire} className="lg:hidden font-semibold">
-					Enquire
-				</a>
 
-				{/* Desktop Enquire */}
-				<button
-					onClick={handleEnquire}
-					className="hidden px-8 py-3 bg-olive-green text-white text-sm rounded-full baseline  lg:block hover:bg-brightRed"
-				>
-					Enquire
-				</button>
-				{/* Mobile Menu Hamburger */}
 				<HamburgerMenu />
 			</div>
 		</nav>

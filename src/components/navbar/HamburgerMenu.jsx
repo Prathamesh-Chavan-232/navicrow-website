@@ -1,33 +1,17 @@
-import { styled } from "styled-components";
-import { MenuToggle } from "./MenuToggle";
 import { useState } from "react";
 import { motion as m } from "framer-motion";
+import { RotatingBorder } from "../utlis/RotatingBorder";
 
-const Menu = styled.div`
-	display: flex;
-`;
-
-const MenuIcon = styled.div`
-	color: ${({ reverseClr }) => (reverseClr ? "#000" : "#fff")};
-	cursor: pointer;
-	z-index: 99;
-	transition: all 250ms ease-in-out;
-`;
-
-const MenuContainer = styled(m.div)`
-	height: 100%;
-	min-width: 300px;
-	width: 100%;
-	max-width: 50%;
-	background: red;
-	box-shadow: -2px 0 2px rgba(15, 15, 15, 0.3);
-	z-index: 90;
-	position: fixed;
-	top: 0;
-	right: 0;
-	user-select: none;
-	padding: 1em 2.5em;
-`;
+const MenuToggle = ({ toggle, isOpen }) => {
+	return (
+		<button
+			onClick={toggle}
+			className="pointer hidden px-8 py-3 bg-olive-green text-white text-sm rounded-full baseline lg:block hover:bg-brightRed"
+		>
+			Enquire
+		</button>
+	);
+};
 
 const menuVariants = {
 	open: {
@@ -52,18 +36,26 @@ export const HamburgerMenu = () => {
 		setIsOpen(!isOpen);
 	};
 	return (
-		<div className="p-8 flex flex-row-reverse lg:hidden">
-			<MenuIcon>
-				<MenuToggle toggle={toggleMenu} isOpen={isOpen} />
-			</MenuIcon>
-			<MenuContainer
+		<div className="flex">
+			<MenuToggle toggle={toggleMenu} isOpen={isOpen}></MenuToggle>
+			<m.div
+				className="h-full w-full max-w-[50%] min-w-[300px] bg-olive-green shadow-xl z-50 fixed top-0 right-0 select-none"
 				initial={false}
 				animate={isOpen ? "open" : "closed"}
 				variants={menuVariants}
 				transition={menuTransition}
 			>
-				<Menu>Menu</Menu>
-			</MenuContainer>
+				<div className="float-right">
+					<button onClick={toggleMenu} className="px-16 py-8">
+						<div className="flex items-center gap-4">
+							<div>CLOSE</div>
+							<RotatingBorder clr={"#eee"} size={"30px"}>
+								X
+							</RotatingBorder>
+						</div>
+					</button>
+				</div>
+			</m.div>
 		</div>
 	);
 };

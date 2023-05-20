@@ -34,7 +34,7 @@ export default {
 				africa: "url('/assets/landscapes/africa.jpg')",
 			},
 			fontFamily: {
-				"font-fancy": "",
+				fancy: ["Playfair Display", "serif"],
 			},
 		},
 	},

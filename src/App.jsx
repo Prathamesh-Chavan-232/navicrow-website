@@ -20,7 +20,7 @@ import { Dev } from "./pages/Dev";
 
 function App() {
 	return (
-		<div className="app overflow-x-hidden">
+		<div className="flex flex-col min-h-screen overflow-x-hidden">
 			<BrowserRouter>
 				<AnimatePresence mode={"wait"}>
 					<Routes location={location} key={location.pathname}>
