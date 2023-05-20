@@ -2,7 +2,7 @@ import React from "react";
 
 export const TextField = ({ label, placeholder }) => {
 	return (
-		<div className="field field_v2">
+		<div className="z-0 field field_v2">
 			<label htmlFor="last-name" className="ha-screen-reader">
 				{label}
 			</label>

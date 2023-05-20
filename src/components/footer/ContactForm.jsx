@@ -1,7 +1,6 @@
 import React from "react";
 import { TextField } from "../utlis/TextField";
 import "/src/styles/footer.css";
-import { RoundedTransparent } from "../utlis/RoundedTransparent";
 
 export const ContactForm = () => {
 	return (

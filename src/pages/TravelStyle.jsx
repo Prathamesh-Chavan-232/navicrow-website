@@ -1,8 +1,9 @@
 import React from "react";
-import { WhyUs } from "../components/homepage/WhyUs";
+import { WhyUs } from "../components/utlis/WhyUs";
 import { Header } from "../components/navbar/Header";
 import { Footer } from "../components/footer/Footer";
-import { Main } from "../components/Main";
+import { Main } from "../components/utlis/Main";
+import { TravelStyleCards } from "../components/utlis/TravelStyleCards";
 export const TravelStyle = () => {
 	return (
 		<div>
@@ -12,6 +13,7 @@ export const TravelStyle = () => {
 				<Main />
 			</div>
 			{/* Section 2 - About us (Why Niarra?) */}
+			<TravelStyleCards />
 			<WhyUs />
 			<Footer />
 		</div>

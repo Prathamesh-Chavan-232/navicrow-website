@@ -68,7 +68,6 @@ const Navbar = () => {
 					</Link>
 				</div>
 				{/* Mobile Enquire */}
-
 				<HamburgerMenu />
 			</div>
 		</nav>

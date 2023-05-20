@@ -1,4 +1,4 @@
-import { Main } from "../components/Main";
+import { Main } from "../components/utlis/Main";
 import { Header } from "../components/navbar/Header";
 import { motion as m } from "framer-motion";
 

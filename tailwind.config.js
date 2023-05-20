@@ -14,6 +14,7 @@ export default {
 				"olive-green": "#293a2c",
 				"light-green": "#b1b886",
 				"gray-green": "#d9dec5",
+
 				// Red / Orangish
 				brightRed: "hsl(12,88%,59%)",
 				brightRedLight: "hsl(12,88%,69%)",

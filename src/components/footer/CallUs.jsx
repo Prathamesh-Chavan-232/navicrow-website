@@ -14,14 +14,14 @@ export const CallUs = () => {
 					We always aim to respond within 24 hours
 				</h3>
 			</div>
-			<div className="flex flex-col font-fancy lg:flex-row">
-				<RotatingBorder clr={"black"} size="200px">
-					<div className="flex flex-col">
+			<div className="flex flex-col gap-12 font-fancy lg:flex-row">
+				<RotatingBorder border={"1px"} clr={"black"} size="200px">
+					<div className="flex flex-col text-center">
 						<span>Call us</span>
-						<span>Call us</span>
+						<span>+1 (332) 334 0501</span>
 					</div>
 				</RotatingBorder>
-				<RotatingBorder clr={"black"} size="200px">
+				<RotatingBorder border={"1px"} clr={"black"} size="200px">
 					<div className="text-center">Send us an enquiry</div>
 				</RotatingBorder>
 			</div>

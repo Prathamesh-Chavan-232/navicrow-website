@@ -1,8 +1,8 @@
-import { Hero } from "../components/homepage/Hero";
+import { Hero } from "../components/utlis/Hero";
 import { Header } from "/src/components/navbar/Header";
-import { WhyUs } from "../components/homepage/WhyUs";
-import { Carousel } from "../components/homepage/Carousel";
-import { TravelStyle } from "../components/homepage/TravelStyle";
+import { WhyUs } from "../components/utlis/WhyUs";
+import { Carousel } from "../components/utlis/Carousel";
+import { TravelStyleCards } from "../components/utlis/TravelStyleCards";
 import { Footer } from "../components/footer/Footer";
 
 import { motion as m } from "framer-motion";
@@ -25,9 +25,9 @@ export const Home = () => {
 			{/* Section 2 - About us (Why Niarra?) */}
 			<WhyUs />
 			{/* Section 3 - Carousel */}
-			{/* <Carousel /> */}
+			<Carousel />
 			{/* Section 4 - Travel Styles */}
-			{/* <TravelStyle /> */}
+			<TravelStyleCards />
 			<Footer />
 		</m.main>
 	);

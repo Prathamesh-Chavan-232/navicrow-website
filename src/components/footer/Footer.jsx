@@ -4,7 +4,7 @@ import { RotatingBorder } from "../utlis/RotatingBorder";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export const Footer = () => {
 	return (
-		<div id="footer" className="mt-auto text-white">
+		<div id="footer" className="z-0 mt-auto text-white">
 			<footer>
 				<ContactForm />
 

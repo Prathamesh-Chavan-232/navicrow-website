@@ -48,6 +48,13 @@
 	font-family: "Playfair Display", serif;
 }
 
+.conic {
+	background: conic-gradient(
+		#f1efec 0deg 90deg,
+		#fff 90deg 270deg,
+		#f1efec 270deg 360deg
+	);
+}
 .arrow {
 	border-width: 0 0.1rem 0.1rem 0;
 	padding: 2px;
