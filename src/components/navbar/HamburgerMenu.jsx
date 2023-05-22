@@ -4,12 +4,17 @@ import { RotatingBorder } from "../utlis/RotatingBorder";
 
 const MenuToggle = ({ toggle, isOpen }) => {
 	return (
-		<button
-			onClick={toggle}
-			className="pointer px-8 py-3 bg-olive-green text-white text-sm rounded-full baseline hover:bg-brightRed"
-		>
-			Enquire
-		</button>
+		<div>
+			<button onClick={toggle} className="font-semibold lg:hidden">
+				Enquire
+			</button>
+			<button
+				onClick={toggle}
+				className="hidden pointer px-8 py-3 bg-olive-green text-white text-sm rounded-full baseline lg:block hover:bg-brightRed"
+			>
+				Enquire
+			</button>
+		</div>
 	);
 };
 

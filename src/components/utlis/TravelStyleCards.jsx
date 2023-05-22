@@ -17,7 +17,7 @@ export const TravelStyleCards = () => {
 							alt=""
 							className="lg:w-96"
 						/>
-						<span>
+						<span className="px-8 text-center">
 							Luxury Family safaris and inspiring wildlife adventures with a
 							positive impact
 						</span>

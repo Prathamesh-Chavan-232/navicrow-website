@@ -10,7 +10,10 @@ export const TravelStyle = () => {
 			{/* Section 1 - Navbar + Hero */}
 			<div className="travel-style">
 				<Header />
-				<Main />
+				<Main
+					heading="LUXURY SAFARIS AND WILDLIFE ADVENTURES"
+					title="Family Travel"
+				/>
 			</div>
 			{/* Section 2 - About us (Why Niarra?) */}
 			<TravelStyleCards />

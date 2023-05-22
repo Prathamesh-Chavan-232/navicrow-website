@@ -13,7 +13,7 @@ export const About = () => {
 			className="text-gray-900"
 		>
 			{/* Section 1 - Navbar + Hero */}
-			<Header />
+			<Header clr="black" />
 			<Main />
 			<section className="p-8 flex flex-col items-center justify-center gap-6">
 				<p className=" lg:w-[40rem] text-xl">

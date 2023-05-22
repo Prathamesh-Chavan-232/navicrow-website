@@ -1,10 +1,13 @@
 // header component
 import useScrollDirection from "/src/hooks/scrollDirection";
 import { motion as m } from "framer-motion";
+import { RotatingBorder } from "../utlis/RotatingBorder";
 import { Link } from "react-router-dom";
 import { HamburgerMenu } from "./HamburgerMenu";
+import "/src/styles/nav.scss";
+import { NavMenu } from "./NavMenu";
 
-export function Header() {
+export function Header({ clr }) {
 	const scrollDirection = useScrollDirection();
 
 	const content = {
@@ -28,7 +31,7 @@ export function Header() {
 	return (
 		<div
 			className={`sticky nav ${
-				scrollDirection === "down" ? "-top-24" : "top-0"
+				scrollDirection === "down" ? "-top-10" : "top-0"
 			} h-24 transition-all duration-200`}
 		>
 			<m.div
@@ -38,16 +41,19 @@ export function Header() {
 				className="space-y-12"
 			>
 				<m.div variants={nav}>
-					<Navbar />
+					<Navbar clr={clr} />
 				</m.div>
 			</m.div>
 		</div>
 	);
 }
-const Navbar = () => {
-	function handleEnquire() {}
+const Navbar = ({ clr }) => {
 	return (
-		<nav className={`mx-auto px-8 py-6 text-white relative container`}>
+		<nav
+			className={`mx-auto px-8 py-6 relative container ${
+				clr === "black" ? "text-black" : "text-white"
+			}`}
+		>
 			{/* Desktop Flex container */}
 			<div className="flex items-center justify-between">
 				<div className="logo">
@@ -67,8 +73,18 @@ const Navbar = () => {
 						ABOUT US <i className="down arrow"></i>
 					</Link>
 				</div>
-				{/* Mobile Enquire */}
-				<HamburgerMenu />
+				<div className="flex gap-8 items-center justify-center">
+					<HamburgerMenu />
+					<div className="lg:hidden">
+						<RotatingBorder clr={"#eee"} size={"36px"} border={"1px"}>
+							<button id="hamburger-menu" className="block hamburger">
+								<span className="hamburger-top"></span>
+								<span className="hamburger-middle"></span>
+								<span className="hamburger-bottom"></span>
+							</button>
+						</RotatingBorder>
+					</div>
+				</div>
 			</div>
 		</nav>
 	);

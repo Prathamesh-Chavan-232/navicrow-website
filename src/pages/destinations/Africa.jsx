@@ -17,7 +17,10 @@ export const Africa = () => {
 				{/* Section 1 - Navbar + Hero */}
 				<div className="travel-destination">
 					<Header />
-					<Main />
+					<Main
+						heading="LUXURY WILDLIFE SAFARIS AND WILDLIFE ADVENTURES"
+						title="Africa"
+					/>
 				</div>
 				{/* Section 2 - About us (Why Niarra?) */}
 				<WhyUs />
