@@ -21,7 +21,7 @@ export const Footer = () => {
 							<h3 className="py-6 text-md text-light-green font-semibold lg:py-2 lg:text-xs">
 								DESTINATIONS
 							</h3>
-							<div>
+							<div className="font-fancy">
 								<p className="font-fancy text-2xl hover:text-light-green">
 									<a href="/africa">Africa</a>
 								</p>
@@ -35,7 +35,9 @@ export const Footer = () => {
 									<a href="/africa">Europe</a>
 								</p>
 								<p className="font-fancy text-2xl hover:text-light-green">
-									<a href="/africa">Latin America</a>
+									<a href="/africa" className="font-fancy">
+										Latin America
+									</a>
 								</p>
 							</div>
 						</div>

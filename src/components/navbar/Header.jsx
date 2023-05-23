@@ -1,11 +1,12 @@
 // header component
+import { useState } from "react";
 import useScrollDirection from "/src/hooks/scrollDirection";
 import { motion as m } from "framer-motion";
 import { RotatingBorder } from "../utlis/RotatingBorder";
 import { Link } from "react-router-dom";
 import { HamburgerMenu } from "./HamburgerMenu";
-import "/src/styles/nav.scss";
 import { NavMenu } from "./NavMenu";
+import "/src/styles/nav.css";
 
 export function Header({ clr }) {
 	const scrollDirection = useScrollDirection();
@@ -48,44 +49,64 @@ export function Header({ clr }) {
 	);
 }
 const Navbar = ({ clr }) => {
+	const [open, setOpen] = useState(false);
+
+	const openMenu = () => {
+		setOpen(true);
+	};
+
+	const closeMenu = () => {
+		setOpen(false);
+	};
+
+	const toggleMenu = () => {
+		setOpen(!open);
+	};
+
 	return (
 		<nav
-			className={`mx-auto px-8 py-6 relative container ${
-				clr === "black" ? "text-black" : "text-white"
-			}`}
+			className={` ${clr === "black" ? "text-black" : "text-white"} 
+				`}
 		>
-			{/* Desktop Flex container */}
-			<div className="flex items-center justify-between">
-				<div className="logo">
-					<a href="/">
-						<img src="/assets/NH.png" alt="" className="h-10 w-10" />
-					</a>
-				</div>
-				{/* nav links */}
-				<div className="hidden space-x-16 lg:block font-normal">
-					<Link to="/destinations/africa" className="text-xs">
-						DESTINATIONS <i className="down arrow"></i>
-					</Link>
-					<Link to="/travel-styles/family-travel" className="text-xs">
-						TRAVEL STYLES <i className="down arrow"></i>
-					</Link>
-					<Link to="/about" className="text-xs">
-						ABOUT US <i className="down arrow"></i>
-					</Link>
-				</div>
-				<div className="flex gap-8 items-center justify-center">
-					<HamburgerMenu />
-					<div className="lg:hidden">
-						<RotatingBorder clr={"#eee"} size={"36px"} border={"1px"}>
-							<button id="hamburger-menu" className="block hamburger">
-								<span className="hamburger-top"></span>
-								<span className="hamburger-middle"></span>
-								<span className="hamburger-bottom"></span>
-							</button>
-						</RotatingBorder>
+			{/* Flex container */}
+			<div className="mx-auto px-8 py-6 relative container">
+				<div className="flex items-center justify-between">
+					<div className="logo">
+						<a href="/">
+							<img src="/assets/NH.png" alt="" className="h-10 w-10" />
+						</a>
+					</div>
+					{/* nav links */}
+					<div className="hidden space-x-16 lg:flex font-normal">
+						<div onClick={toggleMenu} className="text-xs">
+							DESTINATIONS <i className="down arrow"></i>
+						</div>
+						<div onClick={toggleMenu} className="text-xs">
+							TRAVEL STYLES <i className="down arrow"></i>
+						</div>
+						<div onClick={toggleMenu} className="text-xs">
+							ABOUT US <i className="down arrow"></i>
+						</div>
+					</div>
+					<div className="flex gap-8 items-center justify-center">
+						<HamburgerMenu />
+						<div className="lg:hidden">
+							<RotatingBorder clr={"#eee"} size={"36px"} border={"1px"}>
+								<button
+									id="hamburger-menu"
+									onClick={toggleMenu}
+									className="block hamburger"
+								>
+									<span className="hamburger-top"></span>
+									<span className="hamburger-middle"></span>
+									<span className="hamburger-bottom"></span>
+								</button>
+							</RotatingBorder>
+						</div>
 					</div>
 				</div>
 			</div>
+			<NavMenu isOpen={open} openMenu={toggleMenu} />
 		</nav>
 	);
 };

@@ -4,7 +4,7 @@ import { Header } from "../components/navbar/Header";
 import { Footer } from "../components/footer/Footer";
 import { Main } from "../components/utlis/Main";
 import { TravelStyleCards } from "../components/utlis/TravelStyleCards";
-export const TravelStyle = () => {
+export const TravelStyles = () => {
 	return (
 		<div>
 			{/* Section 1 - Navbar + Hero */}

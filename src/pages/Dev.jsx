@@ -1,9 +1,3 @@
-import { Menu } from "../components/navbar/Menu";
-
 export const Dev = () => {
-	return (
-		<div>
-			<Menu />
-		</div>
-	);
+	return <div className="h-screen w-screen bg-blue-400">Dev</div>;
 };

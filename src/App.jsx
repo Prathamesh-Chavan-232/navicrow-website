@@ -14,7 +14,7 @@ import { Destinations } from "./pages/Destinations";
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { AnimatePresence } from "framer-motion";
-import { TravelStyle } from "./pages/TravelStyle";
+import { TravelStyles } from "./pages/TravelStyles";
 import { Africa } from "./pages/destinations/Africa";
 import { Dev } from "./pages/Dev";
 
@@ -29,7 +29,7 @@ function App() {
 						<Route path="/destinations/africa" element={<Africa />} />
 						<Route
 							path="/travel-styles/family-travel"
-							element={<TravelStyle />}
+							element={<TravelStyles />}
 						/>
 						<Route path="/about" element={<About />} />
 					</Routes>
