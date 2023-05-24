@@ -4,13 +4,14 @@ export const TravelStyleCards = () => {
 	return (
 		<div className="text-black">
 			<div className="px-4 conic">
-				<div className="py-16 flex flex-col items-center font-medium gap-10">
-					<span>TRAVEL IN STYLE</span>
-					<span className="font-fancy text-5xl">
+				<div className="py-24 flex flex-col items-center font-medium gap-10">
+					<span className="lg:hidden">TRAVEL IN STYLE</span>
+					<span className="lg:hidden font-fancy text-7xl">
 						Find Travel Inspiration by{" "}
 						<span className="font-normal italic">style</span>
 					</span>
 
+					{/*  Mobile Travel Style Cards (Replace With Slider)  */}
 					<div className="flex flex-col gap-4 items-center lg:hidden">
 						<img
 							src="/src/assets/landscapes/travel-style-1.jpg"
@@ -25,14 +26,17 @@ export const TravelStyleCards = () => {
 							Discover more
 						</button>
 					</div>
-					<div className="px-36 hidden items-center justify-center gap-8 lg:flex">
-						<div className="flex flex-col gap-4 items-center">
+
+					{/*  Desktop Travel Style Cards */}
+					<div className="px-36 hidden items-center justify-center gap-16 lg:flex">
+						{/* Card 1 */}
+						<div className="w-96 flex flex-col gap-4 items-center">
 							<img
 								src="/src/assets/landscapes/travel-style-1.jpg"
 								alt=""
 								className="lg:w-96"
 							/>
-							<span className="px-4 text-center">
+							<span className="text-center">
 								Luxury Family safaris and inspiring wildlife adventures with a
 								positive impact
 							</span>
@@ -40,14 +44,21 @@ export const TravelStyleCards = () => {
 								Discover more
 							</button>
 						</div>
-						<div className="flex flex-col gap-4 items-center">
-							<div className="py-8 bg-light-gray"></div>
+						{/* Card 2 */}
+						<div className="w-96 flex flex-col gap-4 items-center">
+							<div className="p-4 bg-light-gray flex flex-col gap-8 text-center">
+								<span className="text-sm">TRAVEL IN STYLE</span>
+								<span className="font-fancy text-6xl">
+									Find Travel Inspiration by{" "}
+									<span className="italic">style</span>
+								</span>
+							</div>
 							<img
 								src="/src/assets/landscapes/travel-style-2.jpg"
 								alt=""
 								className="lg:w-96"
 							/>
-							<span className="px-4 text-center">
+							<span className="text-center">
 								Luxury Family safaris and inspiring wildlife adventures with a
 								positive impact
 							</span>
@@ -55,13 +66,14 @@ export const TravelStyleCards = () => {
 								Discover more
 							</button>
 						</div>
-						<div className="flex flex-col gap-4 items-center">
+						{/* Card 3 */}
+						<div className="w-96 flex flex-col gap-4 items-center">
 							<img
 								src="/src/assets/landscapes/travel-style-1.jpg"
 								alt=""
 								className="lg:w-96"
 							/>
-							<span className="px-4 text-center">
+							<span className="text-center">
 								Luxury Family safaris and inspiring wildlife adventures with a
 								positive impact
 							</span>
