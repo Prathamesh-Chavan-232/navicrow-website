@@ -44,7 +44,7 @@ export const HamburgerMenu = () => {
 		<div className="flex">
 			<MenuToggle toggle={toggleMenu} isOpen={isOpen}></MenuToggle>
 			<m.div
-				className="h-full w-full max-w-[95%] min-w-[350px] bg-olive-green shadow-xl z-50 fixed top-0 right-0 select-none md:max-w-[55%]"
+				className="h-full w-full max-w-[95%] min-w-[350px] z-50 fixed top-0 right-0 md:max-w-[55%] bg-olive-green shadow-2xl select-none"
 				initial={false}
 				animate={isOpen ? "open" : "closed"}
 				variants={menuVariants}

@@ -16,7 +16,6 @@
 	left: 0;
 	width: 16px;
 	height: 1px;
-	background-color: white;
 	transform: rotate(0);
 	transition: all 0.5s;
 }
@@ -46,13 +45,17 @@
 }
 
 .arrow {
-	border-width: 0 0.1rem 0.1rem 0;
-	padding: 2px;
-	margin-left: 0.25rem;
-	display: inline-block;
+	box-sizing: border-box;
+	height: 5px;
+	width: 5px;
+	border-style: solid;
+	border-color: black;
+	border-width: 0px 1px 1px 0px;
+	transform: rotate(45deg);
+	transition: border-width 150ms ease-in-out;
 }
 
-.down {
-	transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
+.arrow:hover {
+	border-bottom-width: 4px;
+	border-right-width: 4px;
 }

@@ -17,7 +17,7 @@
 			rgba(0, 0, 0, 0.3),
 			rgba(0, 0, 0, 0.6)
 		),
-		url("/assets/landscapes/hero.jpg");
+		url("/src/assets/landscapes/hero.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -28,7 +28,7 @@
 			rgba(0, 0, 0, 0.3),
 			rgba(0, 0, 0, 0.6)
 		),
-		url("/assets/landscapes/africa.jpg");
+		url("/src/assets/landscapes/africa.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -39,7 +39,7 @@
 			rgba(0, 0, 0, 0.3),
 			rgba(0, 0, 0, 0.6)
 		),
-		url("/assets/landscapes/travel-style.jpg");
+		url("/src/assets/landscapes/travel-style.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 }

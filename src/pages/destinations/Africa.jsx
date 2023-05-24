@@ -1,9 +1,9 @@
 import React from "react";
-import { Header } from "../../components/navbar/Header";
 import { motion as m } from "framer-motion";
-import { Main } from "../../components/utlis/Main";
+import { Header } from "/src/components/navbar/Header";
+import { Main } from "../../components/Main";
+import { WhyUs } from "../../components/WhyUs";
 import { Footer } from "../../components/footer/Footer";
-import { WhyUs } from "../../components/utlis/WhyUs";
 export const Africa = () => {
 	return (
 		<div>

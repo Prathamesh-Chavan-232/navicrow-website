@@ -16,7 +16,7 @@ export const WhyUs = ({ clr }) => {
 			</div>
 			<div className="flex flex-col items-center justify-center gap-32 lg:flex-row">
 				<img
-					src="/assets/animals/elephant-portrait.avif"
+					src="/src/assets/animals/elephant-portrait.avif"
 					alt=""
 					className="w-64 h-96"
 				/>

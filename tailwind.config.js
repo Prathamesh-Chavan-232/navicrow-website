@@ -30,9 +30,7 @@ export default {
 				veryLightGray: "hsl(0, 0%, 98%)",
 			},
 			backgroundImage: {
-				"carousel-1": "url('/assets/landscapes/mountains.jpg')",
-				"carousel-2": "url('/assets/landscapes/mountains2.jpg')",
-				africa: "url('/assets/landscapes/africa.jpg')",
+				africa: "url('/src/assets/landscapes/africa.jpg')",
 			},
 			fontFamily: {
 				fancy: ["Playfair Display", "serif"],

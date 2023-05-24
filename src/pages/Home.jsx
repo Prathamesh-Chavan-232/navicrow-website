@@ -1,10 +1,9 @@
-import { Hero } from "../components/utlis/Hero";
 import { Header } from "/src/components/navbar/Header";
-import { WhyUs } from "../components/utlis/WhyUs";
-import { Carousel } from "../components/utlis/Carousel";
-import { TravelStyleCards } from "../components/utlis/TravelStyleCards";
 import { Footer } from "../components/footer/Footer";
-
+import { Hero } from "../components/Hero";
+import { Carousel } from "../components/Carousel";
+import { TravelStyleCards } from "../components/TravelStyleCards";
+import { WhyUs } from "../components/WhyUs";
 import { motion as m } from "framer-motion";
 
 export const Home = () => {

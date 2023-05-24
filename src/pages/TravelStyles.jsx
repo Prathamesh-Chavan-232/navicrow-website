@@ -1,9 +1,10 @@
 import React from "react";
-import { WhyUs } from "../components/utlis/WhyUs";
 import { Header } from "../components/navbar/Header";
 import { Footer } from "../components/footer/Footer";
-import { Main } from "../components/utlis/Main";
-import { TravelStyleCards } from "../components/utlis/TravelStyleCards";
+import { WhyUs } from "../components/WhyUs";
+import { TravelStyleCards } from "../components/TravelStyleCards";
+import { Main } from "../components/Main";
+
 export const TravelStyles = () => {
 	return (
 		<div>

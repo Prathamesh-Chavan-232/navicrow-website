@@ -13,7 +13,7 @@ export const TravelStyleCards = () => {
 
 					<div className="flex flex-col gap-4 items-center lg:hidden">
 						<img
-							src="/assets/landscapes/travel-style-1.jpg"
+							src="/src/assets/landscapes/travel-style-1.jpg"
 							alt=""
 							className="lg:w-96"
 						/>
@@ -28,7 +28,7 @@ export const TravelStyleCards = () => {
 					<div className="px-36 hidden items-center justify-center gap-8 lg:flex">
 						<div className="flex flex-col gap-4 items-center">
 							<img
-								src="/assets/landscapes/travel-style-1.jpg"
+								src="/src/assets/landscapes/travel-style-1.jpg"
 								alt=""
 								className="lg:w-96"
 							/>
@@ -43,7 +43,7 @@ export const TravelStyleCards = () => {
 						<div className="flex flex-col gap-4 items-center">
 							<div className="py-8 bg-light-gray"></div>
 							<img
-								src="/assets/landscapes/travel-style-2.jpg"
+								src="/src/assets/landscapes/travel-style-2.jpg"
 								alt=""
 								className="lg:w-96"
 							/>
@@ -57,7 +57,7 @@ export const TravelStyleCards = () => {
 						</div>
 						<div className="flex flex-col gap-4 items-center">
 							<img
-								src="/assets/landscapes/travel-style-1.jpg"
+								src="/src/assets/landscapes/travel-style-1.jpg"
 								alt=""
 								className="lg:w-96"
 							/>
