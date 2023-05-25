@@ -56,3 +56,12 @@
 		#f1efec 270deg 360deg
 	);
 }
+.float {
+	position: fixed;
+	width: 80px;
+	height: 80px;
+	bottom: 40px;
+	right: 40px;
+	border-radius: 50px;
+	text-align: center;
+}

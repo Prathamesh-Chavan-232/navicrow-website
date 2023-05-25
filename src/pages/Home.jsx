@@ -5,6 +5,7 @@ import { Carousel } from "../components/Carousel";
 import { TravelStyleCards } from "../components/TravelStyleCards";
 import { WhyUs } from "../components/WhyUs";
 import { motion as m } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Home = () => {
 	return (
@@ -18,7 +19,7 @@ export const Home = () => {
 		>
 			{/* Section 1 - Navbar + Hero */}
 			<div className="hero">
-				<Header clr="red" />
+				<Header clr="white" />
 				<Hero />
 			</div>
 			{/* Section 2 - About us (Why Niarra?) */}

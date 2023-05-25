@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import useScrollDirection from "/src/hooks/scrollDirection";
 
 // Components
-import { Card } from "../utlis/Card";
+import { MainMenu } from "../utlis/MainMenu";
 import { RotatingBorder } from "../utlis/RotatingBorder";
 import { HamburgerMenu } from "./HamburgerMenu";
 import { NavMenu } from "./NavMenu";
@@ -176,8 +176,8 @@ const Navbar = ({ clr }) => {
 			</div>
 			<NavMenu isOpen={open}>
 				<div className="relative flex flex-col gap-6 h-full w-full items-center justify-center text-5xl font-fancy text-black">
-					{active === 0 && <Card listItems={destinations.items} />}
-					{active === 1 && <Card listItems={travelStyles.items} />}
+					{active === 0 && <MainMenu listItems={destinations.items} />}
+					{active === 1 && <MainMenu listItems={travelStyles.items} />}
 				</div>
 			</NavMenu>
 

@@ -41,7 +41,7 @@ export const ContactForm = () => {
 				</div>
 
 				{/* Form */}
-				<div className="px-12 grid grid-cols-1 gap-6 lg:grid-cols-2 lg:py-8">
+				<div className="px-12 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:py-8">
 					<TextField
 						label={"First Name (required)"}
 						placeholder={"Enter your First Name"}

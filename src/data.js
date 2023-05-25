@@ -1,9 +1,15 @@
 export const destinations = {
-	items: ["Africa", "Europe", "Asia", "Australia"],
+	items: ["Char Dham", "Do Dham", "Kedarnath", ""],
 	imgs: ["Africa", "Europe", "Asia", "Australia"],
 };
 export const travelStyles = {
-	items: ["Family Travel", "Pilgrimage", "Wildlife Safari", "Honeymoons"],
+	items: [
+		"Pilgrimage Tour",
+		"Family Travel",
+		"Honeymoons",
+		"Home Stay",
+		"Hill Stations",
+	],
 	imgs: ["Africa", "Europe", "Asia", "Australia"],
 };
 export const about = {
