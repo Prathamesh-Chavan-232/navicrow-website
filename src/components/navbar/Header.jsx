@@ -3,6 +3,7 @@ import { motion as m } from "framer-motion";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import useScrollDirection from "/src/hooks/scrollDirection";
+import useScrollLock from "../../hooks/scrollLock";
 
 // Components
 import { MainMenu } from "../utlis/MainMenu";
@@ -16,7 +17,6 @@ import "/src/styles/nav.css";
 
 export function Header({ clr }) {
 	const scrollDirection = useScrollDirection();
-
 	const content = {
 		animate: {
 			transition: { staggerChildren: 10, delayChildren: 1.2 },
@@ -60,14 +60,18 @@ const Navbar = ({ clr }) => {
 	const [open, setOpen] = useState(false);
 	const [openMobileMenu, setOpenMobileMenu] = useState();
 
+	const { lockScroll, unlockScroll } = useScrollLock();
+
 	const handleMenuActions = (index) => {
 		if (!open) {
 			setOpen(true);
+			lockScroll();
 			setActive(index);
 		} else if (active !== index) {
 			setActive(index);
 		} else {
 			setOpen(false);
+			unlockScroll();
 			setActive(-1);
 		}
 	};
@@ -120,14 +124,20 @@ const Navbar = ({ clr }) => {
 						</div>
 
 						{/* Link for About Us */}
-						<Link to="/about" className="flex gap-2 items-center">
-							ABOUT US
+						<div
+							className="flex gap-2 items-center"
+							onClick={() => {
+								setOpen(false);
+								unlockScroll();
+							}}
+						>
+							<Link to="/about">ABOUT US</Link>
 							<div
 								className={`arrow ${
 									clr === "black" || open ? "border-black" : "border-white"
 								}`}
 							></div>
-						</Link>
+						</div>
 					</div>
 					<div className="flex gap-8 items-center justify-center">
 						{/* Sliding Menu & Sliding Menu Buttons */}
@@ -178,16 +188,28 @@ const Navbar = ({ clr }) => {
 				<div className="relative flex flex-col gap-6 h-full w-full items-center justify-center text-5xl font-fancy text-black">
 					{active === 0 && <MainMenu listItems={destinations.items} />}
 					{active === 1 && <MainMenu listItems={travelStyles.items} />}
+					{active === 2 && <MainMenu listItems={travelStyles.items} />}
 				</div>
 			</NavMenu>
 
 			{/* Mobile Nav Menu */}
 			<NavMenu isOpen={openMobileMenu}>
 				<div className="relative flex flex-col gap-6 h-full w-full items-center justify-center text-5xl font-fancy text-black">
-					<Link className="hover:text-light-green">Destinations</Link>
-					<Link className="hover:text-light-green">Travel Styles</Link>
-					<Link className="hover:text-light-green">About us</Link>
-					<Link className="hover:text-light-green">Contact us</Link>
+					<Link
+						to="/destionations/char-dham"
+						className="hover:text-light-green"
+					>
+						Destinations
+					</Link>
+					<Link to="/destionations/" className="hover:text-light-green">
+						Travel Styles
+					</Link>
+					<Link to="/destionations/" className="hover:text-light-green">
+						About us
+					</Link>
+					<Link to="/destionations/" className="hover:text-light-green">
+						Contact us
+					</Link>
 				</div>
 			</NavMenu>
 		</nav>

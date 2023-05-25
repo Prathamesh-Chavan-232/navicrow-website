@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { motion as m } from "framer-motion";
 import { RotatingBorder } from "../utlis/RotatingBorder";
+import { TextField } from "../utlis/TextField";
+import useScrollLock from "../../hooks/scrollLock";
 
 const MenuToggle = ({ toggle, isOpen }) => {
 	return (
@@ -36,15 +38,20 @@ const menuTransition = {
 
 export const HamburgerMenu = () => {
 	const [isOpen, setIsOpen] = useState(false);
-
+	const { lockScroll, unlockScroll } = useScrollLock();
 	const toggleMenu = () => {
+		if (!isOpen) {
+			lockScroll();
+		} else {
+			unlockScroll();
+		}
 		setIsOpen(!isOpen);
 	};
 	return (
-		<div className="flex">
+		<div>
 			<MenuToggle toggle={toggleMenu} isOpen={isOpen}></MenuToggle>
 			<m.div
-				className="h-full w-full max-w-[95%] min-w-[350px] z-50 fixed top-0 right-0 md:max-w-[55%] bg-olive-green shadow-2xl select-none text-white"
+				className="menu h-full w-full max-w-[95%] min-w-[350px] z-50 fixed top-0 right-0 md:max-w-[55%] bg-olive-green shadow-2xl select-none text-white"
 				initial={false}
 				animate={isOpen ? "open" : "closed"}
 				variants={menuVariants}
@@ -81,6 +88,10 @@ export const HamburgerMenu = () => {
 							message
 						</h2>
 					</div>
+					<TextField
+						label={"First Name (required)"}
+						placeholder={"Enter your First Name"}
+					/>
 				</div>
 			</m.div>
 		</div>
