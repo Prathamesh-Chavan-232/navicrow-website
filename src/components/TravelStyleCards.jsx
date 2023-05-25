@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Card } from "./utlis/Card";
-import travelCard1 from "../assets/landscapes/travel-style-1.jpg";
+import travelCard1 from "../assets/landscapes/mountains-5.jpg";
+import travelCard3 from "../assets/landscapes/mountains-4.jpg";
 import travelCard2 from "../assets/landscapes/travel-style-1.jpg";
 
 export const TravelStyleCards = () => {
@@ -36,7 +37,7 @@ export const TravelStyleCards = () => {
 					<div className="px-36 hidden items-center justify-center gap-16 xl:flex">
 						{/* Card 1 */}
 						<Card
-							img={travelCard1}
+							img={travelCard3}
 							title="Honeymoons"
 							subtitle="Indulge in a blissful honeymoon experience, create cherished memories of love and celebration."
 							link="honeymoons"
