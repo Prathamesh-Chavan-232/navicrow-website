@@ -5,10 +5,10 @@ export const MainMenu = ({ listItems }) => {
 			{listItems.map((item, index) => {
 				return (
 					<div key={index}>
-						{/* <img src={listItems.img} alt="" /> */}
-						<Link to={listItems.link} className="hover:text-light-green">
+						{/* <img src={item.img} alt="" /> */}
+						<a href={item.link} className="hover:text-light-green">
 							{item.title}
-						</Link>
+						</a>
 					</div>
 				);
 			})}

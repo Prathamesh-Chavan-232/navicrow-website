@@ -2,22 +2,22 @@ export const destinations = [
 	{
 		title: "Char Dham",
 		img: "/src/assets/char-dham.jpg",
-		link: "/destinations/africa.jpg",
+		link: "/destinations/char-dham",
 	},
 	{
 		title: "Do Dham",
 		img: "/src/assets/moutains2.jpg",
-		link: "/destinations/do-dham",
+		link: "/destinations/char-dham",
 	},
 	{
 		title: "Kedarnath",
 		img: "/src/assets/travel-style.jpg",
-		link: "/destinations/do-dham",
+		link: "/destinations/char-dham",
 	},
 	{
 		title: "Fixed Departures",
 		img: "/src/assets/travel-style-1.jpg",
-		link: "/destinations/do-dham",
+		link: "/destinations/char-dham",
 	},
 ];
 

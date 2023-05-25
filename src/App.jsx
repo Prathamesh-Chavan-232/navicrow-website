@@ -27,7 +27,7 @@ function App() {
 						<Route path="/" element={<Home />} />
 						<Route path="/dev" element={<Dev />} />
 						{/* <Route path="/destinations/:id" element={<Destinations />} /> */}
-						<Route path="/destinations/africa" element={<Africa />} />
+						<Route path="/destinations/char-dham" element={<Africa />} />
 						<Route
 							path="/travel-styles/family-travel"
 							element={<TravelStyles />}

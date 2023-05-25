@@ -24,16 +24,16 @@ export const Footer = () => {
 							</h3>
 							<div className="font-fancy">
 								<p className="font-fancy text-2xl hover:text-light-green">
-									<Link href="/destinations/africa">Char Dham</Link>
+									<a href="/destinations/char-dham">Char Dham</a>
 								</p>
 								<p className="font-fancy text-2xl hover:text-light-green">
-									<Link href="/destinations/africa">Do Dham</Link>
+									<a href="/destinations/char-dham">Do Dham</a>
 								</p>
 								<p className="font-fancy text-2xl hover:text-light-green">
-									<Link href="/destinations/africa">Kedarnath</Link>
+									<a href="/destinations/char-dham">Kedarnath</a>
 								</p>
 								<p className="font-fancy text-2xl hover:text-light-green">
-									<Link href="/destinations/africa">Fixed Departures</Link>
+									<a href="/destinations/char-dham">Fixed Departures</a>
 								</p>
 							</div>
 						</div>

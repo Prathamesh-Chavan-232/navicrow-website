@@ -195,7 +195,7 @@ const Navbar = ({ clr }) => {
 			{/* Mobile Nav Menu */}
 			<NavMenu isOpen={openMobileMenu}>
 				<div className="relative flex flex-col gap-6 h-full w-full items-center justify-center text-5xl font-fancy text-black">
-					<Link to="/destionations" className="hover:text-light-green">
+					<Link to="/destinations" className="hover:text-light-green">
 						Destinations
 					</Link>
 					<Link to="/travel-styles" className="hover:text-light-green">
