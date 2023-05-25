@@ -5,6 +5,7 @@ import { WhyUs } from "../components/WhyUs";
 import { TravelStyleCards } from "../components/TravelStyleCards";
 import { FloatingButton } from "../components/FloatingButton";
 import { Main } from "../components/Main";
+import { useState } from "react";
 
 export const TravelStyles = () => {
 	const [floating, setFloating] = useState(true);
