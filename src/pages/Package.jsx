@@ -28,7 +28,7 @@ export const Package = () => {
 			</div>
 
 			{/* Section - About the Trip */}
-			<div className="bg-olive-green space-y-20 py-20">
+			<div className="bg-olive-green space-y-20 py-20 overflow-x-hidden">
 				<div className="flex flex-col items-center justify-center text-center text-white">
 					<span className="font-medium">OVERVIEW</span>
 					<h1 className="font-fancy text-6xl">Char Dham Yatra via Haridwar</h1>

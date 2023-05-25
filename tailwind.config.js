@@ -31,6 +31,9 @@ export default {
 			},
 			backgroundImage: {
 				africa: "url('/src/assets/landscapes/africa.jpg')",
+				"carousel-1": "url('/src/assets/landscapes/mountains-7.jpg')",
+				"carousel-2": "url('/src/assets/landscapes/travel-style.jpg')",
+				"carousel-3": "url('/src/assets/landscapes/mountains.jpg')",
 			},
 			fontFamily: {
 				fancy: ["Playfair Display", "serif"],

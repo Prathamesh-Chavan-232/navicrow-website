@@ -16,9 +16,11 @@
 		"@fortawesome/free-regular-svg-icons": "^6.4.0",
 		"@fortawesome/free-solid-svg-icons": "^6.4.0",
 		"@fortawesome/react-fontawesome": "^0.2.0",
+		"flickity": "^2.3.0",
 		"framer-motion": "^10.12.12",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
+		"react-flickity-component": "^4.0.5",
 		"react-router-dom": "^6.11.1",
 		"styled-components": "^6.0.0-rc.1"
 	},
