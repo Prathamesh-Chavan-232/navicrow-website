@@ -18,7 +18,7 @@ export const Main = ({ heading, title, price = "" }) => {
 				</div>
 				<div className="mx-8 lg:mx-56 text-white">
 					<div>
-						<span>Borona, Kenya</span>
+						<span>India, Uttarakhand</span>
 					</div>
 				</div>
 			</div>
