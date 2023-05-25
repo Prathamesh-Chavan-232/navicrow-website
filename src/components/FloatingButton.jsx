@@ -5,7 +5,7 @@ export const FloatingButton = () => {
 	return (
 		<div>
 			<a
-				href="https://wa.me/8954766781"
+				href="https://wa.me/+919423989471"
 				className="float flex items-center justify-center bg-olive-green"
 			>
 				<FontAwesomeIcon

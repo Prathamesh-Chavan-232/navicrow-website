@@ -65,10 +65,10 @@ export const HamburgerMenu = ({ toggleFloating }) => {
 						<div>x</div>
 					</RotatingBorder>
 				</div>
-				<div className="m-20 flex flex-col gap-10 text-center items-center justify-center lg:flex-row lg:justify-between">
+				<div className="m-20 flex flex-col gap-10 text-center items-center justify-center lg:flex-row bg-blue-400">
 					<button onClick={toggleMenu} className=""></button>
 					<div className="flex flex-col items-center justify-center gap-3">
-						<h2 className="px-10 text-2xl text-center font-fancy lg:text-left lg:text-4xl">
+						<h2 className="px-10 text-2xl text-center font-fancy lg:px-0 lg:text-left lg:text-4xl">
 							Contact a Travel Researcher
 						</h2>
 						<div className="flex flex-col font-fancy lg:flex-row">
