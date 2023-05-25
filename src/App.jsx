@@ -15,6 +15,7 @@ import { About } from "./pages/About";
 import { AnimatePresence } from "framer-motion";
 import { TravelStyles } from "./pages/TravelStyles";
 import { Package } from "./pages/Package";
+import { ComingSoon } from "./components/ComingSoon";
 
 function App() {
 	return (
@@ -33,6 +34,21 @@ function App() {
 							exact
 							path="/travel-styles/family-travel"
 							element={<TravelStyles />}
+						/>
+						<Route
+							exact
+							path="/travel-styles/hill-stations"
+							element={<ComingSoon />}
+						/>
+						<Route
+							exact
+							path="/travel-styles/honeymoons"
+							element={<ComingSoon />}
+						/>
+						<Route
+							exact
+							path="/travel-styles/home-stay"
+							element={<ComingSoon />}
 						/>
 						<Route
 							exact
