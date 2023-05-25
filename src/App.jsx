@@ -32,6 +32,10 @@ function App() {
 							path="/travel-styles/family-travel"
 							element={<TravelStyles />}
 						/>
+						<Route
+							path="/travel-styles/pilgrimage"
+							element={<TravelStyles />}
+						/>
 						<Route path="/about" element={<About />} />
 					</Routes>
 				</AnimatePresence>
