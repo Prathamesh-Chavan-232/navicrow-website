@@ -66,21 +66,27 @@ export const Footer = () => {
 						<div className="flex flex-col space-y-12">
 							<div className="h-12 w-24 bg-white"></div>
 							<div className="flex gap-8">
-								<FontAwesomeIcon
-									icon="fa-brands fa-instagram"
-									size="xl"
-									className="text-light-green hover:text-white"
-								/>
-								<FontAwesomeIcon
-									icon="fa-brands fa-facebook-f"
-									size="xl"
-									className="text-light-green hover:text-white"
-								/>
-								<FontAwesomeIcon
-									icon="fa-brands fa-whatsapp"
-									size="xl"
-									className="text-light-green hover:text-white"
-								/>
+								<a href="https://www.instagram.com/navicrowholidays_pvt_ltd/">
+									<FontAwesomeIcon
+										icon="fa-brands fa-instagram"
+										size="xl"
+										className="text-light-green hover:text-white"
+									/>
+								</a>
+								<a href="">
+									<FontAwesomeIcon
+										icon="fa-brands fa-facebook-f"
+										size="xl"
+										className="text-light-green hover:text-white"
+									/>
+								</a>
+								<a href="https://wa.me/?/8954766781">
+									<FontAwesomeIcon
+										icon="fa-brands fa-whatsapp"
+										size="xl"
+										className="text-light-green hover:text-white"
+									/>
+								</a>
 							</div>
 						</div>
 					</div>

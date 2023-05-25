@@ -25,12 +25,18 @@ function App() {
 					<Routes location={location} key={location.pathname}>
 						<Route index element={<Home />} />
 						{/* <Route path="/destinations/:id" element={<Destinations />} /> */}
-						<Route path="/destinations/char-dham" element={<Destinations />} />
 						<Route
+							exact
+							path="/destinations/char-dham"
+							element={<Destinations />}
+						/>
+						<Route
+							exact
 							path="/travel-styles/family-travel"
 							element={<TravelStyles />}
 						/>
 						<Route
+							exact
 							path="/travel-styles/pilgrimage-tour"
 							element={<TravelStyles />}
 						/>
