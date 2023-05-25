@@ -1,4 +1,10 @@
 import { motion as m } from "framer-motion";
+import { Header } from "../components/navbar/Header";
+import { Main } from "../components/Main";
+import { WhyUs } from "../components/WhyUs";
+import { Footer } from "../components/footer/Footer";
+import { TravelStyleCards } from "../components/TravelStyleCards";
+import { FloatingButton } from "../components/FloatingButton";
 
 export const Destinations = () => {
 	return (
@@ -15,16 +21,16 @@ export const Destinations = () => {
 					<Header />
 					<Main
 						heading="LUXURY WILDLIFE SAFARIS AND WILDLIFE ADVENTURES"
-						title="Africa"
+						title="Char Dham"
 					/>
 				</div>
-				{/* Section 2 - About us (Why Niarra?) */}
+				{/* Section 2 - About us (Why Navicrow?) */}
 				<WhyUs />
 
-				{/* Section 3 - Carousel */}
-				{/* <Carousel /> */}
+				{/* Section 3 - grid */}
 				{/* Section 4 - Travel Styles */}
-				{/* <TravelStyle /> */}
+				<TravelStyleCards />
+				<FloatingButton />
 				<Footer />
 			</m.main>
 		</div>

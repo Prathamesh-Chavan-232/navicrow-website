@@ -19,7 +19,7 @@ export const TravelStyleCards = () => {
 					<div className="flex flex-col gap-8 items-center xl:hidden">
 						<div className="relative">
 							<span className="text-white font-fancy text-4xl text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:text-6xl lg:text-8xl">
-								Honeymoons
+								Pilgrimage
 							</span>
 							<img src={travelCard1} alt="" />
 						</div>
@@ -28,7 +28,7 @@ export const TravelStyleCards = () => {
 							positive impact
 						</span>
 						<button className="px-10 py-4 border border-olive-green bg-transparent text-2xl text-olive-green rounded-full baseline transition-color duration-200 hover:text-white hover:bg-olive-green">
-							<a href="/travel-styles/family-travel">Discover more</a>
+							<a href="/travel-styles/pilgrimage-tour">Discover more</a>
 						</button>
 					</div>
 

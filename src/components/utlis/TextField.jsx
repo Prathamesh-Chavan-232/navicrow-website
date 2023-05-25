@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../../styles/footer.css";
 export const TextField = ({ label, placeholder }) => {
 	return (
 		<div className="z-0 field field_v2">

@@ -18,8 +18,8 @@ export const WhyUs = ({ clr }) => {
 				<img src={elephant} alt="" className="w-64 h-96" />
 				<div className="flex flex-col gap-3 text-xl text-left lg:w-96">
 					<p className="">
-						Niarra Travel is a forward-thinking travel company headquartered in
-						London born out of a passion to do things differently.
+						Navicrow Travel is a forward-thinking travel company headquartered
+						in Uttarakhand born out of a passion to do things differently.
 					</p>
 					<p className="">
 						In Swahili, a Bantu language spoken by millions in Eastern, Central

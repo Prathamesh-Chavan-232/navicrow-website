@@ -15,7 +15,6 @@ import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { AnimatePresence } from "framer-motion";
 import { TravelStyles } from "./pages/TravelStyles";
-import { Africa } from "./pages/destinations/Africa";
 import { Dev } from "./pages/Dev";
 
 function App() {
@@ -24,16 +23,15 @@ function App() {
 			<BrowserRouter>
 				<AnimatePresence mode={"wait"}>
 					<Routes location={location} key={location.pathname}>
-						<Route path="/" element={<Home />} />
-						<Route path="/dev" element={<Dev />} />
+						<Route index element={<Home />} />
 						{/* <Route path="/destinations/:id" element={<Destinations />} /> */}
-						<Route path="/destinations/char-dham" element={<Africa />} />
+						<Route path="/destinations/char-dham" element={<Destinations />} />
 						<Route
 							path="/travel-styles/family-travel"
 							element={<TravelStyles />}
 						/>
 						<Route
-							path="/travel-styles/pilgrimage"
+							path="/travel-styles/pilgrimage-tour"
 							element={<TravelStyles />}
 						/>
 						<Route path="/about" element={<About />} />

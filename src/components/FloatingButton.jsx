@@ -5,13 +5,13 @@ export const FloatingButton = () => {
 	return (
 		<div>
 			<a
-				href="#"
+				href="https://wa.me/?/8954766781"
 				className="float flex items-center justify-center bg-olive-green"
 			>
 				<FontAwesomeIcon
 					icon="fa-brands fa-whatsapp"
 					size="xl"
-					className=""
+					className="text-white"
 				></FontAwesomeIcon>
 			</a>
 		</div>

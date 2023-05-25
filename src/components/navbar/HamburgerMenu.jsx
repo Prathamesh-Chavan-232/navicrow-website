@@ -92,6 +92,18 @@ export const HamburgerMenu = () => {
 						label={"First Name (required)"}
 						placeholder={"Enter your First Name"}
 					/>
+					<TextField
+						label={"Last Name (required)"}
+						placeholder={"Enter your Last Name"}
+					/>
+					<TextField
+						label={"Email (required)"}
+						placeholder={"Enter your Email"}
+					/>
+					<TextField
+						label={"Phone no"}
+						placeholder={"Enter your Phone Number"}
+					/>
 				</div>
 			</m.div>
 		</div>
