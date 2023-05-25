@@ -19,10 +19,11 @@ export const TravelStyles = () => {
 			<div className="travel-style">
 				<Header clr="white" toggleFloating={toggleFloating} />
 				<Main
-					heading="LUXURY SAFARIS AND WILDLIFE ADVENTURES"
-					title="Family travel"
+					heading="TRANSFORMATIVE SPIRTUAL JOURNEY "
+					title="Pilgrimage Tour"
 				/>
 			</div>
+			<div></div>
 			{/* Section 2 - About us (Why Niarra?) */}
 			<TravelStyleCards />
 			<WhyUs />

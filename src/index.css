@@ -56,6 +56,12 @@
 	background-repeat: no-repeat;
 }
 
+.main-img {
+	background: url("/src/assets/landscapes/char-dham-4.webp");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 .font-fancy {
 	font-family: "Playfair Display", serif;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Main = ({ heading, title, price }) => {
+export const Main = ({ heading, title, price = "" }) => {
 	return (
 		<div>
 			<div className="w-screen h-screen flex flex-col justify-around">
@@ -10,7 +10,9 @@ export const Main = ({ heading, title, price }) => {
 						{title}
 					</h1>
 					<div className="flex flex-col text-xl text-center font-fancy">
-						<span>FROM</span>
+						<span className={`${price === "" ? "hidden" : "block"} `}>
+							FROM
+						</span>
 						<h1 className="font-fancy">{price}</h1>
 					</div>
 				</div>
