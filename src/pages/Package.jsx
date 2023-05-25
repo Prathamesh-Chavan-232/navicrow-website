@@ -1,12 +1,13 @@
 import React from "react";
 import { Header } from "../components/navbar/Header";
-import { Footer } from "../components/footer/Footer";
-import { WhyUs } from "../components/WhyUs";
 import { TravelStyleCards } from "../components/TravelStyleCards";
+import { WhyUs } from "../components/WhyUs";
 import { FloatingButton } from "../components/FloatingButton";
+import { Footer } from "../components/footer/Footer";
+import { useState } from "react";
 import { Main } from "../components/Main";
 
-export const TravelStyles = () => {
+export const Package = () => {
 	const [floating, setFloating] = useState(true);
 
 	function toggleFloating() {
@@ -15,11 +16,12 @@ export const TravelStyles = () => {
 	return (
 		<div>
 			{/* Section 1 - Navbar + Hero */}
-			<div className="travel-style">
+			<div className="travel-package">
 				<Header clr="white" toggleFloating={toggleFloating} />
 				<Main
-					heading="LUXURY SAFARIS AND WILDLIFE ADVENTURES"
-					title="Family travel"
+					heading="11-DAY TRIP"
+					title="Chardham via Haridwar"
+					price="₹ 18000 /-"
 				/>
 			</div>
 			{/* Section 2 - About us (Why Niarra?) */}

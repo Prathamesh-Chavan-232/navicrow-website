@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Main = ({ heading, title }) => {
+export const Main = ({ heading, title, price }) => {
 	return (
 		<div>
 			<div className="w-screen h-screen flex flex-col justify-around">
@@ -9,6 +9,10 @@ export const Main = ({ heading, title }) => {
 					<h1 className="text-5xl lg:text-8xl text-center font-fancy">
 						{title}
 					</h1>
+					<div className="flex flex-col text-xl text-center font-fancy">
+						<span>FROM</span>
+						<h1 className="font-fancy">{price}</h1>
+					</div>
 				</div>
 				<div className="mx-8 lg:mx-56 text-white">
 					<div>

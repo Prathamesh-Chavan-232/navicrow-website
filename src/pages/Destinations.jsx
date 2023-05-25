@@ -5,8 +5,14 @@ import { WhyUs } from "../components/WhyUs";
 import { Footer } from "../components/footer/Footer";
 import { TravelStyleCards } from "../components/TravelStyleCards";
 import { FloatingButton } from "../components/FloatingButton";
+import { useState } from "react";
 
 export const Destinations = () => {
+	const [floating, setFloating] = useState(true);
+
+	function toggleFloating() {
+		setFloating(!floating);
+	}
 	return (
 		<div>
 			<m.main
@@ -18,7 +24,7 @@ export const Destinations = () => {
 			>
 				{/* Section 1 - Navbar + Hero */}
 				<div className="travel-destination">
-					<Header />
+					<Header clr="white" toggleFloating={toggleFloating} />
 					<Main
 						heading="LUXURY WILDLIFE SAFARIS AND WILDLIFE ADVENTURES"
 						title="Char Dham"
@@ -30,7 +36,9 @@ export const Destinations = () => {
 				{/* Section 3 - grid */}
 				{/* Section 4 - Travel Styles */}
 				<TravelStyleCards />
-				<FloatingButton />
+				<div className={`${floating ? "block" : "hidden"}`}>
+					<FloatingButton />
+				</div>
 				<Footer />
 			</m.main>
 		</div>

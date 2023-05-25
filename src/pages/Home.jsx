@@ -7,6 +7,7 @@ import { WhyUs } from "../components/WhyUs";
 import { motion as m } from "framer-motion";
 import { FloatingButton } from "../components/FloatingButton";
 import { useState } from "react";
+
 export const Home = () => {
 	const [floating, setFloating] = useState(true);
 

@@ -24,8 +24,8 @@ export const TravelStyleCards = () => {
 							<img src={travelCard1} alt="" />
 						</div>
 						<span className="text-xl text-center lg:text-3xl">
-							Luxury Family safaris and inspiring wildlife adventures with a
-							positive impact
+							Embark on a transformative spiritual journey with our immersive
+							pilgrimage travel style package.
 						</span>
 						<button className="px-10 py-4 border border-olive-green bg-transparent text-2xl text-olive-green rounded-full baseline transition-color duration-200 hover:text-white hover:bg-olive-green">
 							<a href="/travel-styles/pilgrimage-tour">Discover more</a>
@@ -38,10 +38,7 @@ export const TravelStyleCards = () => {
 						<Card
 							img={travelCard1}
 							title="Honeymoons"
-							subtitle="
-								Luxury Family safaris and inspiring wildlife adventures with a
-								positive impact
-							"
+							subtitle="Indulge in a blissful honeymoon experience, create cherished memories of love and celebration."
 							link="honeymoons"
 						/>
 						<Card
@@ -49,9 +46,7 @@ export const TravelStyleCards = () => {
 							img={travelCard2}
 							title="Pilgrimage"
 							subtitle="
-								Luxury Family safaris and inspiring wildlife adventures with a
-								positive impact
-							"
+							Embark on a transformative spiritual journey with our immersive pilgrimage travel style package."
 							link="pilgrimage-tour"
 						/>
 						<Card

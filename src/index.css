@@ -45,6 +45,17 @@
 	background-repeat: no-repeat;
 }
 
+.travel-package {
+	background: linear-gradient(
+			rgba(0, 0, 0, 0.6),
+			rgba(0, 0, 0, 0.3),
+			rgba(0, 0, 0, 0.6)
+		),
+		url("/src/assets/landscapes/travel-style-2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 .font-fancy {
 	font-family: "Playfair Display", serif;
 }

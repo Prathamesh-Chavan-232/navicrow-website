@@ -195,18 +195,21 @@ const Navbar = ({ clr, toggleFloating }) => {
 			{/* Mobile Nav Menu */}
 			<NavMenu isOpen={openMobileMenu}>
 				<div className="relative flex flex-col gap-6 h-full w-full items-center justify-center text-5xl font-fancy text-black">
-					<Link to="/destinations" className="hover:text-light-green">
+					<a href="/destinations/char-dham" className="hover:text-light-green">
 						Destinations
-					</Link>
-					<Link to="/travel-styles" className="hover:text-light-green">
+					</a>
+					<a
+						href="/travel-styles/pilgrimage-tour"
+						className="hover:text-light-green"
+					>
 						Travel Styles
-					</Link>
-					<Link to="/about" className="hover:text-light-green">
+					</a>
+					<a href="/about" className="hover:text-light-green">
 						About us
-					</Link>
-					<Link to="/contact" className="hover:text-light-green">
-						Contact us
-					</Link>
+					</a>
+					<a href="/package" className="hover:text-light-green">
+						Packages
+					</a>
 				</div>
 			</NavMenu>
 		</nav>
