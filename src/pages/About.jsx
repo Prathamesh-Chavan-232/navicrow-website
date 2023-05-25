@@ -3,7 +3,6 @@ import { Main } from "../components/about/Main";
 import { Header } from "../components/navbar/Header";
 import { Footer } from "../components/footer/Footer";
 import { motion as m } from "framer-motion";
-
 export const About = () => {
 	return (
 		<m.main

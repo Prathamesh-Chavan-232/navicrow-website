@@ -1,5 +1,5 @@
 import React from "react";
-
+import elephant from "../assets/animals/elephant-2.webp";
 export const WhyUs = ({ clr }) => {
 	return (
 		<div
@@ -15,11 +15,7 @@ export const WhyUs = ({ clr }) => {
 				<h2 className="text-6xl font-fancy">Why Niarra</h2>
 			</div>
 			<div className="flex flex-col items-center justify-center gap-32 lg:flex-row">
-				<img
-					src="/src/assets/animals/elephant-portrait.avif"
-					alt=""
-					className="w-64 h-96"
-				/>
+				<img src={elephant} alt="" className="w-64 h-96" />
 				<div className="flex flex-col gap-3 text-xl text-left lg:w-96">
 					<p className="">
 						Niarra Travel is a forward-thinking travel company headquartered in

@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Card } from "./utlis/Card";
+import travelCard1 from "../assets/landscapes/travel-style-1.jpg";
+import travelCard2 from "../assets/landscapes/travel-style-1.jpg";
 
 export const TravelStyleCards = () => {
 	return (
@@ -19,7 +21,7 @@ export const TravelStyleCards = () => {
 							<span className="text-white font-fancy text-4xl text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:text-6xl lg:text-8xl">
 								Honeymoons
 							</span>
-							<img src="/src/assets/landscapes/travel-style-1.jpg" alt="" />
+							<img src={travelCard1} alt="" />
 						</div>
 						<span className="text-xl text-center lg:text-3xl">
 							Luxury Family safaris and inspiring wildlife adventures with a
@@ -34,7 +36,7 @@ export const TravelStyleCards = () => {
 					<div className="px-36 hidden items-center justify-center gap-16 xl:flex">
 						{/* Card 1 */}
 						<Card
-							img="/src/assets/landscapes/travel-style-1.jpg"
+							img={travelCard1}
 							title="Honeymoons"
 							subtitle="
 								Luxury Family safaris and inspiring wildlife adventures with a
@@ -44,7 +46,7 @@ export const TravelStyleCards = () => {
 						/>
 						<Card
 							isCenter={true}
-							img="/src/assets/landscapes/travel-style-2.jpg"
+							img={travelCard2}
 							title="Pilgrimage"
 							subtitle="
 								Luxury Family safaris and inspiring wildlife adventures with a
@@ -53,7 +55,7 @@ export const TravelStyleCards = () => {
 							link="pilgrimage"
 						/>
 						<Card
-							img="/src/assets/landscapes/travel-style-1.jpg"
+							img={travelCard1}
 							title="Family Travel"
 							subtitle="
 							Quality time with family and friends, complete flexibility"

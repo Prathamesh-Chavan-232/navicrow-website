@@ -13,6 +13,7 @@ import { NavMenu } from "./NavMenu";
 import { destinations, travelStyles, about } from "/src/data.js";
 
 // Customn styles
+import logo from "../../assets/NH.png";
 import "/src/styles/nav.css";
 
 export function Header({ clr }) {
@@ -92,7 +93,7 @@ const Navbar = ({ clr }) => {
 				<div className="flex items-center justify-between">
 					{/* Logo */}
 					<a href="/">
-						<img src="/src/assets/NH.png" alt="" className="h-14 w-14" />
+						<img src={logo} alt="" className="h-14 w-14" />
 					</a>
 					{/* nav links */}
 					<div className="hidden space-x-16 lg:flex font-medium text-sm">
