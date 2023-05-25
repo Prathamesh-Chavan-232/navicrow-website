@@ -186,28 +186,24 @@ const Navbar = ({ clr }) => {
 			</div>
 			<NavMenu isOpen={open}>
 				<div className="relative flex flex-col gap-6 h-full w-full items-center justify-center text-5xl font-fancy text-black">
-					{active === 0 && <MainMenu listItems={destinations.items} />}
-					{active === 1 && <MainMenu listItems={travelStyles.items} />}
-					{active === 2 && <MainMenu listItems={travelStyles.items} />}
+					{active === 0 && <MainMenu listItems={destinations} />}
+					{active === 1 && <MainMenu listItems={travelStyles} />}
 				</div>
 			</NavMenu>
 
 			{/* Mobile Nav Menu */}
 			<NavMenu isOpen={openMobileMenu}>
 				<div className="relative flex flex-col gap-6 h-full w-full items-center justify-center text-5xl font-fancy text-black">
-					<Link
-						to="/destionations/char-dham"
-						className="hover:text-light-green"
-					>
+					<Link to="/destionations" className="hover:text-light-green">
 						Destinations
 					</Link>
-					<Link to="/destionations/" className="hover:text-light-green">
+					<Link to="/travel-styles" className="hover:text-light-green">
 						Travel Styles
 					</Link>
-					<Link to="/destionations/" className="hover:text-light-green">
+					<Link to="/about" className="hover:text-light-green">
 						About us
 					</Link>
-					<Link to="/destionations/" className="hover:text-light-green">
+					<Link to="/contact" className="hover:text-light-green">
 						Contact us
 					</Link>
 				</div>

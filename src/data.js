@@ -1,26 +1,73 @@
-export const destinations = {
-	items: ["Char Dham", "Do Dham", "Kedarnath", ""],
-	imgs: ["Africa", "Europe", "Asia", "Australia"],
-};
-export const travelStyles = {
-	items: [
-		"Pilgrimage Tour",
-		"Family Travel",
-		"Honeymoons",
-		"Home Stay",
-		"Hill Stations",
-	],
-	imgs: ["Africa", "Europe", "Asia", "Australia"],
-};
-export const about = {
-	items: [
-		"Our Story",
-		"Why book with Navicrow",
-		"How we work",
-		"Sustainability",
-		"In the press",
-		"Meet the team",
-		"Careers",
-	],
-	imgs: ["Africa", "Europe", "Asia", "Australia"],
-};
+export const destinations = [
+	{
+		title: "Char Dham",
+		img: "/src/assets/char-dham.jpg",
+		link: "/destinations/africa.jpg",
+	},
+	{
+		title: "Do Dham",
+		img: "/src/assets/moutains2.jpg",
+		link: "/destinations/do-dham",
+	},
+	{
+		title: "Kedarnath",
+		img: "/src/assets/travel-style.jpg",
+		link: "/destinations/do-dham",
+	},
+	{
+		title: "Fixed Departures",
+		img: "/src/assets/travel-style-1.jpg",
+		link: "/destinations/do-dham",
+	},
+];
+
+export const travelStyles = [
+	{
+		title: "Family Travel",
+		img: "/src/assets/travel-style.jpg",
+		link: "/travel-styles/family-travel",
+	},
+	{
+		title: "Pilgrimage Tour",
+		img: "/src/assets/travel-style.jpg",
+		link: "/travel-styles/pilgrimage-tour",
+	},
+	{
+		title: "Honeymoons",
+		img: "/src/assets/travel-style.jpg",
+		link: "/travel-styles/honeymoons",
+	},
+	{
+		title: "Home Stay",
+		img: "/src/assets/travel-style.jpg",
+		link: "/travel-styles/home-stay",
+	},
+	{
+		title: "Hill Stations",
+		img: "/src/assets/travel-style.jpg",
+		link: "/travel-styles/hill-stations",
+	},
+];
+
+export const about = [
+	{
+		title: "Our Story",
+		img: "/src/assets/char-dham.jpg",
+		link: "/about/our-story",
+	},
+	{
+		title: "Why book with Navicrow?",
+		img: "/src/assets/moutains2.jpg",
+		link: "/about/why-book-with-navicrow",
+	},
+	{
+		title: "Kedarnath",
+		img: "/src/assets/travel-style.jpg",
+		link: "/about/sustainability",
+	},
+	{
+		title: "Fixed Departures",
+		img: "/src/assets/travel-style-1.jpg",
+		link: "/about/our-team",
+	},
+];

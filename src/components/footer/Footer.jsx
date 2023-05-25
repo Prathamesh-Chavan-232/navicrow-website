@@ -2,6 +2,7 @@ import { ContactForm } from "./ContactForm";
 import { CallUs } from "./CallUs";
 import { RotatingBorder } from "../utlis/RotatingBorder";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 export const Footer = () => {
 	return (
 		<div id="footer" className="z-0 mt-auto text-white">
@@ -23,21 +24,16 @@ export const Footer = () => {
 							</h3>
 							<div className="font-fancy">
 								<p className="font-fancy text-2xl hover:text-light-green">
-									<a href="/africa">Africa</a>
+									<Link href="/destinations/africa">Char Dham</Link>
 								</p>
 								<p className="font-fancy text-2xl hover:text-light-green">
-									<a href="/africa">Asia</a>
+									<Link href="/destinations/africa">Do Dham</Link>
 								</p>
 								<p className="font-fancy text-2xl hover:text-light-green">
-									<a href="/africa">Australasia</a>
+									<Link href="/destinations/africa">Kedarnath</Link>
 								</p>
 								<p className="font-fancy text-2xl hover:text-light-green">
-									<a href="/africa">Europe</a>
-								</p>
-								<p className="font-fancy text-2xl hover:text-light-green">
-									<a href="/africa" className="font-fancy">
-										Latin America
-									</a>
+									<Link href="/destinations/africa">Fixed Departures</Link>
 								</p>
 							</div>
 						</div>
