@@ -12,41 +12,31 @@ export const WhyUs = ({ clr }) => {
 			{/* Why niarra & Elephant */}
 			<div>
 				<h2 className="text-lg">WHAT MAKES US DIFFERENT</h2>
-				<h2 className="text-6xl font-fancy">Why Niarra</h2>
+				<h2 className="text-6xl font-fancy">Why Book with Navicrow</h2>
 			</div>
 			<div className="flex flex-col items-center justify-center gap-32 lg:flex-row">
 				<img src={elephant} alt="" className="w-64 h-96" />
 				<div className="flex flex-col gap-3 text-xl text-left lg:w-96">
 					<p className="">
-						Navicrow Travel is a forward-thinking travel company headquartered
-						in Uttarakhand born out of a passion to do things differently.
+						Navicrow Travels is an innovative tour and travel company, offering
+						unique travel and holiday experiences. Our passion lies in
+						revolutionizing the way people undertake this sacred journey, and we
+						are dedicated to providing exceptional services that leave a lasting
+						impact.
 					</p>
 					<p className="">
-						In Swahili, a Bantu language spoken by millions in Eastern, Central
-						and Southern Africa, the name Niara means "with utmost purpose" and
-						our team are united by a passion for exploration and a belief that
-						the right kind of travel can make the world a better place.
+						Derived from the concept of navigating through divine realms, the
+						name "Navicrow" encapsulates our commitment to guiding pilgrims
+						through the transformative Char Dham Yatra. We understand the
+						profound significance of this pilgrimage and strive to curate
+						extraordinary trips that go beyond conventional travel experiences.
 					</p>
 					<p className="">
-						Our Travel Researchers are here to create incredible trips with a
-						positive impact for you.
+						At Navicrow Travels, we firmly believe in the power of travel to
+						enrich lives.
 					</p>
 				</div>
 			</div>
-
-			{/* <div>
-				<div className="text-xl flex flex-col space-y-7">
-					<div className="flex">
-						<div className="lg:w-72">
-							<p>Unforgettable experiences Creating your trip is entirely</p>
-							<p>
-								collaborative and our Travel Researchers are here for every
-								step.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div> */}
 		</div>
 	);
 };
