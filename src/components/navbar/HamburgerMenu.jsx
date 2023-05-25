@@ -68,6 +68,7 @@ export const HamburgerMenu = ({ toggleFloating }) => {
 					</button>
 				</div>
 				<div className="mx-20 lg:mt-40 flex flex-col gap-10 text-center items-center justify-center lg:flex-row">
+					{/* Column 1 */}
 					<div className="flex flex-col items-center justify-center gap-6">
 						<h2 className="px-10 text-2xl text-center font-fancy lg:px-0 lg:text-4xl">
 							Contact a Travel Researcher
@@ -81,6 +82,7 @@ export const HamburgerMenu = ({ toggleFloating }) => {
 							</RotatingBorder>
 						</div>
 					</div>
+					{/* Column 2 */}
 					<div className="flex flex-col gap-4">
 						<div className="text-center">
 							<h2 className="text-2xl font-fancy lg:text-left lg:text-4xl">
@@ -153,18 +155,18 @@ export const HamburgerMenu = ({ toggleFloating }) => {
 								/>
 							</div>
 						</div>
-					</div>
-					<div className="flex flex-col gap-4">
-						{/* Checkbox with text */}
-						<div className="flex items-center gap-3">
-							<input type="checkbox" id="contact" className="" />
-							<label htmlFor="contact">
-								Can we contact you & Use your Info to plan the trip? *
-							</label>
+						<div className="flex flex-col gap-4">
+							{/* Checkbox with text */}
+							<div className="flex items-center gap-3">
+								<input type="checkbox" id="contact" className="" />
+								<label htmlFor="contact">
+									Can we contact you & Use your Info to plan the trip? *
+								</label>
+							</div>
+							<button className="px-10 py-4 border border-white bg-transparent text-xl text-white rounded-full baseline transition-color duration-200 hover:text-olive-green hover:bg-white">
+								<a href="/travel-styles/pilgrimage-tour">Send message</a>
+							</button>
 						</div>
-						<button className="px-10 py-4 border border-white bg-transparent text-xl text-white rounded-full baseline transition-color duration-200 hover:text-olive-green hover:bg-white">
-							<a href="/travel-styles/pilgrimage-tour">Send message</a>
-						</button>
 					</div>
 				</div>
 			</m.div>
