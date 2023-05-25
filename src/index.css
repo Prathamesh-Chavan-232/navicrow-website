@@ -20,6 +20,7 @@
 		url("/src/assets/landscapes/mountains3.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	z-index: 99;
 }
 
 .travel-destination {

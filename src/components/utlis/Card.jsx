@@ -1,14 +1,5 @@
 import { Link } from "react-router-dom";
-export const Card = ({
-	img,
-	title,
-	subtitle,
-	link,
-	isCenter = false,
-	heading = "",
-	subheading = "",
-	val = 3.2,
-}) => {
+export const Card = ({ img, title, subtitle, link, isCenter = false }) => {
 	return (
 		<div className="w-96 flex flex-col gap-4 items-center">
 			{isCenter && (
@@ -29,7 +20,7 @@ export const Card = ({
 			</div>
 			<span className="text-center text-lg font-thin">{subtitle}</span>
 			<button className="px-10 py-4 border border-olive-green bg-transparent text-2xl text-olive-green rounded-full baseline transition-color duration-200 lg:text-lg lg:px-8 lg:py-3 hover:text-white hover:bg-olive-green">
-				<Link to={`/travel-styles/${link}`}>Discover more</Link>
+				<a href={`/travel-styles/${link}`}>Discover more</a>
 			</button>
 		</div>
 	);

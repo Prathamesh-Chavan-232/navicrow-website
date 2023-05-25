@@ -18,7 +18,7 @@ export const CallUs = () => {
 				<RotatingBorder border={"1px"} clr={"black"} size="200px">
 					<div className="flex flex-col text-center">
 						<span>Call us</span>
-						<span>+1 (332) 334 0501</span>
+						<a href="tel:+01353161082">+01 (353) 161 082</a>
 					</div>
 				</RotatingBorder>
 				<RotatingBorder border={"1px"} clr={"black"} size="200px">

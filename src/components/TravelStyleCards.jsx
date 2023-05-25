@@ -52,7 +52,7 @@ export const TravelStyleCards = () => {
 								Luxury Family safaris and inspiring wildlife adventures with a
 								positive impact
 							"
-							link="pilgrimage"
+							link="pilgrimage-tour"
 						/>
 						<Card
 							img={travelCard1}

@@ -36,13 +36,15 @@ const menuTransition = {
 	delay: 0.1,
 };
 
-export const HamburgerMenu = () => {
+export const HamburgerMenu = ({ toggleFloating }) => {
 	const [isOpen, setIsOpen] = useState(false);
 	const { lockScroll, unlockScroll } = useScrollLock();
 	const toggleMenu = () => {
 		if (!isOpen) {
+			toggleFloating();
 			lockScroll();
 		} else {
+			toggleFloating();
 			unlockScroll();
 		}
 		setIsOpen(!isOpen);
@@ -51,21 +53,20 @@ export const HamburgerMenu = () => {
 		<div>
 			<MenuToggle toggle={toggleMenu} isOpen={isOpen}></MenuToggle>
 			<m.div
-				className="menu h-full w-full max-w-[95%] min-w-[350px] z-50 fixed top-0 right-0 md:max-w-[55%] bg-olive-green shadow-2xl select-none text-white"
+				className="!overflow-y-scroll pb-8 h-full w-full max-w-[95%] min-w-[350px] z-50 fixed top-0 right-0 md:max-w-[50%] bg-olive-green shadow-2xl select-none text-white"
 				initial={false}
 				animate={isOpen ? "open" : "closed"}
 				variants={menuVariants}
 				transition={menuTransition}
 			>
-				<div className="m-6 flex flex-col gap-10 text-center items-center justify-center">
-					<button onClick={toggleMenu} className="">
-						<div className="flex items-center gap-4 text-sm">
-							<div className="hidden font-semibold lg:block">CLOSE</div>
-							<RotatingBorder clr={"#eee"} size={"30px"} border={"1px"}>
-								<div>x</div>
-							</RotatingBorder>
-						</div>
-					</button>
+				<div className="px-24 py-10 flex items-center gap-4 text-sm lg:absolute lg:right-10">
+					<div className="hidden font-semibold lg:block">CLOSE</div>
+					<RotatingBorder clr={"#eee"} size={"30px"} border={"1px"}>
+						<div>x</div>
+					</RotatingBorder>
+				</div>
+				<div className="m-20 flex flex-col gap-10 text-center items-center justify-center lg:flex-row lg:justify-between">
+					<button onClick={toggleMenu} className=""></button>
 					<div className="flex flex-col items-center justify-center gap-3">
 						<h2 className="px-10 text-2xl text-center font-fancy lg:text-left lg:text-4xl">
 							Contact a Travel Researcher
@@ -74,36 +75,51 @@ export const HamburgerMenu = () => {
 							<RotatingBorder clr={"#fff"} border="2px" size="180px">
 								<div className="flex flex-col text-lg text-center">
 									<span>Call us</span>
-									<span>+1 (332) 334 0501</span>
+									<a href="tel:+0135 3161082">+01 (353) 161 082</a>
 								</div>
 							</RotatingBorder>
 						</div>
 					</div>
-
-					<div className="text-center">
-						<h2 className="text-2xl font-fancy lg:text-left lg:text-4xl">
-							Contact us by sending a
-						</h2>
-						<h2 className="text-2xl font-fancy lg:text-left lg:text-4xl">
-							message
-						</h2>
+					<div className="flex flex-col gap-4">
+						<div className="text-center">
+							<h2 className="text-2xl font-fancy lg:text-left lg:text-4xl">
+								Contact us by sending a
+							</h2>
+							<h2 className="text-2xl font-fancy lg:text-left lg:text-4xl">
+								message
+							</h2>
+						</div>
+						<TextField
+							label={"First Name (required)"}
+							placeholder={"Enter your First Name"}
+						/>
+						<TextField
+							label={"Last Name (required)"}
+							placeholder={"Enter your Last Name"}
+						/>
+						<TextField
+							label={"Email (required)"}
+							placeholder={"Enter your Email"}
+						/>
+						<TextField
+							label={"Phone no"}
+							placeholder={"Enter your Phone Number"}
+						/>
+						<TextField
+							label={"Number of Travelers (required)"}
+							placeholder={"Enter the number of travelers"}
+						/>
+						{/* Checkbox with text */}
+						<div className="flex items-center gap-3">
+							<input type="checkbox" id="contact" className="" />
+							<label htmlFor="contact">
+								Can we contact you & Use your Info to plan the trip? *
+							</label>
+						</div>
+						<button className="px-10 py-4 border border-white bg-transparent text-xl text-white rounded-full baseline transition-color duration-200 hover:text-olive-green hover:bg-white">
+							<a href="/travel-styles/pilgrimage-tour">Send message</a>
+						</button>
 					</div>
-					<TextField
-						label={"First Name (required)"}
-						placeholder={"Enter your First Name"}
-					/>
-					<TextField
-						label={"Last Name (required)"}
-						placeholder={"Enter your Last Name"}
-					/>
-					<TextField
-						label={"Email (required)"}
-						placeholder={"Enter your Email"}
-					/>
-					<TextField
-						label={"Phone no"}
-						placeholder={"Enter your Phone Number"}
-					/>
 				</div>
 			</m.div>
 		</div>

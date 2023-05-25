@@ -16,7 +16,7 @@ import { destinations, travelStyles, about } from "/src/data.js";
 import logo from "../../assets/NH.png";
 import "/src/styles/nav.css";
 
-export function Header({ clr }) {
+export function Header({ clr, toggleFloating }) {
 	const scrollDirection = useScrollDirection();
 	const content = {
 		animate: {
@@ -49,13 +49,13 @@ export function Header({ clr }) {
 				className="space-y-12"
 			>
 				<m.div variants={nav}>
-					<Navbar clr={clr} />
+					<Navbar clr={clr} toggleFloating={toggleFloating} />
 				</m.div>
 			</m.div>
 		</div>
 	);
 }
-const Navbar = ({ clr }) => {
+const Navbar = ({ clr, toggleFloating }) => {
 	const [active, setActive] = useState(-1);
 
 	const [open, setOpen] = useState(false);
@@ -142,7 +142,7 @@ const Navbar = ({ clr }) => {
 					</div>
 					<div className="flex gap-8 items-center justify-center">
 						{/* Sliding Menu & Sliding Menu Buttons */}
-						<HamburgerMenu />
+						<HamburgerMenu toggleFloating={toggleFloating} />
 
 						{/* Nav-menu Button For mobile  */}
 						<div className="lg:hidden">

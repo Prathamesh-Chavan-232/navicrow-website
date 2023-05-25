@@ -6,7 +6,13 @@ import { TravelStyleCards } from "../components/TravelStyleCards";
 import { WhyUs } from "../components/WhyUs";
 import { motion as m } from "framer-motion";
 import { FloatingButton } from "../components/FloatingButton";
+import { useState } from "react";
 export const Home = () => {
+	const [floating, setFloating] = useState(true);
+
+	function toggleFloating() {
+		setFloating(!floating);
+	}
 	return (
 		// Hero Section
 		<m.main
@@ -18,7 +24,7 @@ export const Home = () => {
 		>
 			{/* Section 1 - Navbar + Hero */}
 			<div className="hero">
-				<Header clr="white" />
+				<Header clr="white" toggleFloating={toggleFloating} />
 				<Hero />
 			</div>
 			{/* Section 2 - About us (Why Niarra?) */}
@@ -28,7 +34,9 @@ export const Home = () => {
 			<Carousel />
 			{/* Section 4 - Travel Styles */}
 			<TravelStyleCards />
-			<FloatingButton />
+			<div className={`${floating ? "block" : "hidden"}`}>
+				<FloatingButton />
+			</div>
 			<Footer />
 		</m.main>
 	);

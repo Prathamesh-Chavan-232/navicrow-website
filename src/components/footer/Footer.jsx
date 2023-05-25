@@ -45,7 +45,7 @@ export const Footer = () => {
 								</h3>
 								<div>
 									<p className="font-fancy text-2xl hover:text-light-green">
-										<a href="tel:+918954766781">+91 (895) 476 6781</a>
+										<a href="tel:+01353161082">+01 (353) 161 082</a>
 									</p>
 								</div>
 							</div>
@@ -55,8 +55,8 @@ export const Footer = () => {
 								</h3>
 								<div>
 									<p className="font-fancy text-2xl break-words hover:text-light-green">
-										<a href="mailtomailto:navicrowholidayswebsite@gmail.com">
-											navicrowholidayswebsite@gmail.com
+										<a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=info@navicrowholidays.com">
+											info@navicrowholidays.com
 										</a>
 									</p>
 								</div>
@@ -73,9 +73,23 @@ export const Footer = () => {
 										className="text-light-green hover:text-white"
 									/>
 								</a>
-								<a href="">
+								<a href="https://www.facebook.com/Navicrowholidays/?_rdr">
 									<FontAwesomeIcon
 										icon="fa-brands fa-facebook-f"
+										size="xl"
+										className="text-light-green hover:text-white"
+									/>
+								</a>
+								<a href="https://www.linkedin.com/in/navicrow-holidays-private-limited-505b16202/?originalSubdomain=in">
+									<FontAwesomeIcon
+										icon="fa-brands fa-linkedin"
+										size="xl"
+										className="text-light-green hover:text-white"
+									/>
+								</a>
+								<a href="https://www.youtube.com/channel/UCieVKkXaNXaKK70QV9wN3Sg?app=desktop">
+									<FontAwesomeIcon
+										icon="fa-brands fa-youtube"
 										size="xl"
 										className="text-light-green hover:text-white"
 									/>
@@ -86,6 +100,7 @@ export const Footer = () => {
 										size="xl"
 										className="text-light-green hover:text-white"
 									/>
+									{/*  */}{" "}
 								</a>
 							</div>
 						</div>

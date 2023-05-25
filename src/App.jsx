@@ -4,7 +4,6 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 // import your icons
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
-import { far } from "@fortawesome/free-regular-svg-icons";
 
 // npm packages
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -49,7 +48,7 @@ function App() {
 }
 
 export default App;
-library.add(fab, fas, far);
+library.add(fab, fas);
 
 // TODO NOW:
 // [ x ]: Navbar Page Transition
