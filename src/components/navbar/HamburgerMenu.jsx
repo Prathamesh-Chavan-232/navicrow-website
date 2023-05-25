@@ -59,16 +59,17 @@ export const HamburgerMenu = ({ toggleFloating }) => {
 				variants={menuVariants}
 				transition={menuTransition}
 			>
-				<div className="px-24 py-10 flex items-center gap-4 text-sm lg:absolute lg:right-10">
-					<div className="hidden font-semibold lg:block">CLOSE</div>
-					<RotatingBorder clr={"#eee"} size={"30px"} border={"1px"}>
-						<div>x</div>
-					</RotatingBorder>
+				<div className="py-5 lg:px-24 lg:py-10 flex items-center justify-center gap-4 text-sm lg:absolute lg:right-10">
+					<button onClick={toggleMenu} className="flex gap-4 items-center">
+						<div className="hidden font-semibold lg:block">CLOSE</div>
+						<RotatingBorder clr={"#eee"} size={"30px"} border={"1px"}>
+							<div>x</div>
+						</RotatingBorder>
+					</button>
 				</div>
-				<div className="m-20 flex flex-col gap-10 text-center items-center justify-center lg:flex-row bg-blue-400">
-					<button onClick={toggleMenu} className=""></button>
-					<div className="flex flex-col items-center justify-center gap-3">
-						<h2 className="px-10 text-2xl text-center font-fancy lg:px-0 lg:text-left lg:text-4xl">
+				<div className="mx-20 lg:mt-40 flex flex-col gap-10 text-center items-center justify-center lg:flex-row">
+					<div className="flex flex-col items-center justify-center gap-6">
+						<h2 className="px-10 text-2xl text-center font-fancy lg:px-0 lg:text-4xl">
 							Contact a Travel Researcher
 						</h2>
 						<div className="flex flex-col font-fancy lg:flex-row">
@@ -89,26 +90,71 @@ export const HamburgerMenu = ({ toggleFloating }) => {
 								message
 							</h2>
 						</div>
-						<TextField
-							label={"First Name (required)"}
-							placeholder={"Enter your First Name"}
-						/>
-						<TextField
-							label={"Last Name (required)"}
-							placeholder={"Enter your Last Name"}
-						/>
-						<TextField
-							label={"Email (required)"}
-							placeholder={"Enter your Email"}
-						/>
-						<TextField
-							label={"Phone no"}
-							placeholder={"Enter your Phone Number"}
-						/>
-						<TextField
-							label={"Number of Travelers (required)"}
-							placeholder={"Enter the number of travelers"}
-						/>
+						<div className="flex flex-col gap-16">
+							<div className="flex flex-col gap-8">
+								{/* Row */}
+								<div className="flex flex-col gap-6 lg:flex-row">
+									<TextField
+										label={"First Name (required)"}
+										placeholder={"Enter your First Name"}
+									/>
+									<TextField
+										label={"Last Name (required)"}
+										placeholder={"Enter your Last Name"}
+									/>
+								</div>
+								{/* Row */}
+								<div className="flex flex-col gap-6 lg:flex-row">
+									<TextField
+										label={"Email (required)"}
+										placeholder={"Enter your Email"}
+									/>
+									<TextField
+										label={"Phone no"}
+										placeholder={"Enter your Phone Number"}
+									/>
+								</div>
+
+								{/* Row */}
+								<TextField
+									label={"Number of Travelers (required)"}
+									placeholder={"Enter the number of travelers"}
+								/>
+							</div>
+							{/* Form separation */}
+							<div className="flex flex-col gap-8">
+								{/* Row */}
+								<div className="flex flex-col gap-6 lg:flex-row">
+									<TextField
+										label={"First Name (required)"}
+										placeholder={"Enter your First Name"}
+									/>
+									<TextField
+										label={"Last Name (required)"}
+										placeholder={"Enter your Last Name"}
+									/>
+								</div>
+								{/* Row */}
+								<div className="flex flex-col gap-6 lg:flex-row">
+									<TextField
+										label={"Email (required)"}
+										placeholder={"Enter your Email"}
+									/>
+									<TextField
+										label={"Phone no"}
+										placeholder={"Enter your Phone Number"}
+									/>
+								</div>
+
+								{/* Row */}
+								<TextField
+									label={"Number of Travelers (required)"}
+									placeholder={"Enter the number of travelers"}
+								/>
+							</div>
+						</div>
+					</div>
+					<div className="flex flex-col gap-4">
 						{/* Checkbox with text */}
 						<div className="flex items-center gap-3">
 							<input type="checkbox" id="contact" className="" />
