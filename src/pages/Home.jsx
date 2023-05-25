@@ -5,8 +5,7 @@ import { Carousel } from "../components/Carousel";
 import { TravelStyleCards } from "../components/TravelStyleCards";
 import { WhyUs } from "../components/WhyUs";
 import { motion as m } from "framer-motion";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import { FloatingButton } from "../components/FloatingButton";
 export const Home = () => {
 	return (
 		// Hero Section
@@ -29,6 +28,7 @@ export const Home = () => {
 			<Carousel />
 			{/* Section 4 - Travel Styles */}
 			<TravelStyleCards />
+			<FloatingButton />
 			<Footer />
 		</m.main>
 	);
