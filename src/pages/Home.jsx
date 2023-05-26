@@ -7,9 +7,7 @@ import { WhyUs } from "../components/WhyUs";
 import { FloatingButton } from "../components/utlis/FloatingButton";
 import { motion as m } from "framer-motion";
 import { useState } from "react";
-import img from "../assets/landscapes/char-dham-2.jpg";
-import img2 from "../assets/landscapes/travel-style-1.jpg";
-import { Packages } from "../components/Packages";
+import { CharDhamPackages} from "../components/CharDhamPackages"
 
 export const Home = () => {
 	const [floating, setFloating] = useState(true);

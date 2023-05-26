@@ -34,42 +34,42 @@ function App() {
 						<Route exact path="/packages" element={<Packages />} />
 						<Route
 							exact
-							path="/package/char-dham-via-hardiwar"
+							path="/package/chardham-via-haridwar"
 							element={<CharDham1 />}
 						/>
 						<Route
 							exact
-							path="/package/char-dham-via-delhi"
+							path="/package/chardham-via-delhi"
 							element={<CharDham2 />}
 						/>
 						<Route
 							exact
-							path="/package/char-dham-via-chopta"
+							path="/package/chardham-via-chopta"
 							element={<CharDham3 />}
 						/>
 						<Route
 							exact
-							path="/package/char-dham-via-helicopter"
+							path="/package/chardham-via-helicopter"
 							element={<CharDham4 />}
 						/>
 						<Route
 							exact
-							path="/package/do-dham-via-hardiwar"
+							path="/package/dodham-via-hardiwar"
 							element={<DoDham1 />}
 						/>
 						<Route
 							exact
-							path="/package/do-dham-via-delhi"
+							path="/package/dodham-via-delhi"
 							element={<DoDham2 />}
 						/>
 						<Route
 							exact
-							path="/package/do-dham-via-chopta"
+							path="/package/dodham-via-chopta"
 							element={<DoDham3 />}
 						/>
 						<Route
 							exact
-							path="/package/do-dham-via-helicopter"
+							path="/package/dodham-via-helicopter"
 							element={<DoDham4 />}
 						/>
 						<Route exact path="/destinations/:id" element={<Destinations />} />
