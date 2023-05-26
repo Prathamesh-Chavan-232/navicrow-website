@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Header } from "../components/navbar/Header";
 import { TravelStyleCards } from "../components/TravelStyleCards";
@@ -8,7 +7,7 @@ import { Footer } from "../components/footer/Footer";
 import { Main } from "../components/Main";
 import charDhamTemple from "../assets/landscapes/char-dham-1.jpg";
 import { useState } from "react";
-import { charDhamPackage1 } from "../data";
+import { charDhamPackage1 as packageData } from "../data";
 
 export const DoDham2 = () => {
 	const [floating, setFloating] = useState(true);
@@ -22,16 +21,16 @@ export const DoDham2 = () => {
 			<div className="travel-package">
 				<Header clr="white" toggleFloating={toggleFloating} />
 				<Main
-					heading={`${charDhamPackage1.duration} DAY-TRIP`}
-					title={charDhamPackage1.title}
-					price={`₹ ${charDhamPackage1.price} /-`}
+					heading={`${packageData.duration} DAY-TRIP`}
+					title={packageData.title}
+					price={`₹ ${packageData.price} /-`}
 				/>
 			</div>
 
 			{/* Section - About the Trip */}
-			<AboutThePage packageData={charDhamPackage1} />
+			<AboutThePage packageData={packageData} />
 			{/* Day wise */}
-			<Dayplan packageData={charDhamPackage1} reverse={false} />
+			<Dayplan packageData={packageData} reverse={false} />
 			<img src={charDhamTemple} alt="" className="lg:hidden" />
 			<div className="hidden main-img h-screen lg:block">
 				<img
@@ -41,7 +40,7 @@ export const DoDham2 = () => {
 				/>
 			</div>
 			{/* Section - About the Trip */}
-			<Dayplan packageData={charDhamPackage1} reverse={true} />
+			<Dayplan packageData={packageData} reverse={true} />
 			<div className="hidden main-img h-screen lg:block">
 				<img
 					src={charDhamTemple}
@@ -49,7 +48,7 @@ export const DoDham2 = () => {
 					className="absolute left-1/2 w-[600px]"
 				/>
 			</div>
-			<Dayplan packageData={charDhamPackage1} reverse={false} />
+			<Dayplan packageData={packageData} reverse={false} />
 			<TravelStyleCards />
 			<WhyUs />
 			<div className={`${floating ? "block" : "hidden"}`}>
@@ -134,7 +133,7 @@ const AboutThePage = ({ packageData }) => {
 	);
 };
 
-const Dayplan = ({ reverse, packageData}) => {
+const Dayplan = ({ reverse, packageData }) => {
 	return (
 		<div>
 			<div className="bg-light-gray py-40">

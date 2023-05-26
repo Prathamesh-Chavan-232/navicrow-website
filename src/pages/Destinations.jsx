@@ -5,10 +5,11 @@ import { Footer } from "../components/footer/Footer";
 import { TravelStyleCards } from "../components/TravelStyleCards";
 import { FloatingButton } from "../components/utlis/FloatingButton";
 import { CharDhamPackages } from "../components/CharDhamPackages";
+import { DoDhamPackages } from "../components/DoDhamPackages";
 import { motion as m } from "framer-motion";
 import { useState } from "react";
 
-export const Destinations = () => {
+export const Destinations = ({title}) => {
 	const [floating, setFloating] = useState(true);
 
 	function toggleFloating() {
@@ -32,7 +33,7 @@ export const Destinations = () => {
 					/>
 				</div>
 				<WhyUs />
-        <CharDhamPackages />
+        {title === "Chardham" ? <CharDhamPackages /> : <DoDhamPackages />}
 				{/* Section 2 - About us (Why Navicrow?) */}
 
 				{/* Section 3 - grid */}

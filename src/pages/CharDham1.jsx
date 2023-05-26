@@ -7,7 +7,7 @@ import { Footer } from "../components/footer/Footer";
 import { Main } from "../components/Main";
 import charDhamTemple from "../assets/landscapes/char-dham-1.jpg";
 import { useState } from "react";
-import { charDhamPackage1 } from "../data";
+import { charDhamPackage1 as packageData } from "../data";
 
 export const CharDham1 = () => {
 	const [floating, setFloating] = useState(true);
@@ -21,16 +21,16 @@ export const CharDham1 = () => {
 			<div className="travel-package">
 				<Header clr="white" toggleFloating={toggleFloating} />
 				<Main
-					heading={`${charDhamPackage1.duration} DAY-TRIP`}
-					title={charDhamPackage1.title}
-					price={`₹ ${charDhamPackage1.price} /-`}
+					heading={`${packageData.duration} DAY-TRIP`}
+					title={packageData.title}
+					price={`₹ ${packageData.price} /-`}
 				/>
 			</div>
 
 			{/* Section - About the Trip */}
-			<AboutThePage packageData={charDhamPackage1} />
+			<AboutThePage packageData={packageData} />
 			{/* Day wise */}
-			<Dayplan packageData={charDhamPackage1} reverse={false} />
+			<Dayplan packageData={packageData} reverse={false} />
 			<img src={charDhamTemple} alt="" className="lg:hidden" />
 			<div className="hidden main-img h-screen lg:block">
 				<img
@@ -40,7 +40,7 @@ export const CharDham1 = () => {
 				/>
 			</div>
 			{/* Section - About the Trip */}
-			<Dayplan packageData={charDhamPackage1} reverse={true} />
+			<Dayplan packageData={packageData} reverse={true} />
 			<div className="hidden main-img h-screen lg:block">
 				<img
 					src={charDhamTemple}
@@ -48,7 +48,7 @@ export const CharDham1 = () => {
 					className="absolute left-1/2 w-[600px]"
 				/>
 			</div>
-			<Dayplan packageData={charDhamPackage1} reverse={false} />
+			<Dayplan packageData={packageData} reverse={false} />
 			<TravelStyleCards />
 			<WhyUs />
 			<div className={`${floating ? "block" : "hidden"}`}>
@@ -65,9 +65,7 @@ const AboutThePage = ({ packageData }) => {
 			<div className="px-20 space-y-20 text-white">
 				<div className="flex flex-col text-center">
 					<span className="font-medium">OVERVIEW</span>
-					<h1 className="font-fancy text-5xl lg:text-6xl">
-						{packageData.title}
-					</h1>
+					<h1 className="font-fancy text-6xl">{packageData.title}</h1>
 				</div>
 				<div className="flex flex-col gap-12 items-center justify-center xl:gap-64 xl:flex-row">
 					<div className="max-w-[400px]">
