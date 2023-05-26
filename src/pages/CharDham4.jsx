@@ -7,30 +7,33 @@ import { Footer } from "../components/footer/Footer";
 import { Main } from "../components/Main";
 import charDhamTemple from "../assets/landscapes/char-dham-1.jpg";
 import { useState } from "react";
-import { charDhamPackage1 } from "../data";
+import { charDhamPackage1 as packageData } from "../data";
+import Aos from "aos";
+import { useEffect } from "react";
 
 export const CharDham4 = () => {
+  
 	const [floating, setFloating] = useState(true);
 
 	function toggleFloating() {
 		setFloating(!floating);
-	}
+  }
 	return (
 		<div className="">
 			{/* Section 1 - Navbar + Hero */}
 			<div className="travel-package">
 				<Header clr="white" toggleFloating={toggleFloating} />
 				<Main
-					heading={`${charDhamPackage1.duration} DAY-TRIP`}
-					title={charDhamPackage1.title}
-					price={`₹ ${charDhamPackage1.price} /-`}
+					heading={`${packageData.duration} DAY-TRIP`}
+					title={packageData.title}
+					price={`₹ ${packageData.price} /-`}
 				/>
 			</div>
 
 			{/* Section - About the Trip */}
-			<AboutThePage packageData={charDhamPackage1} />
+			<AboutThePage packageData={packageData} />
 			{/* Day wise */}
-			<Dayplan packageData={charDhamPackage1} reverse={false} />
+			<Dayplan anim="zoom-in" packageData={packageData} reverse={false} />
 			<img src={charDhamTemple} alt="" className="lg:hidden" />
 			<div className="hidden main-img h-screen lg:block">
 				<img
@@ -40,7 +43,7 @@ export const CharDham4 = () => {
 				/>
 			</div>
 			{/* Section - About the Trip */}
-			<Dayplan packageData={charDhamPackage1} reverse={true} />
+			<Dayplan anim="zoom-out" packageData={packageData} reverse={true} />
 			<div className="hidden main-img h-screen lg:block">
 				<img
 					src={charDhamTemple}
@@ -48,7 +51,7 @@ export const CharDham4 = () => {
 					className="absolute left-1/2 w-[600px]"
 				/>
 			</div>
-			<Dayplan packageData={charDhamPackage1} reverse={false} />
+			<Dayplan anim="zoom-in" packageData={packageData} reverse={false} />
 			<TravelStyleCards />
 			<WhyUs />
 			<div className={`${floating ? "block" : "hidden"}`}>
@@ -60,12 +63,16 @@ export const CharDham4 = () => {
 };
 
 const AboutThePage = ({ packageData }) => {
+  useEffect(()=> {
+    Aos.init({duration:1200})
+  },[])
+
 	return (
 		<div className="bg-olive-green space-y-20 py-20 overflow-x-hidden">
 			<div className="px-20 space-y-20 text-white">
 				<div className="flex flex-col text-center">
 					<span className="font-medium">OVERVIEW</span>
-					<h1 className="font-fancy text-6xl">{packageData.title}</h1>
+					<h1 data-aos="zoom-in" className="font-fancy text-6xl">{packageData.title}</h1>
 				</div>
 				<div className="flex flex-col gap-12 items-center justify-center xl:gap-64 xl:flex-row">
 					<div className="max-w-[400px]">
@@ -95,7 +102,7 @@ const AboutThePage = ({ packageData }) => {
 				</div>
 				<div>
 					<div className="flex flex-col gap:20 xl:gap-32 xl:flex-row xl:justify-center xl:items-center">
-						<div className="flex flex-col gap-6 xl:max-w-md">
+						<div data-aos="fade-right" className="flex flex-col gap-6 xl:max-w-md">
 							<span className="text-xs font-medium">HIGHLIGHTS</span>
 							<h1 className="text-4xl font-fancy">Trip Highlights</h1>
 							<ul className="space-y-4">
@@ -108,7 +115,7 @@ const AboutThePage = ({ packageData }) => {
 								})}
 							</ul>
 						</div>
-						<div className="flex flex-col gap-6 xl:max-w-md">
+						<div data-aos="fade-up" className="flex flex-col gap-6 xl:max-w-md">
 							<span className="text-xs font-medium">HIGHLIGHTS</span>
 							<h1 className="text-4xl font-fancy">What's Included</h1>
 							<ul className="space-y-4">
@@ -117,7 +124,7 @@ const AboutThePage = ({ packageData }) => {
 								})}
 							</ul>
 						</div>
-						<div className="flex flex-col gap-6 xl:max-w-md">
+						<div data-aos="fade-left" className="flex flex-col gap-6 xl:max-w-md">
 							<span className="text-xs font-medium">HIGHLIGHTS</span>
 							<h1 className="text-4xl font-fancy">What's Excluded</h1>
 							<ul className="space-y-4">
@@ -133,7 +140,10 @@ const AboutThePage = ({ packageData }) => {
 	);
 };
 
-const Dayplan = ({ reverse, packageData}) => {
+const Dayplan = ({ reverse,anim, packageData }) => {
+  useEffect(()=> {
+    Aos.init({duration:1200})
+  },[])
 	return (
 		<div>
 			<div className="bg-light-gray py-40">
@@ -143,11 +153,11 @@ const Dayplan = ({ reverse, packageData}) => {
 						reverse ? "lg:flex-row-reverse" : "lg:flex-row"
 					} `}
 				>
-					<div className="text-center lg:text-left max-w-[20rem]">
+					<div data-aos={anim} className="text-center lg:text-left max-w-[20rem]">
 						<span>Days 1 - 4</span>
 						<h1 className="font-fancy text-6xl">
 							<span className="font-light italic">Haridwar </span>to Barkot
-						</h1>
+              </h1>
 					</div>
 					<div className="flex flex-col gap-4 max-w-[30rem] text-xl">
 						<p>

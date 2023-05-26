@@ -6,6 +6,7 @@ import { TravelStyleCards } from "../components/TravelStyleCards";
 import { FloatingButton } from "../components/utlis/FloatingButton";
 import { Main } from "../components/Main";
 import { useState } from "react";
+import {CharDhamPackages} from "../components/CharDhamPackages"
 
 export const TravelStyles = () => {
 	const [floating, setFloating] = useState(true);
@@ -25,6 +26,7 @@ export const TravelStyles = () => {
 			</div>
 			<div></div>
 			{/* Section 2 - About us (Why Niarra?) */}
+      <CharDhamPackages />
 			<TravelStyleCards />
 			<WhyUs />
 			<div className={`${floating ? "block" : "hidden"}`}>
