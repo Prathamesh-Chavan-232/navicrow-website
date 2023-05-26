@@ -10,9 +10,6 @@ export const Main = ({ heading, title, price = "" }) => {
 						{title}
 					</h1>
 					<div className="flex flex-col text-xl text-center font-fancy">
-						<span className={`${price === "" ? "hidden" : "block"} `}>
-							FROM
-						</span>
 						<h1 className="font-fancy">{price}</h1>
 					</div>
 				</div>

@@ -24,34 +24,10 @@ function App() {
 				<AnimatePresence mode={"wait"}>
 					<Routes location={location} key={location.pathname}>
 						<Route index element={<Home />} />
-						<Route path="/package" element={<Package />} />
-						<Route
-							exact
-							path="/destinations/char-dham"
-							element={<Destinations />}
-						/>
+						<Route exact path="/package/:id" element={<Package />} />
+						<Route exact path="/destinations/:id" element={<Destinations />} />
 						<Route exact path="/travel-styles/:id" element={<TravelStyles />} />
-						{/* <Route
-							exact
-							path="/travel-styles/hill-stations"
-							element={<ComingSoon />}
-						/>
-						<Route
-							exact
-							path="/travel-styles/honeymoons"
-							element={<ComingSoon />}
-						/>
-						<Route
-							exact
-							path="/travel-styles/home-stay"
-							element={<ComingSoon />}
-						/>
-						<Route
-							exact
-							path="/travel-styles/pilgrimage-tour"
-							element={<TravelStyles />}
-						/> */}
-						<Route path="/about" element={<About />} />
+						<Route exact path="/about" element={<About />} />
 					</Routes>
 				</AnimatePresence>
 			</BrowserRouter>

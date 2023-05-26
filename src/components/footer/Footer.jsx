@@ -27,13 +27,13 @@ export const Footer = () => {
 									<a href="/destinations/char-dham">Char Dham</a>
 								</p>
 								<p className="font-fancy text-2xl hover:text-light-green">
-									<a href="/destinations/char-dham">Do Dham</a>
+									<a href="/destinations/do-dham">Do Dham</a>
 								</p>
 								<p className="font-fancy text-2xl hover:text-light-green">
-									<a href="/destinations/char-dham">Kedarnath</a>
+									<a href="/destinations/kedarnath">Kedarnath</a>
 								</p>
 								<p className="font-fancy text-2xl hover:text-light-green">
-									<a href="/package">Packages</a>
+									<a href="/package/char-dham">Packages</a>
 								</p>
 							</div>
 						</div>
