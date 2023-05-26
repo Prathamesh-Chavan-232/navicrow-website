@@ -1,10 +1,11 @@
-import { motion as m } from "framer-motion";
 import { Header } from "../components/navbar/Header";
 import { Main } from "../components/Main";
 import { WhyUs } from "../components/WhyUs";
 import { Footer } from "../components/footer/Footer";
 import { TravelStyleCards } from "../components/TravelStyleCards";
 import { FloatingButton } from "../components/utlis/FloatingButton";
+import { CharDhamPackages } from "../components/CharDhamPackages";
+import { motion as m } from "framer-motion";
 import { useState } from "react";
 
 export const Destinations = () => {
@@ -30,8 +31,9 @@ export const Destinations = () => {
 						title="Char Dham"
 					/>
 				</div>
-				{/* Section 2 - About us (Why Navicrow?) */}
 				<WhyUs />
+        <CharDhamPackages />
+				{/* Section 2 - About us (Why Navicrow?) */}
 
 				{/* Section 3 - grid */}
 				{/* Section 4 - Travel Styles */}

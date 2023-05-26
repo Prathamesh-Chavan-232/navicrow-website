@@ -14,7 +14,6 @@ import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { AnimatePresence } from "framer-motion";
 import { TravelStyles } from "./pages/TravelStyles";
-import { Packages } from "./components/Packages";
 import { CharDham1 } from "./pages/CharDham1";
 import { CharDham2 } from "./pages/CharDham2";
 import { CharDham3 } from "./pages/CharDham3";
@@ -31,7 +30,6 @@ function App() {
 				<AnimatePresence mode={"wait"}>
 					<Routes location={location} key={location.pathname}>
 						<Route index element={<Home />} />
-						<Route exact path="/packages" element={<Packages />} />
 						<Route
 							exact
 							path="/package/chardham-via-haridwar"
