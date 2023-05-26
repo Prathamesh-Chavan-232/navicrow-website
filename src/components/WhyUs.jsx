@@ -6,11 +6,11 @@ import icon1 from "../assets/logos/map.png"
 import icon2 from '../assets/logos/world-health-day.png'
 import icon3 from '../assets/logos/people.png'
 
-const BulletPoint = ({ icon, title, subtitle }) => {
+const BulletPoint = ({ icon, title, subtitle, clr}) => {
   return (
     <div className="w-full flex gap-6 items-center justify-between md:justify-around xl:gap-0 xl:flex-col xl:items-center">
         <img src={icon} alt="" className="w-10 h-10"/> 
-      <div className="flex flex-col w-72 md:w-[400px] xl:w-72 xl:text-center"> 
+      <div className="flex flex-col gap-4 w-72 md:w-[600px] xl:w-72 xl:text-center"> 
         <h1 className="font-fancy text-4xl">{title}</h1>
         <p className="lg:text-xl">{subtitle}</p>
       </div>
@@ -39,8 +39,8 @@ export const WhyUs = ({ clr }) => {
 				<h2 className="text-lg">WHAT MAKES US DIFFERENT</h2>
 				<h2 className="text-6xl font-fancy" data-aos="fade-down">Why Navicrow</h2>
 			</div>
-			<div className="w-full flex flex-col-reverse gap-10 justify-between xxl:justify-around xl:flex-row xl:gap-0">
-				<div className="md:px-20 flex flex-col gap-6 xl:gap-32 text-left xl:px-0">
+			<div className="w-full flex flex-col-reverse gap-10 justify-around xl:flex-row xl:gap-0">
+				<div className="md:px-20 flex flex-col gap-8 xl:gap-32 text-left xl:px-0">
 					<div data-aos="fade-right" className="flex"> 
 						<BulletPoint
               icon={icon1}
@@ -49,9 +49,10 @@ export const WhyUs = ({ clr }) => {
 								"Creating your trip is entirely collaborative and our Travel Researchers are here for every step."
 							}
 						/>
+            
+						<div className="w-[400px] hidden xl:block"></div>
 					</div>
 					<div data-aos="fade-right" className="flex">
-						<div className="w-[200px] hidden xl:block"></div>
 						<BulletPoint
               icon={icon2}
 							title={"Positive Impact"}
@@ -59,6 +60,7 @@ export const WhyUs = ({ clr }) => {
 								"Curated sustainable experiences and accommodation that maximize the benefits to local people and place."
 							}
 						/>
+						<div className="w-[200px] hidden xl:block"></div>
 					</div>
 					<div data-aos="fade-right" className="flex">
 						<div className="w-[600px] hidden xl:block"></div>
@@ -76,7 +78,7 @@ export const WhyUs = ({ clr }) => {
 					alt=""
 					className="hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-96 xl:block"
 				/>
-				<div className="md:px-20 flex flex-col gap-3 md:text-2xl xl:text-lg text-left xl:px-0 xl:w-96">
+				<div className="md:px-20 flex flex-col gap-3 text-xl sm:text-2xl xl:text-lg text-left xl:px-0 xl:w-96">
 					<p className="">
 						Navicrow Travels is an innovative tour and travel company, offering
 						unique travel and holiday experiences. Our passion lies in
