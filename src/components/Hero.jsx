@@ -5,7 +5,7 @@ export const Hero = () => {
 				<div className="pb-8 text-lg text-center">
 					CONNECTING YOUR JOURNEY WITH PURPOSE
 				</div>
-				<h1 className="xl:px-56 text-4xl font-fancy text-center md:text-7xl lg:text-center">
+				<h1 className="xl:px-56 text-5xl sm:text-6xl font-fancy text-center md:text-7xl lg:text-center">
 					Unforgettable travel experiences with a{" "}
 					<span className="font-fancy italic font-thin">positive</span> impact
 				</h1>

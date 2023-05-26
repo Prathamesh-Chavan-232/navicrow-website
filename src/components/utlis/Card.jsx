@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 export const Card = ({ img, title, subtitle, link, isCenter = false }) => {
 	return (
-		<div className="w-96 flex flex-col gap-4 items-center">
+		<div className="min-w-[300px] max-w-[400px] flex flex-col gap-4 items-center">
 			{isCenter && (
 				<div className="p-4 bg-light-gray flex flex-col gap-8 text-center">
 					<span className="text-sm">TRAVEL IN STYLE</span>
