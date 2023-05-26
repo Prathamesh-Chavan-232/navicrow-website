@@ -7,7 +7,7 @@ export const CharDhamPackages = () => {
 	return (
 		<div className="py-10 px-6 bg-light-gray text-black">
 
-			<div className="flex flex-col gap-12 items-center justify-center xl:flex-row"> 
+			<div className="flex flex-col gap-12 items-center justify-center"> 
 				{/*  Desktop Travel Style Cards */}
 				<div>
 					<h1 className="text-4xl font-fancy">
