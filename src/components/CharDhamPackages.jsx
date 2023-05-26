@@ -5,15 +5,15 @@ import img2 from "../assets/landscapes/travel-style-1.jpg";
 import img3 from "../assets/landscapes/mountains-4.jpg";
 export const CharDhamPackages = () => {
 	return (
-		<div className="py-10 pl-20 bg-light-gray text-black">
-			<div className="flex items-center justify-around">
+		<div className="py-10 xl:pl-20 bg-light-gray text-black overflow-x-scroll">
+			<div className="flex flex-col gap-12 items-center justify-around">
 				<div>
 					<h1 className="text-4xl font-fancy">
-						Browse Our {<br />} Best Packages
+						Browse Our Best Packages
 					</h1>
 				</div>
 				{/*  Desktop Travel Style Cards */}
-				<div className="hidden items-center justify-center gap-16 xl:flex">
+				<div className="flex flex-col items-center justify-center gap-16">
 					{/* Card 1 */}
 					<Card
 						img={img}
