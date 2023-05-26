@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import elephant from "../assets/animals/elephant-2.webp";
+import Aos from "aos";
+import "aos/dist/aos.css"
 const BulletPoint = ({ icon, title, subtitle }) => {
 	return (
 		<div className="flex flex-col gap-4 xl:w-72">
@@ -9,22 +11,30 @@ const BulletPoint = ({ icon, title, subtitle }) => {
 	);
 };
 export const WhyUs = ({ clr }) => {
+
+  useEffect(
+    ( )=> {
+      Aos.init({duration: 600
+      })
+      
+    },[]
+  )
 	return (
 		<div
 			className={`${
 				clr === "green"
 					? "bg-olive-green text-white "
 					: "bg-light-gray text-black "
-			} relative px-4 py-20 flex flex-col items-center justify-center gap-8 text-center xl:px-12`}
+			} h-screen w-screen relative px-4 py-20 flex flex-col items-center justify-center gap-8 text-center xl:px-12`}
 		>
 			{/* Why niarra & Elephant */}
 			<div className="flex flex-col gap-4">
 				<h2 className="text-lg">WHAT MAKES US DIFFERENT</h2>
-				<h2 className="text-6xl font-fancy">Why Navicrow</h2>
+				<h2 className="text-6xl font-fancy" data-aos="fade-down">Why Navicrow</h2>
 			</div>
 			<div className="w-full flex flex-col-reverse gap-10 justify-around xl:flex-row xl:gap-0">
 				<div className="md:px-20 flex flex-col gap-6 xl:gap-20 text-left xl:px-0">
-					<div className="flex">
+					<div data-aos="fade-right" className="flex"> 
 						<div className="w-[100px] hidden xl:block"></div>
 						<BulletPoint
 							title={"Unforgettable experiences"}
@@ -33,7 +43,7 @@ export const WhyUs = ({ clr }) => {
 							}
 						/>
 					</div>
-					<div className="flex">
+					<div data-aos="fade-right" className="flex">
 						<div className="w-[200px] hidden xl:block"></div>
 						<BulletPoint
 							title={"Positive Impact"}
@@ -42,7 +52,7 @@ export const WhyUs = ({ clr }) => {
 							}
 						/>
 					</div>
-					<div className="flex">
+					<div data-aos="fade-right" className="flex">
 						<div className="w-[400px] hidden xl:block"></div>
 						<BulletPoint
 							title={"Fairness and Transparency"}

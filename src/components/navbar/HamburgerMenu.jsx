@@ -119,7 +119,7 @@ export const HamburgerMenu = ({ toggleFloating }) => {
 
 								{/* Row */}
 								<TextField
-									label={"Number of Travelers (required)"}
+									label={"Number of Travelers"}
 									placeholder={"Enter the number of travelers"}
 								/>
 							</div>
@@ -150,7 +150,7 @@ export const HamburgerMenu = ({ toggleFloating }) => {
 
 								{/* Row */}
 								<TextField
-									label={"Number of Travelers (required)"}
+									label={"Number of Travelers"}
 									placeholder={"Enter the number of travelers"}
 								/>
 							</div>

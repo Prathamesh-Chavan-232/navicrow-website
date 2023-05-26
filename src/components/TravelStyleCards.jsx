@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Card } from "./utlis/Card";
 import travelCard1 from "../assets/landscapes/mountains-5.jpg";
 import travelCard3 from "../assets/landscapes/mountains-4.jpg";
 import travelCard2 from "../assets/landscapes/travel-style-1.jpg";
 
+import Aos from "aos";
+import "aos/dist/aos.css"
 export const TravelStyleCards = () => {
+  useEffect(()=> {
+      
+  })
 	return (
 		<div className="text-black">
 			<div className="px-6 conic">
