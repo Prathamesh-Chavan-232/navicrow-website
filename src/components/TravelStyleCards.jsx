@@ -1,22 +1,20 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
 import { Card } from "./utlis/Card";
 import travelCard1 from "../assets/landscapes/mountains-5.jpg";
 import travelCard3 from "../assets/landscapes/mountains-4.jpg";
 import travelCard2 from "../assets/landscapes/travel-style-1.jpg";
-
 import Aos from "aos";
-import "aos/dist/aos.css"
+
 export const TravelStyleCards = () => {
   useEffect(()=> {
-      
+    Aos.init({duration: 600}) 
   })
 	return (
 		<div className="text-black">
 			<div className="px-6 conic">
 				<div className="py-24 flex flex-col items-center font-medium gap-10">
 					<span className="xl:hidden">TRAVEL IN STYLE</span>
-					<span className="xl:hidden text-center font-fancy text-4xl lg:text-7xl">
+					<span data-aos="fade" className="xl:hidden text-center font-fancy text-4xl lg:text-7xl">
 						Find Travel Inspiration by{" "}
 						<span className="font-normal italic">style</span>
 					</span>
@@ -29,7 +27,7 @@ export const TravelStyleCards = () => {
 							</span>
 							<img src={travelCard1} alt="" />
 						</div>
-						<span className="text-xl text-center lg:text-3xl">
+						<span data-aos="fade" className="text-xl text-center lg:text-3xl">
 							Embark on a transformative spiritual journey with our immersive
 							pilgrimage travel style package.
 						</span>

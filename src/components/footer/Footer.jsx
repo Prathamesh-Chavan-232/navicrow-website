@@ -1,8 +1,7 @@
 import { ContactForm } from "./ContactForm";
 import { CallUs } from "./CallUs";
-import { RotatingBorder } from "../utlis/RotatingBorder";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
+import Aos from "aos";
 export const Footer = () => {
 	return (
 		<div id="footer" className="z-0 mt-auto text-white">
