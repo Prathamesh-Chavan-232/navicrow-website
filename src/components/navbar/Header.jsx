@@ -13,7 +13,7 @@ import { NavMenu } from "./NavMenu";
 import { destinations, travelStyles, about } from "/src/data.js";
 
 // Customn styles
-import logo from "../../assets/NH.png";
+import logo from "../../assets/NH-logo.png";
 import "/src/styles/nav.css";
 
 export function Header({ clr, toggleFloating }) {
@@ -99,7 +99,7 @@ const Navbar = ({ clr, toggleFloating }) => {
 				<div className="flex items-center justify-between">
 					{/* Logo */}
 					<a href="/">
-						<img src={logo} alt="" className="h-14 w-14" />
+						<img src={logo} alt="" className="h-20 w-20" />
 					</a>
 					{/* nav links */}
 					<div className="hidden space-x-16 lg:flex font-medium text-sm">

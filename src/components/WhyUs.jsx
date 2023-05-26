@@ -3,11 +3,14 @@ import elephant from "../assets/animals/elephant-2.webp";
 import Aos from "aos";
 import "aos/dist/aos.css"
 import icon1 from "../assets/logos/map.png"
+import icon2 from '../assets/logos/world-health-day.png'
+import icon3 from '../assets/logos/people.png'
+
 const BulletPoint = ({ icon, title, subtitle }) => {
   return (
-    <div className="w-full px-10 flex gap-6 items-center justify-between md:justify-around xl:gap-0 xl:justiy-start">
-        <img src={icon1} alt="" className="w-10 h-10"/> 
-      <div className="flex flex-col w-72 md:w-[400px] xl:w-72"> 
+    <div className="w-full flex gap-6 items-center justify-between md:justify-around xl:gap-0 xl:flex-col xl:items-center">
+        <img src={icon} alt="" className="w-10 h-10"/> 
+      <div className="flex flex-col w-72 md:w-[400px] xl:w-72 xl:text-center"> 
         <h1 className="font-fancy text-4xl">{title}</h1>
         <p className="lg:text-xl">{subtitle}</p>
       </div>
@@ -36,10 +39,9 @@ export const WhyUs = ({ clr }) => {
 				<h2 className="text-lg">WHAT MAKES US DIFFERENT</h2>
 				<h2 className="text-6xl font-fancy" data-aos="fade-down">Why Navicrow</h2>
 			</div>
-			<div className="w-full flex flex-col-reverse gap-10 justify-around xl:flex-row xl:gap-0">
-				<div className="md:px-20 flex flex-col gap-6 xl:gap-20 text-left xl:px-0">
+			<div className="w-full flex flex-col-reverse gap-10 justify-between xxl:justify-around xl:flex-row xl:gap-0">
+				<div className="md:px-20 flex flex-col gap-6 xl:gap-32 text-left xl:px-0">
 					<div data-aos="fade-right" className="flex"> 
-						<div className="w-[100px] hidden xl:block"></div>
 						<BulletPoint
               icon={icon1}
 							title={"Unforgettable experiences"}
@@ -51,6 +53,7 @@ export const WhyUs = ({ clr }) => {
 					<div data-aos="fade-right" className="flex">
 						<div className="w-[200px] hidden xl:block"></div>
 						<BulletPoint
+              icon={icon2}
 							title={"Positive Impact"}
 							subtitle={
 								"Curated sustainable experiences and accommodation that maximize the benefits to local people and place."
@@ -58,8 +61,9 @@ export const WhyUs = ({ clr }) => {
 						/>
 					</div>
 					<div data-aos="fade-right" className="flex">
-						<div className="w-[400px] hidden xl:block"></div>
+						<div className="w-[600px] hidden xl:block"></div>
 						<BulletPoint
+              icon={icon3}
 							title={"Fairness and Transparency"}
 							subtitle={
 								"An open, competitive pricing structure that ensures more money goes to where it's needed in the destination."
