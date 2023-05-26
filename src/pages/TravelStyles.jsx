@@ -3,7 +3,7 @@ import { Header } from "../components/navbar/Header";
 import { Footer } from "../components/footer/Footer";
 import { WhyUs } from "../components/WhyUs";
 import { TravelStyleCards } from "../components/TravelStyleCards";
-import { FloatingButton } from "../components/FloatingButton";
+import { FloatingButton } from "../components/utlis/FloatingButton";
 import { Main } from "../components/Main";
 import { useState } from "react";
 

@@ -2,7 +2,7 @@ import React from "react";
 import { Header } from "../components/navbar/Header";
 import { TravelStyleCards } from "../components/TravelStyleCards";
 import { WhyUs } from "../components/WhyUs";
-import { FloatingButton } from "../components/FloatingButton";
+import { FloatingButton } from "../components/utlis/FloatingButton";
 import { Footer } from "../components/footer/Footer";
 import { useState } from "react";
 import { Main } from "../components/Main";

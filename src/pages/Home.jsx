@@ -4,7 +4,7 @@ import { Hero } from "../components/Hero";
 import { Carousel } from "../components/Carousel";
 import { TravelStyleCards } from "../components/TravelStyleCards";
 import { WhyUs } from "../components/WhyUs";
-import { FloatingButton } from "../components/FloatingButton";
+import { FloatingButton } from "../components/utlis/FloatingButton";
 import { motion as m } from "framer-motion";
 import { useState } from "react";
 

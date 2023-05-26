@@ -4,7 +4,7 @@ import { Main } from "../components/Main";
 import { WhyUs } from "../components/WhyUs";
 import { Footer } from "../components/footer/Footer";
 import { TravelStyleCards } from "../components/TravelStyleCards";
-import { FloatingButton } from "../components/FloatingButton";
+import { FloatingButton } from "../components/utlis/FloatingButton";
 import { useState } from "react";
 
 export const Destinations = () => {

@@ -30,12 +30,8 @@ function App() {
 							path="/destinations/char-dham"
 							element={<Destinations />}
 						/>
-						<Route
-							exact
-							path="/travel-styles/family-travel"
-							element={<TravelStyles />}
-						/>
-						<Route
+						<Route exact path="/travel-styles/:id" element={<TravelStyles />} />
+						{/* <Route
 							exact
 							path="/travel-styles/hill-stations"
 							element={<ComingSoon />}
@@ -54,7 +50,7 @@ function App() {
 							exact
 							path="/travel-styles/pilgrimage-tour"
 							element={<TravelStyles />}
-						/>
+						/> */}
 						<Route path="/about" element={<About />} />
 					</Routes>
 				</AnimatePresence>
