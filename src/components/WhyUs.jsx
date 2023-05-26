@@ -25,7 +25,7 @@ export const WhyUs = ({ clr }) => {
 				clr === "green"
 					? "bg-olive-green text-white "
 					: "bg-light-gray text-black "
-			} h-screen w-screen relative px-4 py-20 flex flex-col items-center justify-center gap-8 text-center xl:px-12`}
+			} relative px-4 py-20 lg:py-64 flex flex-col items-center justify-center gap-8 text-center xl:px-12`}
 		>
 			{/* Why niarra & Elephant */}
 			<div className="flex flex-col gap-4">
