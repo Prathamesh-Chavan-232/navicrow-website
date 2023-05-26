@@ -14,8 +14,15 @@ import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { AnimatePresence } from "framer-motion";
 import { TravelStyles } from "./pages/TravelStyles";
-import { Package } from "./pages/Package";
-import { ComingSoon } from "./components/ComingSoon";
+import { Packages } from "./components/Packages";
+import { CharDham1 } from "./pages/CharDham1";
+import { CharDham2 } from "./pages/CharDham2";
+import { CharDham3 } from "./pages/CharDham3";
+import { CharDham4 } from "./pages/CharDham4";
+import { DoDham1 } from "./pages/DoDham1";
+import { DoDham2 } from "./pages/DoDham2";
+import { DoDham3 } from "./pages/DoDham3";
+import { DoDham4 } from "./pages/DoDham4";
 
 function App() {
 	return (
@@ -24,7 +31,47 @@ function App() {
 				<AnimatePresence mode={"wait"}>
 					<Routes location={location} key={location.pathname}>
 						<Route index element={<Home />} />
-						<Route exact path="/package/:id" element={<Package />} />
+						<Route exact path="/packages" element={<Packages />} />
+						<Route
+							exact
+							path="/package/char-dham-via-hardiwar"
+							element={<CharDham1 />}
+						/>
+						<Route
+							exact
+							path="/package/char-dham-via-delhi"
+							element={<CharDham2 />}
+						/>
+						<Route
+							exact
+							path="/package/char-dham-via-chopta"
+							element={<CharDham3 />}
+						/>
+						<Route
+							exact
+							path="/package/char-dham-via-helicopter"
+							element={<CharDham4 />}
+						/>
+						<Route
+							exact
+							path="/package/do-dham-via-hardiwar"
+							element={<DoDham1 />}
+						/>
+						<Route
+							exact
+							path="/package/do-dham-via-delhi"
+							element={<DoDham2 />}
+						/>
+						<Route
+							exact
+							path="/package/do-dham-via-chopta"
+							element={<DoDham3 />}
+						/>
+						<Route
+							exact
+							path="/package/do-dham-via-helicopter"
+							element={<DoDham4 />}
+						/>
 						<Route exact path="/destinations/:id" element={<Destinations />} />
 						<Route exact path="/travel-styles/:id" element={<TravelStyles />} />
 						<Route exact path="/about" element={<About />} />

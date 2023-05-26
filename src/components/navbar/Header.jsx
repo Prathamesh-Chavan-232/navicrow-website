@@ -213,7 +213,7 @@ const Navbar = ({ clr, toggleFloating }) => {
 					<a href="/about" className="hover:text-light-green">
 						About us
 					</a>
-					<a href="/package" className="hover:text-light-green">
+					<a href="/package/char-dham-via-haridwar" className="hover:text-light-green">
 						Packages
 					</a>
 				</div>

@@ -16,11 +16,11 @@ export const Card = ({ img, title, subtitle, link, isCenter = false }) => {
 				>
 					{title}
 				</span>
-				<img src={img} alt="" />
+				<img src={img} alt="" className="h-[600px]" />
 			</div>
 			<span className="text-center text-lg font-thin">{subtitle}</span>
 			<button className="px-10 py-4 border border-olive-green bg-transparent text-2xl text-olive-green rounded-full baseline transition-color duration-200 lg:text-lg lg:px-8 lg:py-3 hover:text-white hover:bg-olive-green">
-				<a href={`/travel-styles/${link}`}>Discover more</a>
+				<a href={link}>Discover more</a>
 			</button>
 		</div>
 	);

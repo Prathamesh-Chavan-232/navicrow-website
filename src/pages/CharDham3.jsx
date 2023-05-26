@@ -1,4 +1,6 @@
-import React from "react";
+
+import React from 'react'
+
 import { Header } from "../components/navbar/Header";
 import { TravelStyleCards } from "../components/TravelStyleCards";
 import { WhyUs } from "../components/WhyUs";
@@ -8,7 +10,8 @@ import { Main } from "../components/Main";
 import charDhamTemple from "../assets/landscapes/char-dham-1.jpg";
 import { useState } from "react";
 import { charDhamPackage1 } from "../data";
-export const Package = () => {
+
+export const CharDham3 = () => {
 	const [floating, setFloating] = useState(true);
 
 	function toggleFloating() {
@@ -29,7 +32,7 @@ export const Package = () => {
 			{/* Section - About the Trip */}
 			<AboutThePage packageData={charDhamPackage1} />
 			{/* Day wise */}
-			<Dayplan />
+			<Dayplan packageData={charDhamPackage1} reverse={false} />
 			<img src={charDhamTemple} alt="" className="lg:hidden" />
 			<div className="hidden main-img h-screen lg:block">
 				<img
@@ -39,8 +42,15 @@ export const Package = () => {
 				/>
 			</div>
 			{/* Section - About the Trip */}
-			<Dayplan reverse={true} />
-			{/* Section 2 - About us (Why Niarra?) */}
+			<Dayplan packageData={charDhamPackage1} reverse={true} />
+			<div className="hidden main-img h-screen lg:block">
+				<img
+					src={charDhamTemple}
+					alt=""
+					className="absolute left-1/2 w-[600px]"
+				/>
+			</div>
+			<Dayplan packageData={charDhamPackage1} reverse={false} />
 			<TravelStyleCards />
 			<WhyUs />
 			<div className={`${floating ? "block" : "hidden"}`}>
@@ -86,7 +96,7 @@ const AboutThePage = ({ packageData }) => {
 					</div>
 				</div>
 				<div>
-					<div className="flex flex-col gap:20 xl:gap-32 xl:flex-row xl:items-center">
+					<div className="flex flex-col gap:20 xl:gap-32 xl:flex-row xl:justify-center xl:items-center">
 						<div className="flex flex-col gap-6 xl:max-w-md">
 							<span className="text-xs font-medium">HIGHLIGHTS</span>
 							<h1 className="text-4xl font-fancy">Trip Highlights</h1>
@@ -125,7 +135,7 @@ const AboutThePage = ({ packageData }) => {
 	);
 };
 
-const Dayplan = ({ reverse }) => {
+const Dayplan = ({ reverse, packageData}) => {
 	return (
 		<div>
 			<div className="bg-light-gray py-40">

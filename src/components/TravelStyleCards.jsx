@@ -40,7 +40,7 @@ export const TravelStyleCards = () => {
 							img={travelCard3}
 							title="Honeymoons"
 							subtitle="Indulge in a blissful honeymoon experience, create cherished memories of love and celebration."
-							link="honeymoons"
+							link="/travel-styles/honeymoons"
 						/>
 						<Card
 							isCenter={true}
@@ -48,14 +48,14 @@ export const TravelStyleCards = () => {
 							title="Pilgrimage"
 							subtitle="
 							Embark on a transformative spiritual journey with our immersive pilgrimage travel style package."
-							link="pilgrimage-tour"
+							link="/travel-styles/pilgrimage-tour"
 						/>
 						<Card
 							img={travelCard1}
 							title="Family Travel"
 							subtitle="
 							Quality time with family and friends, complete flexibility"
-							link="family-travel"
+							link="/travel-styles/family-travel"
 						/>
 					</div>
 				</div>

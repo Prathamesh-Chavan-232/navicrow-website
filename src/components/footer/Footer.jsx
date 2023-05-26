@@ -33,7 +33,7 @@ export const Footer = () => {
 									<a href="/destinations/kedarnath">Kedarnath</a>
 								</p>
 								<p className="font-fancy text-2xl hover:text-light-green">
-									<a href="/package/char-dham">Packages</a>
+									<a href="/package/char-dham-via-haridwar">Packages</a>
 								</p>
 							</div>
 						</div>

@@ -2,7 +2,7 @@ import React from "react";
 import elephant from "../assets/animals/elephant-2.webp";
 const BulletPoint = ({ icon, title, subtitle }) => {
 	return (
-		<div className="flex flex-col gap-4 xl:w-60">
+		<div className="flex flex-col gap-4 xl:w-72">
 			<h1 className="font-fancy text-4xl">{title}</h1>
 			<p className="lg:text-xl">{subtitle}</p>
 		</div>
@@ -25,7 +25,7 @@ export const WhyUs = ({ clr }) => {
 			<div className="w-full flex flex-col-reverse gap-10 justify-around xl:flex-row xl:gap-0">
 				<div className="md:px-20 flex flex-col gap-6 xl:gap-20 text-left xl:px-0">
 					<div className="flex">
-						<div className="w-[50px] hidden xl:block"></div>
+						<div className="w-[100px] hidden xl:block"></div>
 						<BulletPoint
 							title={"Unforgettable experiences"}
 							subtitle={
@@ -34,7 +34,7 @@ export const WhyUs = ({ clr }) => {
 						/>
 					</div>
 					<div className="flex">
-						<div className="w-[100px] hidden xl:block"></div>
+						<div className="w-[200px] hidden xl:block"></div>
 						<BulletPoint
 							title={"Positive Impact"}
 							subtitle={

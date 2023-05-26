@@ -73,7 +73,7 @@ export const about = [
 ];
 
 export const charDhamPackage1 = {
-	title: "Char dham via Haridwar",
+	title: "Chardham via Haridwar",
 	price: 18000,
 	duration: 11,
 	tripHighlights: [
@@ -98,5 +98,9 @@ export const charDhamPackage1 = {
 		"Medical and travel insurance",
 		"Room Heater Charges will be Extra in hotels",
 	],
-	iternary: [],
+	iternary: {
+  
+    "day-1-4": "Haridwar to Uttarakashi",
+    "day-5-6": "Uttarkashi to GuptiKashi",
+  }
 };
