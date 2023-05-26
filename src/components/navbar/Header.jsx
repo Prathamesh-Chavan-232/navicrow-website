@@ -78,7 +78,13 @@ const Navbar = ({ clr, toggleFloating }) => {
 	};
 
 	const toggleMobileMenu = () => {
-		setOpenMobileMenu(!openMobileMenu);
+		if (!openMobileMenu) {
+			setOpenMobileMenu(true);
+			lockScroll();
+		} else {
+			setOpenMobileMenu(false);
+			unlockScroll();
+		}
 	};
 
 	return (

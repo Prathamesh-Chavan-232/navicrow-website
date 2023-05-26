@@ -4,12 +4,18 @@ import { Hero } from "../components/Hero";
 import { Carousel } from "../components/Carousel";
 import { TravelStyleCards } from "../components/TravelStyleCards";
 import { WhyUs } from "../components/WhyUs";
-import { motion as m } from "framer-motion";
 import { FloatingButton } from "../components/FloatingButton";
+import { motion as m } from "framer-motion";
 import { useState } from "react";
 
 export const Home = () => {
 	const [floating, setFloating] = useState(true);
+
+	const getReviews = async () => {
+		const res = await fetch(`${API_URL}`);
+		const data = await res.json();
+		console.log(data);
+	};
 
 	function toggleFloating() {
 		setFloating(!floating);

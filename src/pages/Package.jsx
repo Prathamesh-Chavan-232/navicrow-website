@@ -16,7 +16,7 @@ export const Package = () => {
 		setFloating(!floating);
 	}
 	return (
-		<div>
+		<div className="">
 			{/* Section 1 - Navbar + Hero */}
 			<div className="travel-package">
 				<Header clr="white" toggleFloating={toggleFloating} />
@@ -63,7 +63,8 @@ export const Package = () => {
 			</div>
 			{/* Day wise */}
 			<Dayplan />
-			<div className="flex main-img h-screen">
+			<img src={charDhamTemple} alt="" className="lg:hidden" />
+			<div className="hidden main-img h-screen lg:block">
 				<img
 					src={charDhamTemple}
 					alt=""
