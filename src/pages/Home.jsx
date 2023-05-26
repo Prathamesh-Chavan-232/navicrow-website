@@ -39,7 +39,7 @@ export const Home = () => {
 			<WhyUs clr="green" />
 
 			{/* Packages Card */}
-			<Packages />
+      <CharDhamPackages />
 			{/* Section 3 - Carousel */}
 			<Carousel />
 			{/* Section 4 - Travel Styles */}
