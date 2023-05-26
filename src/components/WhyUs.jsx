@@ -2,13 +2,17 @@ import React, { useEffect } from "react";
 import elephant from "../assets/animals/elephant-2.webp";
 import Aos from "aos";
 import "aos/dist/aos.css"
+import icon1 from "../assets/logos/map.png"
 const BulletPoint = ({ icon, title, subtitle }) => {
-	return (
-		<div className="flex flex-col gap-4 xl:w-72">
-			<h1 className="font-fancy text-4xl">{title}</h1>
-			<p className="lg:text-xl">{subtitle}</p>
-		</div>
-	);
+  return (
+    <div className="w-full px-10 flex gap-6 items-center justify-between md:justify-around xl:gap-0 xl:justiy-start">
+        <img src={icon1} alt="" className="w-10 h-10"/> 
+      <div className="flex flex-col w-72 md:w-[400px] xl:w-72"> 
+        <h1 className="font-fancy text-4xl">{title}</h1>
+        <p className="lg:text-xl">{subtitle}</p>
+      </div>
+    </div>
+    );
 };
 export const WhyUs = ({ clr }) => {
 
@@ -37,6 +41,7 @@ export const WhyUs = ({ clr }) => {
 					<div data-aos="fade-right" className="flex"> 
 						<div className="w-[100px] hidden xl:block"></div>
 						<BulletPoint
+              icon={icon1}
 							title={"Unforgettable experiences"}
 							subtitle={
 								"Creating your trip is entirely collaborative and our Travel Researchers are here for every step."
