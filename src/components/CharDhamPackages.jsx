@@ -1,16 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Card } from "./utlis/Card";
 import img from "../assets/landscapes/char-dham-1.jpg";
 import img2 from "../assets/landscapes/travel-style-1.jpg";
 import img3 from "../assets/landscapes/mountains-4.jpg";
+import Aos from "aos";
+
+
+
 export const CharDhamPackages = () => {
+  useEffect(()=> {
+    Aos.init({duration:1000})
+  })
 	return (
 		<div className="py-10 px-6 bg-light-gray text-black">
 
 			<div className="flex flex-col gap-12 items-center justify-center"> 
 				{/*  Desktop Travel Style Cards */}
 				<div>
-					<h1 className="text-4xl font-fancy">
+					<h1 data-aos="zoom-in-up" className="text-4xl font-fancy">
 						Browse Our Best Packages
 					</h1>
 				</div>

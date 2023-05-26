@@ -4,9 +4,9 @@ import { useEffect } from "react";
 export const Card = ({ img, title, subtitle, link, isCenter = false }) => {
 	useEffect(() => {
 		Aos.init({ duration: 1000 });
-	});
+	},[]);
 	return (
-		<div className="min-w-[300px] max-w-[400px] flex flex-col gap-4 items-center">
+		<div data-aos="fade" className="min-w-[300px] max-w-[400px] flex flex-col gap-4 items-center">
 			{isCenter && (
 				<div className="p-4 bg-light-gray flex flex-col gap-8 text-center">
 					<span className="text-sm">TRAVEL IN STYLE</span>
