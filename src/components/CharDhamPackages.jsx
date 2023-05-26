@@ -32,8 +32,7 @@ export const CharDhamPackages = () => {
 					<Card
 						img={img}
 						title="Chardham via Helicopter"
-						subtitle="
-								Embark on a transformative spiritual journey with our immersive pilgrimage travel style package."
+						subtitle="Embark on a transformative spiritual journey with our immersive pilgrimage travel style package."
 						link="/package/chardham-via-helicopter"
 					/>
 					<Card
