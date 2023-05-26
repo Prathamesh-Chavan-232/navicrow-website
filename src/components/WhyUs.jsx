@@ -1,6 +1,6 @@
 import React from "react";
 import elephant from "../assets/animals/elephant-2.webp";
-import { gsap } from "gsap";
+import gsap from "gsap";
 import { useRef } from "react";
 import { useIntersection } from "react-use";
 export const WhyUs = ({ clr }) => {
@@ -16,7 +16,9 @@ export const WhyUs = ({ clr }) => {
 
 	// Animation for fading in
 	const fadeIn = (element) => {
-		gsap.to(element, 1, {
+		gsap.to(element, {
+			duration: 1,
+			y: 0,
 			opacity: 1,
 			ease: "power4.out",
 			stagger: {
@@ -26,8 +28,8 @@ export const WhyUs = ({ clr }) => {
 	};
 	// Animation for fading out
 	const fadeOut = (element) => {
-		gsap.to(element, 1, {
-			duration: 0.5,
+		gsap.to(element, {
+			duration: 1,
 			opacity: 0,
 			y: -20,
 			ease: "power4.out",
@@ -35,12 +37,13 @@ export const WhyUs = ({ clr }) => {
 	};
 
 	// checking to see when the vieport is visible to the user
-	intersection && intersection.intersectionRatio < 0.2
-		? fadeOut(".fadeIn")
-		: fadeIn(".fadeIn");
+	intersection && intersection.intersectionRatio < 0.5
+		? fadeOut(".fade")
+		: fadeIn(".fade");
 
 	return (
 		<div
+			ref={sectionRef}
 			className={`${
 				clr === "green"
 					? "bg-olive-green text-white "
@@ -48,15 +51,15 @@ export const WhyUs = ({ clr }) => {
 			} relative px-4 py-20 flex flex-col items-center gap-12 text-center lg:px-12 lg:py-40`}
 		>
 			{/* Why niarra & Elephant */}
-			<div className="">
+			<div className="flex flex-col gap-4">
 				<h2 className="text-lg">WHAT MAKES US DIFFERENT</h2>
-				<h2 className="text-6xl font-fancy fadeIn">Why Navicrow</h2>
+				<h2 className="text-6xl font-fancy fade">Why Navicrow</h2>
 			</div>
 			<div className="w-full flex flex-col-reverse items-center gap-10 justify-around lg:flex-row lg:gap-0">
 				<div className="flex flex-col gap-6 lg:gap-20 text-left lg:text-center">
 					<div className="flex">
 						<div className="w-[100px] hidden lg:block"></div>
-						<div className="flex flex-col gap-4 w-72 lg:w-60">
+						<div className="fade flex flex-col gap-4 w-72 lg:w-60">
 							<h1 className="font-fancy text-2xl">Unforgettable experiences</h1>
 							<p>
 								Creating your trip is entirely collaborative and our Travel
@@ -66,7 +69,7 @@ export const WhyUs = ({ clr }) => {
 					</div>
 					<div className="flex">
 						<div className="w-[200px] hidden lg:block"></div>
-						<div className="flex flex-col gap-4 w-60">
+						<div className="fade flex flex-col gap-4 w-60">
 							<h1 className="font-fancy text-2xl">Positive Impact</h1>
 							<p>
 								Curated sustainable experiences and accommodation that maximize
@@ -76,7 +79,7 @@ export const WhyUs = ({ clr }) => {
 					</div>
 					<div className="flex">
 						<div className="w-[400px] hidden lg:block"></div>
-						<div className="flex flex-col gap-4 w-60">
+						<div className="fade flex flex-col gap-4 w-60">
 							<h1 className="font-fancy text-2xl">Fairness and Transparency</h1>
 							<p>
 								An open, competitive pricing structure that ensures more money
