@@ -7,7 +7,7 @@ import { WhyUs } from "../components/WhyUs";
 import { FloatingButton } from "../components/utlis/FloatingButton";
 import { motion as m } from "framer-motion";
 import { useState } from "react";
-import { CharDhamPackages} from "../components/CharDhamPackages"
+import { CharDhamPackages } from "../components/CharDhamPackages";
 
 export const Home = () => {
 	const [floating, setFloating] = useState(true);
@@ -39,7 +39,7 @@ export const Home = () => {
 			<WhyUs clr="green" />
 
 			{/* Packages Card */}
-      <CharDhamPackages />
+			<CharDhamPackages />
 			{/* Section 3 - Carousel */}
 			<Carousel />
 			{/* Section 4 - Travel Styles */}

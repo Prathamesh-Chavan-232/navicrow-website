@@ -1,31 +1,26 @@
 import React, { useEffect } from "react";
 import elephant from "../assets/animals/elephant-2.webp";
 import Aos from "aos";
-import "aos/dist/aos.css"
-import icon1 from "../assets/logos/map.png"
-import icon2 from '../assets/logos/world-health-day.png'
-import icon3 from '../assets/logos/people.png'
+import "aos/dist/aos.css";
+import icon1 from "../assets/logos/map.png";
+import icon2 from "../assets/logos/world-health-day.png";
+import icon3 from "../assets/logos/people.png";
 
-const BulletPoint = ({ icon, title, subtitle, clr}) => {
-  return (
-    <div className="w-full flex gap-6 items-center justify-between md:justify-around xl:gap-0 xl:flex-col xl:items-center">
-        <img src={icon} alt="" className="w-10 h-10"/> 
-      <div className="flex flex-col gap-4 w-72 md:w-[600px] xl:w-72 xl:text-center"> 
-        <h1 className="font-fancy text-4xl">{title}</h1>
-        <p className="lg:text-xl">{subtitle}</p>
-      </div>
-    </div>
-    );
+const BulletPoint = ({ icon, title, subtitle, clr }) => {
+	return (
+		<div className="w-full flex gap-6 items-center justify-between md:justify-around xl:gap-0 xl:flex-col xl:items-center">
+			<img src={icon} alt="" className="w-10 h-10" />
+			<div className="flex flex-col gap-4 w-72 md:w-[600px] xl:w-72 xl:text-center">
+				<h1 className="font-fancy text-4xl">{title}</h1>
+				<p className="lg:text-xl">{subtitle}</p>
+			</div>
+		</div>
+	);
 };
 export const WhyUs = ({ clr }) => {
-
-  useEffect(
-    ( )=> {
-      Aos.init({duration: 600
-      })
-      
-    },[]
-  )
+	useEffect(() => {
+		Aos.init({ duration: 600 });
+	}, []);
 	return (
 		<div
 			className={`${
@@ -37,24 +32,26 @@ export const WhyUs = ({ clr }) => {
 			{/* Why niarra & Elephant */}
 			<div className="flex flex-col gap-4">
 				<h2 className="text-lg">WHAT MAKES US DIFFERENT</h2>
-				<h2 className="text-6xl font-fancy" data-aos="fade-down">Why Navicrow</h2>
+				<h2 className="text-6xl font-fancy" data-aos="fade-down">
+					Why Navicrow
+				</h2>
 			</div>
 			<div className="w-full flex flex-col-reverse gap-10 justify-around xl:flex-row xl:gap-0">
 				<div className="md:px-20 flex flex-col gap-8 xl:gap-32 text-left xl:px-0">
-					<div data-aos="fade-right" className="flex"> 
+					<div data-aos="fade-right" className="flex">
 						<BulletPoint
-              icon={icon1}
+							icon={icon1}
 							title={"Unforgettable experiences"}
 							subtitle={
 								"Creating your trip is entirely collaborative and our Travel Researchers are here for every step."
 							}
 						/>
-            
+
 						<div className="w-[400px] hidden xl:block"></div>
 					</div>
 					<div data-aos="fade-right" className="flex">
 						<BulletPoint
-              icon={icon2}
+							icon={icon2}
 							title={"Positive Impact"}
 							subtitle={
 								"Curated sustainable experiences and accommodation that maximize the benefits to local people and place."
@@ -65,7 +62,7 @@ export const WhyUs = ({ clr }) => {
 					<div data-aos="fade-right" className="flex">
 						<div className="w-[600px] hidden xl:block"></div>
 						<BulletPoint
-              icon={icon3}
+							icon={icon3}
 							title={"Fairness and Transparency"}
 							subtitle={
 								"An open, competitive pricing structure that ensures more money goes to where it's needed in the destination."
