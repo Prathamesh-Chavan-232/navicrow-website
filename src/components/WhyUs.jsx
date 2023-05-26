@@ -5,10 +5,17 @@ import { useRef } from "react";
 import { useIntersection } from "react-use";
 export const WhyUs = ({ clr }) => {
 	// Ref for our element
+	const whyNaviRef = useRef(null);
 	const sectionRef = useRef(null);
 	// All the ref to be observed
 
-	const intersection = useIntersection(sectionRef, {
+	const whynaviAnimation = useIntersection(whyNaviRef, {
+		root: null,
+		rootMargin: "0px",
+		threshold: 0.9,
+	});
+
+	const sectionAnimation = useIntersection(sectionRef, {
 		root: null,
 		rootMargin: "0px",
 		threshold: 0.5,
@@ -18,11 +25,11 @@ export const WhyUs = ({ clr }) => {
 	const fadeIn = (element) => {
 		gsap.to(element, {
 			duration: 1,
-			y: 0,
+			y: -5,
 			opacity: 1,
 			ease: "power4.out",
 			stagger: {
-				amount: 0.3,
+				amount: 1.2,
 			},
 		});
 	};
@@ -37,7 +44,11 @@ export const WhyUs = ({ clr }) => {
 	};
 
 	// checking to see when the vieport is visible to the user
-	intersection && intersection.intersectionRatio < 0.5
+	whynaviAnimation && whynaviAnimation.intersectionRatio < 0.5
+		? fadeOut(".fadeOut")
+		: fadeIn(".fade");
+
+	sectionAnimation && sectionAnimation.intersectionRatio < 0.5
 		? fadeOut(".fade")
 		: fadeIn(".fade");
 
@@ -53,7 +64,7 @@ export const WhyUs = ({ clr }) => {
 			{/* Why niarra & Elephant */}
 			<div className="flex flex-col gap-4">
 				<h2 className="text-lg">WHAT MAKES US DIFFERENT</h2>
-				<h2 className="text-6xl font-fancy fade">Why Navicrow</h2>
+				<h2 className="text-6xl font-fancy">Why Navicrow</h2>
 			</div>
 			<div className="w-full flex flex-col-reverse items-center gap-10 justify-around lg:flex-row lg:gap-0">
 				<div className="flex flex-col gap-6 lg:gap-20 text-left lg:text-center">
