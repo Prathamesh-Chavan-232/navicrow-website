@@ -5,15 +5,16 @@ import "aos/dist/aos.css";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { far } from "@fortawesome/free-regular-svg-icons";
+import { lazy } from "react";
 
 // npm packages
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 
 // Routes
 import { Destinations } from "./pages/Destinations";
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
-import { AnimatePresence } from "framer-motion";
 import { TravelStyles } from "./pages/TravelStyles";
 import { CharDham1 } from "./pages/CharDham1";
 import { CharDham2 } from "./pages/CharDham2";
@@ -23,14 +24,18 @@ import { DoDham1 } from "./pages/DoDham1";
 import { DoDham2 } from "./pages/DoDham2";
 import { DoDham3 } from "./pages/DoDham3";
 import { DoDham4 } from "./pages/DoDham4";
+import { Dev } from "./pages/Dev";
 
 function App() {
 	return (
 		<div className="flex flex-col min-h-screen overflow-x-hidden">
 			<BrowserRouter>
 				<AnimatePresence mode={"wait"}>
+          
 					<Routes location={location} key={location.pathname}>
+            
 						<Route index element={<Home />} />
+            <Route exact path="/dev" element={<Dev />}/>
 						<Route
 							exact
 							path="/package/chardham-via-haridwar"

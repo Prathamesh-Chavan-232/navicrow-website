@@ -165,3 +165,17 @@ h6 {
 	border-radius: 50px;
 	text-align: center;
 }
+
+
+.line {
+  fill: none;
+  stroke: white;
+  stroke-width: 2px;
+}
+text {
+  fill: white;
+  font-size: 15px;
+  font-family: "Signika Negative", sans-serif; 
+  visibility: hidden;
+}
+
