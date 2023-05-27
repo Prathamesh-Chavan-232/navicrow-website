@@ -1,0 +1,340 @@
+{
+	"chardham-via-haridwar": {
+		"title": "Chardham via Haridwar",
+		"price": 18000,
+		"duration": 11,
+		"tripHighlights": [
+			"Yamunotri Dham – Snuggled in Uttarkashi district of Uttarakhand at an altitude of 3,293 m above sea level.",
+			"Gangotri Dham – Perched at an altitude of 3,100 m above sea level, Gangotri temple is situated in Uttarkashi district at a distance of 285 km from Haridwar and 280 km away from Dehradun.",
+			"Kedarnath Dham – Located in the Rudra Himalayan Ranges near Mandakini River, Kedarnath is settled amidst the mountain scape of the Rudraprayag district. From Dehradun, Kedarnath Temple is 274 km and from Haridwar, Kedarnath is around 245 km.",
+			"Badrinath Dham – Snuggled between Nar and Narayan mountain ranges, Badrinath is situated in the Chamoli district. The distance from Badrinath is 300 km and from Haridwar and from Dehradun, Badrinath is 334 km."
+		],
+		"included": [
+			"02 Nights accommodation in hotel in Barkot.",
+			"02 Nights accommodation in hotel in Uttarkashi.",
+			"02 Nights accommodation in hotel in Phata.",
+			"01 Nights accommodation in hotel in Kedarnath.",
+			"02 Nights accommodation in hotel in Pipalkoti.",
+			"Breakfast and Dinner.",
+			"All transfers and sightseeing as per itinerary.",
+			"All applicable fuel, toll taxes, parking fees and driver’s allowances."
+		],
+		"excluded": [
+			"All personal expenses, optional tours and extra meals",
+			"Camera fees, alcoholic/non-alcoholic beverages and starters",
+			"Medical and travel insurance",
+			"Room Heater Charges will be Extra in hotels"
+		],
+		"iternary": ["", "", "", ""]
+	},
+
+	"chardham-via-delhi": {
+		"title": "Chardham via Delhi",
+		"price": 18000,
+		"duration": 11,
+		"tripHighlights": [
+			"Yamunotri Dham – Snuggled in Uttarkashi district of Uttarakhand at an altitude of 3,293 m above sea level.",
+			"Gangotri Dham – Perched at an altitude of 3,100 m above sea level, Gangotri temple is situated in Uttarkashi district at a distance of 285 km from Haridwar and 280 km away from Dehradun.",
+			"Kedarnath Dham – Located in the Rudra Himalayan Ranges near Mandakini River, Kedarnath is settled amidst the mountain scape of the Rudraprayag district. From Dehradun, Kedarnath Temple is 274 km and from Haridwar, Kedarnath is around 245 km.",
+			"Badrinath Dham – Snuggled between Nar and Narayan mountain ranges, Badrinath is situated in the Chamoli district. The distance from Badrinath is 300 km and from Haridwar and from Dehradun, Badrinath is 334 km."
+		],
+		"included": [
+			"02 Nights accommodation in hotel in Barkot.",
+			"02 Nights accommodation in hotel in Uttarkashi.",
+			"02 Nights accommodation in hotel in Phata.",
+			"01 Nights accommodation in hotel in Kedarnath.",
+			"02 Nights accommodation in hotel in Pipalkoti.",
+			"Breakfast and Dinner.",
+			"All transfers and sightseeing as per itinerary.",
+			"All applicable fuel, toll taxes, parking fees and driver’s allowances."
+		],
+		"excluded": [
+			"All personal expenses, optional tours and extra meals",
+			"Camera fees, alcoholic/non-alcoholic beverages and starters",
+			"Medical and travel insurance",
+			"Room Heater Charges will be Extra in hotels"
+		],
+		"iternary": ["", "", "", ""]
+	},
+	"chardham-via-chopta": {
+		"title": "Chardham via Chopta",
+		"price": 18000,
+		"duration": 11,
+		"tripHighlights": [
+			"Yamunotri Dham – Snuggled in Uttarkashi district of Uttarakhand at an altitude of 3,293 m above sea level.",
+			"Gangotri Dham – Perched at an altitude of 3,100 m above sea level, Gangotri temple is situated in Uttarkashi district at a distance of 285 km from Haridwar and 280 km away from Dehradun.",
+			"Kedarnath Dham – Located in the Rudra Himalayan Ranges near Mandakini River, Kedarnath is settled amidst the mountain scape of the Rudraprayag district. From Dehradun, Kedarnath Temple is 274 km and from Haridwar, Kedarnath is around 245 km.",
+			"Badrinath Dham – Snuggled between Nar and Narayan mountain ranges, Badrinath is situated in the Chamoli district. The distance from Badrinath is 300 km and from Haridwar and from Dehradun, Badrinath is 334 km."
+		],
+		"included": [
+			"02 Nights accommodation in hotel in Barkot.",
+			"02 Nights accommodation in hotel in Uttarkashi.",
+			"02 Nights accommodation in hotel in Phata.",
+			"01 Nights accommodation in hotel in Kedarnath.",
+			"02 Nights accommodation in hotel in Pipalkoti.",
+			"Breakfast and Dinner.",
+			"All transfers and sightseeing as per itinerary.",
+			"All applicable fuel, toll taxes, parking fees and driver’s allowances."
+		],
+		"excluded": [
+			"All personal expenses, optional tours and extra meals",
+			"Camera fees, alcoholic/non-alcoholic beverages and starters",
+			"Medical and travel insurance",
+			"Room Heater Charges will be Extra in hotels"
+		],
+		"iternary": ["", "", "", ""]
+	},
+	"chardham-via-helicopter": {
+		"title": "Chardham via Helicopter",
+		"price": 18000,
+		"duration": 11,
+		"tripHighlights": [
+			"Yamunotri Dham – Snuggled in Uttarkashi district of Uttarakhand at an altitude of 3,293 m above sea level.",
+			"Gangotri Dham – Perched at an altitude of 3,100 m above sea level, Gangotri temple is situated in Uttarkashi district at a distance of 285 km from Haridwar and 280 km away from Dehradun.",
+			"Kedarnath Dham – Located in the Rudra Himalayan Ranges near Mandakini River, Kedarnath is settled amidst the mountain scape of the Rudraprayag district. From Dehradun, Kedarnath Temple is 274 km and from Haridwar, Kedarnath is around 245 km.",
+			"Badrinath Dham – Snuggled between Nar and Narayan mountain ranges, Badrinath is situated in the Chamoli district. The distance from Badrinath is 300 km and from Haridwar and from Dehradun, Badrinath is 334 km."
+		],
+		"included": [
+			"02 Nights accommodation in hotel in Barkot.",
+			"02 Nights accommodation in hotel in Uttarkashi.",
+			"02 Nights accommodation in hotel in Phata.",
+			"01 Nights accommodation in hotel in Kedarnath.",
+			"02 Nights accommodation in hotel in Pipalkoti.",
+			"Breakfast and Dinner.",
+			"All transfers and sightseeing as per itinerary.",
+			"All applicable fuel, toll taxes, parking fees and driver’s allowances."
+		],
+		"excluded": [
+			"All personal expenses, optional tours and extra meals",
+			"Camera fees, alcoholic/non-alcoholic beverages and starters",
+			"Medical and travel insurance",
+			"Room Heater Charges will be Extra in hotels"
+		],
+		"iternary": ["", "", "", ""]
+	},
+	"dodham-via-haridwar": {
+		"title": "Dodham via Haridwar",
+		"price": 18000,
+		"duration": 11,
+		"tripHighlights": [
+			"Yamunotri Dham – Snuggled in Uttarkashi district of Uttarakhand at an altitude of 3,293 m above sea level.",
+			"Gangotri Dham – Perched at an altitude of 3,100 m above sea level, Gangotri temple is situated in Uttarkashi district at a distance of 285 km from Haridwar and 280 km away from Dehradun.",
+			"Kedarnath Dham – Located in the Rudra Himalayan Ranges near Mandakini River, Kedarnath is settled amidst the mountain scape of the Rudraprayag district. From Dehradun, Kedarnath Temple is 274 km and from Haridwar, Kedarnath is around 245 km.",
+			"Badrinath Dham – Snuggled between Nar and Narayan mountain ranges, Badrinath is situated in the Chamoli district. The distance from Badrinath is 300 km and from Haridwar and from Dehradun, Badrinath is 334 km."
+		],
+		"included": [
+			"02 Nights accommodation in hotel in Barkot.",
+			"02 Nights accommodation in hotel in Uttarkashi.",
+			"02 Nights accommodation in hotel in Phata.",
+			"01 Nights accommodation in hotel in Kedarnath.",
+			"02 Nights accommodation in hotel in Pipalkoti.",
+			"Breakfast and Dinner.",
+			"All transfers and sightseeing as per itinerary.",
+			"All applicable fuel, toll taxes, parking fees and driver’s allowances."
+		],
+		"excluded": [
+			"All personal expenses, optional tours and extra meals",
+			"Camera fees, alcoholic/non-alcoholic beverages and starters",
+			"Medical and travel insurance",
+			"Room Heater Charges will be Extra in hotels"
+		],
+		"iternary": ["", "", "", ""]
+	},
+	"dodham-via-delhi": {
+		"title": "Dodham via Delhi",
+		"price": 18000,
+		"duration": 11,
+		"tripHighlights": [
+			"Yamunotri Dham – Snuggled in Uttarkashi district of Uttarakhand at an altitude of 3,293 m above sea level.",
+			"Gangotri Dham – Perched at an altitude of 3,100 m above sea level, Gangotri temple is situated in Uttarkashi district at a distance of 285 km from Haridwar and 280 km away from Dehradun.",
+			"Kedarnath Dham – Located in the Rudra Himalayan Ranges near Mandakini River, Kedarnath is settled amidst the mountain scape of the Rudraprayag district. From Dehradun, Kedarnath Temple is 274 km and from Haridwar, Kedarnath is around 245 km.",
+			"Badrinath Dham – Snuggled between Nar and Narayan mountain ranges, Badrinath is situated in the Chamoli district. The distance from Badrinath is 300 km and from Haridwar and from Dehradun, Badrinath is 334 km."
+		],
+		"included": [
+			"02 Nights accommodation in hotel in Barkot.",
+			"02 Nights accommodation in hotel in Uttarkashi.",
+			"02 Nights accommodation in hotel in Phata.",
+			"01 Nights accommodation in hotel in Kedarnath.",
+			"02 Nights accommodation in hotel in Pipalkoti.",
+			"Breakfast and Dinner.",
+			"All transfers and sightseeing as per itinerary.",
+			"All applicable fuel, toll taxes, parking fees and driver’s allowances."
+		],
+		"excluded": [
+			"All personal expenses, optional tours and extra meals",
+			"Camera fees, alcoholic/non-alcoholic beverages and starters",
+			"Medical and travel insurance",
+			"Room Heater Charges will be Extra in hotels"
+		],
+		"iternary": ["", "", "", ""]
+	},
+	"dodham-via-chopta": {
+		"title": "Dodham via Chopta",
+		"price": 18000,
+		"duration": 11,
+		"tripHighlights": [
+			"Yamunotri Dham – Snuggled in Uttarkashi district of Uttarakhand at an altitude of 3,293 m above sea level.",
+			"Gangotri Dham – Perched at an altitude of 3,100 m above sea level, Gangotri temple is situated in Uttarkashi district at a distance of 285 km from Haridwar and 280 km away from Dehradun.",
+			"Kedarnath Dham – Located in the Rudra Himalayan Ranges near Mandakini River, Kedarnath is settled amidst the mountain scape of the Rudraprayag district. From Dehradun, Kedarnath Temple is 274 km and from Haridwar, Kedarnath is around 245 km.",
+			"Badrinath Dham – Snuggled between Nar and Narayan mountain ranges, Badrinath is situated in the Chamoli district. The distance from Badrinath is 300 km and from Haridwar and from Dehradun, Badrinath is 334 km."
+		],
+		"included": [
+			"02 Nights accommodation in hotel in Barkot.",
+			"02 Nights accommodation in hotel in Uttarkashi.",
+			"02 Nights accommodation in hotel in Phata.",
+			"01 Nights accommodation in hotel in Kedarnath.",
+			"02 Nights accommodation in hotel in Pipalkoti.",
+			"Breakfast and Dinner.",
+			"All transfers and sightseeing as per itinerary.",
+			"All applicable fuel, toll taxes, parking fees and driver’s allowances."
+		],
+		"excluded": [
+			"All personal expenses, optional tours and extra meals",
+			"Camera fees, alcoholic/non-alcoholic beverages and starters",
+			"Medical and travel insurance",
+			"Room Heater Charges will be Extra in hotels"
+		],
+		"iternary": ["", "", "", ""]
+	},
+	"dodham-via-helicopter": {
+		"title": "dodham via Helicopter",
+		"price": 18000,
+		"duration": 11,
+		"tripHighlights": [
+			"Yamunotri Dham – Snuggled in Uttarkashi district of Uttarakhand at an altitude of 3,293 m above sea level.",
+			"Gangotri Dham – Perched at an altitude of 3,100 m above sea level, Gangotri temple is situated in Uttarkashi district at a distance of 285 km from Haridwar and 280 km away from Dehradun.",
+			"Kedarnath Dham – Located in the Rudra Himalayan Ranges near Mandakini River, Kedarnath is settled amidst the mountain scape of the Rudraprayag district. From Dehradun, Kedarnath Temple is 274 km and from Haridwar, Kedarnath is around 245 km.",
+			"Badrinath Dham – Snuggled between Nar and Narayan mountain ranges, Badrinath is situated in the Chamoli district. The distance from Badrinath is 300 km and from Haridwar and from Dehradun, Badrinath is 334 km."
+		],
+		"included": [
+			"02 Nights accommodation in hotel in Barkot.",
+			"02 Nights accommodation in hotel in Uttarkashi.",
+			"02 Nights accommodation in hotel in Phata.",
+			"01 Nights accommodation in hotel in Kedarnath.",
+			"02 Nights accommodation in hotel in Pipalkoti.",
+			"Breakfast and Dinner.",
+			"All transfers and sightseeing as per itinerary.",
+			"All applicable fuel, toll taxes, parking fees and driver’s allowances."
+		],
+		"excluded": [
+			"All personal expenses, optional tours and extra meals",
+			"Camera fees, alcoholic/non-alcoholic beverages and starters",
+			"Medical and travel insurance",
+			"Room Heater Charges will be Extra in hotels"
+		],
+		"iternary": ["", "", "", ""]
+	},
+
+	"kedarnath-via-haridwar": {
+		"title": "kedarnath via Haridwar",
+		"price": 18000,
+		"duration": 11,
+		"tripHighlights": [
+			"Yamunotri Dham – Snuggled in Uttarkashi district of Uttarakhand at an altitude of 3,293 m above sea level.",
+			"Gangotri Dham – Perched at an altitude of 3,100 m above sea level, Gangotri temple is situated in Uttarkashi district at a distance of 285 km from Haridwar and 280 km away from Dehradun.",
+			"Kedarnath Dham – Located in the Rudra Himalayan Ranges near Mandakini River, Kedarnath is settled amidst the mountain scape of the Rudraprayag district. From Dehradun, Kedarnath Temple is 274 km and from Haridwar, Kedarnath is around 245 km.",
+			"Badrinath Dham – Snuggled between Nar and Narayan mountain ranges, Badrinath is situated in the Chamoli district. The distance from Badrinath is 300 km and from Haridwar and from Dehradun, Badrinath is 334 km."
+		],
+		"included": [
+			"02 Nights accommodation in hotel in Barkot.",
+			"02 Nights accommodation in hotel in Uttarkashi.",
+			"02 Nights accommodation in hotel in Phata.",
+			"01 Nights accommodation in hotel in Kedarnath.",
+			"02 Nights accommodation in hotel in Pipalkoti.",
+			"Breakfast and Dinner.",
+			"All transfers and sightseeing as per itinerary.",
+			"All applicable fuel, toll taxes, parking fees and driver’s allowances."
+		],
+		"excluded": [
+			"All personal expenses, optional tours and extra meals",
+			"Camera fees, alcoholic/non-alcoholic beverages and starters",
+			"Medical and travel insurance",
+			"Room Heater Charges will be Extra in hotels"
+		],
+		"iternary": ["", "", "", ""]
+	},
+	"kedarnath-via-delhi": {
+		"title": "kedarnath via Delhi",
+		"price": 18000,
+		"duration": 11,
+		"tripHighlights": [
+			"Yamunotri Dham – Snuggled in Uttarkashi district of Uttarakhand at an altitude of 3,293 m above sea level.",
+			"Gangotri Dham – Perched at an altitude of 3,100 m above sea level, Gangotri temple is situated in Uttarkashi district at a distance of 285 km from Haridwar and 280 km away from Dehradun.",
+			"Kedarnath Dham – Located in the Rudra Himalayan Ranges near Mandakini River, Kedarnath is settled amidst the mountain scape of the Rudraprayag district. From Dehradun, Kedarnath Temple is 274 km and from Haridwar, Kedarnath is around 245 km.",
+			"Badrinath Dham – Snuggled between Nar and Narayan mountain ranges, Badrinath is situated in the Chamoli district. The distance from Badrinath is 300 km and from Haridwar and from Dehradun, Badrinath is 334 km."
+		],
+		"included": [
+			"02 Nights accommodation in hotel in Barkot.",
+			"02 Nights accommodation in hotel in Uttarkashi.",
+			"02 Nights accommodation in hotel in Phata.",
+			"01 Nights accommodation in hotel in Kedarnath.",
+			"02 Nights accommodation in hotel in Pipalkoti.",
+			"Breakfast and Dinner.",
+			"All transfers and sightseeing as per itinerary.",
+			"All applicable fuel, toll taxes, parking fees and driver’s allowances."
+		],
+		"excluded": [
+			"All personal expenses, optional tours and extra meals",
+			"Camera fees, alcoholic/non-alcoholic beverages and starters",
+			"Medical and travel insurance",
+			"Room Heater Charges will be Extra in hotels"
+		],
+		"iternary": ["", "", "", ""]
+	},
+	"kedarnath-via-chopta": {
+		"title": "kedarnath via Chopta",
+		"price": 18000,
+		"duration": 11,
+		"tripHighlights": [
+			"Yamunotri Dham – Snuggled in Uttarkashi district of Uttarakhand at an altitude of 3,293 m above sea level.",
+			"Gangotri Dham – Perched at an altitude of 3,100 m above sea level, Gangotri temple is situated in Uttarkashi district at a distance of 285 km from Haridwar and 280 km away from Dehradun.",
+			"Kedarnath Dham – Located in the Rudra Himalayan Ranges near Mandakini River, Kedarnath is settled amidst the mountain scape of the Rudraprayag district. From Dehradun, Kedarnath Temple is 274 km and from Haridwar, Kedarnath is around 245 km.",
+			"Badrinath Dham – Snuggled between Nar and Narayan mountain ranges, Badrinath is situated in the Chamoli district. The distance from Badrinath is 300 km and from Haridwar and from Dehradun, Badrinath is 334 km."
+		],
+		"included": [
+			"02 Nights accommodation in hotel in Barkot.",
+			"02 Nights accommodation in hotel in Uttarkashi.",
+			"02 Nights accommodation in hotel in Phata.",
+			"01 Nights accommodation in hotel in Kedarnath.",
+			"02 Nights accommodation in hotel in Pipalkoti.",
+			"Breakfast and Dinner.",
+			"All transfers and sightseeing as per itinerary.",
+			"All applicable fuel, toll taxes, parking fees and driver’s allowances."
+		],
+		"excluded": [
+			"All personal expenses, optional tours and extra meals",
+			"Camera fees, alcoholic/non-alcoholic beverages and starters",
+			"Medical and travel insurance",
+			"Room Heater Charges will be Extra in hotels"
+		],
+		"iternary": ["", "", "", ""]
+	},
+	"kedarnath-via-helicopter": {
+		"title": "kedarnath via Helicopter",
+		"price": 18000,
+		"duration": 11,
+		"tripHighlights": [
+			"Yamunotri Dham – Snuggled in Uttarkashi district of Uttarakhand at an altitude of 3,293 m above sea level.",
+			"Gangotri Dham – Perched at an altitude of 3,100 m above sea level, Gangotri temple is situated in Uttarkashi district at a distance of 285 km from Haridwar and 280 km away from Dehradun.",
+			"Kedarnath Dham – Located in the Rudra Himalayan Ranges near Mandakini River, Kedarnath is settled amidst the mountain scape of the Rudraprayag district. From Dehradun, Kedarnath Temple is 274 km and from Haridwar, Kedarnath is around 245 km.",
+			"Badrinath Dham – Snuggled between Nar and Narayan mountain ranges, Badrinath is situated in the Chamoli district. The distance from Badrinath is 300 km and from Haridwar and from Dehradun, Badrinath is 334 km."
+		],
+		"included": [
+			"02 Nights accommodation in hotel in Barkot.",
+			"02 Nights accommodation in hotel in Uttarkashi.",
+			"02 Nights accommodation in hotel in Phata.",
+			"01 Nights accommodation in hotel in Kedarnath.",
+			"02 Nights accommodation in hotel in Pipalkoti.",
+			"Breakfast and Dinner.",
+			"All transfers and sightseeing as per itinerary.",
+			"All applicable fuel, toll taxes, parking fees and driver’s allowances."
+		],
+		"excluded": [
+			"All personal expenses, optional tours and extra meals",
+			"Camera fees, alcoholic/non-alcoholic beverages and starters",
+			"Medical and travel insurance",
+			"Room Heater Charges will be Extra in hotels"
+		],
+		"iternary": ["", "", "", ""]
+	}
+}

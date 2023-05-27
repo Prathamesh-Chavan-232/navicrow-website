@@ -99,7 +99,7 @@ const Navbar = ({ clr, toggleFloating }) => {
 				<div className="flex items-center justify-between">
 					{/* Logo */}
 					<a href="/">
-						<img src={logo} alt="" className="h-20 w-20" />
+						<img src={logo} alt="" className="h-28 w-28" />
 					</a>
 					{/* nav links */}
 					<div className="hidden space-x-16 lg:flex font-medium text-sm">

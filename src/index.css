@@ -139,7 +139,12 @@ h6 {
 }
 
 .main-img {
-	background: url("/src/assets/landscapes/char-dham-4.webp");
+	background: url("/src/assets/landscapes/mountains-8.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.main-img-2 {
+	background: url("/src/assets/landscapes/mountains-9.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -166,16 +171,14 @@ h6 {
 	text-align: center;
 }
 
-
 .line {
-  fill: none;
-  stroke: white;
-  stroke-width: 2px;
+	fill: none;
+	stroke: white;
+	stroke-width: 2px;
 }
 text {
-  fill: white;
-  font-size: 15px;
-  font-family: "Signika Negative", sans-serif; 
-  visibility: hidden;
+	fill: white;
+	font-size: 15px;
+	font-family: "Signika Negative", sans-serif;
+	visibility: hidden;
 }
-

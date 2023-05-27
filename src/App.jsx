@@ -16,14 +16,7 @@ import { Destinations } from "./pages/Destinations";
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { TravelStyles } from "./pages/TravelStyles";
-import { CharDham1 } from "./pages/CharDham1";
-import { CharDham2 } from "./pages/CharDham2";
-import { CharDham3 } from "./pages/CharDham3";
-import { CharDham4 } from "./pages/CharDham4";
-import { DoDham1 } from "./pages/DoDham1";
-import { DoDham2 } from "./pages/DoDham2";
-import { DoDham3 } from "./pages/DoDham3";
-import { DoDham4 } from "./pages/DoDham4";
+import { PackagePage } from "./pages/PackagePage";
 import { Dev } from "./pages/Dev";
 
 function App() {
@@ -38,43 +31,8 @@ function App() {
             <Route exact path="/dev" element={<Dev />}/>
 						<Route
 							exact
-							path="/package/chardham-via-haridwar"
-							element={<CharDham1 />}
-						/>
-						<Route
-							exact
-							path="/package/chardham-via-delhi"
-							element={<CharDham2 />}
-						/>
-						<Route
-							exact
-							path="/package/chardham-via-chopta"
-							element={<CharDham3 />}
-						/>
-						<Route
-							exact
-							path="/package/chardham-via-helicopter"
-							element={<CharDham4 />}
-						/>
-						<Route
-							exact
-							path="/package/dodham-via-hardiwar"
-							element={<DoDham1 />}
-						/>
-						<Route
-							exact
-							path="/package/dodham-via-delhi"
-							element={<DoDham2 />}
-						/>
-						<Route
-							exact
-							path="/package/dodham-via-chopta"
-							element={<DoDham3 />}
-						/>
-						<Route
-							exact
-							path="/package/dodham-via-helicopter"
-							element={<DoDham4 />}
+							path="/package/:id"
+							element={<PackagePage />}
 						/>
 						<Route exact path="/destinations/:id" element={<Destinations />} />
 						<Route exact path="/travel-styles/:id" element={<TravelStyles />} />

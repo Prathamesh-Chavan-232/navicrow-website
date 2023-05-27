@@ -32,7 +32,7 @@ export const WhyUs = ({ clr }) => {
 			{/* Why niarra & Elephant */}
 			<div className="flex flex-col gap-4">
 				<h2 className="text-lg">WHAT MAKES US DIFFERENT</h2>
-				<h2 className="text-6xl font-fancy" data-aos="fade-down">
+				<h2 className="text-6xl font-fancy" data-aos="fade">
 					Why Navicrow
 				</h2>
 			</div>
