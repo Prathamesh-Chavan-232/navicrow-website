@@ -56,7 +56,7 @@ export const PackagePage = () => {
 					className="absolute right-[70%] w-[600px]"
 				/>
 			</div>
-			<Dayplan packageData={packageData} days="1 - 4" />
+			{/* <Dayplan packageData={packageData} days="1 - 4" /> */}
 			<DaysHeading
 				anim="zoom-out-left"
 				days={"5 - 6"}
