@@ -10,7 +10,8 @@ import { Dayplan } from "../components/Dayplan";
 import { useState } from "react";
 import { charDhamPackage1 as packageData } from "../data";
 import charDhamTemple from "../assets/landscapes/char-dham-1.jpg";
-import Aos from "aos";
+import { gsap } from "gsap";
+import { ScrollTrigger, MotionPathPlugin } from "gsap/all";
 import { useEffect } from "react";
 
 export const CharDham1 = () => {
@@ -63,7 +64,7 @@ export const CharDham1 = () => {
 			)
 			.add(pulses, 0);
 	}, []);
-
+
 
 
 
