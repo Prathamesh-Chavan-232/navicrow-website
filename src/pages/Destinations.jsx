@@ -8,6 +8,7 @@ import { CharDhamPackages } from "../components/CharDhamPackages";
 import { DoDhamPackages } from "../components/DoDhamPackages";
 import { motion as m } from "framer-motion";
 import { useState } from "react";
+import { InfoComponent } from "./InfoComponent";
 
 export const Destinations = ({title}) => {
 	const [floating, setFloating] = useState(true);
@@ -32,6 +33,7 @@ export const Destinations = ({title}) => {
 						title="Char Dham"
 					/>
 				</div>
+        <InfoComponent />
 				<WhyUs />
         {title === "Chardham" ? <CharDhamPackages /> : <DoDhamPackages />}
 				{/* Section 2 - About us (Why Navicrow?) */}

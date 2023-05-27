@@ -98,9 +98,5 @@ export const charDhamPackage1 = {
 		"Medical and travel insurance",
 		"Room Heater Charges will be Extra in hotels",
 	],
-	iternary: {
-  
-    "day-1-4": "Haridwar to Uttarakashi",
-    "day-5-6": "Uttarkashi to GuptiKashi",
-  }
+	iternary: [],
 };
