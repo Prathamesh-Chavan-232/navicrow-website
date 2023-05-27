@@ -44,7 +44,7 @@ export const Footer = () => {
 								</h3>
 								<div>
 									<p className="font-fancy text-2xl hover:text-light-green">
-										<a href="tel:+01353161082">+01 (353) 161 082</a>
+										<a href="tel:+918954766781">+91 895 4766 781</a>
 									</p>
 								</div>
 							</div>
