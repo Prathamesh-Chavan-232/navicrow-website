@@ -6,8 +6,9 @@ export const Hero = () => {
 					CONNECTING YOUR JOURNEY WITH PURPOSE
 				</div>
 				<h1 className="xl:px-56 text-5xl sm:text-6xl font-fancy text-center md:text-7xl lg:text-center">
-					Unforgettable travel experiences with a{" "}
-					<span className="font-fancy italic font-thin">positive</span> impact
+					We offer specially curated{" "}
+					<span className="font-fancy italic font-thin">Chardham</span>
+					Yatra packages. Book now!
 				</h1>
 			</div>
 		</div>

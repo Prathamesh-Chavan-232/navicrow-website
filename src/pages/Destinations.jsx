@@ -7,15 +7,28 @@ import { FloatingButton } from "../components/utlis/FloatingButton";
 import { CharDhamPackages } from "../components/CharDhamPackages";
 import { DoDhamPackages } from "../components/DoDhamPackages";
 import { motion as m } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { InfoComponent } from "./InfoComponent";
+import { useParams } from "react-router-dom";
 
-export const Destinations = ({title}) => {
+export const Destinations = () => {
+	const { id } = useParams();
 	const [floating, setFloating] = useState(true);
+	const [title, setTitle] = useState("Yatra");
 
 	function toggleFloating() {
 		setFloating(!floating);
 	}
+
+	useEffect(() => {
+		if (id === "char-dham") {
+			setTitle("Char Dham");
+		} else if (id === "do-dham") {
+			setTitle("Do Dham");
+		} else if (id === "kedarnath") {
+			setTitle("Kedarnath");
+		}
+	});
 	return (
 		<div>
 			<m.main
@@ -30,12 +43,14 @@ export const Destinations = ({title}) => {
 					<Header clr="white" toggleFloating={toggleFloating} />
 					<Main
 						heading="LUXURY WILDLIFE SAFARIS AND WILDLIFE ADVENTURES"
-						title="Char Dham"
+						title={id}
 					/>
 				</div>
-        <InfoComponent />
+				<InfoComponent />
 				<WhyUs />
-        {title === "Chardham" ? <CharDhamPackages /> : <DoDhamPackages />}
+				{id === "char-dham" ? <CharDhamPackages /> : ""}
+				{id === "do-dham" ? <DoDhamPackages /> : ""}
+				{/* {title === "kedarnath" ? <KedarnathPackages /> : ""} */}
 				{/* Section 2 - About us (Why Navicrow?) */}
 
 				{/* Section 3 - grid */}

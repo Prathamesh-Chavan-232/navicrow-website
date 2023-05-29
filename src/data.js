@@ -421,7 +421,7 @@ export const packages = {
 			"Morning after breakfast, checkout from hotel and head towards Delhi, according to your Train schedule driver will drop you to the Airport/ Railway Station and your Trip with us ends here.",
 		],
 	},
-	"dodham-via-delhi": {
+	"dodham-via-": {
 		title: "Dodham via Delhi",
 		price: 18000,
 		duration: 11,
