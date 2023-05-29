@@ -32,7 +32,7 @@ export const PackagePage = () => {
 	useEffect(() => {
 		fetchPackageData();
 		return () => {
-			console.log();
+			console.log(packageData);
 		};
 	}, []);
 
@@ -59,19 +59,21 @@ export const PackagePage = () => {
 			{/* <Dayplan packageData={packageData} days="1 - 4" /> */}
 			<DaysHeading
 				anim="zoom-out-left"
-				days={"5 - 6"}
-				packageData={packageData}
-				reverse={true}
+				days={"1 - 4"}
+				title={packages[id].titles[0]}
+				packageData={packages[id]}
+				reverse={false}
 			/>
 			<div className="hidden main-img-2 h-screen lg:block">
 				<img src={temple} alt="" className="absolute left-[70%] w-[600px]" />
 			</div>
-			<Dayplan packageData={packageData} days="5 - 6" />
+			{/* <Dayplan packageData={packageData} days="5 - 6" /> */}
 			<DaysHeading
-				days={"6 - 8"}
+				days={"5 - 6"}
+				title={packages[id].titles[1]}
 				anim="zoom-in-right"
-				packageData={packageData}
-				reverse={false}
+				packageData={packages[id]}
+				reverse={true}
 			/>
 			<div className="hidden main-img h-screen lg:block">
 				<img
@@ -80,16 +82,24 @@ export const PackagePage = () => {
 					className="absolute right-[70%] w-[600px]"
 				/>
 			</div>
-			<Dayplan packageData={packageData} days="6 - 8" />
+			{/* <Dayplan packageData={packageData} days="6 - 8" /> */}
 			<DaysHeading
-				days={"8 - 11"}
+				days={"6 - 8"}
 				anim="zoom-in-right"
-				packageData={packageData}
+				title={packages[id].titles[2]}
+				packageData={packages[id]}
 				reverse={true}
 			/>
 			<div className="hidden main-img-2 h-screen lg:block">
 				<img src={temple} alt="" className="absolute left-[70%] w-[600px]" />
 			</div>
+			<DaysHeading
+				days={"8 - 11"}
+				anim="zoom-in-right"
+				title={packages[id].titles[3]}
+				packageData={packages[id]}
+				reverse={true}
+			/>
 			<TravelStyleCards />
 			<WhyUs />
 			<div className={`${floating ? "block" : "hidden"}`}>

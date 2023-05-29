@@ -1,4 +1,3 @@
-
 import Aos from "aos";
 import { useEffect } from "react";
 import charDhamTemple from "../assets/landscapes/char-dham-1.jpg";
