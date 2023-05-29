@@ -276,7 +276,7 @@ export const packages = {
 	"dodham-via-haridwar": {
 		title: "Dodham via Haridwar",
 		price: 11500,
-		duration: 11,
+		duration: 6,
 		tripHighlights: [
 			"Kedarnath Dham – Located in the Rudra Himalayan Ranges near Mandakini River, Kedarnath is settled amidst the mountain scape of the Rudraprayag district. From Dehradun, Kedarnath Temple is 274 km and from Haridwar, Kedarnath is around 245 km.",
 			"Badrinath Dham – Snuggled between Nar and Narayan mountain ranges, Badrinath is situated in the Chamoli district. The distance from Badrinath is 300 km and from Haridwar and from Dehradun, Badrinath is 334 km.",
@@ -296,29 +296,24 @@ export const packages = {
 			"Room Heater Charges will be Extra in hotels",
 		],
 		titles: [
-			"Delhi to Barkot to Harshil",
-			"Uttarkashi to Gangotari to Phata",
+			"Haridwar to Kedarnath to Pipalkoti",
+			"Pipalkoti to Badrinath",
 			"Kedarnath to Pipalkoti",
 			"Badrinath to Risikesh to Delhi",
 		],
-		"1 - 4": [
-			"On arrival our representative will pick you up at Railway Station/ Airport. Start your journey towards Haridwar from Delhi. Freshen up and proceed to explore ancient temples of Haridwar like Mansa Devi and Chandi Devi. In evening witness the religious Ganga Aarti in Har ki Pauri and overnight stay in Haridwar.",
-			"Start your day off as early as possible, you start your journey towards the first dham – Yamunotri. On the way you can explore Mussoorie, and after reaching Barkot witness the mesmerizing beauty of Snow Capped Peaks and overnight stay at hotel in Barkot.",
-			"After an early breakfast, you’ll start your journey towards Yamunotri. Start your 5km Trek from Janki Chatti to Yamunotri, you can take a dip in Suryakund and worship the ancient Divyashila. After darshan return to Janki Chatti and drive back towards Barkot, after dinner overnight stay at hotel in Barkot.",
+		"1 - 2": [
+			"In morning our representative will pick you up and after breakfast proceed towards Phata via Devprayag and Guptkashi, enroute enjoy the surreal view of Garhwal Mountain Ranges reach Phata by evening and overnight stay at hotel in Phata.",
+			"Morning after breakfast proceed to Sonprayag and start your 14km Trek from Gaurikund to Kedarnath. During the Trek embrace the Beauty of Kedarnath Himalayas covered in snow,lush green meadows and forests. Reach by evening and witness religious Aarti of Kedarnath and overnight stay at hotel.",
+			"Morning head back towards Sonprayag. You should start early from Kedarnath to reach Sonprayag till evening. Driver will pick you up and proceed to Phata and overnight stay in Phata.",
 		],
-		"5 - 6": [
+		"3 - 4": [
 			"Morning after breakfast proceed to Harsil via Uttarkashi, Harsil is famous for its natural beauty and for the majestic views of the Deodar trees. Enroute you can also visit Vishwanath Temple and Gangnani Hot Water Spring. Reach Harsil by evening and overnight stay at hotel.",
 			"Morning after breakfast proceed towards Gangotri, You can take holy dip in Sacred river Ganges. After Darshan and exploring the nearby places like Surya Kund and Bhagirath Shila head back towards Uttarkashi and overnight stay at hotel.",
 			"In morning after breakfast proceed towards Phata via Tilwara and Lambgaon, enroute you can see the beautiful Mandakini River and Ardh Narishwar Temple in Guptkashi, reach Phata by evening and overnight stay at hotel in Phata.",
 		],
-		"6 - 8": [
+		"5 - 6": [
 			"Morning after breakfast proceed to Sonprayag and start your 14km Trek from Gaurikund to Kedarnath. During the Trek embrace the Beauty of Kedarnath Himalayas covered in snow, lush green meadows and forests. Reach by evening and witness religious Aarti of Kedarnath and overnight stay at hotel.",
 			"Morning after breakfast, you would be travelling towards Pipalkoti, enroute you can visit Karnprayag and Rudraprayag confluence of Alaknanda and Mandakini. Reach Pipalkoti via Karnprayag by evening and overnight stay in hotel.",
-		],
-		"8 - 11": [
-			"Morning after breakfast proceed towards Badrinath via Joshimath. Enroute witness the ancient  landmarks and fresher view  of Himalayas. After darshan you can  explore Mana Village, Visit Ved Vyas Gufa and Bheem Pul. Return Pipalkoti till evening and overnight stay.",
-			"Morning after breakfast, head back towards Rishikesh. On the way explore confluence of Alaknanda and Bhagirathi River known as Devprayag, reach Rishikesh by evening and overnight stay in hotel.",
-			"Morning after breakfast, checkout from hotel and head towards Delhi, according to your Train schedule driver will drop you to the Airport/ Railway Station and your Trip with us ends here.",
 		],
 	},
 	"dodham-via-delhi": {

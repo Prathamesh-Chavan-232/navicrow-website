@@ -15,6 +15,24 @@ import { Dayplan } from "../components/Dayplan";
 import { useParams } from "react-router-dom";
 import { packages } from "../data";
 
+const ImgRight = () => {
+	return (
+		<div className="hidden main-img-2 h-screen lg:block">
+			<img src={temple} alt="" className="absolute right-[10%] w-[600px]" />
+		</div>
+	);
+};
+const ImgLeft = () => {
+	return (
+		<div className="hidden main-img-2 h-screen lg:block">
+			<img
+				src={charDhamTemple}
+				alt=""
+				className="absolute left-[10%] w-[600px]"
+			/>
+		</div>
+	);
+};
 export const PackagePage = () => {
 	const { id } = useParams();
 	const [floating, setFloating] = useState(true);
@@ -49,14 +67,10 @@ export const PackagePage = () => {
 			</div>
 			<AboutPackage packageData={packages[id]} />
 			<img src={charDhamTemple} alt="" className="lg:hidden" />
-			<div className="hidden main-img h-screen lg:block">
-				<img
-					src={charDhamTemple}
-					alt=""
-					className="absolute right-[70%] w-[600px]"
-				/>
-			</div>
-			{id === "chardham-via-helicopter" && (
+
+			{id.startsWith("kedarnath") && <div>Kedarnath</div>}
+
+			{(id === "chardham-via-helicopter" || id.startsWith("dodham")) && (
 				<div>
 					<DaysHeading
 						anim="zoom-out-left"
@@ -65,14 +79,7 @@ export const PackagePage = () => {
 						packageData={packages[id]}
 						reverse={false}
 					/>
-					<div className="hidden main-img-2 h-screen lg:block">
-						<img
-							src={temple}
-							alt=""
-							className="absolute left-[70%] w-[600px]"
-						/>
-					</div>
-					{/* <Dayplan packageData={packageData} days="5 - 6" /> */}
+					<ImgRight />
 					<DaysHeading
 						days={"3 - 4"}
 						title={packages[id].titles[0]}
@@ -80,31 +87,18 @@ export const PackagePage = () => {
 						packageData={packages[id]}
 						reverse={true}
 					/>
-					<div className="hidden main-img h-screen lg:block">
-						<img
-							src={charDhamTemple}
-							alt=""
-							className="absolute right-[70%] w-[600px]"
-						/>
-					</div>
-					{/* <Dayplan packageData={packageData} days="6 - 8" /> */}
+					<ImgLeft />
 					<DaysHeading
 						days={"5 - 6"}
 						anim="zoom-in-right"
 						title={packages[id].titles[0]}
 						packageData={packages[id]}
-						reverse={true}
+						reverse={false}
 					/>
-					<div className="hidden main-img-2 h-screen lg:block">
-						<img
-							src={temple}
-							alt=""
-							className="absolute left-[70%] w-[600px]"
-						/>
-					</div>
+					<ImgRight />
 				</div>
 			)}
-			{id != "chardham-via-helicopter" && (
+			{id.startsWith("chardham") && id != "chardham-via-helicopter" && (
 				<div className="">
 					{/* <Dayplan packageData={packageData} days="1 - 4" /> */}
 					<DaysHeading
@@ -114,13 +108,7 @@ export const PackagePage = () => {
 						packageData={packages[id]}
 						reverse={false}
 					/>
-					<div className="hidden main-img-2 h-screen lg:block">
-						<img
-							src={temple}
-							alt=""
-							className="absolute left-[70%] w-[600px]"
-						/>
-					</div>
+					<ImgRight />
 					{/* <Dayplan packageData={packageData} days="5 - 6" /> */}
 					<DaysHeading
 						days={"5 - 6"}
@@ -129,28 +117,16 @@ export const PackagePage = () => {
 						packageData={packages[id]}
 						reverse={true}
 					/>
-					<div className="hidden main-img h-screen lg:block">
-						<img
-							src={charDhamTemple}
-							alt=""
-							className="absolute right-[70%] w-[600px]"
-						/>
-					</div>
+					<ImgLeft />
 					{/* <Dayplan packageData={packageData} days="6 - 8" /> */}
 					<DaysHeading
 						days={"6 - 8"}
 						anim="zoom-in-right"
 						title={packages[id].titles[2]}
 						packageData={packages[id]}
-						reverse={true}
+						reverse={false}
 					/>
-					<div className="hidden main-img-2 h-screen lg:block">
-						<img
-							src={temple}
-							alt=""
-							className="absolute left-[70%] w-[600px]"
-						/>
-					</div>
+					<ImgRight />
 					<DaysHeading
 						days={"8 - 11"}
 						anim="zoom-in-right"
@@ -158,6 +134,7 @@ export const PackagePage = () => {
 						packageData={packages[id]}
 						reverse={true}
 					/>
+					<ImgLeft />
 				</div>
 			)}
 			<TravelStyleCards />
