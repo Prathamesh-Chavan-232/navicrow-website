@@ -158,14 +158,14 @@ export const PackagePage = () => {
 						packageData={packages[id]}
 						reverse={true}
 					/>
-					<TravelStyleCards />
-					<WhyUs />
-					<div className={`${floating ? "block" : "hidden"}`}>
-						<FloatingButton />
-					</div>
-					<Footer />
 				</div>
 			)}
+			<TravelStyleCards />
+			<WhyUs />
+			<div className={`${floating ? "block" : "hidden"}`}>
+				<FloatingButton />
+			</div>
+			<Footer />
 		</div>
 	);
 };
