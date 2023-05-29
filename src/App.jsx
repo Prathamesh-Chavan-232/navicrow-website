@@ -48,26 +48,25 @@ export default App;
 library.add(fab, fas, far);
 
 // TODO NOW:
+// [ ]: Grid View - Destinations
+// [ ]: Packages Info Carousel
+// [ ]: Fullpage Carousel, Image Carousel
+// [ ]: Dry out the code
+// [ ]: Padding & sizes consistency
+// [ ] - Animations, Smooth Scrolling & Other Fancy stuff
+// [ ] - Image Loading, Lazy Loading
+// [ ] - Optimization, code spiltting, etc
+// [ ] - Switch to Next & pnpm
+// [ ]: Travel Stories Blog
+
+// TODO:
 // [ x ]: Navbar Page Transition
 // [ x ]: Travel Styles Section
 // [ x ]: Enquire Form Hamburger
 // [ x ]: Destinations & Travel Style Menus
-// [ ]: Grid View - Destinations
-// [ ]: Destinations - Char Dhaam
-// [ ]: Travel Style - Pilgrimage
-// [ ]: Package Page
-// [ ]: Packages Info Carousel
-// [ ]: Fullpage Carousel, Image Carousel
-// [ ]: Scrolling Animations
-
-// TODO:
+// [ x ]: Destinations - Char Dhaam
+// [ x ]: Travel Style - Pilgrimage
+// [ x ]: Package Page
+// [ x ]: Scrolling Animations
 // [ x ] - Proper Layout
 // [ x ] - Drop downs, Carousels
-// [ ] - Check all Padding & Layouts
-// [ ] - Check all Fonts, Sizes, Heading tags, html tags.
-// [ ] - Animations, Smooth Scrolling & Other Fancy stuff
-// [ ] - Image Loading, Lazy Loading
-// [ ] - Optimization, code spiltting, etc
-// [ ] - (Optional if Loading is good) - Switch to Next & pnpm
-
-// [ ]: Travel Stories Blog

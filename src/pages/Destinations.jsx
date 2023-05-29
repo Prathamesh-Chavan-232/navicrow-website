@@ -6,6 +6,7 @@ import { TravelStyleCards } from "../components/TravelStyleCards";
 import { FloatingButton } from "../components/utlis/FloatingButton";
 import { CharDhamPackages } from "../components/CharDhamPackages";
 import { DoDhamPackages } from "../components/DoDhamPackages";
+import { KedarnathPackages } from "../components/KedarnathPackages";
 import { motion as m } from "framer-motion";
 import { useEffect, useState } from "react";
 import { InfoComponent } from "./InfoComponent";
@@ -43,14 +44,14 @@ export const Destinations = () => {
 					<Header clr="white" toggleFloating={toggleFloating} />
 					<Main
 						heading="LUXURY WILDLIFE SAFARIS AND WILDLIFE ADVENTURES"
-						title={id}
+						title={title}
 					/>
 				</div>
 				<InfoComponent />
 				<WhyUs />
 				{id === "char-dham" ? <CharDhamPackages /> : ""}
 				{id === "do-dham" ? <DoDhamPackages /> : ""}
-				{/* {title === "kedarnath" ? <KedarnathPackages /> : ""} */}
+				{id === "kedarnath" ? <KedarnathPackages /> : ""}
 				{/* Section 2 - About us (Why Navicrow?) */}
 
 				{/* Section 3 - grid */}

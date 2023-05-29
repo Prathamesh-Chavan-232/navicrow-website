@@ -3,13 +3,13 @@ import { Card } from "./utlis/Card";
 import img from "../assets/landscapes/char-dham-1.jpg";
 import img2 from "../assets/landscapes/travel-style-1.jpg";
 import img3 from "../assets/landscapes/mountains-4.jpg";
-export const DoDhamPackages = () => {
+export const KedarnathPackages = () => {
 	return (
 		<div className="py-10 px-6 bg-light-gray text-black">
 			<div className="flex flex-col gap-12 items-center justify-around">
 				<div>
 					<h1 className="text-4xl font-fancy text-center">
-						Browse Do Dham Packages
+						Browse Kedarnath Packages
 					</h1>
 				</div>
 				{/*  Desktop Travel Style Cards */}
@@ -17,28 +17,28 @@ export const DoDhamPackages = () => {
 					{/* Card 1 */}
 					<Card
 						img={img}
-						title="Do Dham via Haridwar"
+						title="Kedarnath"
 						subtitle="Embark on a transformative spiritual journey with our immersive pilgrimage travel style package."
-						link="/package/dodham-via-haridwar"
+						link="/package/kedarnath"
 					/>
 					<Card
 						img={img2}
-						title="Dodham via Delhi"
+						title="Kedarnath via Delhi"
 						subtitle="
 							Embark on a transformative spiritual journey with our immersive pilgrimage travel style package."
-						link="/package/dodham-via-delhi"
+						link="/package/kedarnath-via-delhi"
 					/>
 					<Card
 						img={img3}
-						title="Dodham via Helicopter"
+						title="Kedarnath via Tempo"
 						subtitle="Embark on a transformative spiritual journey with our immersive pilgrimage travel style package."
-						link="/package/dodham-via-helicopter"
+						link="/package/kedarnath-via-tempo"
 					/>
 					<Card
 						img={img}
-						title="Do Dham via Chopta"
+						title="Kedarnath via Helicopter"
 						subtitle="Embark on a transformative spiritual journey with our immersive pilgrimage travel style package."
-						link="/package/dodham-via-chopta"
+						link="/package/kedarnath-via-helicopter"
 					/>
 				</div>
 			</div>

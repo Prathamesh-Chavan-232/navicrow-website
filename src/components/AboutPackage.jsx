@@ -48,7 +48,6 @@ export const AboutPackage = ({ packageData }) => {
 							data-aos="fade-right"
 							className="flex flex-col gap-6 xl:max-w-md"
 						>
-							<span className="text-xs font-medium">HIGHLIGHTS</span>
 							<h1 className="text-4xl font-fancy">Trip Highlights</h1>
 							<ul className="space-y-4">
 								{packageData.tripHighlights.map((item, i) => {
@@ -61,7 +60,6 @@ export const AboutPackage = ({ packageData }) => {
 							</ul>
 						</div>
 						<div data-aos="fade-up" className="flex flex-col gap-6 xl:max-w-md">
-							<span className="text-xs font-medium">HIGHLIGHTS</span>
 							<h1 className="text-4xl font-fancy">What's Included</h1>
 							<ul className="space-y-4">
 								{packageData.included.map((item, i) => {
@@ -73,7 +71,6 @@ export const AboutPackage = ({ packageData }) => {
 							data-aos="fade-left"
 							className="flex flex-col gap-6 xl:max-w-md"
 						>
-							<span className="text-xs font-medium">HIGHLIGHTS</span>
 							<h1 className="text-4xl font-fancy">What's Excluded</h1>
 							<ul className="space-y-4">
 								{packageData.excluded.map((item, i) => {
