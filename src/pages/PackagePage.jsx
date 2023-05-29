@@ -32,12 +32,12 @@ export const PackagePage = () => {
 	useEffect(() => {
 		fetchPackageData();
 		return () => {
-			console.log(packageData);
+			console.log(id);
 		};
 	}, []);
 
 	return (
-		<div className="">
+		<div>
 			{/* Section 1 - Navbar + Hero */}
 			<div className="travel-package">
 				<Header clr="white" toggleFloating={toggleFloating} />
@@ -56,56 +56,116 @@ export const PackagePage = () => {
 					className="absolute right-[70%] w-[600px]"
 				/>
 			</div>
-			{/* <Dayplan packageData={packageData} days="1 - 4" /> */}
-			<DaysHeading
-				anim="zoom-out-left"
-				days={"1 - 4"}
-				title={packages[id].titles[0]}
-				packageData={packages[id]}
-				reverse={false}
-			/>
-			<div className="hidden main-img-2 h-screen lg:block">
-				<img src={temple} alt="" className="absolute left-[70%] w-[600px]" />
-			</div>
-			{/* <Dayplan packageData={packageData} days="5 - 6" /> */}
-			<DaysHeading
-				days={"5 - 6"}
-				title={packages[id].titles[1]}
-				anim="zoom-in-right"
-				packageData={packages[id]}
-				reverse={true}
-			/>
-			<div className="hidden main-img h-screen lg:block">
-				<img
-					src={charDhamTemple}
-					alt=""
-					className="absolute right-[70%] w-[600px]"
-				/>
-			</div>
-			{/* <Dayplan packageData={packageData} days="6 - 8" /> */}
-			<DaysHeading
-				days={"6 - 8"}
-				anim="zoom-in-right"
-				title={packages[id].titles[2]}
-				packageData={packages[id]}
-				reverse={true}
-			/>
-			<div className="hidden main-img-2 h-screen lg:block">
-				<img src={temple} alt="" className="absolute left-[70%] w-[600px]" />
-			</div>
-			<DaysHeading
-				days={"8 - 11"}
-				anim="zoom-in-right"
-				title={packages[id].titles[3]}
-				packageData={packages[id]}
-				reverse={true}
-			/>
-			<TravelStyleCards />
-			<WhyUs />
-			<div className={`${floating ? "block" : "hidden"}`}>
-				<FloatingButton />
-			</div>
-			<Footer />
+			{id === "chardham-via-helicopter" && (
+				<div>
+					<DaysHeading
+						anim="zoom-out-left"
+						days={"1 - 2"}
+						title={packages[id].titles[0]}
+						packageData={packages[id]}
+						reverse={false}
+					/>
+					<div className="hidden main-img-2 h-screen lg:block">
+						<img
+							src={temple}
+							alt=""
+							className="absolute left-[70%] w-[600px]"
+						/>
+					</div>
+					{/* <Dayplan packageData={packageData} days="5 - 6" /> */}
+					<DaysHeading
+						days={"3 - 4"}
+						title={packages[id].titles[0]}
+						anim="zoom-in-right"
+						packageData={packages[id]}
+						reverse={true}
+					/>
+					<div className="hidden main-img h-screen lg:block">
+						<img
+							src={charDhamTemple}
+							alt=""
+							className="absolute right-[70%] w-[600px]"
+						/>
+					</div>
+					{/* <Dayplan packageData={packageData} days="6 - 8" /> */}
+					<DaysHeading
+						days={"5 - 6"}
+						anim="zoom-in-right"
+						title={packages[id].titles[0]}
+						packageData={packages[id]}
+						reverse={true}
+					/>
+					<div className="hidden main-img-2 h-screen lg:block">
+						<img
+							src={temple}
+							alt=""
+							className="absolute left-[70%] w-[600px]"
+						/>
+					</div>
+				</div>
+			)}
+			{id != "chardham-via-helicopter" && (
+				<div className="">
+					{/* <Dayplan packageData={packageData} days="1 - 4" /> */}
+					<DaysHeading
+						anim="zoom-out-left"
+						days={"1 - 4"}
+						title={packages[id].titles[0]}
+						packageData={packages[id]}
+						reverse={false}
+					/>
+					<div className="hidden main-img-2 h-screen lg:block">
+						<img
+							src={temple}
+							alt=""
+							className="absolute left-[70%] w-[600px]"
+						/>
+					</div>
+					{/* <Dayplan packageData={packageData} days="5 - 6" /> */}
+					<DaysHeading
+						days={"5 - 6"}
+						title={packages[id].titles[1]}
+						anim="zoom-in-right"
+						packageData={packages[id]}
+						reverse={true}
+					/>
+					<div className="hidden main-img h-screen lg:block">
+						<img
+							src={charDhamTemple}
+							alt=""
+							className="absolute right-[70%] w-[600px]"
+						/>
+					</div>
+					{/* <Dayplan packageData={packageData} days="6 - 8" /> */}
+					<DaysHeading
+						days={"6 - 8"}
+						anim="zoom-in-right"
+						title={packages[id].titles[2]}
+						packageData={packages[id]}
+						reverse={true}
+					/>
+					<div className="hidden main-img-2 h-screen lg:block">
+						<img
+							src={temple}
+							alt=""
+							className="absolute left-[70%] w-[600px]"
+						/>
+					</div>
+					<DaysHeading
+						days={"8 - 11"}
+						anim="zoom-in-right"
+						title={packages[id].titles[3]}
+						packageData={packages[id]}
+						reverse={true}
+					/>
+					<TravelStyleCards />
+					<WhyUs />
+					<div className={`${floating ? "block" : "hidden"}`}>
+						<FloatingButton />
+					</div>
+					<Footer />
+				</div>
+			)}
 		</div>
 	);
 };

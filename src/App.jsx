@@ -17,7 +17,6 @@ import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { TravelStyles } from "./pages/TravelStyles";
 import { PackagePage } from "./pages/PackagePage";
-import { PackagePage2 } from "./pages/PackagePage2";
 import { Dev } from "./pages/Dev";
 
 function App() {
@@ -29,11 +28,6 @@ function App() {
 						<Route index element={<Home />} />
 						<Route exact path="/dev" element={<Dev />} />
 						<Route exact path="/package/:id" element={<PackagePage />} />
-						<Route
-							exact
-							path="/package/chardham-via-helicopter"
-							element={<PackagePage2 />}
-						/>
 						<Route exact path="/destinations/:id" element={<Destinations />} />
 						<Route exact path="/travel-styles/:id" element={<TravelStyles />} />
 						<Route exact path="/about" element={<About />} />
