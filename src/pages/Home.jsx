@@ -8,6 +8,7 @@ import { FloatingButton } from "../components/utlis/FloatingButton";
 import { motion as m } from "framer-motion";
 import { useState } from "react";
 import { CharDhamPackages } from "../components/CharDhamPackages";
+import { Main } from "../components/Main";
 
 export const Home = () => {
 	const [floating, setFloating] = useState(true);
@@ -33,10 +34,10 @@ export const Home = () => {
 			{/* Section 1 - Navbar + Hero */}
 			<div className="hero">
 				<Header clr="white" toggleFloating={toggleFloating} />
-				<Hero />
-			</div>
-			{/* Section 2 - About us (Why Niarra?) */}
-			<WhyUs clr="green" />
+        <Main heading={"CONNECTING YOUR JOURNEY WITH PURPOSE"} />
+      </div>
+      {/* Section 2 - About us (Why Niarra?) */}
+      <WhyUs clr="green" />
 
 			{/* Packages Card */}
 			<CharDhamPackages />
@@ -47,7 +48,6 @@ export const Home = () => {
 			<div className={`${floating ? "block" : "hidden"}`}>
 				<FloatingButton />
 			</div>
-			<Footer />
-		</m.main>
+	</m.main>
 	);
 };

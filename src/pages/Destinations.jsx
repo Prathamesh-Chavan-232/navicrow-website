@@ -60,8 +60,7 @@ export const Destinations = () => {
 				<div className={`${floating ? "block" : "hidden"}`}>
 					<FloatingButton />
 				</div>
-				<Footer />
-			</m.main>
+</m.main>
 		</div>
 	);
 };

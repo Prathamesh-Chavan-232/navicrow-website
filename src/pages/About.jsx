@@ -75,7 +75,6 @@ export const About = () => {
 				</h1>
 				<img src={cert} alt="" className="w-[800px] h-[500px]" />
 			</section>
-			<Footer />
 		</m.main>
 	);
 };

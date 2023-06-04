@@ -255,21 +255,23 @@ export const packages = {
 		titles: [
 			"Dehradun to Yamunotri",
 			"Gangotari to Kedarnath",
-			"Phata to Pipalkoti",
-			"Badrinath to Risikesh",
+			"Kedarnath to Badrinath",
 		],
 		"1 - 2": [
-			"On arrival driver will pick you up and proceed to Barkot via Dehradun. Start your journey towards the first dham – Yamunotri. On the way you can explore Mussoorie, and after reaching Barkot witness the mesmerizing beauty of Snow Capped Peaks and overnight stay at hotel in Barkot.",
-			"After an early breakfast, you will start your journey towards Yamunotri. Start your 5 km Trek from Janki Chatti to Yamunotri, you can take a dip in Suryakund and worship the ancient Divyashila. After darshan return to Janki Chatti and drive back towards Barkot, after dinner overnight stay at hotel in Barkot.",
-			"Morning after breakfast proceed to Uttarkashi via Dharasu, visit Vishwanath Temple and religious places of Uttarkashi. Overnight stay at hotel.Morning after breakfast proceed towards Gangotri via Gangnani, after Gangotri Darshan and exploring the nearby places, head back towards Uttarkashi and overnight stay at hotel.",
+			"Upon arrival at Dehradun airport or railway station our informed driver cum guide will receive you and transfer you to our luxurious hotel for complimentary stay including dinner and breakfast. Spend the day to relax after smooth check-in process and sleep homely for an exciting tomorrow.",
+
+			"Upon arrival at Kharsali (Yamunotri), you are welcomed by our handlers; they will unload your baggage and take you to the hotel. Relish a fresh breakfast and leave for VIP darshan in palki to yamunotri temple which is around 5 km trek. Enjoy your palki ride with the glory of nature!",
+
+			"In Evening pay a visit to ancient Shani Temple nearby and spend the night at your hotel, after having dinner.",
 		],
 		"3 - 4": [
-			"In morning after breakfast procced towards Guptkashi via Tilwara, on the way visit Ardh Narishwar Temple in Guptkashi, reach Guptkashi by evening and overnight stay at hotel in Guptkashi.",
-			"Morning after breakfast proceed to Sonprayag and start your 14km Trek from Gaurikund to Kedarnath. During the trek embrace the beauty of Kedarnath Himalayas covered in snow, lush green meadows and forests. Reach by evening and witness religious Aarti of Kedarnath and overnight stay at hotel.",
+			"Enter the most beautiful valleys in Uttarakhand, called the mini Switzerland, Gangotri. Our handlers will take you to the nearby Luxurious hotel. After an Early morning breakfast, you’ll leave for Gangotri temple VIP darshan in Cab which is 20 kms away from hotel.",
+			"Tune yourself to the high altitude and enjoy the picturesque paradise on earth; Gangotri Dham.",
 		],
 		"5 - 6": [
-			"Morning you should start early as possible and after morning Darshan Trek back towards Gaurikund from Kedarnath, reach Sonprayag till evening. Driver will pick you up and proceed to Guptkashi and overnight stay in Guptkashi.",
-			"Morning after breakfast, you would be travelling towards Pipalkoti, enroute you can visit Karnprayag and Rudraprayag confluence of Alaknanda and Mandakini. Reach Pipalkoti via Karnprayag by evening and overnight stay in hotel.",
+			"You will arrive at Guptkashi helipad from Gangotri, after changing the chopper you’ll fly for KEDARNATH which is 10 minutes flying from Guptkashi. As you reach the kedarnath, You will witness the beauty of changing colors in the sky.",
+			"On the fourth day of your chardham package itinerary, you’ll be heading to Badrinath and on the way you’ll see the deep valleys and majestic view of lofty Himalayas. In the evening, spend a leisurely hours in the Mana Village which is near to religious site of Badrinath.",
+			"In the morning after having a hearty breakfast, bow your head to Badri Narayan temple and fly back to Dehradun with positive vibes and pleasant memories of Chardham Yatra by helicopter package.",
 		],
 	},
 	// Do Dham Packages
@@ -404,12 +406,10 @@ export const packages = {
 		],
 	},
 	"dodham-via-helicopter": {
-		title: "Chardham via Helicopter",
-		price: 190000,
-		duration: 6,
+		title: "Dodham via Helicopter",
+		price: 125000,
+		duration: 3,
 		tripHighlights: [
-			"Yamunotri Dham – Snuggled in Uttarkashi district of Uttarakhand at an altitude of 3,293 m above sea level.",
-			"Gangotri Dham – Perched at an altitude of 3,100 m above sea level, Gangotri temple is situated in Uttarkashi district at a distance of 285 km from Haridwar and 280 km away from Dehradun.",
 			"Kedarnath Dham – Located in the Rudra Himalayan Ranges near Mandakini River, Kedarnath is settled amidst the mountain scape of the Rudraprayag district. From Dehradun, Kedarnath Temple is 274 km and from Haridwar, Kedarnath is around 245 km.",
 			"Badrinath Dham – Snuggled between Nar and Narayan mountain ranges, Badrinath is situated in the Chamoli district. The distance from Badrinath is 300 km and from Haridwar and from Dehradun, Badrinath is 334 km.",
 		],
@@ -477,7 +477,7 @@ export const packages = {
 			"Medical and travel insurance",
 			"Room Heater Charges will be Extra in hotels",
 		],
-		"1-4": [
+		"1 - 4": [
 			"After an early breakfast, you will start your journey towards Yamunotri. Start your 5 km Trek from Janki Chatti to Yamunotri, you can take a dip in Suryakund and worship the ancient Divyashila. After darshan return to Janki Chatti and drive back towards Barkot, after dinner overnight stay at hotel in Barkot.",
 			"After an early breakfast, you will start your journey towards Yamunotri. Start your 5 km Trek from Janki Chatti to Yamunotri, you can take a dip in Suryakund and worship the ancient Divyashila. After darshan return to Janki Chatti and drive back towards Barkot, after dinner overnight stay at hotel in Barkot.",
 		],
@@ -606,19 +606,7 @@ export const packages = {
 			"Medical and travel insurance",
 			"Room Heater Charges will be Extra in hotels",
 		],
-		"1-4": [
-			"After an early breakfast, you will start your journey towards Yamunotri. Start your 5 km Trek from Janki Chatti to Yamunotri, you can take a dip in Suryakund and worship the ancient Divyashila. After darshan return to Janki Chatti and drive back towards Barkot, after dinner overnight stay at hotel in Barkot.",
-			"After an early breakfast, you will start your journey towards Yamunotri. Start your 5 km Trek from Janki Chatti to Yamunotri, you can take a dip in Suryakund and worship the ancient Divyashila. After darshan return to Janki Chatti and drive back towards Barkot, after dinner overnight stay at hotel in Barkot.",
-		],
-		"5 - 6": [
-			"After an early breakfast, you will start your journey towards Yamunotri. Start your 5 km Trek from Janki Chatti to Yamunotri, you can take a dip in Suryakund and worship the ancient Divyashila. After darshan return to Janki Chatti and drive back towards Barkot, after dinner overnight stay at hotel in Barkot.",
-			"After an early breakfast, you will start your journey towards Yamunotri. Start your 5 km Trek from Janki Chatti to Yamunotri, you can take a dip in Suryakund and worship the ancient Divyashila. After darshan return to Janki Chatti and drive back towards Barkot, after dinner overnight stay at hotel in Barkot.",
-		],
-		"6 - 8": [
-			"After an early breakfast, you will start your journey towards Yamunotri. Start your 5 km Trek from Janki Chatti to Yamunotri, you can take a dip in Suryakund and worship the ancient Divyashila. After darshan return to Janki Chatti and drive back towards Barkot, after dinner overnight stay at hotel in Barkot.",
-			"After an early breakfast, you will start your journey towards Yamunotri. Start your 5 km Trek from Janki Chatti to Yamunotri, you can take a dip in Suryakund and worship the ancient Divyashila. After darshan return to Janki Chatti and drive back towards Barkot, after dinner overnight stay at hotel in Barkot.",
-		],
-		"8 - 11": [
+		1: [
 			"After an early breakfast, you will start your journey towards Yamunotri. Start your 5 km Trek from Janki Chatti to Yamunotri, you can take a dip in Suryakund and worship the ancient Divyashila. After darshan return to Janki Chatti and drive back towards Barkot, after dinner overnight stay at hotel in Barkot.",
 			"After an early breakfast, you will start your journey towards Yamunotri. Start your 5 km Trek from Janki Chatti to Yamunotri, you can take a dip in Suryakund and worship the ancient Divyashila. After darshan return to Janki Chatti and drive back towards Barkot, after dinner overnight stay at hotel in Barkot.",
 		],

@@ -36,7 +36,6 @@ export const TravelStyles = () => {
 			<div className={`${floating ? "block" : "hidden"}`}>
 				<FloatingButton />
 			</div>
-			<Footer />
 		</div>
 	);
 };

@@ -4,7 +4,6 @@ import { Header } from "../components/navbar/Header";
 import { TravelStyleCards } from "../components/TravelStyleCards";
 import { WhyUs } from "../components/WhyUs";
 import { FloatingButton } from "../components/utlis/FloatingButton";
-import { Footer } from "../components/footer/Footer";
 import { Main } from "../components/Main";
 import { AboutPackage } from "../components/AboutPackage";
 import { DaysHeading } from "../components/DaysHeading";
@@ -68,9 +67,41 @@ export const PackagePage = () => {
 			<AboutPackage packageData={packages[id]} />
 			<img src={charDhamTemple} alt="" className="lg:hidden" />
 
-			{id.startsWith("kedarnath") && <div>Kedarnath</div>}
-
-			{(id === "chardham-via-helicopter" || id.startsWith("dodham")) && (
+			{id.startsWith("kedarnath") && <div>
+        
+      </div>}
+        {(id === "dodham-via-helicopter") && (
+         <div>
+           
+				<div>
+					<DaysHeading
+						anim="zoom-out-left"
+						days={"1"}
+						title={packages[id].titles[0]}
+						packageData={packages[id]}
+						reverse={false}
+					/>
+					<ImgRight />
+					<DaysHeading
+						days={"2"}
+						title={packages[id].titles[1]}
+						anim="zoom-in-right"
+						packageData={packages[id]}
+						reverse={true}
+					/>
+					<ImgLeft />
+					<DaysHeading
+						days={"3"}
+						anim="zoom-in-right"
+						title={packages[id].titles[2]}
+						packageData={packages[id]}
+						reverse={false}
+					/>
+					<ImgRight />
+				</div>
+         </div> 
+        )}
+			{(id === "chardham-via-helicopter"  || (id.startsWith("dodham") && id !== "dodham-via-helicopter")) && (
 				<div>
 					<DaysHeading
 						anim="zoom-out-left"
@@ -82,7 +113,7 @@ export const PackagePage = () => {
 					<ImgRight />
 					<DaysHeading
 						days={"3 - 4"}
-						title={packages[id].titles[0]}
+						title={packages[id].titles[1]}
 						anim="zoom-in-right"
 						packageData={packages[id]}
 						reverse={true}
@@ -91,7 +122,7 @@ export const PackagePage = () => {
 					<DaysHeading
 						days={"5 - 6"}
 						anim="zoom-in-right"
-						title={packages[id].titles[0]}
+						title={packages[id].titles[2]}
 						packageData={packages[id]}
 						reverse={false}
 					/>
@@ -142,7 +173,6 @@ export const PackagePage = () => {
 			<div className={`${floating ? "block" : "hidden"}`}>
 				<FloatingButton />
 			</div>
-			<Footer />
 		</div>
 	);
 };

@@ -18,6 +18,7 @@ import { About } from "./pages/About";
 import { TravelStyles } from "./pages/TravelStyles";
 import { PackagePage } from "./pages/PackagePage";
 import { Dev } from "./pages/Dev";
+import { Footer } from "./components/footer/Footer";
 
 function App() {
 	return (
@@ -34,6 +35,7 @@ function App() {
 					</Routes>
 				</AnimatePresence>
 			</BrowserRouter>
+			<Footer />
 		</div>
 	);
 }

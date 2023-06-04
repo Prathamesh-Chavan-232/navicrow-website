@@ -1,20 +1,16 @@
+
+
 /** @type {import('tailwindcss').Config} */
+
 export default {
-	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-	theme: {
-		screens: {
-			sm: "480px",
-			md: "768px",
-			lg: "976px",
-			xl: "1450px",
-      xxl: "1660px"
-		},
-		extend: {
-			colors: {
-				"light-gray": "#f1efec",
-				"olive-green": "#293a2c",
-				"light-green": "#b1b886",
-				"gray-green": "#d9dec5",
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        "light-gray": "#f1efec",
+        "olive-green": "#293a2c",
+        "light-green": "#b1b886",
+        "gray-green": "#d9dec5",
 
 				// Red / Orangish
 				brightRed: "hsl(12,88%,59%)",
