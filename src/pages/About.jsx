@@ -1,10 +1,19 @@
-import React from "react";
 import { Main } from "../components/about/Main";
 import { Header } from "../components/navbar/Header";
 import { Footer } from "../components/footer/Footer";
 import cert from "../assets/logos/certificate.jpg";
 import { motion as m } from "framer-motion";
+import { useState } from "react";
+import { FloatingButton } from "../components/utlis/FloatingButton";
+
 export const About = () => {
+  
+	const [floating, setFloating] = useState(true);
+	
+  function toggleFloating() {
+		setFloating(!floating);
+	}
+  
 	return (
 		<m.main
 			initial={{ opacity: 0 }}
@@ -13,7 +22,7 @@ export const About = () => {
 			className="text-gray-900"
 		>
 			{/* Section 1 - Navbar + Hero */}
-			<Header clr="black" />
+			<Header clr="black" toggleFloating={toggleFloating}/>
 			<Main />
 			<section className="p-8 flex flex-col items-center justify-center gap-6">
 				<p className=" lg:w-[40rem] text-xl">
@@ -75,6 +84,9 @@ export const About = () => {
 				</h1>
 				<img src={cert} alt="" className="w-[800px] h-[500px]" />
 			</section>
+			<div className={`${floating ? "block" : "hidden"}`}>
+					<FloatingButton />
+			</div>
 		</m.main>
 	);
 };

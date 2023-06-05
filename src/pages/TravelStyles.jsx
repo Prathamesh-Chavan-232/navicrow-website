@@ -10,7 +10,7 @@ import { CharDhamPackages } from "../components/CharDhamPackages";
 import Aos from "aos";
 import { useEffect } from "react";
 import charDhamTemple from "../assets/landscapes/char-dham-1.jpg";
-import { InfoComponent } from "./InfoComponent";
+import { InfoComponent } from "../components/InfoComponent";
 
 export const TravelStyles = () => {
 	const [floating, setFloating] = useState(true);
@@ -28,7 +28,7 @@ export const TravelStyles = () => {
 					title="Pilgrimage Tour"
 				/>
 			</div>
-      <InfoComponent />
+			<InfoComponent />
 			{/* Section 2 - About us (Why Niarra?) */}
 			<CharDhamPackages />
 			<TravelStyleCards />

@@ -5,6 +5,13 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    screens: {
+      sm: "480px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1450px",
+      "2xl": "1660px",
+    },
     extend: {
       colors: {
         "light-gray": "#f1efec",

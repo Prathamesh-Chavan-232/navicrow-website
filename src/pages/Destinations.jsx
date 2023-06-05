@@ -9,7 +9,7 @@ import { DoDhamPackages } from "../components/DoDhamPackages";
 import { KedarnathPackages } from "../components/KedarnathPackages";
 import { motion as m } from "framer-motion";
 import { useEffect, useState } from "react";
-import { InfoComponent } from "./InfoComponent";
+import { InfoComponent } from "../components/InfoComponent";
 import { useParams } from "react-router-dom";
 
 export const Destinations = () => {
@@ -60,7 +60,7 @@ export const Destinations = () => {
 				<div className={`${floating ? "block" : "hidden"}`}>
 					<FloatingButton />
 				</div>
-</m.main>
+			</m.main>
 		</div>
 	);
 };

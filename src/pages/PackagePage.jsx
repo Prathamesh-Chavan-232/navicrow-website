@@ -32,6 +32,7 @@ const ImgLeft = () => {
 		</div>
 	);
 };
+
 export const PackagePage = () => {
 	const { id } = useParams();
 	const [floating, setFloating] = useState(true);

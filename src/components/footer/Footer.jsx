@@ -1,7 +1,7 @@
 import { ContactForm } from "./ContactForm";
 import { CallUs } from "./CallUs";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Aos from "aos";
+import certPdf from "../../assets/cert.pdf";
 
 export const Footer = () => {
 	const socials = [
@@ -42,20 +42,20 @@ export const Footer = () => {
 	];
 
 	const contacts = [
-    {
-      heading: "ADDRESS1",
-      icon: "fa fa-location-dot",
-      contact: "Green valley complex, kothal gate, Mussoorie road, Dehradun- 248009",
-      link: "",
-    },
-    {
-      heading: "ADDRESS2",
-      icon: "fa fa-location-dot",
-      contact: "Haripur kalan, Street 8, Haridwar road, 249205",
-      link: "",
-    },
-    
-    
+		{
+			heading: "ADDRESS1",
+			icon: "fa fa-location-dot",
+			contact:
+				"Green valley complex, kothal gate, Mussoorie road, Dehradun- 248009",
+			link: "",
+		},
+		{
+			heading: "ADDRESS2",
+			icon: "fa fa-location-dot",
+			contact: "Haripur kalan, Street 8, Haridwar road, 249205",
+			link: "",
+		},
+
 		{
 			heading: "CALL US",
 			icon: "fa fa-phone",
@@ -118,6 +118,10 @@ export const Footer = () => {
 									})}
 								</div>
 							</div>
+
+							<a href={certPdf} className="">
+								Recognised by Government of India
+							</a>
 						</div>
 
 						{/* Destinations */}
@@ -170,9 +174,12 @@ export const Footer = () => {
 						</h3>
 						<div className="text-sm flex gap-20 items-center justify-between lg:justify-center">
 							<h2 className="text-xs underline">
-								<a href="/">Privacy policy </a>
+								<a href="/privacy-policy">Privacy policy </a>
 							</h2>
-							<h2 className="text-xs underline">Terms & conditions</h2>
+							<h2 className="text-xs underline">
+								{" "}
+								<a href="/terms">Terms & conditions</a>
+							</h2>
 						</div>
 					</div>
 				</div>
