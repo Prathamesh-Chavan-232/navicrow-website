@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Header } from "../components/navbar/Header";
+import { terms, policy } from "../data";
 
 export const Terms = ({ id }) => {
 	const [title, setTitle] = useState("");
@@ -11,102 +12,35 @@ export const Terms = ({ id }) => {
 		}
 	}, []);
 
-	const terms = [
-		{
-			title: "Terms of use of Navicrow Holidays",
-			content:
-				"We invite and welcome visitors on www.navicrowholidays.com website. This aim of this Website is to assist customers to gather travel information, post reviews /opinions on their travel related experiences / issues, engage them in travel related forums so that they gather maximum information on the travel industry / countries/ cities around the world. By accessing or using www.navicrowholidays.com in any manner, it is considered that you have agreed to be bound by the Agreement, as if you had signed this agreement. Please read the Agreement carefully. If you do not accept all of these terms and conditions, please do not use this Website. We suggest visitors of www.navicrowholidays.com to return to this page periodically to review the most current version of the Agreement. www.navicrowholidays.com reserves the right at any time, at our sole discretion, to change or otherwise modify the Agreement without prior notice, and your continued access or use of this Website signifies your acceptance of the updated or modified Agreement.",
-		},
-		{
-			title: "Prices",
-			content:
-				"All Prices displayed for the Products and Services on Navicrow Holidays are subject to change without Prior information or notice and prices you see while making the booking may not be final until the full Payment for the Product or Service is made at the end of the Booking Process.\n\n  Prices on www.navicrowholidays.com shall be inclusive OR exclusive of Booking Fee, Hotel taxes, Airport taxes, Port taxes or any other applicable Government taxes (GST and VAT), etc. Availability of any Product or Service is subject to change at any point in time even while finalizing the booking, which can lead to Price variation, depending upon the basis of available room type in the Hotel, flight booking class, Cruise Cabin, etc at that point in time.",
-		},
-		{
-			title: "Booking and Payments",
-			content:
-				'All Online Payments that happen for any of the Products or Services booked on www.navicrowholidays.com are secure. Navicrow Holidays does not store the Credit / Debit or any other Payment Card details of any customer in the database or in any data backup system. Once you are ready to transact you are transferred directly to the Bank Website. The card details are captured on the Bank Website and not in Navicrow Holidays. Navicrow Holidays takes no responsibility, in case of any misuse of Credit Card by whomsoever.\n\n  Navicrow Holidays acts as an agent for its third party providers and distributors for all products and services purchased by you on this website. You may place bookings for or may make purchases of products and services online at this site. A contract for the sale and purchase of products and services may be made online at this site by your acceptance of the products and services offered on the site (the "Contract") by third party providers and/or distributors and/or where stated, Navicrow Holidays, and you hereby agree to waive any rights to challenge the validity or enforceability of Contracts entered into on this site on the grounds that it was made in electronic form instead of by paper and/or signed or sealed.\n\n Please note that by indicating your acceptance to purchase any product or service offered on the website, you are obligated to complete such transactions. You are prohibited from indicating your acceptance to purchase products and services where you do not intend to complete such transactions. You may not purchase goods or services that you are prohibited from purchasing or possessing by any applicable Indian or local laws. The responsibility for ensuring compliance with all applicable laws shall be yours alone. By submitting an order to purchase goods or services, you represent and warrant that you have the legal right to purchase, utilise and/or possess such goods or services In case any user is booking a ticket/hotel or any other online services via a credit/debit/gift card which is not directly in the name of the person availing these services - www.navicrowholidays.com reserves the right to cancel/hold the said service till the time proper verification is provided. In case you are booking using someone else`s credit/debit/gift card - you are requested to send us a copy of the card used (at the following email id: sales@navicrowholidays.com or call us at 8954766781) a photo identification card of the person in whose name the card is, as well as the person in whose name the services are being provided and an authority letter from the said credit/debit/gift card holder.  In case any of the above mentioned conditions are not met, www.navicrowholidays.com reserves the right to declare such transactions as fraudulent and cancel/hold the service provided. It also holds the right to charge the requisite Cancellation Charges that may be applicable before refunding any such amount.',
-		},
-		{
-			title: "Amendment to booking & purchase",
-			content:
-				"Kindly read and note the Terms & Conditions for amendment in bookings and Purchases, while making the booking or Purchase, which may vary for each product and service. If you don't find any Terms and conditions regarding the amendment policy, you may NOT change your booking or purchase online. Kindly call our Customer care team to know the amendment policy and do the necessary amendment.",
-		},
-		{
-			title: "Cancellation & refunds",
-			content:
-				"Cancellation of Bookings and Cancellation Policy differs for each Product OR Service. When you make a booking, kindly view Terms & Conditions of each Product OR Service, which reflects the Cancellation, Refund with Booking Terms & Conditions. You can cancel the purchased product or service online on our Website - www.navicrowholidays.com . If you find difficulty in cancelling, you can get the same cancelled by calling our customer care team. Cancellation at your request may require a minimum processing time, subject to specific terms and conditions applicable to the type of Product or Service booked & purchased.\n\n You can cancel the purchased product or service online on our Website - www.navicrowholidays.com . If you find difficulty in cancelling, you can get the same cancelled by calling our customer care team. Cancellation at your request may require a minimum processing time, subject to specific terms and conditions applicable to the type of Product or Service booked & purchased.\n\n There may be full Cancellation penalty on the Products or services booked and purchased, which are Non-utilized or Cancelled after the Cancellation deadline mentioned in the Terms and Conditions, while making the purchase.\n\n You agree to bear the full cost of any booking, cancellation and administration fees for any products or services booked but not utilized for any reason. In some cases, Navicrow Holidays may charge cancellation or amendment fees in addition to those imposed by travel services providers.\n\n Navicrow Holidays reserves the right to decline any booking or purchase for any reason and shall not be held liable for any resulting claims of losses, damages or compensation. In such an event, Navicrow Holidays shall refund to you all unutilized money collected from you for that purchase.\n\n For Bookings and Purchases, which has already been paid by you, when cancelled, refunds will be made (based on the Refund Policy, mentioned in Terms and Conditions, while making the booking or at the time of Purchase). For Air ticket, it may take between 30 - 45 working days and for the Hotels it may take between 10 - 15 working days for the amount to get credited into your account. Refund policy may vary for every Product and Service\n\n The preceding refund timeline is a guide for your reference only and shall not be binding upon Navicrow Holidays.",
-		},
-		{
-			title: "Duplicate bookings",
-			content:
-				"You agree that multiple duplicate bookings for the same traveller/s are not allowed and may result in damage and loss to Navicrow Holidays, which you will bear in full.",
-		},
-		{
-			title: "Products & services",
-			content:
-				"Products & Services statements on this Website are for general description purposes only and not all the Products or Services are available in every state or country. You can send us an enquiry by clicking our Contact us or Send Query section, we will provide you with the details regarding terms & conditions, exclusions, products and services applicable for you. Please note the Products and Services that can be booked and purchased on the Website\n\n 1. Hotels -When you make a Hotel booking on the website, kindly go through the fact sheet with terms and conditions carefully to ensure the amenities present in the hotel or the category of the hotel is as per your requirement. Navicrow Holidays keeps updating the fact sheets with terms and conditions of the hotels, however it is dependent on the hotel to provide us with the updated information. Renovation at hotels is normally undertaken at sole discretion of hotels and not necessarily is informed to us. In case of any disputes, Navicrow Holidays shall not be held liable for any disruption in information\n\n 2. Sightseeing Tours - There is a choice of Seat in Coach (SIC) sightseeing and Private sightseeing tours. Seat in Coach tours / transfers may have a waiting time at the airport / hotels. Seat In Coach tours are as per the fixed timings and does not allow you to stop at any site of interest to you, which are not a Part of the Program, as Seat in Coach tours are fixed with a Schedule. You have to make a choice according to your requirement and budget. Entrance Fees at the monuments or places of Interest are not included in the Sightseeing tours unless and until specified.\n\n 3. Airlines - There is a choice to book low cost airlines and full service airlines options. Low Cost Airlines do not have all the services on board in the flight, so kindly choose the airlines carefully and please read the terms & conditions / cancellation Policy before making any purchase of the airlines ticket. There are paper tickets / e-tickets that will be issued to you and both are valid to travel by the airlines. With E-tickets, there is a mandatory requirement of Original identity Photo Card for you to carry and show at the check-in counter of the Airport. Navicrow Holidays is only an Intermediary party and hence takes no responsibility in case of any delay, change in route or cancellation in the flight due to any reasons.\n\n 4. Holidays - Kindly read the Terms & conditions with the Inclusions, Package Itinerary and other details before making any purchase of the Holiday Packages. In case if the Package is not as per your requirement or suits your needs, we can also customize the same for you. Kindly click on the Send Query of the Website with all the details like Hotel Category, No. of Nights, no. of pax, destinations would like to visit, etc and our Customer Care team will get back to you with the Package\n\n 5. Car Rental (Self drive or Chauffeur drive) - Please read the Terms & conditions before making any purchase of this service. Navicrow Holidays takes no responsibility in case of any break down of the car or the quality of car is not up to the level and delays due to bad traffic conditions, any penalty due to speed by the driver or by yourself, etc.\n\n 6. Travel Insurance - Navicrow Holidays strongly recommends insurance cover and safety for all the traveller/s travelling domestic or outside the Country. Traveller/s can purchase the travel Insurance on the Website. Please read the terms and conditions given by the Insurance Provider before issuing the same. Navicrow Holidays takes no responsibility and liability on the claims and disputes whatsoever as mentioned by the Insurance Provider.",
-		},
-		{
-			title: "Delivery of products & services",
-			content:
-				"1. Hotels - When a Hotel booking is made and purchased on the Website, it gives an instant confirmation after the Payment is made completely and you will receive the hotel confirmation voucher in your mentioned email id. Voucher give details about the Hotel Address, Telephone number, Hotel Confirmation number, Meal Plan, Payment details, Supplier details, other relevant important information etc. Voucher is to be given to the Hotel at the Check-in counter.\n\n 2. Sightseeing Tours -When a sightseeing tour is booked and purchased online, an Instant confirmation voucher is issued and you will receive the same in your mentioned email id after the Payment is made completely. Voucher gives details about the pick-up time, pick-up point, date of the sightseeing tour, supplier details, Payment details, other relevant important information etc. There is a choice of Seat in Coach (SIC) sightseeing and Private sightseeing tours. Seat in Coach tours / transfers may have waiting time at the airport / hotels.\n\n 3. Airlines E-tickets - An E-ticket is a paperless electronic document with a unique confirmation number given to passengers in place of Paper ticket. Passengers are required to produce the unique confirmation number print-out at the airlines check-in counter to get the boarding pass.\n\n How to receive an E-ticket? After the complete Payment is made online via credit / debit or any other Payment Card, your e-ticket details will be mailed to you at your email address mentioned at the time of making the Purchase. In case if you don't have an email address, the details will be given to you over the phone or you can come to pick up your e ticket from our office or directly from the airlines counter at the airport by giving them the unique confirmation number - PNR\n\n Paper Tickets - Some of the airlines are still issuing Paper tickets. You will receive the booking confirmation number immediately after you have made full Payment online. All the paper tickets will be dispatched to the delivery address mentioned at the time of making the Purchase. It takes 3 working days to receive the Paper ticket at your address from the day of making the purchase. Navicrow Holidays would not be responsible in case if the customer is not present at the address at the time of delivery.\n\n 4. Holidays - Holiday Packages takes minimum 24 Hours in getting the Confirmation, once the Payment is made online on the Website, our customer care team will get in touch with you and will mail you the confirmation vouchers along with the day to day program at the email address mentioned by you at the time of making the Purchase or in case if there is no email ID, vouchers will be delivered at your address within 3 working days at no additional cost. Navicrow Holidays would not be responsible in case if the customer is not present at the address at the time of delivery.\n\n 5. Rail and Cruises - When a Rail or Cruise booking is made and purchased on the Website, it gives an instant confirmation after the Payment is made completely and you will receive the rail confirmation ticket or Cruise voucher in your email id mentioned at the time of making the purchase . If you don't have an email Id, you can call our Customer Care team and can get the same collected from our Office or it can also be delivered at your doorstep at an additional cost.\n\n 6. Car Rental (Self drive or Chauffeur drive) - It takes minimum 4 - 5 Hours for the Car rental confirmation. Once the Payment is made online, our customer care team will get in touch with you and give you the confirmation details over the phone and will also email you the confirmation voucher.\n\n 7. Travel Insurance - Travel Insurance Policy will be issued and mailed to you instantly at an email Id given at the time of making the purchase. In case if you don't have an email Id, you can get the details from our Customer Care Team and same can be collected from our Office or can be delivered at your doorstep at an additional cost.",
-		},
-		{
-			title: "Third party travel service providers",
-			content:
-				"You may be bound by terms and conditions imposed by the travel service providers for whom Navicrow Holidays acts as an agent including conditions of carriage, refund and cancellation policies of airlines, cruise lines, car rental companies, hotels, vacation rentals, etc.\n\n Navicrow Holidays is not liable for any claims against non-fulfilment or unsatisfactory fulfilment of products and services purchased on your behalf by Navicrow Holidays from these third party providers and distributors, such as, but not limited to, airlines, hotels, tour operators, car rental companies, insurance companies, and other entities. Sometimes, Hotels, when they are in a overbooking situation, they move the booked Passengers to some other Hotel and also with the airlines and other service providers may overbook passengers on their flights or re-schedule flight times, in such incidents Navicrow Holidays takes no responsibility and should not be liable for any looses, damages that may take place due to the above situation",
-		},
-		{
-			title: "Terms & conditions for product & services",
-			content:
-				"Some of the Products and Services have special governing Terms & Conditions, which shall apply in addition to the Terms and Conditions mentioned separately for each product and service. It is important that you read the obtain the information related to these specific Products and Services as they may contain exclusions of limitations of liability and other terms and conditions, including restrictions on amendment or cancellation. Some of these terms and conditions for specific products and services shall include terms and conditions found on your screens and when using any part of this website.",
-		},
-		{
-			title: "Jurisdiction",
-			content:
-				"In the event of any dispute, the dispute shall be referred to the sole arbitrator to be appointed by Navicrow Holidays in Delhi and the matter shall be subjected to the jurisdiction of Delhi Courts only.",
-		},
-		{
-			title: "Passport, visa & health requirement ",
-			content:
-				"It is mandatory requirement for most of the Countries; foreign nationals coming into the country must hold Passport with a validity of minimum 06 Months. Visa and Health regulations are different from country to country. It is the sole responsibility of an Individual Traveller to ensure the submission of complete documentation and medical requirements to the Country Embassy / consulate they are visiting. Navicrow Holidays takes no responsibility in any rejections or declining of the Visa issuance due to any reasons.\n\n Visa/Immigration :\n\n 1. www.navicrowholidays.com is only a facilitator and is not directly responsible for your Visa and Immigration facilities\n\n 2. Please be advised that Immigration and Visa are directly in the jurisdiction of the respective embassies & consulate. www.navicrowholidays.com or any of its third-party vendors do not guarantee the confirmation of any Visas or related documents.\n\n 3. We advise you to go through the immigration and travel rules and regulations of the country and ensure that you have the requisite documents, transit permits and permissions for your holiday. www.navicrowholidays.com will not be responsible in any manner for the same.\n\n 4. Navicrow Holidays customers are advised to check for Airport Charges (if any) at various international destinations apart from India. Navicrow Holidays shall not be responsible to pay any such charges at various destinations that the customer is travelling to.\n\n Navicrow Holidays reserves the right to decline any booking or purchase for any reason and shall not be liable for any resulting claims for losses, damages or compensation. In such an event, Navicrow Holidays shall refund to you all the Unutilized Payment collected after deducting the Booking Fee / Administration charges / Cancellation Charges (if applicable) for that purchase.",
-		},
-		{
-			title: "Content submission",
-			content:
-				'Navicrow Holidays, enable users to submit, post, exchange, transmit or make available for inclusion information, ideas, opinions, images, photos or other materials (collectively "Content"). You agree that Responsibility for all the Content made Posted or available on Navicrow Holidays is your responsibility. Navicrow Holidays, its partners, affiliates, subsidiaries or employees shall in no way be held liable and responsible for any content posted by you or any third party. Navicrow Holidays at its discretion can refuse to post or remove the contents posted by you for any reason including, without limitation, violation of these terms or if it is otherwise deemed to be unlawful or objectionable.\n\n When the content is posted by you, you give permission without any charges to Navicrow Holidays an unrestricted license to use, copy, modify, reformate, translate, display publically, republish whole or part of the Content for any purpose of Commercial use or in connection with any other services offered or in Promotion by Navicrow Holidays\n\n You also confirm that you have all rights to license the Content you posted on the Website for the purposes mentioned above.',
-		},
-		{
-			title:
-				"Use of the website - Visitors / Users of this Website hereby agree upon following terms.",
-			content:
-				"1. Information/ experience posted by you on Navicrow Holidays is true, accurate, current and complete and it is not a biased opinion for any reason due to personal enmity\n\n 2. If you have a Navicrow Holidays account, you will safeguard your account information and will supervise and be completely responsible for any use of your account by anyone other than you.\n\n 3. You must be 13 years of age or older in order to register for an account and contribute to our website. Navicrow Holidays does not knowingly collect the information of anyone under the age of 13. Navicrow Holidays retain sole right and has sole discretion to deny access to anyone to this Website and the services we offer, at any time and for any reason, including, but not restricted to, for violation of this Agreement.",
-		},
-		{
-			title: "Prohibited activites on the site",
-			content:
-				'The content and information related to messages, data, information, text, music, sound, photos, graphics, video, maps, icons, software, code or other material on this website, as well as the infrastructure used to provide such content and information, becomes proprietary rights of Navicrow Holidays. You agree that the information posted by you is true and complete to your knowledge and is not biased. You also agree not to:\n\n 1. Use this Website or its contents for any commercial purpose;\n\n 2. Access, monitor or copy any content or information of this Website using any robot, spider, scraper or other automated means or any manual process for any purpose without our written permission;\n\n 3. Violate the restrictions in any robot exclusion headers on this Website or bypass or circumvent other measures employed to prevent or limit access to this Website;\n\n 4. Take any action that imposes, or may impose, in our discretion, an unreasonable or disproportionately large load on our infrastructure;\n\n 5. Deep-link to any portion of this Website for any purpose without our express written permission; or\n\n 6. "Frame", "Mirror" or otherwise incorporate any part of this Website into any other website without our prior written authorization.\n\n 7. Attempt to modify, translate, adapt, edit, decompile, disassemble, or reverse engineer any software programs used by Navicrow Holidays in connection with the Website or the services',
-		},
-	];
 	return (
 		<div>
 			<Header clr="black" toggleFloating={() => {}} />
-			<div className="flex flex-col px-4 py-10 gap-8 items-center text-center lg:px-12">
-				<h1 className="text-6xl lg:text-8xl font-fancy">{title}</h1>
+			<div className="flex flex-col px-4 py-36 gap-8 items-center text-center lg:px-12">
+				<h1 className="text-7xl lg:text-8xl font-fancy">{title}</h1>
 			</div>
-			{id === "terms" &&
-				terms.map((item, i) => {
-					return (
-						<div
-							key={i}
-							className="px-4 py-10 lg:px-12 flex flex-col gap-6 whitespace-pre-line"
-						>
-							<h2 className="font-bold text-3xl">{item.title}</h2>
-							<p>{item.content}</p>
-						</div>
-					);
-				})}
+			<div>
+				{id === "terms"
+					? terms.map((item, i) => {
+							return (
+								<div
+									key={i}
+									className="px-4 py-10 lg:px-60 xl:px-96 space-y-6 whitespace-pre-line"
+								>
+									<h2 className="font-bold text-3xl">{item.title}</h2>
+									<p>{item.content}</p>
+								</div>
+							);
+					  })
+					: policy.map((item, i) => {
+							<div
+								key={i}
+								className="px-4 py-10 lg:px-60 xl:px-96 space-y-6 whitespace-pre-line"
+							>
+								<h2 className="font-bold text-3xl">{item.title}</h2>
+								<p>{item.content}</p>
+							</div>;
+					  })}
+			</div>
 		</div>
 	);
 };

@@ -21,7 +21,6 @@ import { PackagePage } from "./pages/PackagePage";
 import { Dev } from "./pages/Dev";
 import { Footer } from "./components/footer/Footer";
 import { Terms } from "./pages/Terms";
-import { Privacy } from "./pages/Privacy";
 
 function App() {
 	const id = useParams();
@@ -44,7 +43,11 @@ function App() {
 					<Route exact path="/travel-styles/:id" element={<TravelStyles />} />
 					<Route exact path="/about" element={<About />} />
 					<Route exact path="/terms" element={<Terms id={"terms"} />} />
-					<Route exact path="/privacy-policy" element={<Privacy />} />
+					<Route
+						exact
+						path="/privacy-policy"
+						element={<Terms id={"privacy"} />}
+					/>
 				</Routes>
 			</AnimatePresence>
 			<Footer />
