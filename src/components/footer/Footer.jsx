@@ -174,7 +174,7 @@ export const Footer = () => {
 						</h3>
 						<div className="text-sm flex gap-20 items-center justify-between lg:justify-center">
 							<h2 className="text-xs underline">
-								<a href="/privacy-policy">Privacy policy </a>
+								<a href="/policy">Privacy policy</a>
 							</h2>
 							<h2 className="text-xs underline">
 								{" "}

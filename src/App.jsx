@@ -43,11 +43,7 @@ function App() {
 					<Route exact path="/travel-styles/:id" element={<TravelStyles />} />
 					<Route exact path="/about" element={<About />} />
 					<Route exact path="/terms" element={<Terms id={"terms"} />} />
-					<Route
-						exact
-						path="/privacy-policy"
-						element={<Terms id={"privacy"} />}
-					/>
+					<Route path="/policy" element={<Terms id="privacy" />} />
 				</Routes>
 			</AnimatePresence>
 			<Footer />
