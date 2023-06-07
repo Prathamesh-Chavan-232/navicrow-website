@@ -1,12 +1,9 @@
 import { Header } from "../components/navbar/Header";
 import { Main } from "../components/Main";
 import { WhyUs } from "../components/WhyUs";
-import { Footer } from "../components/footer/Footer";
 import { TravelStyleCards } from "../components/TravelStyleCards";
 import { FloatingButton } from "../components/utlis/FloatingButton";
-import { CharDhamPackages } from "../components/CharDhamPackages";
-import { DoDhamPackages } from "../components/DoDhamPackages";
-import { KedarnathPackages } from "../components/KedarnathPackages";
+import { PackageCards } from "../components/PackageCards";
 import { motion as m } from "framer-motion";
 import { useEffect, useState } from "react";
 import { InfoComponent } from "../components/InfoComponent";
@@ -16,7 +13,7 @@ export const Destinations = () => {
 	const { id } = useParams();
 	const [floating, setFloating] = useState(true);
 	const [title, setTitle] = useState("Yatra");
-
+    
 	function toggleFloating() {
 		setFloating(!floating);
 	}
@@ -29,7 +26,7 @@ export const Destinations = () => {
 		} else if (id === "kedarnath") {
 			setTitle("Kedarnath");
 		}
-	});
+	},[]);
 	return (
 		<div>
 			<m.main
@@ -48,15 +45,9 @@ export const Destinations = () => {
 					/>
 				</div>
 				<InfoComponent />
-				<WhyUs />
-				{id === "char-dham" ? <CharDhamPackages /> : ""}
-				{id === "do-dham" ? <DoDhamPackages /> : ""}
-				{id === "kedarnath" ? <KedarnathPackages /> : ""}
-				{/* Section 2 - About us (Why Navicrow?) */}
-
-				{/* Section 3 - grid */}
-				{/* Section 4 - Travel Styles */}
+				<PackageCards id={id} /> 
 				<TravelStyleCards />
+				<WhyUs />
 				<div className={`${floating ? "block" : "hidden"}`}>
 					<FloatingButton />
 				</div>

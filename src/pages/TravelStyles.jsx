@@ -5,12 +5,11 @@ import { WhyUs } from "../components/WhyUs";
 import { TravelStyleCards } from "../components/TravelStyleCards";
 import { FloatingButton } from "../components/utlis/FloatingButton";
 import { Main } from "../components/Main";
-import { useState } from "react";
-import { CharDhamPackages } from "../components/CharDhamPackages";
+import { InfoComponent } from "../components/InfoComponent";
+import { PackageCards } from "../components/PackageCards";
 import Aos from "aos";
 import { useEffect } from "react";
-import charDhamTemple from "../assets/landscapes/char-dham-1.jpg";
-import { InfoComponent } from "../components/InfoComponent";
+import { useState } from "react";
 
 export const TravelStyles = () => {
 	const [floating, setFloating] = useState(true);
@@ -30,7 +29,7 @@ export const TravelStyles = () => {
 			</div>
 			<InfoComponent />
 			{/* Section 2 - About us (Why Niarra?) */}
-			<CharDhamPackages />
+			<PackageCards id="char-dham" />
 			<TravelStyleCards />
 			<WhyUs />
 			<div className={`${floating ? "block" : "hidden"}`}>

@@ -13,7 +13,7 @@ export const AboutPackage = ({ packageData }) => {
 				<div className="flex flex-col text-center">
 					<span className="font-medium">OVERVIEW</span>
 					<h1 data-aos="zoom-in" className="font-fancy text-6xl">
-						{/* {packageData.title} */}
+						{packageData.title} 
 					</h1>
 				</div>
 				<div className="flex flex-col gap-12 items-center justify-center xl:gap-64 xl:flex-row">

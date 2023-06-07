@@ -1,14 +1,12 @@
+import { WhyUs } from "../components/WhyUs";
+import { Main } from "../components/Main";
 import { Header } from "/src/components/navbar/Header";
-import { Footer } from "../components/footer/Footer";
-import { Hero } from "../components/Hero";
 import { Carousel } from "../components/Carousel";
 import { TravelStyleCards } from "../components/TravelStyleCards";
-import { WhyUs } from "../components/WhyUs";
 import { FloatingButton } from "../components/utlis/FloatingButton";
+import { PackageCards } from "../components/PackageCards";
 import { motion as m } from "framer-motion";
 import { useState } from "react";
-import { CharDhamPackages } from "../components/CharDhamPackages";
-import { Main } from "../components/Main";
 
 export const Home = () => {
 	const [floating, setFloating] = useState(true);
@@ -40,7 +38,7 @@ export const Home = () => {
       <WhyUs clr="green" />
 
 			{/* Packages Card */}
-			<CharDhamPackages />
+			<PackageCards id="char-dham"/>
 			{/* Section 3 - Carousel */}
 			<Carousel />
 			{/* Section 4 - Travel Styles */}

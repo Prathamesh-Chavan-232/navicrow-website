@@ -1,23 +1,21 @@
-
-
 /** @type {import('tailwindcss').Config} */
 
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  theme: {
-    screens: {
-      sm: "480px",
-      md: "768px",
-      lg: "1024px",
-      xl: "1450px",
-      "2xl": "1660px",
-    },
-    extend: {
-      colors: {
-        "light-gray": "#f1efec",
-        "olive-green": "#293a2c",
-        "light-green": "#b1b886",
-        "gray-green": "#d9dec5",
+	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+	theme: {
+		screens: {
+			sm: "480px",
+			md: "768px",
+			lg: "1024px",
+			xl: "1450px",
+			"2xl": "1660px",
+		},
+		extend: {
+			colors: {
+				"light-gray": "#f1efec",
+				"olive-green": "#293a2c",
+				"light-green": "#b1b886",
+				"gray-green": "#d9dec5",
 
 				// Red / Orangish
 				brightRed: "hsl(12,88%,59%)",
@@ -37,8 +35,9 @@ export default {
 				africa: "url('/src/assets/landscapes/africa.jpg')",
 				"carousel-1": "url('/src/assets/landscapes/mountains-7.jpg')",
 				"carousel-2": "url('/src/assets/landscapes/travel-style.jpg')",
-				"carousel-3": "url('/src/assets/landscapes/mountains.jpg')",	
-				"card-1":"linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.6)), url()"
+				"carousel-3": "url('/src/assets/landscapes/mountains.jpg')",
+				"card-1":
+					"linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.6)), url()",
 			},
 			fontFamily: {
 				fancy: ["Playfair Display", "serif"],
