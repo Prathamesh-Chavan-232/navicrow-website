@@ -9,11 +9,11 @@ export const AboutPackage = ({ packageData }) => {
 
 	return (
 		<div className="bg-olive-green space-y-20 py-20 overflow-x-hidden">
-			<div className="px-20 space-y-20 text-white">
-				<div className="flex flex-col text-center">
+			<div className="px-4 lg:px-20 space-y-20 text-white">
+				<div className="text-center space-y-4">
 					<span className="font-medium">OVERVIEW</span>
-					<h1 data-aos="zoom-in" className="font-fancy text-6xl">
-						{packageData.title} 
+					<h1 data-aos="zoom-in" className="font-fancy text-5xl lg:text-6xl">
+						{packageData.title}
 					</h1>
 				</div>
 				<div className="flex flex-col gap-12 items-center justify-center xl:gap-64 xl:flex-row">
@@ -43,7 +43,7 @@ export const AboutPackage = ({ packageData }) => {
 					</div>
 				</div>
 				<div>
-					<div className="flex flex-col gap:20 xl:gap-32 xl:flex-row xl:justify-center xl:items-center">
+					<div className="flex flex-col gap-20 xl:gap-32 xl:flex-row xl:justify-center xl:items-center">
 						<div
 							data-aos="fade-right"
 							className="flex flex-col gap-6 xl:max-w-md"

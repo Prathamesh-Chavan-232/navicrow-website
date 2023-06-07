@@ -11,18 +11,21 @@ import temple1 from "../assets/landscapes/char-dham-1.jpg";
 import temple2 from "../assets/landscapes/temple-1.jpg";
 import { Dayplan } from "../components/Dayplan";
 import { useParams } from "react-router-dom";
-import { chardhamHaridwar } from "../data";
+import { packages } from "../data";
 
 const Img = ({ align, img = temple2 }) => {
 	return (
-		<div className="hidden main-img-2 h-screen lg:block">
-			<img
-				src={img}
-				alt=""
-				className={`absolute w-[600px] ${
-					align === "left" ? "left-[10%]" : "right-[10%]"
-				}`}
-			/>
+		<div>
+			<img src={img} alt="" className={`px-4 lg:hidden w-[600px]`} />
+			<div className="hidden main-img-2 h-screen lg:block">
+				<img
+					src={img}
+					alt=""
+					className={`absolute w-[600px] ${
+						align === "left" ? "left-[10%]" : "right-[10%]"
+					}`}
+				/>
+			</div>
 		</div>
 	);
 };
@@ -31,19 +34,17 @@ export const PackagePage = () => {
 	const { id } = useParams();
 	const [floating, setFloating] = useState(true);
 
-	const [packageData, setPackageData] = useState({});
-	const [itinerary, setItinerary] = useState([]);
+	// const [packageData, setPackageData] = useState({});
+	// const [itinerary, setItinerary] = useState([]);
 
 	function toggleFloating() {
 		setFloating(!floating);
 	}
 
 	useEffect(() => {
-		setPackageData(chardhamHaridwar);
-		setItinerary(chardhamHaridwar.itinerary);
 		return () => {
 			console.log(id);
-			console.log(itinerary.length);
+			console.log(packages[id]);
 		};
 	}, []);
 
@@ -53,20 +54,20 @@ export const PackagePage = () => {
 			<div className="travel-package">
 				<Header clr="white" toggleFloating={toggleFloating} />
 				<Main
-					heading={`${packageData.duration} DAY-TRIP`}
-					title={packageData.title}
-					price={`₹ ${packageData.price} /-`}
+					heading={`${packages[id].duration} DAY-TRIP`}
+					title={packages[id].title}
+					price={`₹ ${packages[id].price} /-`}
 				/>
 			</div>
-			<AboutPackage packageData={chardhamHaridwar} />
-			{chardhamHaridwar.itinerary.map((item, i) => {
+			<AboutPackage packageData={packages[id]} />
+			{packages[id].itinerary.map((item, i) => {
 				return (
 					<div key={i}>
 						<DaysHeading
 							anim="zoom-out-left"
-							days={chardhamHaridwar.days[i]}
-							title={chardhamHaridwar.titles[i]}
-							desc={chardhamHaridwar.desc[i]}
+							days={packages[id].days[i]}
+							title={packages[id].titles[i]}
+							desc={packages[id].desc[i]}
 							reverse={i % 2}
 						/>
 						<Img
@@ -74,8 +75,8 @@ export const PackagePage = () => {
 							img={i % 2 ? temple1 : temple2}
 						/>
 						<Dayplan
-							packageData={chardhamHaridwar}
-							days={chardhamHaridwar.days[i]}
+							packageData={packages[id]}
+							days={packages[id].days[i]}
 							itinerary={item}
 						/>
 					</div>
