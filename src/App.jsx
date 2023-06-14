@@ -46,7 +46,9 @@ function App() {
 					<Route path="/policy" element={<Terms id="privacy" />} />
 				</Routes>
 			</AnimatePresence>
+      { /* 
 			<Footer />
+      */}
 		</div>
 	);
 }
@@ -54,26 +56,17 @@ function App() {
 export default App;
 library.add(fab, fas, far);
 
-// TODO NOW:
+// TODO (Navicrow):
 // [ ]: Grid View - Destinations
 // [ ]: Packages Info Carousel
 // [ ]: Fullpage Carousel, Image Carousel
 // [ ]: Dry out the code
 // [ ]: Padding & sizes consistency
-// [ ] - Animations, Smooth Scrolling & Other Fancy stuff
-// [ ] - Image Loading, Lazy Loading
-// [ ] - Optimization, code spiltting, etc
-// [ ] - Switch to Next & pnpm
+// [ ]: Animations, Smooth Scrolling & Other Fancy stuff
+// [ ]: Image Loading, Lazy Loading
+// [ ]: Optimization, code spiltting, etc
+// [ ]: Switch to Next & pnpm
 // [ ]: Travel Stories Blog
 
-// TODO:
-// [ x ]: Navbar Page Transition
-// [ x ]: Travel Styles Section
-// [ x ]: Enquire Form Hamburger
-// [ x ]: Destinations & Travel Style Menus
-// [ x ]: Destinations - Char Dhaam
-// [ x ]: Travel Style - Pilgrimage
-// [ x ]: Package Page
-// [ x ]: Scrolling Animations
-// [ x ] - Proper Layout
-// [ x ] - Drop downs, Carousels
+// TODO (Niarra):
+// [ ] - Proper Layout
