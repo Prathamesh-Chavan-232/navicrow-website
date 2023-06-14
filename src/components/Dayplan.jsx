@@ -35,7 +35,7 @@ export const Dayplan = ({ days, reverse = true, itinerary, id }) => {
 										{item}
 									</div>
 
-									<div className="absolute" data-aos={anim}>
+									<div className="line absolute" data-aos={anim}>
 										<svg
 											width="358"
 											height="357"
