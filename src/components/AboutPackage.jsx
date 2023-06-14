@@ -2,7 +2,7 @@ import Aos from "aos";
 import { useEffect } from "react";
 import charDhamTemple from "../assets/landscapes/char-dham-1.jpg";
 
-export const AboutPackage = ({ packageData }) => {
+export const AboutPackage = ({ id, packageData, tripHighlights }) => {
 	useEffect(() => {
 		Aos.init({ duration: 1200 });
 	}, []);
@@ -43,20 +43,31 @@ export const AboutPackage = ({ packageData }) => {
 					</div>
 				</div>
 				<div>
-					<div className="flex flex-col gap-20 xl:gap-32 xl:flex-row xl:justify-center xl:items-center">
+					<div className="flex flex-col gap-20 xl:gap-32 xl:flex-row xl:justify-center">
 						<div
 							data-aos="fade-right"
 							className="flex flex-col gap-6 xl:max-w-md"
 						>
 							<h1 className="text-4xl font-fancy">Trip Highlights</h1>
 							<ul className="space-y-4">
-								{packageData.tripHighlights.map((item, i) => {
-									return (
-										<li key={i} className="">
-											{item}
-										</li>
-									);
-								})}
+								{!id.endsWith("chopta") &&
+									tripHighlights.map((item, i) => {
+										return (
+											<li key={i} className="">
+												{item}
+											</li>
+										);
+									})}
+							</ul>
+							<ul>
+								{id.endsWith("chopta") &&
+									packageData.tripHighlights.map((item, i) => {
+										return (
+											<li key={i} className="">
+												{item}
+											</li>
+										);
+									})}
 							</ul>
 						</div>
 						<div data-aos="fade-up" className="flex flex-col gap-6 xl:max-w-md">

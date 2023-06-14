@@ -11,18 +11,25 @@ import temple1 from "../assets/landscapes/char-dham-1.jpg";
 import temple2 from "../assets/landscapes/temple-1.jpg";
 import { Dayplan } from "../components/Dayplan";
 import { useParams } from "react-router-dom";
-import { packages } from "../data";
+import {
+	chardhamHighlights,
+	dodhamHighlights,
+	kedarnathHighlights,
+	packages,
+} from "../data";
 
 const Img = ({ align, img = temple2 }) => {
 	return (
-		<div>
-			<img src={img} alt="" className={`px-4 lg:hidden w-[600px]`} />
-			<div className="hidden main-img-2 h-screen lg:block">
+		<div className="relative bg-light-gray">
+			{/* <div className="flex items-center justify-center w-full">
+				<img src={img} alt="" className={`px-4 lg:hidden w-[600px]`} />
+			</div> */}
+			<div className="main-img-2 h-screen lg:block">
 				<img
 					src={img}
 					alt=""
-					className={`absolute w-[600px] ${
-						align === "left" ? "left-[10%]" : "right-[10%]"
+					className={`px-6 lg:px-0 w-[600px] absolute -top-40 lg:-top-10 ${
+						align === "left" ? "lg:left-[10%]" : "lg:right-[10%]"
 					}`}
 				/>
 			</div>
@@ -33,9 +40,7 @@ const Img = ({ align, img = temple2 }) => {
 export const PackagePage = () => {
 	const { id } = useParams();
 	const [floating, setFloating] = useState(true);
-
-	// const [packageData, setPackageData] = useState({});
-	// const [itinerary, setItinerary] = useState([]);
+	const [tripHighlights, setTripHighlights] = useState([]);
 
 	function toggleFloating() {
 		setFloating(!floating);
@@ -43,6 +48,9 @@ export const PackagePage = () => {
 
 	useEffect(() => {
 		return () => {
+			if (id.startsWith("chardham")) setTripHighlights(chardhamHighlights);
+			else if (id.startsWith("dodham")) setTripHighlights(dodhamHighlights);
+			else setTripHighlights(kedarnathHighlights);
 			console.log(id);
 			console.log(packages[id]);
 		};
@@ -59,17 +67,24 @@ export const PackagePage = () => {
 					price={`₹ ${packages[id].price} /-`}
 				/>
 			</div>
-			<AboutPackage packageData={packages[id]} />
+			<AboutPackage
+				id={id}
+				tripHighlights={tripHighlights}
+				packageData={packages[id]}
+			/>
 			{packages[id].itinerary.map((item, i) => {
 				return (
 					<div key={i}>
-						<DaysHeading
-							anim="zoom-out-left"
-							days={packages[id].days[i]}
-							title={packages[id].titles[i]}
-							desc={packages[id].desc[i]}
-							reverse={i % 2}
-						/>
+						<div className="bg-light-gray py-20">
+							<DaysHeading
+								anim="zoom-out-left"
+								days={packages[id].days[i]}
+								title={packages[id].titles[i]}
+								desc={packages[id].desc[i]}
+								reverse={i % 2}
+								id={id}
+							/>
+						</div>
 						<Img
 							align={i % 2 ? "left" : "right"}
 							img={i % 2 ? temple1 : temple2}
@@ -78,6 +93,7 @@ export const PackagePage = () => {
 							packageData={packages[id]}
 							days={packages[id].days[i]}
 							itinerary={item}
+							id={id}
 						/>
 					</div>
 				);

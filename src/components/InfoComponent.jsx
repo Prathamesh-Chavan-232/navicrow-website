@@ -10,9 +10,9 @@ export const InfoComponent = () => {
 	return (
 		<div>
 			<div className="bg-white text-black space-y-20 py-20 overflow-x-hidden">
-				<div className="px-20 space-y-20">
+				<div className="px-4 lg:px-12 space-y-20">
 					<div className="flex flex-col text-center">
-						<h1 data-aos="zoom-in" className="font-fancy text-6xl">
+						<h1 data-aos="zoom-in" className="font-fancy text-4xl lg:text-6xl">
 							BEYOND EXPEDITIONS
 						</h1>
 					</div>

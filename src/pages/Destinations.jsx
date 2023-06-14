@@ -40,7 +40,7 @@ export const Destinations = () => {
 				<div className="travel-destination">
 					<Header clr="white" toggleFloating={toggleFloating} />
 					<Main
-						heading="LUXURY WILDLIFE SAFARIS AND WILDLIFE ADVENTURES"
+						heading="Journey of Divine Bliss: Embark on a Spiritual Pilgrimage"
 						title={title}
 					/>
 				</div>

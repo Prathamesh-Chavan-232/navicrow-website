@@ -164,17 +164,26 @@ export const kedarnathPackages = [
 	},
 ];
 
+export const chardhamHighlights = [
+	"Yamunotri Dham – Snuggled in Uttarkashi district of Uttarakhand at an altitude of 3,293 m above sea level.",
+	"Gangotri Dham – Gangotri temple is situated in Uttarkashi district ",
+	"Kedarnath Dham – Kedarnath is settled amidst the mountain scape of the Rudraprayag district.",
+	"Badrinath Dham – Badrinath is situated in the Chamoli district.",
+];
+
+export const dodhamHighlights = [
+	"Kedarnath Dham – Kedarnath is settled amidst the mountain scape of the Rudraprayag district.",
+	"Badrinath Dham – Badrinath is situated in the Chamoli district",
+];
+export const kedarnathHighlights = [
+	"Kedarnath Dham – Located in the Rudra Himalayan Ranges near Mandakini River, Kedarnath is settled amidst the mountain scape of the Rudraprayag district. From Dehradun, Kedarnath Temple is 274 km and from Haridwar, Kedarnath is around 245 km.",
+];
+
 export const packages = {
 	"chardham-via-haridwar": {
 		title: "Chardham via Haridwar",
 		price: 18000,
 		duration: 10,
-		tripHighlights: [
-			"Yamunotri Dham – Snuggled in Uttarkashi district of Uttarakhand at an altitude of 3,293 m above sea level.",
-			"Gangotri Dham – Perched at an altitude of 3,100 m above sea level, Gangotri temple is situated in Uttarkashi district at a distance of 285 km from Haridwar and 280 km away from Dehradun.",
-			"Kedarnath Dham – Located in the Rudra Himalayan Ranges near Mandakini River, Kedarnath is settled amidst the mountain scape of the Rudraprayag district. From Dehradun, Kedarnath Temple is 274 km and from Haridwar, Kedarnath is around 245 km.",
-			"Badrinath Dham – Snuggled between Nar and Narayan mountain ranges, Badrinath is situated in the Chamoli district. The distance from Badrinath is 300 km and from Haridwar and from Dehradun, Badrinath is 334 km.",
-		],
 		included: [
 			"Breakfast and Dinner.",
 			"1 Night accommodation in hotel in Kedarnath.",
@@ -233,12 +242,6 @@ export const packages = {
 		title: "Chardham via Delhi",
 		price: 22000,
 		duration: 10,
-		tripHighlights: [
-			"Yamunotri Dham – Snuggled in Uttarkashi district of Uttarakhand at an altitude of 3,293 m above sea level.",
-			"Gangotri Dham – Perched at an altitude of 3,100 m above sea level, Gangotri temple is situated in Uttarkashi district at a distance of 285 km from Haridwar and 280 km away from Dehradun.",
-			"Kedarnath Dham – Located in the Rudra Himalayan Ranges near Mandakini River, Kedarnath is settled amidst the mountain scape of the Rudraprayag district. From Dehradun, Kedarnath Temple is 274 km and from Haridwar, Kedarnath is around 245 km.",
-			"Badrinath Dham – Snuggled between Nar and Narayan mountain ranges, Badrinath is situated in the Chamoli district. The distance from Badrinath is 300 km and from Haridwar and from Dehradun, Badrinath is 334 km.",
-		],
 		included: [
 			"Breakfast and Dinner.",
 			"1 Night accommodation in hotel in Kedarnath.",
@@ -295,13 +298,13 @@ export const packages = {
 	"chardham-via-chopta": {
 		title: "Chardham via Chopta",
 		price: 22000,
-		duration: 11,
+		duration: 10,
 		tripHighlights: [
-			"Kedarnath Temple: Located at an altitude of 3600 meters, Kedarnath Temple is one of the 12 Jyotirlingas of Lord Shiva and an important site of the Chota Chardham Yatra.",
-			"Badrinath Temple: Situated on the banks of the Alaknanda River, Badrinath Temple is dedicated to Lord Vishnu and is a significant pilgrimage site in the Chardham circuit.",
-			"Gangotri: A small town known for the Gangotri Temple, it holds great religious importance as it is believed to be the place where the River Ganga descended from heaven.",
-			"Yamunotri Temple: Located in the Garhwal Himalayas, Yamunotri Temple is dedicated to Goddess Yamuna and is one of the four sacred sites of the Chota Chardham pilgrimage.",
-			"Chopta: A picturesque destination in Uttarakhand, Chopta is popular among trekkers as it serves as the base camp for treks to Tungnath, Deoria Tal, and Chandrashila. It offers breathtaking views of snow-covered peaks like Trishul, Nanda Devi, and Chaukhamba.",
+			"Yamunotri Dham – Snuggled in Uttarkashi district of Uttarakhand at an altitude of 3,293 m above sea level.",
+			"Gangotri Dham – Gangotri temple is situated in Uttarkashi district ",
+			"Kedarnath Dham – Kedarnath is settled amidst the mountain scape of the Rudraprayag district.",
+			"Badrinath Dham – Badrinath is situated in the Chamoli district.",
+			"Chopta: A picturesque destination in Uttarakhand",
 		],
 		included: [
 			"Breakfast and Dinner.",
@@ -326,11 +329,11 @@ export const packages = {
 			"Badrinath and Risihikesh",
 		],
 		desc: [
-			"Embark on a thrilling Char Dham adventure as you journey from Haridwar to Barkot, mesmerized by the scenic beauty of Dehradun and Mussoorie. Trek through mystical trails to reach Yamunotri, immersing yourself in its divine aura.",
-			"Indulge in spiritual bliss as you traverse from Barkot to Uttarkashi, where ancient temples await your reverence. Explore the sacred abode of Gangotri, surrounded by majestic Himalayan vistas, leaving you awe-inspired.",
-			"Embark on a soul-stirring journey from Uttarkashi to Guptkashi, immersing yourself in the serenity of the Ardh Narishwar Temple. Trek amidst snow-clad peaks and lush meadows to reach the divine land of Kedarnath.",
-			"Trace your steps back from the heavenly abode of Kedarnath, immersing your soul in the spiritual essence. Travel from Guptkashi to Pipalkoti, encountering the confluence of sacred rivers, a sight to behold.",
-			"Embark on a transcendent pilgrimage as you proceed from Pipalkoti to Badrinath, basking in the divine aura of the sacred temple. Conclude your enchanting journey in Rishikesh, where the holy Ganges welcomes you with open arms.",
+			"Embark on a captivating journey from Haridwar to Yamunotri, the first destination of your Chardham Yatra. Delight in the scenic drive through Mussoorie, with a visit to the mesmerizing Kempty Falls. Immerse yourself in the sacred hot water springs and offer prayers at the Yamunotri Temple",
+			"Enjoy a serene night's rest and then embark on a picturesque journey to Gangotri. Immerse yourself in the pure waters of the Bhagirathi River and pay homage at the Gangotri Temple, surrounded by awe-inspiring landscapes.",
+			"Leave Uttarkashi behind and head towards Guptkashi/Phata, where your registration for the holy Kedarnath visit awaits. Seek blessings and witness the divine aura before returning to Guptkashi/Phata, where comfort and rest await for an enchanting overnight stay.",
+			"Embark on a scenic drive to the breathtaking paradise of Chopta, a haven for nature lovers and thrill-seekers alike. Trek to Tunganath, one of the five Kedars, and revel in the divine surroundings while gazing at the majestic Chaukhamba peak.",
+			"Along the way, marvel at the scenic wonders and soak in the spiritual atmosphere. Visit the iconic Badrinath Temple, take a sacred dip in the Taptkund, and explore the temple complex. Conclude your remarkable Chardham Yatra at the Haridwar Railway Station, cherishing the cherished memories of this transformative pilgrimage.",
 		],
 
 		itinerary: [
@@ -359,13 +362,13 @@ export const packages = {
 	},
 	"chardham-via-helicopter": {
 		title: "Chardham via Helicopter",
-		price: 190000,
+		price: 125000,
 		duration: 6,
 		tripHighlights: [
 			"Yamunotri Dham – Snuggled in Uttarkashi district of Uttarakhand at an altitude of 3,293 m above sea level.",
-			"Gangotri Dham – Perched at an altitude of 3,100 m above sea level, Gangotri temple is situated in Uttarkashi district at a distance of 285 km from Haridwar and 280 km away from Dehradun.",
-			"Kedarnath Dham – Located in the Rudra Himalayan Ranges near Mandakini River, Kedarnath is settled amidst the mountain scape of the Rudraprayag district. From Dehradun, Kedarnath Temple is 274 km and from Haridwar, Kedarnath is around 245 km.",
-			"Badrinath Dham – Snuggled between Nar and Narayan mountain ranges, Badrinath is situated in the Chamoli district. The distance from Badrinath is 300 km and from Haridwar and from Dehradun, Badrinath is 334 km.",
+			"Gangotri Dham – Gangotri temple is situated in Uttarkashi district ",
+			"Kedarnath Dham – Kedarnath is settled amidst the mountain scape of the Rudraprayag district.",
+			"Badrinath Dham – Badrinath is situated in the Chamoli district. The distance from Badrinath is 300 km and from Haridwar and from Dehradun, Badrinath is 334 km.",
 		],
 		included: [
 			"Breakfast and Dinner.",
@@ -375,10 +378,13 @@ export const packages = {
 			"All applicable fuel, toll taxes, parking fees and driver’s allowances.",
 		],
 		excluded: [
-			"All personal expenses, optional tours and extra meals",
-			"Camera fees, alcoholic/non-alcoholic beverages and starters",
+			"GST @5%",
+			"Any kind of entry fees",
 			"Medical and travel insurance",
+			"All personal expenses, optional tours and extra meals, Lunch is not included in the package",
+			"Porter, pony, horse, cable car, boat, train tickets, air tickets charges.",
 			"Room Heater Charges will be Extra in hotels",
+			"VIP Darshan for Kedarnath Darshan.",
 		],
 
 		days: ["1", "2", "3", "4", "5", "6"],
@@ -390,11 +396,12 @@ export const packages = {
 			"Badrinath and Risihikesh",
 		],
 		desc: [
-			"Embark on a thrilling Char Dham adventure as you journey from Haridwar to Barkot, mesmerized by the scenic beauty of Dehradun and Mussoorie. Trek through mystical trails to reach Yamunotri, immersing yourself in its divine aura.",
-			"Indulge in spiritual bliss as you traverse from Barkot to Uttarkashi, where ancient temples await your reverence. Explore the sacred abode of Gangotri, surrounded by majestic Himalayan vistas, leaving you awe-inspired.",
-			"Embark on a soul-stirring journey from Uttarkashi to Guptkashi, immersing yourself in the serenity of the Ardh Narishwar Temple. Trek amidst snow-clad peaks and lush meadows to reach the divine land of Kedarnath.",
-			"Trace your steps back from the heavenly abode of Kedarnath, immersing your soul in the spiritual essence. Travel from Guptkashi to Pipalkoti, encountering the confluence of sacred rivers, a sight to behold.",
-			"Embark on a transcendent pilgrimage as you proceed from Pipalkoti to Badrinath, basking in the divine aura of the sacred temple. Conclude your enchanting journey in Rishikesh, where the holy Ganges welcomes you with open arms.",
+			"Welcome to Dehradun, the gateway to your enchanting Chardham Yatra. Upon arrival, our courteous driver cum guide will greet you and transfer you to our luxurious hotel, where you will enjoy a complimentary stay with delicious meals. Relax and recharge for the exciting journey that awaits you.",
+			"Embark on an unforgettable helicopter ride from Sahastradhara Helipad to Kharsali Helipad in Yamunotri. Indulge in a scrumptious breakfast before heading for a VIP darshan at Yamunotri Temple, where you will be carried in a palki amidst the breathtaking natural beauty.",
+			"Prepare to be mesmerized as you soar to Harsil Helipad, the gateway to Gangotri. Immerse yourself in the serene ambiance of Gangotri, known as the mini Switzerland of Uttarakhand. Visit Gangotri Temple for a VIP darshan, and soak in the beauty of this unexplored valley. ",
+			"Continue your spiritual journey by flying to Kedarnath from Harsil Helipad. Marvel at the ever-changing colors of the sky and experience a VIP darshan at the sacred Kedarnath Temple. Return to Guptkashi for a blissful stay at Hotel Villa Aadhya. Take in the tranquility of the surroundings and feel a sense of deep connection.",
+			"Embark on a scenic helicopter ride from Kedarnath to Badrinath, relishing the panoramic views of deep valleys and majestic Himalayan peaks. After arrival, visit the revered Badrinath Temple for a VIP darshan.",
+			"In the morning, offer your prayers at the Badri Narayan Temple and bid farewell to Badrinath. Fly back to Dehradun, carrying with you the positive vibes and cherished memories of your Chardham Yatra by helicopter. Reflect on the profound spiritual journey you have undertaken and return with a sense of fulfillment.",
 		],
 
 		itinerary: [
@@ -425,19 +432,18 @@ export const packages = {
 		],
 	},
 	"dodham-via-haridwar": {
-		title: "Chardham via Haridwar",
-		price: 18000,
-		duration: 11,
+		title: "Dodham via Haridwar",
+		price: 11500,
+		duration: 6,
 		tripHighlights: [
-			"Yamunotri Dham – Snuggled in Uttarkashi district of Uttarakhand at an altitude of 3,293 m above sea level.",
-			"Gangotri Dham – Perched at an altitude of 3,100 m above sea level, Gangotri temple is situated in Uttarkashi district at a distance of 285 km from Haridwar and 280 km away from Dehradun.",
 			"Kedarnath Dham – Located in the Rudra Himalayan Ranges near Mandakini River, Kedarnath is settled amidst the mountain scape of the Rudraprayag district. From Dehradun, Kedarnath Temple is 274 km and from Haridwar, Kedarnath is around 245 km.",
 			"Badrinath Dham – Snuggled between Nar and Narayan mountain ranges, Badrinath is situated in the Chamoli district. The distance from Badrinath is 300 km and from Haridwar and from Dehradun, Badrinath is 334 km.",
 		],
 		included: [
-			"Breakfast and Dinner.",
-			"1 Night accommodation in hotel in Kedarnath.",
-			"2 Nights accommodation in Barkot, Uttarkashi, Phata, Pipalkoti each.",
+			"1 night accommodation in hotel in Kedarnath.",
+			"2 night accommodation in hotel in Phata.",
+			"2 night accommodation in hotel in Pipalkoti.",
+			"Breakfast and Dinner",
 			"All transfers and sightseeing as per itinerary.",
 			"All applicable fuel, toll taxes, parking fees and driver’s allowances.",
 		],
@@ -448,13 +454,11 @@ export const packages = {
 			"Room Heater Charges will be Extra in hotels",
 		],
 
-		days: ["1 - 2", "3 - 4", "5 - 6", "7 - 8", "9 - 10"],
+		days: ["1 - 2", "3 - 4", "5 - 6"],
 		titles: [
 			"Haridwar to Barkot and Yamunotri",
 			"Barkot to Uttarkashi and Gangotri",
 			"Uttarkashi to Guptkashi and Kedarnath",
-			"Kedarnath, Guptkashi, Pipalkoti",
-			"Badrinath and Risihikesh",
 		],
 		desc: [
 			"Embark on a thrilling Char Dham adventure as you journey from Haridwar to Barkot, mesmerized by the scenic beauty of Dehradun and Mussoorie. Trek through mystical trails to reach Yamunotri, immersing yourself in its divine aura.",
@@ -466,30 +470,24 @@ export const packages = {
 
 		itinerary: [
 			[
-				"Upon your arrival in Haridwar, the driver will pick you up and drive you to Barkot via Dehradun. You can enjoy the scenic beauty of the route and make a stop at Mussoorie, a popular hill station. After reaching Barkot, you can witness the mesmerizing snow-capped peaks. Overnight stay at a hotel in Barkotn.",
-				"After an early breakfast, you will start your journey towards Yamunotri, the first dham (sacred place) of the Char Dham Yatra. You will proceed to Janki Chatti, from where you will begin a 5 km trek to Yamunotri. Along the way, you can take a dip in the holy Suryakund and worship the ancient Divyashila. After the darshan (worship), you will return to Janki Chatti and then drive back to Barkot. Overnight stay at a hotel in Barkot.",
+				"On day one, our representative will pick you up from Haridwar in the morning. After breakfast, you will embark on a journey towards Phata, passing through Devprayag and Guptkashi. Along the way, you will be treated to breathtaking views of the Garhwal Mountain Ranges. By evening, you will reach Phata and check into a hotel for an overnight stay.",
+				"Day two begins with breakfast, followed by a transfer to Sonprayag. From there, you will start a 14-kilometer trek from Gaurikund to Kedarnath. During the trek, you will be mesmerized by the beauty of the snow-covered Himalayas of Kedarnath, lush green meadows, and enchanting forests. By evening, you will reach Kedarnath, where you can witness the religious Aarti (ritual) and spend the night at a hotel.",
 			],
 			[
-				"On the fifth day, After breakfast, you will proceed towards Guptkashi via Tilwara. On the way, you can visit the Ardh Narishwar Temple in Guptkashi. Guptkashi is a scenic town located on the way to Kedarnath. You will reach Guptkashi by evening and stay overnight at a hotel.",
-				"On the sixth day, there are two options to reach Kedarnath from Guptkashi. Option 1 is to take a helicopter ride from Guptkashi, Phata, or Sersi (depending on the helicopter ticket) and visit the Kedarnath Temple for darshan. Option 2 is to trek from Gaurikund to Kedarnath, which involves a 14 km trek. After the darshan, you will stay overnight at a hotel in Kedarnath.",
+				"On day three, you will head back from Kedarnath towards Sonprayag. It is recommended to start early to reach Sonprayag by evening. Our driver will pick you up and proceed to Phata, where you will spend the night.",
+				"Day four begins with breakfast, followed by a journey towards Pipalkoti. Along the way, you can visit Guptkashi and Rudraprayag. By evening, you will reach Pipalkoti via Karnprayag, where you will check into a hotel for an overnight stay.",
 			],
 			[
-				"In the morning, you should start the return trek from Kedarnath to Gaurikund. From Gaurikund, you will reach Sonprayag by evening. Our driver will pick you up from Sonprayag and proceed to Guptkashi. Overnight stay in Guptkashi.",
-				"After breakfast, you will travel towards Pipalkoti. On the way, you can visit the confluence of Alaknanda and Mandakini rivers at Karnprayag and Rudraprayag. Enjoy the beautiful landscapes and reach Pipalkoti by evening. Overnight stay at a hotel in Pipalkoti",
-			],
-			[
-				"After breakfast, you will proceed towards Badrinath via Joshimath. En route, you can witness the ancient landmarks and enjoy the fresher view of the Himalayas. Upon reaching Badrinath, you can visit the famous Badrinath Temple and seek blessings. After the darshan, you can explore Mana Village, the last village on the Indian side before the Tibetan border. You can also visit Ved Vyas Gufa (cave) and Bheem Pul (bridge). Return to Pipalkoti by evening. Overnight stay in Pipalkoti.",
-				"After breakfast, you will head back to Rishikesh. Along the way, you can witness the origin of the Ganga River, where the Bhagirathi and Alaknanda rivers meet at Devprayag. Enjoy the serene atmosphere and the confluence of these two sacred rivers. Finally, our driver will drop you off at the airport, railway station, or your hotel in Rishikesh, marking the end of your trip.",
+				"In the morning of day five, after breakfast, you will proceed towards Badrinath via Joshimath. After darshan (worship) at the Badrinath Temple, you can explore the enchanting Mana Village. Visit notable places like Vyas Gufa, Bheem Pul, and the Saraswati River. Return to Pipalkoti by evening and spend the night there.",
+				"On day six, after breakfast, you will make your way back to Rishikesh via Srinagar. Our driver will drop you off at the airport or train station, according to your flight or train schedule. Your memorable trip with us concludes here.",
 			],
 		],
 	},
 	"dodham-via-delhi": {
 		title: "Dodham via Delhi",
-		price: 18000,
-		duration: 11,
+		price: 14000,
+		duration: 8,
 		tripHighlights: [
-			"Yamunotri Dham – Snuggled in Uttarkashi district of Uttarakhand at an altitude of 3,293 m above sea level.",
-			"Gangotri Dham – Perched at an altitude of 3,100 m above sea level, Gangotri temple is situated in Uttarkashi district at a distance of 285 km from Haridwar and 280 km away from Dehradun.",
 			"Kedarnath Dham – Located in the Rudra Himalayan Ranges near Mandakini River, Kedarnath is settled amidst the mountain scape of the Rudraprayag district. From Dehradun, Kedarnath Temple is 274 km and from Haridwar, Kedarnath is around 245 km.",
 			"Badrinath Dham – Snuggled between Nar and Narayan mountain ranges, Badrinath is situated in the Chamoli district. The distance from Badrinath is 300 km and from Haridwar and from Dehradun, Badrinath is 334 km.",
 		],
@@ -507,173 +505,199 @@ export const packages = {
 			"Room Heater Charges will be Extra in hotels",
 		],
 
-		days: ["1 - 2", "3 - 4", "5 - 6", "7 - 8", "9 - 10"],
+		days: ["1 - 2", "3 - 4", "5 - 6", "7 - 8"],
 		titles: [
 			"Haridwar to Barkot and Yamunotri",
 			"Barkot to Uttarkashi and Gangotri",
 			"Uttarkashi to Guptkashi and Kedarnath",
 			"Kedarnath, Guptkashi, Pipalkoti",
-			"Badrinath and Risihikesh",
 		],
 		desc: [
 			"Embark on a thrilling Char Dham adventure as you journey from Haridwar to Barkot, mesmerized by the scenic beauty of Dehradun and Mussoorie. Trek through mystical trails to reach Yamunotri, immersing yourself in its divine aura.",
 			"Indulge in spiritual bliss as you traverse from Barkot to Uttarkashi, where ancient temples await your reverence. Explore the sacred abode of Gangotri, surrounded by majestic Himalayan vistas, leaving you awe-inspired.",
 			"Embark on a soul-stirring journey from Uttarkashi to Guptkashi, immersing yourself in the serenity of the Ardh Narishwar Temple. Trek amidst snow-clad peaks and lush meadows to reach the divine land of Kedarnath.",
 			"Trace your steps back from the heavenly abode of Kedarnath, immersing your soul in the spiritual essence. Travel from Guptkashi to Pipalkoti, encountering the confluence of sacred rivers, a sight to behold.",
-			"Embark on a transcendent pilgrimage as you proceed from Pipalkoti to Badrinath, basking in the divine aura of the sacred temple. Conclude your enchanting journey in Rishikesh, where the holy Ganges welcomes you with open arms.",
 		],
 
 		itinerary: [
 			[
-				"Upon your arrival in Haridwar, the driver will pick you up and drive you to Barkot via Dehradun. You can enjoy the scenic beauty of the route and make a stop at Mussoorie, a popular hill station. After reaching Barkot, you can witness the mesmerizing snow-capped peaks. Overnight stay at a hotel in Barkotn.",
-				"After an early breakfast, you will start your journey towards Yamunotri, the first dham (sacred place) of the Char Dham Yatra. You will proceed to Janki Chatti, from where you will begin a 5 km trek to Yamunotri. Along the way, you can take a dip in the holy Suryakund and worship the ancient Divyashila. After the darshan (worship), you will return to Janki Chatti and then drive back to Barkot. Overnight stay at a hotel in Barkot.",
+				"On arrival our representative will pick you up and proceed towards Haridwar. Reach Haridwar and explore the ancient temples of Haridwar like Mansa Devi and Daksh Temple. In evening witness the religious Ganga Aarti in Har ki Pauri and overnight stay in Haridwar.",
+				"Morning after breakfast proceed towards Phata via Devprayag and Guptkashi, enroute you can see the confluence of rivers in Devprayag and Rudraprayag, reach Phata by evening and overnight stay at hotel in Phata.",
 			],
 			[
-				"On the fifth day, After breakfast, you will proceed towards Guptkashi via Tilwara. On the way, you can visit the Ardh Narishwar Temple in Guptkashi. Guptkashi is a scenic town located on the way to Kedarnath. You will reach Guptkashi by evening and stay overnight at a hotel.",
-				"On the sixth day, there are two options to reach Kedarnath from Guptkashi. Option 1 is to take a helicopter ride from Guptkashi, Phata, or Sersi (depending on the helicopter ticket) and visit the Kedarnath Temple for darshan. Option 2 is to trek from Gaurikund to Kedarnath, which involves a 14 km trek. After the darshan, you will stay overnight at a hotel in Kedarnath.",
+				"Morning after breakfast proceed to Sonprayag and start your 14km Trek from Gaurikund to Kedarnath. During the Trek embrace the Beauty of Kedarnath Himalayas covered in snow,lush green meadows and forests. Reach by evening and witness religious Aarti of Kedarnath and overnight stay at hotel. During the Trek you'll have two options - By Trek or By Helicopter",
+				"Morning head back towards Sonprayag. You should start early from Kedarnath to reach Sonprayag till evening. Driver will pick you up and proceed to Phata and overnight stay in Phata.",
 			],
 			[
-				"In the morning, you should start the return trek from Kedarnath to Gaurikund. From Gaurikund, you will reach Sonprayag by evening. Our driver will pick you up from Sonprayag and proceed to Guptkashi. Overnight stay in Guptkashi.",
-				"After breakfast, you will travel towards Pipalkoti. On the way, you can visit the confluence of Alaknanda and Mandakini rivers at Karnprayag and Rudraprayag. Enjoy the beautiful landscapes and reach Pipalkoti by evening. Overnight stay at a hotel in Pipalkoti",
+				"Morning after breakfast, you would be travelling towards Pipalkoti, enroute you can visit Guptkashi and Rudraprayag. Reach Pipalkoti via Karnprayag by evening and overnight stay in hotel.",
+				"Morning after breakfast proceed towards Badrinath via Joshimath. After darshan you can explore Mana Village. Visit Vyas Gufa, Bheem Pul and Saraswati River. Return Pipalkoti till evening and overnight stay.",
 			],
 			[
-				"After breakfast, you will proceed towards Badrinath via Joshimath. En route, you can witness the ancient landmarks and enjoy the fresher view of the Himalayas. Upon reaching Badrinath, you can visit the famous Badrinath Temple and seek blessings. After the darshan, you can explore Mana Village, the last village on the Indian side before the Tibetan border. You can also visit Ved Vyas Gufa (cave) and Bheem Pul (bridge). Return to Pipalkoti by evening. Overnight stay in Pipalkoti.",
-				"After breakfast, you will head back to Rishikesh. Along the way, you can witness the origin of the Ganga River, where the Bhagirathi and Alaknanda rivers meet at Devprayag. Enjoy the serene atmosphere and the confluence of these two sacred rivers. Finally, our driver will drop you off at the airport, railway station, or your hotel in Rishikesh, marking the end of your trip.",
+				"Morning after breakfast, head back towards Rishikesh via Srinagar. Enroute explore Dhari Devi Temple and reach Rishikesh by evening and witness the world famous Ganga Aarti in Parmarth Niketan and overnight stay at hotel in Rishikesh.",
+				"Morning after breakfast, checkout from hotel and head back towards Delhi via Roorkee. According to your Flight/ Train schedule driver will drop you to the Airport/ Station. Your trip with us ends here.",
 			],
 		],
 	},
 	"dodham-via-chopta": {
 		title: "Dodham via Chopta",
-		price: 18000,
-		duration: 10,
+		price: 13000,
+		duration: 7,
 		tripHighlights: [
-			"Yamunotri Dham – Snuggled in Uttarkashi district of Uttarakhand at an altitude of 3,293 m above sea level.",
-			"Gangotri Dham – Perched at an altitude of 3,100 m above sea level, Gangotri temple is situated in Uttarkashi district at a distance of 285 km from Haridwar and 280 km away from Dehradun.",
-			"Kedarnath Dham – Located in the Rudra Himalayan Ranges near Mandakini River, Kedarnath is settled amidst the mountain scape of the Rudraprayag district. From Dehradun, Kedarnath Temple is 274 km and from Haridwar, Kedarnath is around 245 km.",
-			"Badrinath Dham – Snuggled between Nar and Narayan mountain ranges, Badrinath is situated in the Chamoli district. The distance from Badrinath is 300 km and from Haridwar and from Dehradun, Badrinath is 334 km.",
+			"Kedarnath Dham – Kedarnath is settled amidst the mountain scape of the Rudraprayag district.",
+			"Badrinath Dham – Badrinath is situated in the Chamoli district.",
+			"Chopta: A picturesque destination in Uttarakhand",
 		],
 		included: [
-			"Breakfast and Dinner.",
-			"1 Night accommodation in hotel in Kedarnath.",
-			"2 Nights accommodation in Barkot, Uttarkashi, Phata, Pipalkoti each.",
-			"All transfers and sightseeing as per itinerary.",
-			"All applicable fuel, toll taxes, parking fees and driver’s allowances.",
+			"Road trip starting from Haridwar",
+			"Arrival along with Airport/Railway return transfer",
+			"Accommodation with Breakfast & Dinner (6 nights stay)",
+			"All ground transfers & local sightseeing on group basis",
 		],
 		excluded: [
 			"All personal expenses, optional tours and extra meals",
 			"Camera fees, alcoholic/non-alcoholic beverages and starters",
 			"Medical and travel insurance",
+			"Tips, travel insurance, medical insurance, laundry charges, liquors, mineral water, telephone charges.",
 			"Room Heater Charges will be Extra in hotels",
 		],
 
-		days: ["1 - 2", "3 - 4", "5 - 6", "7 - 8", "9 - 10"],
+		days: ["1 - 2", "3 - 4", "5 - 6", "7"],
 		titles: [
-			"Haridwar to Barkot and Yamunotri",
-			"Barkot to Uttarkashi and Gangotri",
-			"Uttarkashi to Guptkashi and Kedarnath",
-			"Kedarnath, Guptkashi, Pipalkoti",
-			"Badrinath and Risihikesh",
+			"Haridwar to Guptkashi",
+			"Guptkashi to Kedarnath and Return",
+			"Guptkashi to Chopta and Tungnath Darshan",
+			"Chopta to Deoriyatal",
+			"Badrinath to Rudraprayag and Haridwar",
 		],
 		desc: [
 			"Embark on a thrilling Char Dham adventure as you journey from Haridwar to Barkot, mesmerized by the scenic beauty of Dehradun and Mussoorie. Trek through mystical trails to reach Yamunotri, immersing yourself in its divine aura.",
+			"Trace your steps back from the heavenly abode of Kedarnath, immersing your soul in the spiritual essence. Travel from Guptkashi to Pipalkoti, encountering the confluence of sacred rivers, a sight to behold.",
 			"Indulge in spiritual bliss as you traverse from Barkot to Uttarkashi, where ancient temples await your reverence. Explore the sacred abode of Gangotri, surrounded by majestic Himalayan vistas, leaving you awe-inspired.",
 			"Embark on a soul-stirring journey from Uttarkashi to Guptkashi, immersing yourself in the serenity of the Ardh Narishwar Temple. Trek amidst snow-clad peaks and lush meadows to reach the divine land of Kedarnath.",
-			"Trace your steps back from the heavenly abode of Kedarnath, immersing your soul in the spiritual essence. Travel from Guptkashi to Pipalkoti, encountering the confluence of sacred rivers, a sight to behold.",
-			"Embark on a transcendent pilgrimage as you proceed from Pipalkoti to Badrinath, basking in the divine aura of the sacred temple. Conclude your enchanting journey in Rishikesh, where the holy Ganges welcomes you with open arms.",
 		],
 
 		itinerary: [
 			[
-				"Upon your arrival in Haridwar, the driver will pick you up and drive you to Barkot via Dehradun. You can enjoy the scenic beauty of the route and make a stop at Mussoorie, a popular hill station. After reaching Barkot, you can witness the mesmerizing snow-capped peaks. Overnight stay at a hotel in Barkotn.",
-				"After an early breakfast, you will start your journey towards Yamunotri, the first dham (sacred place) of the Char Dham Yatra. You will proceed to Janki Chatti, from where you will begin a 5 km trek to Yamunotri. Along the way, you can take a dip in the holy Suryakund and worship the ancient Divyashila. After the darshan (worship), you will return to Janki Chatti and then drive back to Barkot. Overnight stay at a hotel in Barkot.",
+				"Upon arrival in Haridwar, your journey to the religious Do Dham Yatra will commence. You will be transferred to Guptkashi via a comfortable AC private vehicle, enjoying scenic views of the Mandakini river along the way. In Guptkashi, visit the Ardh Nareshwar Temple for a religious start to your journey.",
+				"The next day, embark on a 14-kilometer trek from Gaurikund to Kedarnath, surrounded by the breathtaking beauty of the snow-capped Himalayas. Experience the divine aura of Kedarnath Temple, and then return to Guptkashi for an overnight stay.",
 			],
 			[
-				"On the fifth day, After breakfast, you will proceed towards Guptkashi via Tilwara. On the way, you can visit the Ardh Narishwar Temple in Guptkashi. Guptkashi is a scenic town located on the way to Kedarnath. You will reach Guptkashi by evening and stay overnight at a hotel.",
-				"On the sixth day, there are two options to reach Kedarnath from Guptkashi. Option 1 is to take a helicopter ride from Guptkashi, Phata, or Sersi (depending on the helicopter ticket) and visit the Kedarnath Temple for darshan. Option 2 is to trek from Gaurikund to Kedarnath, which involves a 14 km trek. After the darshan, you will stay overnight at a hotel in Kedarnath.",
+				'Guptkashi to Chopta (Tungnath Darshan) and Chopta to Deoriyatal From Guptkashi, proceed to Chopta, often referred to as "Mini Switzerland." After checking into your hotel, embark on a fulfilling trek to Tungnath Temple, the highest temple of Lord Shiva. If desired, you can continue your trek to Chandrashila peak for panoramic views of the majestic Himalayas.',
+				"The following day, trek to Deoriyatal, a beautiful lake surrounded by scenic views of Chaukhamba and other prominent peaks. Spend the night at a nearby camp, indulging in adventure and enjoying delicious meals.",
 			],
 			[
-				"In the morning, you should start the return trek from Kedarnath to Gaurikund. From Gaurikund, you will reach Sonprayag by evening. Our driver will pick you up from Sonprayag and proceed to Guptkashi. Overnight stay in Guptkashi.",
-				"After breakfast, you will travel towards Pipalkoti. On the way, you can visit the confluence of Alaknanda and Mandakini rivers at Karnprayag and Rudraprayag. Enjoy the beautiful landscapes and reach Pipalkoti by evening. Overnight stay at a hotel in Pipalkoti",
+				"Deoriyatal to Badrinath, Badrinath to Rudraprayag, and Rudraprayag to Haridwar Trek back to Sari Village and then drive to Badrinath, where you can take a holy dip in Taptkund and experience the divine aura of Badrinath Temple. Explore other notable spots like Mana Village, Vasundhara Waterfall, and Vyas Gufa.",
+				"On the sixth day, proceed to Rudraprayag via Joshimath, visiting the Narsingh Temple en route. In Rudraprayag, spend the night at a hotel",
 			],
 			[
 				"After breakfast, you will proceed towards Badrinath via Joshimath. En route, you can witness the ancient landmarks and enjoy the fresher view of the Himalayas. Upon reaching Badrinath, you can visit the famous Badrinath Temple and seek blessings. After the darshan, you can explore Mana Village, the last village on the Indian side before the Tibetan border. You can also visit Ved Vyas Gufa (cave) and Bheem Pul (bridge). Return to Pipalkoti by evening. Overnight stay in Pipalkoti.",
 				"After breakfast, you will head back to Rishikesh. Along the way, you can witness the origin of the Ganga River, where the Bhagirathi and Alaknanda rivers meet at Devprayag. Enjoy the serene atmosphere and the confluence of these two sacred rivers. Finally, our driver will drop you off at the airport, railway station, or your hotel in Rishikesh, marking the end of your trip.",
+			],
+			[
+				"On your final day of the incredible Do Dham tour, including Tungnath Darshan and Deoriyatal, savor a delicious breakfast before checking out from the hotel. Your private vehicle will be waiting for you at the hotel front gate, ready to embark on the next leg of your journey.",
+				"As you travel, make a stop in Rishikesh, often referred to as the Land of Sages. Explore the famous landmarks of Ram Jhula and Laxman Jhula, immersing yourself in the spiritual ambiance of this sacred place. In the late evening, return to Haridwar, bringing with you the auspicious blessings and cherished memories from your entire trip.",
 			],
 		],
 	},
 	"dodham-via-helicopter": {
 		title: "Dodham via Helicopter",
-		price: 18000,
-		duration: 11,
-		tripHighlights: [
-			"Yamunotri Dham – Snuggled in Uttarkashi district of Uttarakhand at an altitude of 3,293 m above sea level.",
-			"Gangotri Dham – Perched at an altitude of 3,100 m above sea level, Gangotri temple is situated in Uttarkashi district at a distance of 285 km from Haridwar and 280 km away from Dehradun.",
-			"Kedarnath Dham – Located in the Rudra Himalayan Ranges near Mandakini River, Kedarnath is settled amidst the mountain scape of the Rudraprayag district. From Dehradun, Kedarnath Temple is 274 km and from Haridwar, Kedarnath is around 245 km.",
-			"Badrinath Dham – Snuggled between Nar and Narayan mountain ranges, Badrinath is situated in the Chamoli district. The distance from Badrinath is 300 km and from Haridwar and from Dehradun, Badrinath is 334 km.",
-		],
+		price: 125000,
+		duration: 3,
 		included: [
-			"Breakfast and Dinner.",
-			"1 Night accommodation in hotel in Kedarnath.",
-			"2 Nights accommodation in Barkot, Uttarkashi, Phata, Pipalkoti each.",
-			"All transfers and sightseeing as per itinerary.",
-			"All applicable fuel, toll taxes, parking fees and driver’s allowances.",
+			"Road trip starting from Haridwar",
+			"Arrival along with Airport/Railway return transfer",
+			"Accommodation with Breakfast & Dinner (6 nights stay)",
+			"All ground transfers & local sightseeing on group basis",
 		],
 		excluded: [
-			"All personal expenses, optional tours and extra meals",
-			"Camera fees, alcoholic/non-alcoholic beverages and starters",
+			"GST @5%",
+			"Any kind of entry fees",
+			"All personal expenses, optional tours and extra meals, Lunch is not included in the package",
 			"Medical and travel insurance",
 			"Room Heater Charges will be Extra in hotels",
+			"VIP Darshan for Kedarnath Darshan.",
 		],
 
-		days: ["1 - 2", "3 - 4", "5 - 6", "7 - 8", "9 - 10"],
-		titles: [
-			"Haridwar to Barkot and Yamunotri",
-			"Barkot to Uttarkashi and Gangotri",
-			"Uttarkashi to Guptkashi and Kedarnath",
-			"Kedarnath, Guptkashi, Pipalkoti",
-			"Badrinath and Risihikesh",
-		],
+		days: ["1", "2", "3"],
+		titles: ["Visit Kedarnath", "Visit Badrinath", "Departure Day"],
 		desc: [
-			"Embark on a thrilling Char Dham adventure as you journey from Haridwar to Barkot, mesmerized by the scenic beauty of Dehradun and Mussoorie. Trek through mystical trails to reach Yamunotri, immersing yourself in its divine aura.",
-			"Indulge in spiritual bliss as you traverse from Barkot to Uttarkashi, where ancient temples await your reverence. Explore the sacred abode of Gangotri, surrounded by majestic Himalayan vistas, leaving you awe-inspired.",
-			"Embark on a soul-stirring journey from Uttarkashi to Guptkashi, immersing yourself in the serenity of the Ardh Narishwar Temple. Trek amidst snow-clad peaks and lush meadows to reach the divine land of Kedarnath.",
-			"Trace your steps back from the heavenly abode of Kedarnath, immersing your soul in the spiritual essence. Travel from Guptkashi to Pipalkoti, encountering the confluence of sacred rivers, a sight to behold.",
-			"Embark on a transcendent pilgrimage as you proceed from Pipalkoti to Badrinath, basking in the divine aura of the sacred temple. Conclude your enchanting journey in Rishikesh, where the holy Ganges welcomes you with open arms.",
+			"Journey to Divine Heights - Explore the sacred realm as we soar from Sahastradhara to Sersi Helipad, continuing our flight to Kedarnath. Experience VIP darshan guided by a Pandit and embrace the divine blessings. Return to Guptkashi for a serene stay, cherishing the profound spirituality of Kedarnath.",
+			"Celestial Majesty Unveiled - Embark on a majestic voyage to Badrinath from Sersi Helipad. Immerse yourself in the spiritual aura as you check-in at the hotel. Discover the enchanting Mana village, the gateway to the mystical Himalayas. Witness the resplendent Swarna Aarti, an ethereal experience that lingers in your heart.",
+			"Departure to Earthly Realms - As our journey nears its end, relish a panoramic view of the region's awe-inspiring landscapes. Behold the captivating confluences and picturesque valleys as we return to Dehradun. Depart with cherished memories of the divine blessings received in Kedarnath and Badrinath, forever etched in your soul.klF",
 		],
 
 		itinerary: [
 			[
-				"Upon your arrival in Haridwar, the driver will pick you up and drive you to Barkot via Dehradun. You can enjoy the scenic beauty of the route and make a stop at Mussoorie, a popular hill station. After reaching Barkot, you can witness the mesmerizing snow-capped peaks. Overnight stay at a hotel in Barkotn.",
-				"After an early breakfast, you will start your journey towards Yamunotri, the first dham (sacred place) of the Char Dham Yatra. You will proceed to Janki Chatti, from where you will begin a 5 km trek to Yamunotri. Along the way, you can take a dip in the holy Suryakund and worship the ancient Divyashila. After the darshan (worship), you will return to Janki Chatti and then drive back to Barkot. Overnight stay at a hotel in Barkot.",
+				"On the first day, we will start our journey at Sahastradhara Helipad and board a helicopter to Sersi Helipad. From there, we will continue our flight to Kedarnath. The temple is approximately 500 meters away from the helipad, and it will take us around 15 minutes to reach there. ",
+				"After the darshan and Poojan (ritual offering), we will fly back to Sersi helipad. For lunch and an overnight stay, we will proceed to Guptkashi, a town located on the banks of the river Mandakini.",
 			],
 			[
-				"On the fifth day, After breakfast, you will proceed towards Guptkashi via Tilwara. On the way, you can visit the Ardh Narishwar Temple in Guptkashi. Guptkashi is a scenic town located on the way to Kedarnath. You will reach Guptkashi by evening and stay overnight at a hotel.",
-				"On the sixth day, there are two options to reach Kedarnath from Guptkashi. Option 1 is to take a helicopter ride from Guptkashi, Phata, or Sersi (depending on the helicopter ticket) and visit the Kedarnath Temple for darshan. Option 2 is to trek from Gaurikund to Kedarnath, which involves a 14 km trek. After the darshan, you will stay overnight at a hotel in Kedarnath.",
+				'On the second day, we will head to the Helipad at Sersi to continue our journey towards Badrinath. Upon reaching the Badrinath Helipad, the group will check-in at a hotel. After having lunch, we will visit Mana village, which is known as the "Last village of India" due to its proximity to the China border.',
+				"In the evening, the passengers will have the opportunity to attend the Swarna Aarti (golden light ceremony) at the Badrinath temple. Following the Aarti, dinner will be served, and the group will have an overnight stay in Badrinath.",
 			],
 			[
-				"In the morning, you should start the return trek from Kedarnath to Gaurikund. From Gaurikund, you will reach Sonprayag by evening. Our driver will pick you up from Sonprayag and proceed to Guptkashi. Overnight stay in Guptkashi.",
-				"After breakfast, you will travel towards Pipalkoti. On the way, you can visit the confluence of Alaknanda and Mandakini rivers at Karnprayag and Rudraprayag. Enjoy the beautiful landscapes and reach Pipalkoti by evening. Overnight stay at a hotel in Pipalkoti",
+				"On the last day of the trip, after breakfast, we will begin our return journey to Dehradun. During the flight, passengers will enjoy a beautiful overview of the region, including picturesque views of the confluences.",
+				"The region boasts stunning valleys, dense forests, and five confluences, namely Vishu Prayag, Nanda Prayag, Karna Prayag, Rudra Prayag, and Dev Prayag. This scenic route will be a treat for nature lovers. Finally, we will arrive back at the helipad, concluding our memorable visit to Kedarnath and Badrinath.",
+			],
+		],
+	},
+	"kedarnath-via-delhi": {
+		title: "Kedarnath",
+		price: 15000,
+		duration: 6,
+		included: [
+			"Breakfast + Dinner.",
+			"All applicable hotel and transport taxes.",
+			"Transfers and sightseeing as prepackage car.",
+			"All toll tax, parking, fuel and driver allowances.",
+			"Hotel accommodation as per package same or similar hotels.",
+		],
+		excluded: [
+			"GST @5%",
+			"All personal expenses, optional tours and extra meals",
+			"Camera fees, alcoholic/non-alcoholic beverages and starters, Lunch is not included in Package.",
+			"Any kind of entry fees.",
+			"Helicopter Ticket INR 8500/- per person",
+			"Medical and travel insurance",
+			"VIP Darshan for Kedarnath Darshan.",
+			"Room Heater Charges will be Extra in hotels",
+		],
+
+		days: ["1 - 2", "3 - 4", "5 - 6"],
+		titles: [
+			"Delhi to Haridwar and Guptakashi",
+			"Guptkashi to Kedarnath and return",
+			"Guptakashi to Haridwar and Delhi",
+		],
+		desc: [
+			"Embark on a spiritual odyssey from bustling Delhi to the tranquil haven of Haridwar. Immerse yourself in the scenic beauty of Devprayag and Rudraprayag as you journey from Haridwar to Guptkashi.",
+			"Embark on an extraordinary pilgrimage as you trek from Sonprayag to the revered shrine of Kedarnath. Experience the blissful morning rituals at the sacred Kedarnath Temple and embark on a memorable trek back to Guptkashi.",
+			"Embark on a picturesque journey from Guptkashi to Haridwar, traversing through the divine towns of Rudraprayag, Dev Prayag, and Rishikesh. Conclude your unforgettable pilgrimage with a heartfelt farewell from Haridwar. As we drive you back to Delhi, reminisce about the divine experiences and blessings received.",
+		],
+
+		itinerary: [
+			[
+				'Embark on a journey filled with spiritual bliss as you meet our driver at Delhi airport, station, hotel, or home. Upon arrival, check into the hotel and prepare for an evening of divine experiences. Visit the revered Mansa Devi Temple and witness the captivating Ganga Aarti at the sacred "Har Ki Pauri."',
+				"Take a scenic drive to Guptakashi.Along the way, be captivated by the beauty of Devprayag and Rudraprayag. Arriving in Guptakashi, visit the sacred Ardh Narishwar Temple before settling into your hotel. Let the tranquility of Guptkashi surround you as you enjoy an overnight stay in this serene town.",
 			],
 			[
-				"After breakfast, you will proceed towards Badrinath via Joshimath. En route, you can witness the ancient landmarks and enjoy the fresher view of the Himalayas. Upon reaching Badrinath, you can visit the famous Badrinath Temple and seek blessings. After the darshan, you can explore Mana Village, the last village on the Indian side before the Tibetan border. You can also visit Ved Vyas Gufa (cave) and Bheem Pul (bridge). Return to Pipalkoti by evening. Overnight stay in Pipalkoti.",
-				"After breakfast, you will head back to Rishikesh. Along the way, you can witness the origin of the Ganga River, where the Bhagirathi and Alaknanda rivers meet at Devprayag. Enjoy the serene atmosphere and the confluence of these two sacred rivers. Finally, our driver will drop you off at the airport, railway station, or your hotel in Rishikesh, marking the end of your trip.",
+				"Embark on a remarkable journey to the revered shrine of Shri Kedarnath. Drive to Sonprayag and Gaurikund, and then begin an invigorating trek to reach Kedarnath. As you arrive at the holy temple, experience the divine aura and participate in the evening arti.",
+				"In the morning, engage in heartfelt pooja (worship) and seek blessings at the sacred Kedarnath Temple. Afterwards, embark on a trek back to Guptakashi. As you arrive in Guptakashi, indulge in a delightful dinner and unwind during your overnight stay, cherishing the memories of your divine journey.",
+			],
+			[
+				"After a fulfilling breakfast, it's time to bid farewell to Guptakashi and embark on a scenic drive to Haridwar. En route, visit the awe-inspiring destinations of Rudraprayag, Dev Prayag, and Rishikesh, known for their spiritual significance. Upon reaching Haridwar, check-in to the hotel and enjoy a comfortable overnight stay, rejuvenating your spirit in this sacred city.",
+				"On the final day, savor a delicious breakfast before driving back to Delhi. Our journey together concludes as we drop you off at the Delhi airport, station, home, or hotel. Depart with a heart full of divine blessings and cherish the memories of this extraordinary pilgrimage.",
 			],
 		],
 	},
 	kedarnath: {
 		title: "Kedarnath",
-		price: 18000,
-		duration: 11,
-		tripHighlights: [
-			"Yamunotri Dham – Snuggled in Uttarkashi district of Uttarakhand at an altitude of 3,293 m above sea level.",
-			"Gangotri Dham – Perched at an altitude of 3,100 m above sea level, Gangotri temple is situated in Uttarkashi district at a distance of 285 km from Haridwar and 280 km away from Dehradun.",
-			"Kedarnath Dham – Located in the Rudra Himalayan Ranges near Mandakini River, Kedarnath is settled amidst the mountain scape of the Rudraprayag district. From Dehradun, Kedarnath Temple is 274 km and from Haridwar, Kedarnath is around 245 km.",
-			"Badrinath Dham – Snuggled between Nar and Narayan mountain ranges, Badrinath is situated in the Chamoli district. The distance from Badrinath is 300 km and from Haridwar and from Dehradun, Badrinath is 334 km.",
-		],
+		price: 7500,
+		duration: 4,
 		included: [
 			"Breakfast and Dinner.",
 			"1 Night accommodation in hotel in Kedarnath.",
-			"2 Nights accommodation in Barkot, Uttarkashi, Phata, Pipalkoti each.",
+			"2 Nights accommodation in Guptakashi",
 			"All transfers and sightseeing as per itinerary.",
 			"All applicable fuel, toll taxes, parking fees and driver’s allowances.",
 		],
@@ -684,135 +708,73 @@ export const packages = {
 			"Room Heater Charges will be Extra in hotels",
 		],
 
-		days: ["1 - 2", "3 - 4", "5 - 6", "7 - 8", "9 - 10"],
+		days: ["1", "2", "3", "4"],
 		titles: [
-			"Haridwar to Barkot and Yamunotri",
-			"Barkot to Uttarkashi and Gangotri",
-			"Uttarkashi to Guptkashi and Kedarnath",
-			"Kedarnath, Guptkashi, Pipalkoti",
-			"Badrinath and Risihikesh",
+			"Haridwar to Guptakash",
+			"Guptkashi to Kedarnath",
+			"Kedarnath to Guptkashi",
+			"Guptkashi to Haridwar",
 		],
 		desc: [
-			"Embark on a thrilling Char Dham adventure as you journey from Haridwar to Barkot, mesmerized by the scenic beauty of Dehradun and Mussoorie. Trek through mystical trails to reach Yamunotri, immersing yourself in its divine aura.",
-			"Indulge in spiritual bliss as you traverse from Barkot to Uttarkashi, where ancient temples await your reverence. Explore the sacred abode of Gangotri, surrounded by majestic Himalayan vistas, leaving you awe-inspired.",
-			"Embark on a soul-stirring journey from Uttarkashi to Guptkashi, immersing yourself in the serenity of the Ardh Narishwar Temple. Trek amidst snow-clad peaks and lush meadows to reach the divine land of Kedarnath.",
-			"Trace your steps back from the heavenly abode of Kedarnath, immersing your soul in the spiritual essence. Travel from Guptkashi to Pipalkoti, encountering the confluence of sacred rivers, a sight to behold.",
-			"Embark on a transcendent pilgrimage as you proceed from Pipalkoti to Badrinath, basking in the divine aura of the sacred temple. Conclude your enchanting journey in Rishikesh, where the holy Ganges welcomes you with open arms.",
+			"Embark on a spiritual odyssey from bustling Delhi to the tranquil haven of Haridwar. Immerse yourself in the scenic beauty of Devprayag and Rudraprayag as you journey from Haridwar to Guptkashi.",
+			"Embark on an extraordinary pilgrimage as you trek from Sonprayag to the revered shrine of Kedarnath. Experience the blissful morning rituals at the sacred Kedarnath Temple and embark on a memorable trek back to Guptkashi.",
+			"Embark on a picturesque journey from Guptkashi to Haridwar, traversing through the divine towns of Rudraprayag, Dev Prayag, and Rishikesh. Conclude your unforgettable pilgrimage with a heartfelt farewell from Haridwar. As we drive you back to Delhi, reminisce about the divine experiences and blessings received.",
+			"",
 		],
 
 		itinerary: [
 			[
-				"Upon your arrival in Haridwar, the driver will pick you up and drive you to Barkot via Dehradun. You can enjoy the scenic beauty of the route and make a stop at Mussoorie, a popular hill station. After reaching Barkot, you can witness the mesmerizing snow-capped peaks. Overnight stay at a hotel in Barkotn.",
-				"After an early breakfast, you will start your journey towards Yamunotri, the first dham (sacred place) of the Char Dham Yatra. You will proceed to Janki Chatti, from where you will begin a 5 km trek to Yamunotri. Along the way, you can take a dip in the holy Suryakund and worship the ancient Divyashila. After the darshan (worship), you will return to Janki Chatti and then drive back to Barkot. Overnight stay at a hotel in Barkot.",
+				"Embark on a captivating journey as our representative picks you up in the morning. After enjoying a delicious breakfast, we will proceed towards Phata, passing through the enchanting towns of Devprayag and Rudraprayag.",
+				"Along the way, be mesmerized by the breathtaking views of the Garhwal Mountain Ranges. By evening, we will reach Phata and settle into our hotel in Guptkashi",
 			],
 			[
-				"On the fifth day, After breakfast, you will proceed towards Guptkashi via Tilwara. On the way, you can visit the Ardh Narishwar Temple in Guptkashi. Guptkashi is a scenic town located on the way to Kedarnath. You will reach Guptkashi by evening and stay overnight at a hotel.",
-				"On the sixth day, there are two options to reach Kedarnath from Guptkashi. Option 1 is to take a helicopter ride from Guptkashi, Phata, or Sersi (depending on the helicopter ticket) and visit the Kedarnath Temple for darshan. Option 2 is to trek from Gaurikund to Kedarnath, which involves a 14 km trek. After the darshan, you will stay overnight at a hotel in Kedarnath.",
+				"After a refreshing breakfast, we will head to Sonprayag, where our exhilarating 14-kilometer trek from Gaurikund to Kedarnath begins. Reach Kedarnath by evening, where you can witness the sacred Aarti ceremony and seek divine blessings.",
+				"In the morning, our driver will transfer you to the designated Helipad in Guptkashi, Phata, or Sersi, based on your helicopter ticket time. Different aviation services may have different helipad locations. Upon arrival, visit the magnificent Kedarnath Temple for darshan.",
 			],
 			[
-				"In the morning, you should start the return trek from Kedarnath to Gaurikund. From Gaurikund, you will reach Sonprayag by evening. Our driver will pick you up from Sonprayag and proceed to Guptkashi. Overnight stay in Guptkashi.",
-				"After breakfast, you will travel towards Pipalkoti. On the way, you can visit the confluence of Alaknanda and Mandakini rivers at Karnprayag and Rudraprayag. Enjoy the beautiful landscapes and reach Pipalkoti by evening. Overnight stay at a hotel in Pipalkoti",
+				"Start your morning early as we begin our journey back from Kedarnath to Sonprayag. Our driver will be there to pick you up and proceed to Guptkashi.",
+				"To ensure a timely arrival, it is recommended to start early from Kedarnath. After a fulfilling dinner, spend the night at the hotel in Guptkashi, reflecting on the spiritual experiences of the day.",
 			],
 			[
-				"After breakfast, you will proceed towards Badrinath via Joshimath. En route, you can witness the ancient landmarks and enjoy the fresher view of the Himalayas. Upon reaching Badrinath, you can visit the famous Badrinath Temple and seek blessings. After the darshan, you can explore Mana Village, the last village on the Indian side before the Tibetan border. You can also visit Ved Vyas Gufa (cave) and Bheem Pul (bridge). Return to Pipalkoti by evening. Overnight stay in Pipalkoti.",
-				"After breakfast, you will head back to Rishikesh. Along the way, you can witness the origin of the Ganga River, where the Bhagirathi and Alaknanda rivers meet at Devprayag. Enjoy the serene atmosphere and the confluence of these two sacred rivers. Finally, our driver will drop you off at the airport, railway station, or your hotel in Rishikesh, marking the end of your trip.",
+				"After a hearty breakfast, we will embark on our return journey towards Haridwar. En route, you will have the opportunity to visit the sacred Dhari Devi Temple. Depending on your flight or train schedule, our driver will drop you off at the airport or railway station in Haridwar.",
+				"With this, your unforgettable trip with us comes to an end, leaving you with cherished memories of a divine pilgrimage.",
 			],
 		],
 	},
-	"kedarnath-via-delhi": {
-		title: "Kedarnath via Delhi",
-		price: 18000,
-		duration: 11,
-		tripHighlights: [
-			"Yamunotri Dham – Snuggled in Uttarkashi district of Uttarakhand at an altitude of 3,293 m above sea level.",
-			"Gangotri Dham – Perched at an altitude of 3,100 m above sea level, Gangotri temple is situated in Uttarkashi district at a distance of 285 km from Haridwar and 280 km away from Dehradun.",
-			"Kedarnath Dham – Located in the Rudra Himalayan Ranges near Mandakini River, Kedarnath is settled amidst the mountain scape of the Rudraprayag district. From Dehradun, Kedarnath Temple is 274 km and from Haridwar, Kedarnath is around 245 km.",
-			"Badrinath Dham – Snuggled between Nar and Narayan mountain ranges, Badrinath is situated in the Chamoli district. The distance from Badrinath is 300 km and from Haridwar and from Dehradun, Badrinath is 334 km.",
-		],
-		included: [
-			"Breakfast and Dinner.",
-			"1 Night accommodation in hotel in Kedarnath.",
-			"2 Nights accommodation in Barkot, Uttarkashi, Phata, Pipalkoti each.",
-			"All transfers and sightseeing as per itinerary.",
-			"All applicable fuel, toll taxes, parking fees and driver’s allowances.",
-		],
-		excluded: [
-			"All personal expenses, optional tours and extra meals",
-			"Camera fees, alcoholic/non-alcoholic beverages and starters",
-			"Medical and travel insurance",
-			"Room Heater Charges will be Extra in hotels",
-		],
 
-		days: ["1 - 2", "3 - 4", "5 - 6", "7 - 8", "9 - 10"],
-		titles: [
-			"Haridwar to Barkot and Yamunotri",
-			"Barkot to Uttarkashi and Gangotri",
-			"Uttarkashi to Guptkashi and Kedarnath",
-			"Kedarnath, Guptkashi, Pipalkoti",
-			"Badrinath and Risihikesh",
-		],
-		desc: [
-			"Embark on a thrilling Char Dham adventure as you journey from Haridwar to Barkot, mesmerized by the scenic beauty of Dehradun and Mussoorie. Trek through mystical trails to reach Yamunotri, immersing yourself in its divine aura.",
-			"Indulge in spiritual bliss as you traverse from Barkot to Uttarkashi, where ancient temples await your reverence. Explore the sacred abode of Gangotri, surrounded by majestic Himalayan vistas, leaving you awe-inspired.",
-			"Embark on a soul-stirring journey from Uttarkashi to Guptkashi, immersing yourself in the serenity of the Ardh Narishwar Temple. Trek amidst snow-clad peaks and lush meadows to reach the divine land of Kedarnath.",
-			"Trace your steps back from the heavenly abode of Kedarnath, immersing your soul in the spiritual essence. Travel from Guptkashi to Pipalkoti, encountering the confluence of sacred rivers, a sight to behold.",
-			"Embark on a transcendent pilgrimage as you proceed from Pipalkoti to Badrinath, basking in the divine aura of the sacred temple. Conclude your enchanting journey in Rishikesh, where the holy Ganges welcomes you with open arms.",
-		],
-
-		itinerary: [
-			[
-				"Upon your arrival in Haridwar, the driver will pick you up and drive you to Barkot via Dehradun. You can enjoy the scenic beauty of the route and make a stop at Mussoorie, a popular hill station. After reaching Barkot, you can witness the mesmerizing snow-capped peaks. Overnight stay at a hotel in Barkotn.",
-				"After an early breakfast, you will start your journey towards Yamunotri, the first dham (sacred place) of the Char Dham Yatra. You will proceed to Janki Chatti, from where you will begin a 5 km trek to Yamunotri. Along the way, you can take a dip in the holy Suryakund and worship the ancient Divyashila. After the darshan (worship), you will return to Janki Chatti and then drive back to Barkot. Overnight stay at a hotel in Barkot.",
-			],
-			[
-				"On the fifth day, After breakfast, you will proceed towards Guptkashi via Tilwara. On the way, you can visit the Ardh Narishwar Temple in Guptkashi. Guptkashi is a scenic town located on the way to Kedarnath. You will reach Guptkashi by evening and stay overnight at a hotel.",
-				"On the sixth day, there are two options to reach Kedarnath from Guptkashi. Option 1 is to take a helicopter ride from Guptkashi, Phata, or Sersi (depending on the helicopter ticket) and visit the Kedarnath Temple for darshan. Option 2 is to trek from Gaurikund to Kedarnath, which involves a 14 km trek. After the darshan, you will stay overnight at a hotel in Kedarnath.",
-			],
-			[
-				"In the morning, you should start the return trek from Kedarnath to Gaurikund. From Gaurikund, you will reach Sonprayag by evening. Our driver will pick you up from Sonprayag and proceed to Guptkashi. Overnight stay in Guptkashi.",
-				"After breakfast, you will travel towards Pipalkoti. On the way, you can visit the confluence of Alaknanda and Mandakini rivers at Karnprayag and Rudraprayag. Enjoy the beautiful landscapes and reach Pipalkoti by evening. Overnight stay at a hotel in Pipalkoti",
-			],
-			[
-				"After breakfast, you will proceed towards Badrinath via Joshimath. En route, you can witness the ancient landmarks and enjoy the fresher view of the Himalayas. Upon reaching Badrinath, you can visit the famous Badrinath Temple and seek blessings. After the darshan, you can explore Mana Village, the last village on the Indian side before the Tibetan border. You can also visit Ved Vyas Gufa (cave) and Bheem Pul (bridge). Return to Pipalkoti by evening. Overnight stay in Pipalkoti.",
-				"After breakfast, you will head back to Rishikesh. Along the way, you can witness the origin of the Ganga River, where the Bhagirathi and Alaknanda rivers meet at Devprayag. Enjoy the serene atmosphere and the confluence of these two sacred rivers. Finally, our driver will drop you off at the airport, railway station, or your hotel in Rishikesh, marking the end of your trip.",
-			],
-		],
-	},
 	"kedarnath-via-tempo": {
 		title: "Kedarnath via Tempo",
-		price: 18000,
-		duration: 11,
-		tripHighlights: [
-			"Yamunotri Dham – Snuggled in Uttarkashi district of Uttarakhand at an altitude of 3,293 m above sea level.",
-			"Gangotri Dham – Perched at an altitude of 3,100 m above sea level, Gangotri temple is situated in Uttarkashi district at a distance of 285 km from Haridwar and 280 km away from Dehradun.",
-			"Kedarnath Dham – Located in the Rudra Himalayan Ranges near Mandakini River, Kedarnath is settled amidst the mountain scape of the Rudraprayag district. From Dehradun, Kedarnath Temple is 274 km and from Haridwar, Kedarnath is around 245 km.",
-			"Badrinath Dham – Snuggled between Nar and Narayan mountain ranges, Badrinath is situated in the Chamoli district. The distance from Badrinath is 300 km and from Haridwar and from Dehradun, Badrinath is 334 km.",
-		],
+		price: 8500,
+		duration: 4,
 		included: [
-			"Breakfast and Dinner.",
-			"1 Night accommodation in hotel in Kedarnath.",
-			"2 Nights accommodation in Barkot, Uttarkashi, Phata, Pipalkoti each.",
-			"All transfers and sightseeing as per itinerary.",
-			"All applicable fuel, toll taxes, parking fees and driver’s allowances.",
+			"Breakfast + Dinner.",
+			"All applicable hotel and transport taxes.",
+			"Transfers and sightseeing as prepackage car.",
+			"All toll tax, parking, fuel and driver allowances.",
+			"Hotel accommodation as per package same or similar hotels.",
 		],
 		excluded: [
+			"GST @5%",
 			"All personal expenses, optional tours and extra meals",
-			"Camera fees, alcoholic/non-alcoholic beverages and starters",
+			"Camera fees, alcoholic/non-alcoholic beverages and starters, Lunch is not included in Package.",
+			"Any kind of entry fees.",
+			"Helicopter Ticket INR 8500/- per person",
 			"Medical and travel insurance",
+			"VIP Darshan for Kedarnath Darshan.",
 			"Room Heater Charges will be Extra in hotels",
 		],
 
-		days: ["1 - 2", "3 - 4", "5 - 6", "7 - 8", "9 - 10"],
+		days: ["1", "2", "3", "4"],
+
 		titles: [
-			"Haridwar to Barkot and Yamunotri",
-			"Barkot to Uttarkashi and Gangotri",
-			"Uttarkashi to Guptkashi and Kedarnath",
-			"Kedarnath, Guptkashi, Pipalkoti",
-			"Badrinath and Risihikesh",
+			"Haridwar to Guptkashi",
+			"Guptkashi to Sonprayag to Kedarnath",
+			"Sonprayag to Rudraprayag/Srinager",
+			"Rudraprayag/Srinagar to Rishikesh to Haridwar",
 		],
 		desc: [
-			"Embark on a thrilling Char Dham adventure as you journey from Haridwar to Barkot, mesmerized by the scenic beauty of Dehradun and Mussoorie. Trek through mystical trails to reach Yamunotri, immersing yourself in its divine aura.",
-			"Indulge in spiritual bliss as you traverse from Barkot to Uttarkashi, where ancient temples await your reverence. Explore the sacred abode of Gangotri, surrounded by majestic Himalayan vistas, leaving you awe-inspired.",
+			"Your Kedarnath tour begins with a scenic road trip from Haridwar to Guptkashi. Take some time to relax and explore the serene beauty of Guptkashi at your own pace. This spiritual town is home to ancient temples and sacred sites, including the renowned Vishwanath Temple and Ardhnarishwar Temple.",
+			"",
 			"Embark on a soul-stirring journey from Uttarkashi to Guptkashi, immersing yourself in the serenity of the Ardh Narishwar Temple. Trek amidst snow-clad peaks and lush meadows to reach the divine land of Kedarnath.",
 			"Trace your steps back from the heavenly abode of Kedarnath, immersing your soul in the spiritual essence. Travel from Guptkashi to Pipalkoti, encountering the confluence of sacred rivers, a sight to behold.",
 			"Embark on a transcendent pilgrimage as you proceed from Pipalkoti to Badrinath, basking in the divine aura of the sacred temple. Conclude your enchanting journey in Rishikesh, where the holy Ganges welcomes you with open arms.",
@@ -820,39 +782,33 @@ export const packages = {
 
 		itinerary: [
 			[
-				"Upon your arrival in Haridwar, the driver will pick you up and drive you to Barkot via Dehradun. You can enjoy the scenic beauty of the route and make a stop at Mussoorie, a popular hill station. After reaching Barkot, you can witness the mesmerizing snow-capped peaks. Overnight stay at a hotel in Barkotn.",
-				"After an early breakfast, you will start your journey towards Yamunotri, the first dham (sacred place) of the Char Dham Yatra. You will proceed to Janki Chatti, from where you will begin a 5 km trek to Yamunotri. Along the way, you can take a dip in the holy Suryakund and worship the ancient Divyashila. After the darshan (worship), you will return to Janki Chatti and then drive back to Barkot. Overnight stay at a hotel in Barkot.",
+				"Upon arrival, our IHPL representative will welcome you and assist with the check-in process at your hotel or camp. Take some time to relax and explore the serene beauty of Guptkashi at your own pace.",
+				"Your Kedarnath tour begins with a scenic road trip from Haridwar to Guptkashi. Take some time to relax and explore the serene beauty of Guptkashi at your own pace. This spiritual town is home to ancient temples and sacred sites, including the renowned Vishwanath Temple and Ardhnarishwar Temple.",
 			],
 			[
-				"On the fifth day, After breakfast, you will proceed towards Guptkashi via Tilwara. On the way, you can visit the Ardh Narishwar Temple in Guptkashi. Guptkashi is a scenic town located on the way to Kedarnath. You will reach Guptkashi by evening and stay overnight at a hotel.",
-				"On the sixth day, there are two options to reach Kedarnath from Guptkashi. Option 1 is to take a helicopter ride from Guptkashi, Phata, or Sersi (depending on the helicopter ticket) and visit the Kedarnath Temple for darshan. Option 2 is to trek from Gaurikund to Kedarnath, which involves a 14 km trek. After the darshan, you will stay overnight at a hotel in Kedarnath.",
+				"Start your day with an early morning breakfast and check out from your hotel. Embark on a road trip to Sonprayag, which serves as the starting point for the 20 km trek to Kedarnath. Upon reaching Kedarnath, check in at the Govt. Camps/Lodges. Rest, enjoy dinner, and spend the night at your accommodation, preparing for the spiritual journey ahead.",
+				"Upon reaching Kedarnath, check in at the Govt. Camps/Lodges. Rest, enjoy dinner, and spend the night at your accommodation, preparing for the spiritual journey ahead.",
 			],
 			[
-				"In the morning, you should start the return trek from Kedarnath to Gaurikund. From Gaurikund, you will reach Sonprayag by evening. Our driver will pick you up from Sonprayag and proceed to Guptkashi. Overnight stay in Guptkashi.",
-				"After breakfast, you will travel towards Pipalkoti. On the way, you can visit the confluence of Alaknanda and Mandakini rivers at Karnprayag and Rudraprayag. Enjoy the beautiful landscapes and reach Pipalkoti by evening. Overnight stay at a hotel in Pipalkoti",
+				"Rise before dawn and take a refreshing bath to begin your day. Make your way to the Kedarnath Temple by 4:45 am to attend the sacred 'Abhishek' to Kedarnath Shiva. After the darshan and puja, return to your accommodation for rest and breakfast.",
+				"From Sonprayag, board your vehicle and proceed towards Rudraprayag/Srinagar. Upon reaching your hotel in Rudraprayag/Srinagar, enjoy dinner and a comfortable overnight stay.",
 			],
 			[
-				"After breakfast, you will proceed towards Badrinath via Joshimath. En route, you can witness the ancient landmarks and enjoy the fresher view of the Himalayas. Upon reaching Badrinath, you can visit the famous Badrinath Temple and seek blessings. After the darshan, you can explore Mana Village, the last village on the Indian side before the Tibetan border. You can also visit Ved Vyas Gufa (cave) and Bheem Pul (bridge). Return to Pipalkoti by evening. Overnight stay in Pipalkoti.",
-				"After breakfast, you will head back to Rishikesh. Along the way, you can witness the origin of the Ganga River, where the Bhagirathi and Alaknanda rivers meet at Devprayag. Enjoy the serene atmosphere and the confluence of these two sacred rivers. Finally, our driver will drop you off at the airport, railway station, or your hotel in Rishikesh, marking the end of your trip.",
+				"Embark on a drive to Rishikesh, a spiritual center situated on the banks of the river Ganga in the Shivalik Mountains. Explore the famous Ram Jhula and Laxman Jhula suspension bridges and indulge in a sightseeing tour of this enchanting city.",
+				"In the evening, drive to Haridwar, where your tour conclude with a drop-off at Haridwar Railway Station. Reflect on the divine experiences and cherished memories as you bid farewell to this spiritual journey.",
 			],
 		],
 	},
 	"kedarnath-via-helicopter": {
 		title: "Kedarnath via Helicopter",
-		price: 18000,
-		duration: 11,
-		tripHighlights: [
-			"Yamunotri Dham – Snuggled in Uttarkashi district of Uttarakhand at an altitude of 3,293 m above sea level.",
-			"Gangotri Dham – Perched at an altitude of 3,100 m above sea level, Gangotri temple is situated in Uttarkashi district at a distance of 285 km from Haridwar and 280 km away from Dehradun.",
-			"Kedarnath Dham – Located in the Rudra Himalayan Ranges near Mandakini River, Kedarnath is settled amidst the mountain scape of the Rudraprayag district. From Dehradun, Kedarnath Temple is 274 km and from Haridwar, Kedarnath is around 245 km.",
-			"Badrinath Dham – Snuggled between Nar and Narayan mountain ranges, Badrinath is situated in the Chamoli district. The distance from Badrinath is 300 km and from Haridwar and from Dehradun, Badrinath is 334 km.",
-		],
+		price: 75000,
+		duration: 1,
 		included: [
+			"VIP Darshan at Kedarnath Temple",
+			"Delicious Lunch at Guptkashi/ Sersi.",
+			"Fuel, Toll, Parking Fee and Driver Allowance.",
+			"Shuttle Services at kedarnath on priority basis.",
 			"Breakfast and Dinner.",
-			"1 Night accommodation in hotel in Kedarnath.",
-			"2 Nights accommodation in Barkot, Uttarkashi, Phata, Pipalkoti each.",
-			"All transfers and sightseeing as per itinerary.",
-			"All applicable fuel, toll taxes, parking fees and driver’s allowances.",
 		],
 		excluded: [
 			"All personal expenses, optional tours and extra meals",
@@ -861,38 +817,16 @@ export const packages = {
 			"Room Heater Charges will be Extra in hotels",
 		],
 
-		days: ["1 - 2", "3 - 4", "5 - 6", "7 - 8", "9 - 10"],
-		titles: [
-			"Haridwar to Barkot and Yamunotri",
-			"Barkot to Uttarkashi and Gangotri",
-			"Uttarkashi to Guptkashi and Kedarnath",
-			"Kedarnath, Guptkashi, Pipalkoti",
-			"Badrinath and Risihikesh",
-		],
+		days: ["1"],
+		titles: ["Dehradun – Guptakashi – Kedarnath Darshan"],
 		desc: [
 			"Embark on a thrilling Char Dham adventure as you journey from Haridwar to Barkot, mesmerized by the scenic beauty of Dehradun and Mussoorie. Trek through mystical trails to reach Yamunotri, immersing yourself in its divine aura.",
-			"Indulge in spiritual bliss as you traverse from Barkot to Uttarkashi, where ancient temples await your reverence. Explore the sacred abode of Gangotri, surrounded by majestic Himalayan vistas, leaving you awe-inspired.",
-			"Embark on a soul-stirring journey from Uttarkashi to Guptkashi, immersing yourself in the serenity of the Ardh Narishwar Temple. Trek amidst snow-clad peaks and lush meadows to reach the divine land of Kedarnath.",
-			"Trace your steps back from the heavenly abode of Kedarnath, immersing your soul in the spiritual essence. Travel from Guptkashi to Pipalkoti, encountering the confluence of sacred rivers, a sight to behold.",
-			"Embark on a transcendent pilgrimage as you proceed from Pipalkoti to Badrinath, basking in the divine aura of the sacred temple. Conclude your enchanting journey in Rishikesh, where the holy Ganges welcomes you with open arms.",
 		],
 
 		itinerary: [
 			[
-				"Upon your arrival in Haridwar, the driver will pick you up and drive you to Barkot via Dehradun. You can enjoy the scenic beauty of the route and make a stop at Mussoorie, a popular hill station. After reaching Barkot, you can witness the mesmerizing snow-capped peaks. Overnight stay at a hotel in Barkotn.",
-				"After an early breakfast, you will start your journey towards Yamunotri, the first dham (sacred place) of the Char Dham Yatra. You will proceed to Janki Chatti, from where you will begin a 5 km trek to Yamunotri. Along the way, you can take a dip in the holy Suryakund and worship the ancient Divyashila. After the darshan (worship), you will return to Janki Chatti and then drive back to Barkot. Overnight stay at a hotel in Barkot.",
-			],
-			[
-				"On the fifth day, After breakfast, you will proceed towards Guptkashi via Tilwara. On the way, you can visit the Ardh Narishwar Temple in Guptkashi. Guptkashi is a scenic town located on the way to Kedarnath. You will reach Guptkashi by evening and stay overnight at a hotel.",
-				"On the sixth day, there are two options to reach Kedarnath from Guptkashi. Option 1 is to take a helicopter ride from Guptkashi, Phata, or Sersi (depending on the helicopter ticket) and visit the Kedarnath Temple for darshan. Option 2 is to trek from Gaurikund to Kedarnath, which involves a 14 km trek. After the darshan, you will stay overnight at a hotel in Kedarnath.",
-			],
-			[
-				"In the morning, you should start the return trek from Kedarnath to Gaurikund. From Gaurikund, you will reach Sonprayag by evening. Our driver will pick you up from Sonprayag and proceed to Guptkashi. Overnight stay in Guptkashi.",
-				"After breakfast, you will travel towards Pipalkoti. On the way, you can visit the confluence of Alaknanda and Mandakini rivers at Karnprayag and Rudraprayag. Enjoy the beautiful landscapes and reach Pipalkoti by evening. Overnight stay at a hotel in Pipalkoti",
-			],
-			[
-				"After breakfast, you will proceed towards Badrinath via Joshimath. En route, you can witness the ancient landmarks and enjoy the fresher view of the Himalayas. Upon reaching Badrinath, you can visit the famous Badrinath Temple and seek blessings. After the darshan, you can explore Mana Village, the last village on the Indian side before the Tibetan border. You can also visit Ved Vyas Gufa (cave) and Bheem Pul (bridge). Return to Pipalkoti by evening. Overnight stay in Pipalkoti.",
-				"After breakfast, you will head back to Rishikesh. Along the way, you can witness the origin of the Ganga River, where the Bhagirathi and Alaknanda rivers meet at Devprayag. Enjoy the serene atmosphere and the confluence of these two sacred rivers. Finally, our driver will drop you off at the airport, railway station, or your hotel in Rishikesh, marking the end of your trip.",
+				"Experience the divine realm with our Kedarnath helicopter itinerary, starting from the enchanting city of Dehradun. Embark on a breathtaking journey as our representative welcomes you at Sahastradhara helipad. From there, a helicopter ride will transport you to the peaceful town of Guptkashi.",
+				"In Guptkashi, another helicopter awaits to take you on a shuttle to the revered Kedarnath Ji temple. Prepare for a VIP darshan, as you witness the divine presence of Lord Shiva. After a soul-enriching experience, return to the Kedarnath helipad and fly back to Guptkashi. Finally, board the helicopter for a safe journey back to Dehradun.",
 			],
 		],
 	},

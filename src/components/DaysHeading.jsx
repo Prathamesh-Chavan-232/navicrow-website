@@ -1,7 +1,7 @@
 import Aos from "aos";
 import { useEffect } from "react";
 
-export const DaysHeading = ({ reverse, anim, days, title, desc }) => {
+export const DaysHeading = ({ reverse, anim, days, title, desc, id }) => {
 	useEffect(() => {
 		Aos.init({ duration: 1200 });
 	}, []);
@@ -17,7 +17,14 @@ export const DaysHeading = ({ reverse, anim, days, title, desc }) => {
 						data-aos={anim}
 						className="text-center lg:text-left lg:max-w-[20rem]"
 					>
-						<span>DAYS {days}</span>
+						<span>
+							{id.endsWith("helicopter") ||
+							id === "kedarnath" ||
+							id.endsWith("tempo")
+								? "DAY "
+								: "DAYS "}
+							{days}
+						</span>
 						<h1 className="px-20 font-fancy text-5xl font-medium italic lg:px-0 lg:w-96">
 							{title}
 						</h1>
