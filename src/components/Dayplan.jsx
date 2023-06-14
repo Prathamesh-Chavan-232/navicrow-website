@@ -34,8 +34,7 @@ export const Dayplan = ({ days, reverse = true, itinerary, id }) => {
 									<div className="flex flex-col gap-4 max-w-[30rem] text-xl whitespace-pre-line">
 										{item}
 									</div>
-
-									<div className="line absolute" data-aos={anim}>
+									{/* <div className="absolute">
 										<svg
 											width="358"
 											height="357"
@@ -46,10 +45,10 @@ export const Dayplan = ({ days, reverse = true, itinerary, id }) => {
 											<path
 												d="M355.901 1C355.101 106.6 256.235 149 206.901 157C163.901 159 69.1013 174.2 33.9013 219C-1.29869 263.8 1.57356e-05 337.667 3.00002 356"
 												stroke="#F96222"
-												stroke-width="3"
+												strokeWidth="3"
 											/>
 										</svg>
-									</div>
+									</div> */}
 								</div>
 							);
 						})}

@@ -49,7 +49,7 @@ export const AboutPackage = ({ id, packageData, tripHighlights }) => {
 							className="flex flex-col gap-6 xl:max-w-md"
 						>
 							<h1 className="text-4xl font-fancy">Trip Highlights</h1>
-							<ul className="space-y-4">
+							<ul className="round space-y-4">
 								{!id.endsWith("chopta") &&
 									tripHighlights.map((item, i) => {
 										return (
@@ -59,7 +59,7 @@ export const AboutPackage = ({ id, packageData, tripHighlights }) => {
 										);
 									})}
 							</ul>
-							<ul>
+							<ul className="round space-y-4">
 								{id.endsWith("chopta") &&
 									packageData.tripHighlights.map((item, i) => {
 										return (
@@ -72,7 +72,7 @@ export const AboutPackage = ({ id, packageData, tripHighlights }) => {
 						</div>
 						<div data-aos="fade-up" className="flex flex-col gap-6 xl:max-w-md">
 							<h1 className="text-4xl font-fancy">What's Included</h1>
-							<ul className="space-y-4">
+							<ul className="round space-y-4">
 								{packageData.included.map((item, i) => {
 									return <li key={i}>{item}</li>;
 								})}
@@ -83,7 +83,7 @@ export const AboutPackage = ({ id, packageData, tripHighlights }) => {
 							className="flex flex-col gap-6 xl:max-w-md"
 						>
 							<h1 className="text-4xl font-fancy">What's Excluded</h1>
-							<ul className="space-y-4">
+							<ul className="round space-y-4">
 								{packageData.excluded.map((item, i) => {
 									return <li key={i}>{item}</li>;
 								})}

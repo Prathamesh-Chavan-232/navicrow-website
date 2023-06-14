@@ -23,7 +23,7 @@ export const DaysHeading = ({ reverse, anim, days, title, desc, id }) => {
 						<path
 							d="M355.901 1C355.101 106.6 256.235 149 206.901 157C163.901 159 69.1013 174.2 33.9013 219C-1.29869 263.8 1.57356e-05 337.667 3.00002 356"
 							stroke="#F96222"
-							stroke-width="3"
+							strokeWidth="3"
 						/>
 					</svg>
 				</div>

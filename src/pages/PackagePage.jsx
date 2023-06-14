@@ -21,9 +21,6 @@ import {
 const Img = ({ align, img = temple2 }) => {
 	return (
 		<div className="relative bg-light-gray">
-			{/* <div className="flex items-center justify-center w-full">
-				<img src={img} alt="" className={`px-4 lg:hidden w-[600px]`} />
-			</div> */}
 			<div className="main-img-2 h-screen lg:block">
 				<img
 					src={img}
