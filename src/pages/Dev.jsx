@@ -4,7 +4,7 @@ import {Carousel} from "../components/Carousel"
 export const Dev = () => {
 
 	return (
-    <div className="h-[200vh] w-screen">
+    <div className="dev h-[200vh] w-screen">
       
       <div className="line-container">
         <svg viewBox="0 0 419 1265" fill="none" preserveAspectRatio="xMidYMax meet">
