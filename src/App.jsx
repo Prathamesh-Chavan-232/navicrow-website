@@ -46,9 +46,7 @@ function App() {
 					<Route path="/policy" element={<Terms id="privacy" />} />
 				</Routes>
 			</AnimatePresence>
-      { /* 
 			<Footer />
-      */}
 		</div>
 	);
 }
