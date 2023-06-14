@@ -29,7 +29,7 @@ export const DaysHeading = ({ reverse, anim, days, title, desc, id }) => {
 				</div>
 				<div
 					data-aos={anim}
-					className="text-center lg:text-left lg:max-w-[20rem]"
+					className="text-center lg:text-left"
 				>
 					<span>
 						{id.endsWith("helicopter") ||

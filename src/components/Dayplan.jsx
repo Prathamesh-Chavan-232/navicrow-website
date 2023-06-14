@@ -12,7 +12,7 @@ export const Dayplan = ({ days, reverse = true, itinerary, id }) => {
 							return (
 								<div
 									key={i}
-									className={`px-8 py-10 pb-96 flex flex-col gap-6 items-center justify-center lg:gap-[40rem] ${
+									className={`px-8 py-10 pb-96 flex flex-col gap-6 items-center justify-center lg:gap-[30rem] ${
 										i % 2 ? "lg:flex-row" : "lg:flex-row-reverse"
 									} `}
 								>
