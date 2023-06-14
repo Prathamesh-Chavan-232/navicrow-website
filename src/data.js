@@ -716,10 +716,10 @@ export const packages = {
 			"Guptkashi to Haridwar",
 		],
 		desc: [
-			"Embark on a spiritual odyssey from bustling Delhi to the tranquil haven of Haridwar. Immerse yourself in the scenic beauty of Devprayag and Rudraprayag as you journey from Haridwar to Guptkashi.",
-			"Embark on an extraordinary pilgrimage as you trek from Sonprayag to the revered shrine of Kedarnath. Experience the blissful morning rituals at the sacred Kedarnath Temple and embark on a memorable trek back to Guptkashi.",
-			"Embark on a picturesque journey from Guptkashi to Haridwar, traversing through the divine towns of Rudraprayag, Dev Prayag, and Rishikesh. Conclude your unforgettable pilgrimage with a heartfelt farewell from Haridwar. As we drive you back to Delhi, reminisce about the divine experiences and blessings received.",
-			"",
+			"Embark on a captivating journey through picturesque landscapes as we whisk you away from Haridwar to the serene town of Guptkashi. Traverse through Devprayag and Rudraprayag, marveling at the majestic Garhwal Mountain Ranges. ",
+			"Embark on an exhilarating trek from Gaurikund to Kedarnath, enveloped by snow-capped peaks, lush meadows, and enchanting forests. Immerse yourself in the sacred ambiance as you witness the divine Aarti ceremony and seek blessings at the revered Kedarnath Temple. ",
+			"Begin your return journey from Kedarnath to Sonprayag, savoring the enchanting surroundings. Our driver awaits to escort you back to Guptkashi. Reflect on the spiritual experiences of the day as you spend the night in the serene ambiance of the hotel.",
+			"Embark on your homeward journey from Guptkashi to Haridwar, with a stop at the sacred Dhari Devi Temple. Absorb the spiritual energy and bid adieu to the divine lands. Our driver will ensure your timely drop-off at the airport or railway station, concluding your unforgettable pilgrimage with cherished memories.",
 		],
 
 		itinerary: [
