@@ -40,7 +40,7 @@ export const Home = () => {
 			{/* Packages Card */}
 			<PackageCards id="char-dham"/>
 			{/* Section 3 - Carousel */}
-			<Carousel />
+			{/* <Carousel /> */}	
 			{/* Section 4 - Travel Styles */}
 			<TravelStyleCards />
 			<div className={`${floating ? "block" : "hidden"}`}>

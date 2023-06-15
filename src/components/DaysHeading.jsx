@@ -12,7 +12,7 @@ export const DaysHeading = ({ reverse, anim, days, title, desc, id }) => {
 					reverse ? "lg:flex-row-reverse" : "lg:flex-row"
 				} `}
 			>
-				<div className="absolute" data-aos={anim}>
+				{/* <div className="absolute" data-aos={anim}>
 					<svg
 						width="358"
 						height="357"
@@ -26,11 +26,9 @@ export const DaysHeading = ({ reverse, anim, days, title, desc, id }) => {
 							strokeWidth="3"
 						/>
 					</svg>
-				</div>
-				<div
-					data-aos={anim}
-					className="text-center lg:text-left"
-				>
+				</div> */}
+
+        <div data-aos={anim} className="text-center lg:text-left">
 					<span>
 						{id.endsWith("helicopter") ||
 						id === "kedarnath" ||

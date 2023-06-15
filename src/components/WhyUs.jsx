@@ -37,7 +37,7 @@ export const WhyUs = ({ clr }) => {
 				</h2>
 			</div>
 			<div className="w-full flex flex-col-reverse gap-10 justify-around xl:flex-row xl:gap-0">
-				<div className="md:px-20 flex flex-col gap-8 xl:gap-32 text-left xl:px-0">
+				<div className="flex flex-col gap-8 xl:gap-32 text-left xl:px-0">
 					<div data-aos="fade-right" className="flex">
 						<BulletPoint
 							icon={icon1}
@@ -75,7 +75,7 @@ export const WhyUs = ({ clr }) => {
 					alt=""
 					className="hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-96 xl:block"
 				/>
-				<div className="md:px-20 flex flex-col gap-3 text-xl sm:text-2xl xl:text-lg text-left xl:px-0 xl:w-96">
+				<div className="px-4 flex flex-col gap-3 text-xl sm:text-2xl xl:text-lg text-left xl:px-0 xl:w-96">
 					<p className="">
 						Navicrow Travels is an innovative tour and travel company, offering
 						unique travel and holiday experiences. Our passion lies in

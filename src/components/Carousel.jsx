@@ -6,6 +6,7 @@ import carousel3 from "../assets/landscapes/carousel-3.jpeg"
 import dest1 from "../assets/landscapes/destinations-1.jpg"
 import dest2 from "../assets/landscapes/mountains-7.jpg"
 import dest3 from "../assets/landscapes/mountains-5.jpg"
+import { useState } from "react"
 
 const destinationsSlider = [
   {
@@ -40,17 +41,17 @@ const carousel = [
 ]
 
 const Img = ({img, className}) => {
-  return <img src={img} alt="arrow" className={"absolute top-0 bottom-0 m-auto w-[10%] h-[20%] " + (className || "")} />
-  
+  return <img src={img} alt="arrow" className={"absolute top-0 bottom-0 m-auto w-[10%] h-[20%] " + (className || "")} />  
 }
 
 export const Carousel = () => {
-
+  
+  const [index, setIndex] = useState(0)
   return (
-    <div className="relative flex bg-black h-screen">
+    <div className="relative flex">
       <Img img={arrowLeft}  className="left-0"/>
-      {carousel.map((item,i)=> {
-        return <img src={item.img} key={i} alt="carousel image"  />
+      {carousel.map((item, i)=> {
+        return <img src={item.img} key={i} alt="carousel image" className="w-screen h-screen"  />
       })}
       <Img img={arrowRight} className="right-0"/>
     </div>
