@@ -138,7 +138,7 @@ h6 {
 			rgba(0, 0, 0, 0.3),
 			rgba(0, 0, 0, 0.6)
 		),
-		url("/src/assets/landscapes/kedarnath.jpg");
+		url("/src/assets/landscapes/kedarnath.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -149,7 +149,7 @@ h6 {
 			rgba(0, 0, 0, 0.3),
 			rgba(0, 0, 0, 0.6)
 		),
-		url("/src/assets/landscapes/travel-style.jpg");
+		url("/src/assets/landscapes/travel-style-2.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -170,6 +170,7 @@ h6 {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+
 .main-img-2 {
 	background: url("/src/assets/landscapes/mountains-9.jpg");
 	background-size: cover;

@@ -31,14 +31,6 @@ export default {
 				// Gray
 				veryLightGray: "hsl(0, 0%, 98%)",
 			},
-			backgroundImage: {
-				africa: "url('/src/assets/landscapes/africa.jpg')",
-				"carousel-1": "url('/src/assets/landscapes/mountains-7.jpg')",
-				"carousel-2": "url('/src/assets/landscapes/travel-style.jpg')",
-				"carousel-3": "url('/src/assets/landscapes/mountains.jpg')",
-				"card-1":
-					"linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.6)), url()",
-			},
 			fontFamily: {
 				fancy: ["Playfair Display", "serif"],
 			},

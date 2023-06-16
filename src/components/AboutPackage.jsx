@@ -4,6 +4,7 @@ import charDhamTemple from "../assets/landscapes/char-dham-1.jpg";
 
 export const AboutPackage = ({ id, packageData, tripHighlights }) => {
 	useEffect(() => {
+		console.log(tripHighlights);
 		Aos.init({ duration: 1200 });
 	}, []);
 
@@ -48,8 +49,10 @@ export const AboutPackage = ({ id, packageData, tripHighlights }) => {
 							data-aos="fade-right"
 							className="flex flex-col gap-6 xl:max-w-md"
 						>
-							<h1 className="text-4xl font-fancy">Trip <span className="italic">Highlights</span></h1>
-              <hr />
+							<h1 className="text-4xl font-fancy">
+								Trip <span className="italic">Highlights</span>
+							</h1>
+							<hr />
 							<ul className="round space-y-4">
 								{!id.endsWith("chopta") &&
 									tripHighlights.map((item, i) => {
@@ -72,8 +75,10 @@ export const AboutPackage = ({ id, packageData, tripHighlights }) => {
 							</ul>
 						</div>
 						<div data-aos="fade-up" className="flex flex-col gap-6 xl:max-w-md">
-							<h1 className="text-4xl font-fancy">What's <span className="italic">Included</span></h1>
-              <hr />
+							<h1 className="text-4xl font-fancy">
+								What's <span className="italic">Included</span>
+							</h1>
+							<hr />
 							<ul className="round space-y-4">
 								{packageData.included.map((item, i) => {
 									return <li key={i}>{item}</li>;
@@ -84,8 +89,10 @@ export const AboutPackage = ({ id, packageData, tripHighlights }) => {
 							data-aos="fade-left"
 							className="flex flex-col gap-6 xl:max-w-md"
 						>
-							<h1 className="text-4xl font-fancy">What's <span className="italic">Excluded</span></h1>
-              <hr />
+							<h1 className="text-4xl font-fancy">
+								What's <span className="italic">Excluded</span>
+							</h1>
+							<hr />
 							<ul className="round space-y-4">
 								{packageData.excluded.map((item, i) => {
 									return <li key={i}>{item}</li>;

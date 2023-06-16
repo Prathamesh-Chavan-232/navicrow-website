@@ -3,8 +3,9 @@ import { Carousel } from "../components/Carousel";
 
 export const Dev = () => {
 	return (
-		<div className="dev h-[200vh] w-screen">
-			<div className="line-container">
+		<div className="">
+			<Carousel />
+			{/* <div className="line-container">
 				<svg
 					viewBox="0 0 419 1265"
 					fill="none"
@@ -29,7 +30,7 @@ export const Dev = () => {
 					omg scroll
 				</h1>
 				<p>Big Watermark</p>
-			</section>
+			</section> */}
 		</div>
 	);
 };

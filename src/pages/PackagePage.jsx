@@ -49,6 +49,7 @@ export const PackagePage = () => {
 			else if (id.startsWith("dodham")) setTripHighlights(dodhamHighlights);
 			else setTripHighlights(kedarnathHighlights);
 			console.log(id);
+			console.log(tripHighlights);
 			console.log(packages[id]);
 		};
 	}, []);
