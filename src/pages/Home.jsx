@@ -32,20 +32,20 @@ export const Home = () => {
 			{/* Section 1 - Navbar + Hero */}
 			<div className="hero">
 				<Header clr="white" toggleFloating={toggleFloating} />
-        <Main heading={"CONNECTING YOUR JOURNEY WITH PURPOSE"} />
-      </div>
-      {/* Section 2 - About us (Why Niarra?) */}
-      <WhyUs clr="green" />
+				<Main heading={"CONNECTING YOUR JOURNEY WITH PURPOSE"} />
+			</div>
+			{/* Section 2 - About us (Why Niarra?) */}
+			<WhyUs clr="green" />
 
 			{/* Packages Card */}
-			<PackageCards id="char-dham"/>
+			<PackageCards id="char-dham" />
 			{/* Section 3 - Carousel */}
-			{/* <Carousel /> */}	
+			<Carousel />
 			{/* Section 4 - Travel Styles */}
 			<TravelStyleCards />
 			<div className={`${floating ? "block" : "hidden"}`}>
 				<FloatingButton />
 			</div>
-	</m.main>
+		</m.main>
 	);
 };
