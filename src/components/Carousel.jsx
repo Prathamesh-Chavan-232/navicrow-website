@@ -26,7 +26,7 @@ const Arrow = ({ onClick, className, children }) => {
 	return (
 		<button
 			className={
-				"p-2 absolute top-[50%] -translate-x-0 translate-y-[-50%] rounded-full text-2xl bg-black/20 " +
+				"p-2 absolute top-[50%] -translate-x-0 translate-y-[-50%] rounded-full text-xl lg:text-4xl bg-black/40 " +
 				(className || "")
 			}
 			onClick={onClick}
@@ -48,8 +48,8 @@ export const Carousel = () => {
 	};
 
 	return (
-		<div className="relative h-[400px] lg:h-screen bg-light-gray">
-			<Arrow onClick={slideLeft} className={"left-10"}>
+		<div className="relative h-[400px] lg:h-screen bg-light-gray group">
+			<Arrow onClick={slideLeft} className={"left-2 lg:left-10"}>
 				<BsChevronCompactLeft />
 			</Arrow>
 			<div
@@ -60,12 +60,12 @@ export const Carousel = () => {
 					<h1 className="text-4xl lg:text-6xl font-fancy">
 						{carousel[index].title}
 					</h1>
-					<button className="px-10 py-4 border border-white bg-transparent text-2xl text-white rounded-full baseline transition-color duration-200 hover:text-olive-green hover:bg-white">
+					<button className="px-10 py-4 border border-white bg-transparent text-md lg:text-2xl text-white rounded-full baseline transition-color duration-200 hover:text-olive-green hover:bg-white">
 						<a href={carousel[index].link}>Discover more</a>
 					</button>
 				</div>
 			</div>
-			<Arrow onClick={slideRight} className={"right-10"}>
+			<Arrow onClick={slideRight} className={"right-2 lg:right-10"}>
 				<BsChevronCompactRight />
 			</Arrow>
 		</div>
