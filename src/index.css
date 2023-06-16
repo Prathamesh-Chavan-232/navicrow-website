@@ -110,6 +110,39 @@ h6 {
 	background-repeat: no-repeat;
 }
 
+.chardham {
+	background: linear-gradient(
+			rgba(0, 0, 0, 0.6),
+			rgba(0, 0, 0, 0.3),
+			rgba(0, 0, 0, 0.6)
+		),
+		url("/src/assets/landscapes/chardham.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.dodham {
+	background: linear-gradient(
+			rgba(0, 0, 0, 0.6),
+			rgba(0, 0, 0, 0.3),
+			rgba(0, 0, 0, 0.6)
+		),
+		url("/src/assets/landscapes/dodham.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.kedarnath {
+	background: linear-gradient(
+			rgba(0, 0, 0, 0.6),
+			rgba(0, 0, 0, 0.3),
+			rgba(0, 0, 0, 0.6)
+		),
+		url("/src/assets/landscapes/kedarnath.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 .travel-style {
 	background: linear-gradient(
 			rgba(0, 0, 0, 0.6),
@@ -163,15 +196,15 @@ h6 {
 }
 
 ul {
-  line-height: 1.5em;
-  margin: 5px 0 15px;
-  padding: 0;
+	line-height: 1.5em;
+	margin: 5px 0 15px;
+	padding: 0;
 }
 
 li {
-  list-style: none;
-  position: relative;
-  padding: 0 0 0 20px;
+	list-style: none;
+	position: relative;
+	padding: 0 0 0 20px;
 }
 
 ul.round li::before {

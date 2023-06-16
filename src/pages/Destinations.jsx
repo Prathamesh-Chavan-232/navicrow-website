@@ -8,12 +8,12 @@ import { motion as m } from "framer-motion";
 import { useEffect, useState } from "react";
 import { InfoComponent } from "../components/InfoComponent";
 import { useParams } from "react-router-dom";
+import { chardham, dodham, kedarnath } from "../data";
 
 export const Destinations = () => {
 	const { id } = useParams();
 	const [floating, setFloating] = useState(true);
 	const [title, setTitle] = useState("Yatra");
-    
 	function toggleFloating() {
 		setFloating(!floating);
 	}
@@ -26,7 +26,7 @@ export const Destinations = () => {
 		} else if (id === "kedarnath") {
 			setTitle("Kedarnath");
 		}
-	},[]);
+	}, []);
 	return (
 		<div>
 			<m.main
@@ -37,7 +37,18 @@ export const Destinations = () => {
 				className="lg:text-black"
 			>
 				{/* Section 1 - Navbar + Hero */}
-				<div className="travel-destination">
+				<div
+					className={
+						id === "char-dham"
+							? "chardham"
+							: id === "do-dham"
+							? "dodham"
+							: "kedarnath"
+					}
+					// style={{
+					// 	background: `linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(${img.img})`,
+					// }}
+				>
 					<Header clr="white" toggleFloating={toggleFloating} />
 					<Main
 						heading="Journey of Divine Bliss: Embark on a Spiritual Pilgrimage"
@@ -45,7 +56,7 @@ export const Destinations = () => {
 					/>
 				</div>
 				<InfoComponent />
-				<PackageCards id={id} /> 
+				<PackageCards id={id} />
 				<TravelStyleCards />
 				<WhyUs />
 				<div className={`${floating ? "block" : "hidden"}`}>
