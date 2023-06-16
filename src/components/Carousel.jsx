@@ -2,7 +2,7 @@ import { useState } from "react";
 import dest1 from "../assets/landscapes/destinations-1.jpg";
 import dest2 from "../assets/landscapes/dodham.png";
 import dest3 from "../assets/landscapes/mountains-5.jpg";
-import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 
 const carousel = [
 	{
@@ -22,42 +22,52 @@ const carousel = [
 	},
 ];
 
+const Arrow = ({ onClick, className, children }) => {
+	return (
+		<button
+			className={
+				"p-2 absolute top-[50%] -translate-x-0 translate-y-[-50%] rounded-full text-2xl bg-black/20 " +
+				(className || "")
+			}
+			onClick={onClick}
+		>
+			{children}
+		</button>
+	);
+};
+
 export const Carousel = () => {
 	const [index, setIndex] = useState(0);
+
+	const slideLeft = () => {
+		if (index !== 0) setIndex(index - 1);
+	};
+
+	const slideRight = () => {
+		if (index !== carousel.length - 1) setIndex(index + 1);
+	};
+
 	return (
 		<div className="relative h-[400px] lg:h-screen bg-light-gray">
-			<button
-				className="absolute top-1/2 left-10"
-				onClick={() => {
-					if (index !== 0) setIndex(index - 1);
-				}}
+			<Arrow onClick={slideLeft} className={"left-10"}>
+				<BsChevronCompactLeft />
+			</Arrow>
+			<div
+				className="w-screen h-[400px] lg:h-screen object-cover duration-500 bg-center bg-cover bg-no-repeat "
+				style={{ backgroundImage: `url(${carousel[index].img})` }}
 			>
-				<MdChevronLeft size={60} />
-			</button>
-
-			<div id="slider" className="">
-				<div
-					className="w-screen h-[400px] lg:h-screen object-cover duration-500 bg-center bg-cover bg-no-repeat "
-					style={{ backgroundImage: `url(${carousel[index].img})` }}
-				>
-					<div className="flex flex-col items-center justify-center gap-4 text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-						<h1 className="text-4xl lg:text-6xl font-fancy">
-							{carousel[index].title}
-						</h1>
-						<button className="px-10 py-4 border border-white bg-transparent text-2xl text-white rounded-full baseline transition-color duration-200 hover:text-olive-green hover:bg-white">
-							<a href={carousel[index].link}>Discover more</a>
-						</button>
-					</div>
+				<div className="flex flex-col items-center justify-center gap-4 text-white absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+					<h1 className="text-4xl lg:text-6xl font-fancy">
+						{carousel[index].title}
+					</h1>
+					<button className="px-10 py-4 border border-white bg-transparent text-2xl text-white rounded-full baseline transition-color duration-200 hover:text-olive-green hover:bg-white">
+						<a href={carousel[index].link}>Discover more</a>
+					</button>
 				</div>
 			</div>
-			<button
-				onClick={() => {
-					if (index !== carousel.length - 1) setIndex(index + 1);
-				}}
-				className="absolute top-1/2 right-10"
-			>
-				<MdChevronRight size={60} />
-			</button>
+			<Arrow onClick={slideRight} className={"right-10"}>
+				<BsChevronCompactRight />
+			</Arrow>
 		</div>
 	);
 };
