@@ -67,7 +67,13 @@ export const PackagePage = () => {
 			</div>
 			<AboutPackage
 				id={id}
-				tripHighlights={tripHighlights}
+				tripHighlights={
+					id.startsWith("chardham")
+						? chardhamHighlights
+						: id.startsWith("dodham")
+						? dodhamHighlights
+						: kedarnathHighlights
+				}
 				packageData={packages[id]}
 			/>
 			{packages[id].itinerary.map((item, i) => {
