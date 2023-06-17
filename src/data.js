@@ -2,10 +2,6 @@ import img from "./assets/landscapes/char-dham-1.jpg";
 import img2 from "./assets/landscapes/travel-style-1.jpg";
 import img3 from "./assets/landscapes/mountains-4.jpg";
 
-import chardhamImg from "./assets/landscapes/hero.jpg";
-import dodhamImg from "./assets/landscapes/africa.jpg";
-import kedarnathImg from "./assets/landscapes/destinations-1.jpg";
-
 export const destinations = [
 	{
 		title: "Char Dham",
@@ -23,21 +19,6 @@ export const destinations = [
 		link: "/destinations/kedarnath",
 	},
 ];
-
-export const chardham = {
-	title: "Char Dham",
-	img: chardhamImg,
-};
-
-export const dodham = {
-	title: "Do Dham",
-	img: dodhamImg,
-};
-
-export const kedarnath = {
-	title: "Kedarnath",
-	img: kedarnathImg,
-};
 
 export const travelStyles = [
 	{

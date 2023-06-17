@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
-import elephant from "../assets/animals/elephant-2.webp";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import icon1 from "../assets/logos/map.png";
 import icon2 from "../assets/logos/world-health-day.png";
 import icon3 from "../assets/logos/people.png";
+import temple3 from "../assets/landscapes/temple-3.jpg";
 
 const BulletPoint = ({ icon, title, subtitle, clr }) => {
 	return (
@@ -71,7 +71,7 @@ export const WhyUs = ({ clr }) => {
 					</div>
 				</div>
 				<img
-					src={elephant}
+					src={temple3}
 					alt=""
 					className="hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-96 xl:block"
 				/>
@@ -96,7 +96,7 @@ export const WhyUs = ({ clr }) => {
 					</p>
 				</div>
 				<div className="flex w-full xl:hidden justify-center items-center">
-					<img src={elephant} alt="" className="w-64 h-96 xl:hidden" />
+					<img src={temple3} alt="" className="w-64 h-96 xl:hidden" />
 				</div>
 			</div>
 		</div>

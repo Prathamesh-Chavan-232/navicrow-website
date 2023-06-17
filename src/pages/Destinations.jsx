@@ -8,7 +8,6 @@ import { motion as m } from "framer-motion";
 import { useEffect, useState } from "react";
 import { InfoComponent } from "../components/InfoComponent";
 import { useParams } from "react-router-dom";
-import { chardham, dodham, kedarnath } from "../data";
 
 export const Destinations = () => {
 	const { id } = useParams();
