@@ -16,7 +16,7 @@ export const PackageCards = ({ id }) => {
 		Aos.init({ duration: 1000 });
 	}, []);
 	return (
-		<div className="py-10 px-6 bg-light-gray text-black">
+		<div className="py-40 px-6 bg-light-gray text-black">
 			<div className="flex flex-col gap-12 items-center justify-center">
 				{/*  Desktop Travel Style Cards */}
 				<div>
