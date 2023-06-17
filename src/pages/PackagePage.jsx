@@ -92,7 +92,7 @@ export const PackagePage = () => {
 						/>
 						<Dayplan
 							packageData={packages[id]}
-							days={packages[id].days[i]}
+							days={2 * i + 1}
 							itinerary={item}
 							id={id}
 						/>

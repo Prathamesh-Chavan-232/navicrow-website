@@ -18,17 +18,9 @@ export const Dayplan = ({ days, reverse = true, itinerary, id }) => {
 									} `}
 								>
 									<div className="flex flex-col items-center gap-4 ">
-										<h1 className="font-bold">
-											<ol>
-												{id.endsWith("helicopter") ||
-												id === "kedarnath" ||
-												id.endsWith("tempo")
-													? "DAY"
-													: "DAYS"}
-											</ol>
-										</h1>
+										<h1 className="font-bold">DAY</h1>
 										<RotatingBorder clr="black" border="2px" size="150px">
-											<h1 className="text-4xl">{days}</h1>
+											<h1 className="text-4xl">{i == 0 ? days : days + 1} </h1>
 										</RotatingBorder>
 									</div>
 
