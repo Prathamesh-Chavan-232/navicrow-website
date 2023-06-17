@@ -9,6 +9,7 @@ export const Dayplan = ({ days, reverse = true, itinerary, id }) => {
 				<div className="bg-light-gray py-40">
 					<div className="flex flex-col items-center">
 						{itinerary.map((item, i) => {
+							console.log(itinerary);
 							return (
 								<div
 									key={i}

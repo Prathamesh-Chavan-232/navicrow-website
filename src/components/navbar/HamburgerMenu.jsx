@@ -71,7 +71,7 @@ export const HamburgerMenu = ({ toggleFloating }) => {
 				</div>
 				<div className="mx-20 my-20 flex flex-col gap-10 text-center items-center justify-center">
 					{/* Column 1 */}
-					<div className="flex flex-col items-center justify-center gap-6">
+					<div className="flex flex-col items-center justify-center gap-12">
 						<h2 className="px-10 text-2xl text-center font-fancy lg:px-0 lg:text-4xl">
 							Contact a Travel Researcher
 						</h2>
@@ -95,6 +95,12 @@ export const HamburgerMenu = ({ toggleFloating }) => {
 								</div>
 							</RotatingBorder>
 						</div>
+						<a
+							href="https://mail.google.com/mail/?view=cm&fs=1&to=info@navicrowholidays.com"
+							className="text-2xl font-fancy hover:text-light-green"
+						>
+							info@navicrowholidays.com
+						</a>
 					</div>
 					{/* Column 2 */}
 					<div className="flex flex-col gap-4">
@@ -121,21 +127,13 @@ export const HamburgerMenu = ({ toggleFloating }) => {
 								</div>
 								{/* Row */}
 								<div className="flex flex-col gap-6 lg:flex-row">
+									<TextField label={"Email"} placeholder={"Enter your Email"} />
 									<TextField
-										label={"Email (required)"}
-										placeholder={"Enter your Email"}
-									/>
-									<TextField
-										label={"Phone no"}
+										label={"Phone no (required)"}
 										placeholder={"Enter your Phone Number"}
 									/>
 								</div>
 
-								{/* Row */}
-								<TextField
-									label={"Number of Travelers"}
-									placeholder={"Enter the number of travelers"}
-								/>
 								{/* Row */}
 								<TextField
 									label={"Number of Travelers"}
