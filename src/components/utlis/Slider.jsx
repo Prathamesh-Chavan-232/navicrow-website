@@ -4,7 +4,6 @@ import img1 from "../../assets/landscapes/banner-2.jpg";
 import img2 from "../../assets/landscapes/travel-style-2.jpg";
 import img3 from "../../assets/landscapes/mountains-5.jpg";
 import img4 from "../../assets/landscapes/mountains-4.jpg";
-import img5 from "../../assets/landscapes/banner.jpg";
 
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 
@@ -50,6 +49,16 @@ export const Slider = () => {
 					);
 				})}
 			</div>
+			<div
+				className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
+				style={{
+					background:
+						" background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)) ",
+				}}
+			>
+				<h1 className="text-white text-3xl font-fancy">Char Dham</h1>
+			</div>
+
 			<div className="absolute inset-0 flex items-center justify-between p-4">
 				<button
 					onClick={prev}
