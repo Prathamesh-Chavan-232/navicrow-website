@@ -11,12 +11,6 @@ import { useState } from "react";
 export const Home = () => {
 	const [floating, setFloating] = useState(true);
 
-	const getReviews = async () => {
-		const res = await fetch(`${API_URL}`);
-		const data = await res.json();
-		console.log(data);
-	};
-
 	function toggleFloating() {
 		setFloating(!floating);
 	}

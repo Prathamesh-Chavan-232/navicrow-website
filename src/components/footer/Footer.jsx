@@ -57,16 +57,26 @@ export const Footer = () => {
 		},
 
 		{
-			heading: "CALL US",
-			icon: "fa fa-phone",
-			contact: "+91 895 4766 781",
-			link: "tel:+918954766781",
-		},
-		{
 			heading: "E-MAIL US",
 			contact: "info@navicrowholidays.com",
 			icon: "fa fa-envelope",
 			link: "https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=info@navicrowholidays.com",
+		},
+	];
+
+	const callUs = [
+		{
+			contact: "+91 80776 80788",
+			link: "tel:+918077680788",
+		},
+		{
+			contact: "+91 92582 38707",
+			link: "tel:+919258238707",
+		},
+		{
+			icon: "fa fa-phone",
+			contact: "+91 81263 68535",
+			link: "tel:+918126368535",
 		},
 	];
 
@@ -164,6 +174,25 @@ export const Footer = () => {
 									</div>
 								);
 							})}
+
+							<div className="font-fancy text-2xl space-x-4">
+								<FontAwesomeIcon
+									icon={"fa fa-phone"}
+									size="sm"
+									className="text-white hover:text-light-green"
+								/>
+								{callUs.map((item, i) => {
+									return (
+										<a
+											key={i}
+											href={item.link}
+											className="hover:text-light-green"
+										>
+											{item.contact}
+										</a>
+									);
+								})}
+							</div>
 						</div>
 					</div>
 

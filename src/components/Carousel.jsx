@@ -60,9 +60,12 @@ export const Carousel = () => {
 					<h1 className="text-4xl lg:text-6xl font-fancy">
 						{carousel[index].title}
 					</h1>
-					<button className="px-10 py-4 border border-white bg-transparent text-md lg:text-2xl text-white rounded-full baseline transition-color duration-200 hover:text-olive-green hover:bg-white">
-						<a href={carousel[index].link}>Discover more</a>
-					</button>
+					<a
+						href={carousel[index].link}
+						className="px-10 py-4 border border-white bg-transparent text-md lg:text-2xl text-white rounded-full baseline transition-color duration-200 hover:text-olive-green hover:bg-white"
+					>
+						Discover more
+					</a>
 				</div>
 			</div>
 			<Arrow onClick={slideRight} className={"right-2 lg:right-10"}>

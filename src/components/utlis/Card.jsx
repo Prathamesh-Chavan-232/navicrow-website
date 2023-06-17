@@ -4,9 +4,12 @@ import { useEffect } from "react";
 export const Card = ({ img, title, subtitle, link, isCenter = false }) => {
 	useEffect(() => {
 		Aos.init({ duration: 1000 });
-	},[]);
+	}, []);
 	return (
-		<div data-aos="fade" className="min-w-[300px] max-w-[400px] flex flex-col gap-4 items-center">
+		<div
+			data-aos="fade"
+			className="min-w-[300px] max-w-[400px] flex flex-col gap-4 items-center"
+		>
 			{isCenter && (
 				<div className="p-4 bg-light-gray flex flex-col gap-8 text-center">
 					<span className="text-sm">TRAVEL IN STYLE</span>
@@ -24,9 +27,12 @@ export const Card = ({ img, title, subtitle, link, isCenter = false }) => {
 				<img src={img} alt="" className="h-[600px]" />
 			</div>
 			<span className="text-center text-lg font-thin">{subtitle}</span>
-			<button className="px-10 py-4 border border-olive-green bg-transparent text-2xl text-olive-green rounded-full baseline transition-color duration-200 lg:text-lg lg:px-8 lg:py-3 hover:text-white hover:bg-olive-green">
-				<a href={link}>Discover more</a>
-			</button>
+			<a
+				href={link}
+				className="px-10 py-4 border border-olive-green bg-transparent text-2xl text-olive-green rounded-full baseline transition-color duration-200 lg:text-lg lg:px-8 lg:py-3 hover:text-white hover:bg-olive-green"
+			>
+				Discover more
+			</a>
 		</div>
 	);
 };

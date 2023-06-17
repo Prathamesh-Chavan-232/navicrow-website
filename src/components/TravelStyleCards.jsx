@@ -34,9 +34,12 @@ export const TravelStyleCards = () => {
 							Embark on a transformative spiritual journey with our immersive
 							pilgrimage travel style package.
 						</span>
-						<button className="px-10 py-4 border border-olive-green bg-transparent text-2xl text-olive-green rounded-full baseline transition-color duration-200 hover:text-white hover:bg-olive-green">
-							<a href="/travel-styles/pilgrimage-tour">Discover more</a>
-						</button>
+						<a
+							href="/travel-styles/pilgrimage-tour"
+							className="px-10 py-4 border border-olive-green bg-transparent text-2xl text-olive-green rounded-full baseline transition-color duration-200 hover:text-white hover:bg-olive-green"
+						>
+							Discover more
+						</a>
 					</div>
 
 					{/*  Desktop Travel Style Cards */}
