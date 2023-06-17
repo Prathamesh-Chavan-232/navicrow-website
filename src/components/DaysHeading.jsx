@@ -28,7 +28,7 @@ export const DaysHeading = ({ reverse, anim, days, title, desc, id }) => {
 					</svg>
 				</div> */}
 
-        <div data-aos={anim} className="text-center lg:text-left">
+				<div data-aos={anim} className="text-center lg:text-left">
 					<span>
 						{id.endsWith("helicopter") ||
 						id === "kedarnath" ||
@@ -37,7 +37,7 @@ export const DaysHeading = ({ reverse, anim, days, title, desc, id }) => {
 							: "DAYS "}
 						{days}
 					</span>
-					<h1 className="px-20 font-fancy text-5xl font-medium italic lg:px-0 lg:w-96">
+					<h1 className="px-20 font-fancy text-4xl lg:text-5xl font-medium italic lg:px-0 lg:w-96">
 						{title}
 					</h1>
 				</div>

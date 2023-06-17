@@ -165,6 +165,12 @@ h6 {
 	background-repeat: no-repeat;
 }
 
+.main-img-1 {
+	background: url("/src/assets/landscapes/main-img.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 .main-img-2 {
 	background: url("/src/assets/landscapes/mountains-2.jpg");
 	background-size: cover;

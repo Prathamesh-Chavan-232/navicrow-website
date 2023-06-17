@@ -7,8 +7,8 @@ import { FloatingButton } from "../components/utlis/FloatingButton";
 import { Main } from "../components/Main";
 import { AboutPackage } from "../components/AboutPackage";
 import { DaysHeading } from "../components/DaysHeading";
-import temple1 from "../assets/landscapes/char-dham-1.jpg";
-import temple2 from "../assets/landscapes/temple-1.jpg";
+import img2 from "../assets/landscapes/temple-1.jpg";
+import img1 from "../assets/landscapes/banner-3.jpg";
 import { Dayplan } from "../components/Dayplan";
 import { useParams } from "react-router-dom";
 import {
@@ -18,15 +18,20 @@ import {
 	packages,
 } from "../data";
 import { PackageSlider } from "../components/PackageSlider";
+import { Slider } from "../components/utlis/Slider";
 
-const Img = ({ align, img = temple2 }) => {
+const Img = ({ align, img = img2 }) => {
 	return (
 		<div className="relative bg-light-gray">
-			<div className="main-img-2 h-screen lg:block">
+			<div
+				className={`h-screen lg:block ${
+					align == "left" ? "main-img-1" : "main-img-2"
+				}`}
+			>
 				<img
 					src={img}
 					alt=""
-					className={`px-6 lg:px-0 w-[600px] absolute -top-40 lg:-top-10 ${
+					className={`px-6 lg:px-0 h-[500px] w-[600px] lg:h-[800px] absolute -top-40 lg:-top-10 ${
 						align === "left" ? "lg:left-[10%]" : "lg:right-[10%]"
 					}`}
 				/>
@@ -45,14 +50,12 @@ export const PackagePage = () => {
 	}
 
 	useEffect(() => {
-		return () => {
-			if (id.startsWith("chardham")) setTripHighlights(chardhamHighlights);
-			else if (id.startsWith("dodham")) setTripHighlights(dodhamHighlights);
-			else setTripHighlights(kedarnathHighlights);
-			console.log(id);
-			console.log(tripHighlights);
-			console.log(packages[id]);
-		};
+		if (id.startsWith("chardham")) setTripHighlights(chardhamHighlights);
+		else if (id.startsWith("dodham")) setTripHighlights(dodhamHighlights);
+		else setTripHighlights(kedarnathHighlights);
+		console.log(id);
+		console.log(tripHighlights);
+		console.log(packages[id]);
 	}, []);
 
 	return (
@@ -86,16 +89,16 @@ export const PackagePage = () => {
 								id={id}
 							/>
 						</div>
-						<Img
-							align={i % 2 ? "left" : "right"}
-							img={i % 2 ? temple1 : temple2}
-						/>
+						<Img align={i % 2 ? "left" : "right"} img={i % 2 ? img1 : img2} />
 						<Dayplan
 							packageData={packages[id]}
 							days={2 * i + 1}
 							itinerary={item}
 							id={id}
 						/>
+						<div className="py-20 flex items-center justify-center bg-light-gray">
+							<Slider></Slider>
+						</div>
 					</div>
 				);
 			})}
