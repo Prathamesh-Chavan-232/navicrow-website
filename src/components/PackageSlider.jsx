@@ -1,24 +1,23 @@
 import { useState } from "react";
-import dest1 from "../assets/landscapes/destinations-1.jpg";
-import dest2 from "../assets/landscapes/dodham.png";
-import dest3 from "../assets/landscapes/mountains-5.jpg";
+import dest1 from "../assets/landscapes/1.png";
+import dest2 from "../assets/landscapes/2.png";
+import dest3 from "../assets/landscapes/3.png";
+import dest4 from "../assets/landscapes/4.png";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
+import { Main } from "./Main";
 
 const carousel = [
 	{
-		title: "Char Dham",
 		img: dest1,
-		link: "/destinations/char-dham",
 	},
 	{
-		title: "Do Dham",
 		img: dest2,
-		link: "/destinations/do-dham",
 	},
 	{
-		title: "Kedarnath",
 		img: dest3,
-		link: "/destinations/kedarnath",
+	},
+	{
+		img: dest4,
 	},
 ];
 
@@ -56,14 +55,11 @@ export const PackageSlider = ({ packageData }) => {
 				className="w-screen h-[400px] lg:h-screen object-cover duration-500 bg-center bg-cover bg-no-repeat "
 				style={{ backgroundImage: `url(${carousel[index].img})` }}
 			>
-				<div className="flex flex-col items-center justify-center gap-4 text-white absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-					<h1 className="text-4xl lg:text-6xl font-fancy">
-						{carousel[index].title}
-					</h1>
-					<button className="px-10 py-4 border border-white bg-transparent text-md lg:text-2xl text-white rounded-full baseline transition-color duration-200 hover:text-olive-green hover:bg-white">
-						<a href={carousel[index].link}>Discover more</a>
-					</button>
-				</div>
+				<Main
+					heading={`${packageData.duration} DAY-TRIP`}
+					title={packageData.title}
+					price={`₹ ${packageData.price} /-`}
+				/>
 			</div>
 			<Arrow onClick={slideRight} className={"right-2 lg:right-10"}>
 				<BsChevronCompactRight />

@@ -17,6 +17,7 @@ import {
 	kedarnathHighlights,
 	packages,
 } from "../data";
+import { PackageSlider } from "../components/PackageSlider";
 
 const Img = ({ align, img = temple2 }) => {
 	return (
@@ -59,11 +60,7 @@ export const PackagePage = () => {
 			{/* Section 1 - Navbar + Hero */}
 			<div className="travel-package">
 				<Header clr="white" toggleFloating={toggleFloating} />
-				<Main
-					heading={`${packages[id].duration} DAY-TRIP`}
-					title={packages[id].title}
-					price={`₹ ${packages[id].price} /-`}
-				/>
+				<PackageSlider packageData={packages[id]} />
 			</div>
 			<AboutPackage
 				id={id}
