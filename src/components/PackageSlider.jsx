@@ -25,7 +25,7 @@ const Arrow = ({ onClick, className, children }) => {
 	return (
 		<button
 			className={
-				"p-2 absolute top-[50%] -translate-x-0 translate-y-[-50%] rounded-full text-xl lg:text-4xl bg-black/40 " +
+				"p-2 absolute top-[50%] -translate-x-0 translate-y-[-50%] rounded-full text-xl lg:text-4xl bg-white/80 " +
 				(className || "")
 			}
 			onClick={onClick}
