@@ -12,10 +12,13 @@ export const AboutPackage = ({ id, packageData, tripHighlights }) => {
 		<div className="bg-olive-green space-y-20 py-20 overflow-x-hidden">
 			<div className="px-4 lg:px-20 space-y-20 text-white">
 				<div className="text-center space-y-4">
-					<span className="font-medium">OVERVIEW</span>
-					<h1 data-aos="zoom-in" className="font-fancy text-5xl lg:text-6xl">
+					<span className="font-medium">
+						OVERVIEW
+						<br />
+					</span>
+					<span data-aos="zoom-in" className="font-fancy text-5xl lg:text-6xl">
 						{packageData.title}
-					</h1>
+					</span>
 				</div>
 				<div className="flex flex-col gap-12 items-center justify-center xl:gap-64 xl:flex-row">
 					<div className="max-w-[400px]">

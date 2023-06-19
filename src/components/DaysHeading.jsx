@@ -6,7 +6,7 @@ export const DaysHeading = ({ reverse, anim, days, title, desc, id }) => {
 		Aos.init({ duration: 1200 });
 	}, []);
 	return (
-		<div className="bg-light-gray py-40">
+		<div className="bg-light-gray">
 			<div
 				className={`px-8 flex flex-col gap-6 items-center justify-center lg:gap-[20rem] ${
 					reverse ? "lg:flex-row-reverse" : "lg:flex-row"

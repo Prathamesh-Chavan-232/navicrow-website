@@ -39,7 +39,7 @@ export function Header({ clr, toggleFloating }) {
 	return (
 		<div
 			className={`sticky nav ${
-				scrollDirection === "down" ? "-top-10" : "top-0"
+				scrollDirection === "down" ? "" : "top-0"
 			} h-24 transition-all duration-200`}
 		>
 			<m.div
@@ -88,12 +88,7 @@ const Navbar = ({ clr, toggleFloating }) => {
 	};
 
 	return (
-		<nav
-			className={` ${
-				clr === "black" || open || openMobileMenu ? "text-black" : "text-white"
-			} 
-				`}
-		>
+		<nav className={`text-black`}>
 			{/* Z index 50 - to Display on Navmenu */}
 			<div className="z-50 mx-auto px-8 py-6 relative container">
 				<div className="flex items-center justify-between">
@@ -152,39 +147,15 @@ const Navbar = ({ clr, toggleFloating }) => {
 
 						{/* Nav-menu Button For mobile  */}
 						<div className="lg:hidden">
-							<RotatingBorder
-								clr={
-									open || openMobileMenu || clr === "black" ? "#000" : "#eee"
-								}
-								size={"36px"}
-								border={"1px"}
-							>
+							<RotatingBorder clr={"#000"} size={"36px"} border={"1px"}>
 								<button
 									id="hamburger-menu"
 									onClick={toggleMobileMenu}
 									className="block hamburger"
 								>
-									<span
-										className={`hamburger-top ${
-											open || openMobileMenu || clr === "black"
-												? "bg-black"
-												: "bg-white"
-										}`}
-									></span>
-									<span
-										className={`hamburger-middle ${
-											open || openMobileMenu || clr === "black"
-												? "bg-black"
-												: "bg-white"
-										}`}
-									></span>
-									<span
-										className={`hamburger-bottom ${
-											open || openMobileMenu || clr === "black"
-												? "bg-black"
-												: "bg-white"
-										}`}
-									></span>
+									<span className={`hamburger-top bg-black`}></span>
+									<span className={`hamburger-middle bg-black`}></span>
+									<span className={`hamburger-bottom bg-black `}></span>
 								</button>
 							</RotatingBorder>
 						</div>
@@ -213,7 +184,10 @@ const Navbar = ({ clr, toggleFloating }) => {
 					<a href="/about" className="hover:text-light-green">
 						About us
 					</a>
-					<a href="/package/chardham-via-haridwar" className="hover:text-light-green">
+					<a
+						href="/package/chardham-via-haridwar"
+						className="hover:text-light-green"
+					>
 						Packages
 					</a>
 				</div>

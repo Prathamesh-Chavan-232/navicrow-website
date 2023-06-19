@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
 import { Carousel } from "../components/Carousel";
+import { Main } from "../components/Main";
 
 export const Dev = () => {
 	return (
 		<div className="">
 			<Carousel />
-			{/* <div className="line-container">
-				<svg
+			<Main />
+			{/* <div className="line-container"> <svg
 					viewBox="0 0 419 1265"
 					fill="none"
 					preserveAspectRatio="xMidYMax meet"

@@ -1,6 +1,7 @@
 import img from "./assets/landscapes/char-dham-1.jpg";
 import img2 from "./assets/landscapes/travel-style-1.jpg";
 import img3 from "./assets/landscapes/mountains-4.jpg";
+import heli from "./assets/landscapes/kedarnath-helicopter.png";
 
 export const destinations = [
 	{
@@ -159,7 +160,7 @@ export const kedarnathPackages = [
 		title: "Kedarnath via Helicopter",
 		subtitle:
 			"Embark on a transformative spiritual journey with our immersive pilgrimage travel style package.",
-		img: img3,
+		img: heli,
 		link: "/package/kedarnath-via-helicopter",
 	},
 ];

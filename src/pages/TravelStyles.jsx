@@ -20,13 +20,12 @@ export const TravelStyles = () => {
 	return (
 		<div>
 			{/* Section 1 - Navbar + Hero */}
-			<div className="travel-style">
-				<Header clr="white" toggleFloating={toggleFloating} />
-				<Main
-					heading="TRANSFORMATIVE SPIRTUAL JOURNEY "
-					title="Pilgrimage Tour"
-				/>
-			</div>
+			<div className="travel-style"></div>
+			<Header clr="white" toggleFloating={toggleFloating} />
+			<Main
+				heading="TRANSFORMATIVE SPIRTUAL JOURNEY "
+				title="Pilgrimage Tour"
+			/>
 			<InfoComponent />
 			{/* Section 2 - About us (Why Niarra?) */}
 			<PackageCards id="char-dham" />

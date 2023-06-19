@@ -8,6 +8,9 @@ import { motion as m } from "framer-motion";
 import { useEffect, useState } from "react";
 import { InfoComponent } from "../components/InfoComponent";
 import { useParams } from "react-router-dom";
+import chardham from "../assets/landscapes/chardham.png";
+import dodham from "../assets/landscapes/dodham.png";
+import kedarnath from "../assets/landscapes/kedarnath.png";
 
 export const Destinations = () => {
 	const { id } = useParams();
@@ -36,24 +39,18 @@ export const Destinations = () => {
 				className="lg:text-black"
 			>
 				{/* Section 1 - Navbar + Hero */}
-				<div
-					className={
+				<Header clr="white" toggleFloating={toggleFloating} />
+				<Main
+					img={
 						id === "char-dham"
-							? "chardham"
+							? chardham
 							: id === "do-dham"
-							? "dodham"
-							: "kedarnath"
+							? dodham
+							: kedarnath
 					}
-					// style={{
-					// 	background: `linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(${img.img})`,
-					// }}
-				>
-					<Header clr="white" toggleFloating={toggleFloating} />
-					<Main
-						heading="Journey of Divine Bliss: Embark on a Spiritual Pilgrimage"
-						title={title}
-					/>
-				</div>
+					heading="Journey of Divine Bliss: Embark on a Spiritual Pilgrimage"
+					title={title}
+				/>
 				<InfoComponent />
 				<PackageCards id={id} />
 				<TravelStyleCards />

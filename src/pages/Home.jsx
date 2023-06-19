@@ -7,6 +7,7 @@ import { FloatingButton } from "../components/utlis/FloatingButton";
 import { PackageCards } from "../components/PackageCards";
 import { motion as m } from "framer-motion";
 import { useState } from "react";
+import img from "../assets/landscapes/mountains-3.jpg";
 
 export const Home = () => {
 	const [floating, setFloating] = useState(true);
@@ -24,10 +25,8 @@ export const Home = () => {
 			className="text-white"
 		>
 			{/* Section 1 - Navbar + Hero */}
-			<div className="hero">
-				<Header clr="white" toggleFloating={toggleFloating} />
-				<Main heading={"CONNECTING YOUR JOURNEY WITH PURPOSE"} />
-			</div>
+			<Header clr="black" toggleFloating={toggleFloating} />
+			<Main heading={"CONNECTING YOUR JOURNEY WITH PURPOSE"} img={img} />
 			{/* Section 2 - About us (Why Niarra?) */}
 			<WhyUs clr="green" />
 

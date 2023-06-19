@@ -35,7 +35,7 @@ const Arrow = ({ onClick, className, children }) => {
 	);
 };
 
-export const PackageSlider = ({ packageData }) => {
+export const PackageSlider = ({ id, packageData }) => {
 	const [index, setIndex] = useState(0);
 
 	const slideLeft = () => {
@@ -47,15 +47,17 @@ export const PackageSlider = ({ packageData }) => {
 	};
 
 	return (
-		<div className="relative h-[400px] lg:h-screen bg-light-gray group">
+		<div className="relative h-[400px] lg:h-screen">
 			<Arrow onClick={slideLeft} className={"left-2 lg:left-10"}>
 				<BsChevronCompactLeft />
 			</Arrow>
 			<div
-				className="w-screen h-[400px] lg:h-screen object-cover duration-500 bg-center bg-cover bg-no-repeat "
-				style={{ backgroundImage: `url(${carousel[index].img})` }}
+				className="w-screen h-[400px] lg:h-screen object-cover duration-500 bg-center bg-cover bg-no-repeat z-0"
+				style={{
+					backgroundImage: `url(${carousel[index].img})`,
+				}}
 			>
-				<Main
+				<Content
 					heading={`${packageData.duration} DAY-TRIP`}
 					title={packageData.title}
 					price={`₹ ${packageData.price} /-`}
@@ -64,6 +66,27 @@ export const PackageSlider = ({ packageData }) => {
 			<Arrow onClick={slideRight} className={"right-2 lg:right-10"}>
 				<BsChevronCompactRight />
 			</Arrow>
+		</div>
+	);
+};
+
+const Content = ({ heading, title, price }) => {
+	return (
+		<div className="w-screen h-screen flex flex-col justify-around">
+			<div className="px-8 mt-10 lg:mt-40 flex flex-col gap-8 text-white items-center justify-center">
+				<div className="uppercase text-xl text-center">{heading}</div>
+				<h1 className="text-4xl lg:px-40 lg:text-6xl text-center font-fancy">
+					{title}
+				</h1>
+				<div className="flex flex-col text-2xl text-center font-fancy">
+					<h1 className="font-fancy">{price}</h1>
+				</div>
+			</div>
+			<div className="mx-8 lg:mx-56 text-white">
+				<div>
+					<span>India, Uttarakhand</span>
+				</div>
+			</div>
 		</div>
 	);
 };

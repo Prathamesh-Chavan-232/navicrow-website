@@ -4,28 +4,31 @@ import { Header } from "../components/navbar/Header";
 import { TravelStyleCards } from "../components/TravelStyleCards";
 import { WhyUs } from "../components/WhyUs";
 import { FloatingButton } from "../components/utlis/FloatingButton";
-import { Main } from "../components/Main";
 import { AboutPackage } from "../components/AboutPackage";
 import { DaysHeading } from "../components/DaysHeading";
 import img2 from "../assets/landscapes/temple-1.jpg";
 import img1 from "../assets/landscapes/banner-3.jpg";
 import { Dayplan } from "../components/Dayplan";
 import { useParams } from "react-router-dom";
+import { Main } from "../components/Main";
 import {
 	chardhamHighlights,
 	dodhamHighlights,
 	kedarnathHighlights,
 	packages,
 } from "../data";
-import { PackageSlider } from "../components/PackageSlider";
 import { Slider } from "../components/utlis/Slider";
 
-const Img = ({ align, img = img2 }) => {
+const Img = ({ id = "", align, img = img2 }) => {
 	return (
 		<div className="relative bg-light-gray">
 			<div
 				className={`h-screen lg:block ${
-					align == "left" ? "main-img-1" : "main-img-2"
+					align == "left"
+						? "main-img-1"
+						: id.endsWith("helicopter")
+						? "heli-img"
+						: "main-img-2"
 				}`}
 			>
 				<img
@@ -61,10 +64,13 @@ export const PackagePage = () => {
 	return (
 		<div>
 			{/* Section 1 - Navbar + Hero */}
-			<div className="travel-package">
-				<Header clr="white" toggleFloating={toggleFloating} />
-				<PackageSlider packageData={packages[id]} />
-			</div>
+			<Header clr="white" toggleFloating={toggleFloating} />
+			<Main
+				heading={`${packages[id].duration} DAY-TRIP`}
+				title={packages[id].title}
+				price={`₹ ${packages[id].price} /-`}
+				img=""
+			/>
 			<AboutPackage
 				id={id}
 				tripHighlights={
@@ -79,17 +85,19 @@ export const PackagePage = () => {
 			{packages[id].itinerary.map((item, i) => {
 				return (
 					<div key={i}>
-						<div className="bg-light-gray py-20">
-							<DaysHeading
-								anim="zoom-out-left"
-								days={packages[id].days[i]}
-								title={packages[id].titles[i]}
-								desc={packages[id].desc[i]}
-								reverse={i % 2}
-								id={id}
-							/>
-						</div>
-						<Img align={i % 2 ? "left" : "right"} img={i % 2 ? img1 : img2} />
+						<DaysHeading
+							anim="zoom-out-left"
+							days={packages[id].days[i]}
+							title={packages[id].titles[i]}
+							desc={packages[id].desc[i]}
+							reverse={i % 2}
+							id={id}
+						/>
+						<Img
+							id={id}
+							align={i % 2 ? "left" : "right"}
+							img={i % 2 ? img1 : img2}
+						/>
 						<Dayplan
 							packageData={packages[id]}
 							days={2 * i + 1}
