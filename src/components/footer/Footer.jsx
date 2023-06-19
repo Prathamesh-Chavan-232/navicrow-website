@@ -81,7 +81,12 @@ export const Footer = () => {
 	];
 
 	return (
-		<div id="footer" className="z-[2] mt-auto text-white absolute">
+		<div id="footer" 
+		className="z-[2] mt-auto text-white absolute"
+			style={{
+				overflowX:"hidden"
+			}}
+		>
 			<footer
 				style={{
 					width:"100vw"
