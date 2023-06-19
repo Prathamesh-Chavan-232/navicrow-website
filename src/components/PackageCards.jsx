@@ -20,7 +20,7 @@ export const PackageCards = ({ id }) => {
 			<div className="flex flex-col gap-12 items-center justify-center">
 				{/*  Desktop Travel Style Cards */}
 				<div>
-					<h1 data-aos="zoom-in-down" className="text-4xl font-fancy">
+					<h1 data-aos="zoom-in-down" className="text-5xl font-fancy">
 						Browse Our Best Packages
 					</h1>
 				</div>

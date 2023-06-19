@@ -18,15 +18,14 @@ export const Main = ({ heading, title = "", price = "", img = hero }) => {
 			className="w-screen h-screen flex flex-col justify-around"
 			style={style}
 		>
-			<div className="px-8 mt-10 lg:mt-40 flex flex-col gap-8 text-white items-center justify-center">
-				<div className="uppercase text-xl text-center">{heading}</div>
-				<h1 className="text-4xl lg:px-40 lg:text-6xl text-center font-fancy">
+			<div className="px-4 mt-10 lg:mt-40 flex flex-col gap-8 text-white items-center justify-center">
+				<div className="uppercase text-lg text-center">{heading}</div>
+				<h1 className="text-4xl lg:text-6xl text-center font-fancy">
 					{title === "" && (
 						<>
 							We offer specially curated <br />
 							<span className="font-fancy italic font-thin">Chardham </span>
 							Yatra packages.
-							<br /> Book now!
 						</>
 					)}
 					{title}

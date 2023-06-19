@@ -81,7 +81,7 @@ export const Footer = () => {
 	];
 
 	return (
-		<div id="footer" className="z-0 mt-auto text-white">
+		<div id="footer" className="mt-auto text-white">
 			<footer>
 				{/* Contact Form */}
 				<ContactForm />
@@ -95,7 +95,7 @@ export const Footer = () => {
 						<div className="flex flex-col gap-6">
 							{/* Description  */}
 							<div className="space-y-4">
-								<div className="font-fancy text-3xl lg:text-5xl hover:text-gray-green">
+								<div className="font-fancy text-4xl hover:text-gray-green">
 									NAVICROW
 									<span className="text-light-green hover:text-gray-green">
 										HOLIDAYS
@@ -144,7 +144,7 @@ export const Footer = () => {
 									return (
 										<p
 											key={i}
-											className="font-fancy text-2xl hover:text-light-green"
+											className="font-fancy text-xl hover:text-light-green"
 										>
 											<a href={item.link}>{item.title}</a>
 										</p>
@@ -162,7 +162,7 @@ export const Footer = () => {
 								return (
 									<div key={i} className="space-y-4">
 										<div>
-											<p className="font-fancy text-2xl hover:text-light-green">
+											<p className="font-fancy text-xl hover:text-light-green">
 												<FontAwesomeIcon
 													icon={item.icon}
 													size="sm"
@@ -175,7 +175,7 @@ export const Footer = () => {
 								);
 							})}
 
-							<div className="font-fancy text-2xl space-x-4">
+							<div className="font-fancy text-xl space-x-4">
 								<FontAwesomeIcon
 									icon={"fa fa-phone"}
 									size="sm"
@@ -198,17 +198,12 @@ export const Footer = () => {
 
 					<hr className="bg-gray-green" />
 					<div className="mt-auto px-4 py-6 flex flex-col items-center gap-4 lg:px-12 lg:flex-row lg:justify-between">
-						<h3>
+						<p className="text-sm">
 							Copyright © <a href="#">Navicrow.</a> All Rights Reserved.
-						</h3>
-						<div className="text-sm flex gap-20 items-center justify-between lg:justify-center">
-							<h2 className="text-xs underline">
-								<a href="/policy">Privacy policy</a>
-							</h2>
-							<h2 className="text-xs underline">
-								{" "}
-								<a href="/terms">Terms & conditions</a>
-							</h2>
+						</p>
+						<div className="text-sm underline flex gap-20 items-center justify-between lg:justify-center">
+							<a href="/policy">Privacy policy</a>
+							<a href="/terms">Terms & conditions</a>
 						</div>
 					</div>
 				</div>

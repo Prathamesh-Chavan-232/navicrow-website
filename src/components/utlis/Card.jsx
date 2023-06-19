@@ -13,8 +13,9 @@ export const Card = ({ img, title, subtitle, link, isCenter = false }) => {
 			{isCenter && (
 				<div className="p-4 bg-light-gray flex flex-col gap-8 text-center">
 					<span className="text-sm">TRAVEL IN STYLE</span>
-					<span data-aos="zoom-in" className="font-fancy text-6xl">
-						Find Travel Inspiration by <span className="italic">style</span>
+					<span data-aos="zoom-in" className="font-fancy text-5xl">
+						Find Travel Inspiration by{" "}
+						<span className="font-normal italic">style</span>
 					</span>
 				</div>
 			)}

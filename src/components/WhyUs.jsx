@@ -11,8 +11,8 @@ const BulletPoint = ({ icon, title, subtitle, clr }) => {
 		<div className="w-full flex gap-6 items-center justify-between md:justify-around xl:gap-0 xl:flex-col xl:items-center">
 			<img src={icon} alt="" className="w-10 h-10" />
 			<div className="flex flex-col gap-4 w-72 md:w-[600px] xl:w-72 xl:text-center">
-				<h1 className="font-fancy text-4xl">{title}</h1>
-				<p className="lg:text-xl">{subtitle}</p>
+				<h1 className="font-fancy text-2xl">{title}</h1>
+				<p className="lg:text-md">{subtitle}</p>
 			</div>
 		</div>
 	);
@@ -31,7 +31,7 @@ export const WhyUs = ({ clr }) => {
 		>
 			{/* Why niarra & Elephant */}
 			<div className="flex flex-col gap-4">
-				<h2 className="text-lg">WHAT MAKES US DIFFERENT</h2>
+				<div className="text-lg">WHAT MAKES US DIFFERENT</div>
 				<h2 className="text-6xl font-fancy" data-aos="fade">
 					Why Navicrow
 				</h2>
@@ -75,22 +75,22 @@ export const WhyUs = ({ clr }) => {
 					alt=""
 					className="hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-96 xl:block"
 				/>
-				<div className="px-4 flex flex-col gap-3 text-xl sm:text-2xl xl:text-lg text-left xl:px-0 xl:w-96">
-					<p className="">
+				<div className="px-4 flex flex-col gap-3 text-left xl:px-0 xl:w-96">
+					<p className="text-lg leading-relaxed">
 						Navicrow Travels is an innovative tour and travel company, offering
 						unique travel and holiday experiences. Our passion lies in
 						revolutionizing the way people undertake this sacred journey, and we
 						are dedicated to providing exceptional services that leave a lasting
 						impact.
 					</p>
-					<p className="">
+					<p className="text-md">
 						Derived from the concept of navigating through divine realms, the
 						name "Navicrow" encapsulates our commitment to guiding pilgrims
 						through the transformative Char Dham Yatra. We understand the
 						profound significance of this pilgrimage and strive to curate
 						extraordinary trips that go beyond conventional travel experiences.
 					</p>
-					<p className="">
+					<p className="text-md">
 						At Navicrow Travels, we firmly believe in the power of travel to
 						enrich lives.
 					</p>
