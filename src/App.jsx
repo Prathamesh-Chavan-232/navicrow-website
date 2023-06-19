@@ -21,6 +21,7 @@ import { PackagePage } from "./pages/PackagePage";
 import { Dev } from "./pages/Dev";
 import { Footer } from "./components/footer/Footer";
 import { Terms } from "./pages/Terms";
+import { ComingSoon } from "./components/ComingSoon";
 
 function App() {
 	const id = useParams();
@@ -40,7 +41,12 @@ function App() {
 					<Route exact path="/dev" element={<Dev />} />
 					<Route exact path="/package/:id" element={<PackagePage />} />
 					<Route exact path="/destinations/:id" element={<Destinations />} />
-					<Route exact path="/travel-styles/:id" element={<TravelStyles />} />
+					<Route
+						exact
+						path="/travel-styles/pilgrimage-tour"
+						element={<TravelStyles />}
+					/>
+					<Route exact path="/travel-styles/:id" element={<ComingSoon />} />
 					<Route exact path="/about" element={<About />} />
 					<Route exact path="/terms" element={<Terms id={"terms"} />} />
 					<Route path="/policy" element={<Terms id="privacy" />} />
