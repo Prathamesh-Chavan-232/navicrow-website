@@ -8,7 +8,7 @@ export const DaysHeading = ({ reverse, anim, days, title, desc, id }) => {
 	return (
 		<div className="bg-light-gray">
 			<div
-				className={`px-8 flex flex-col gap-6 items-center justify-center lg:gap-[20rem] ${
+				className={`px-8 py-40 flex flex-col gap-6 items-center justify-center lg:gap-[20rem] ${
 					reverse ? "lg:flex-row-reverse" : "lg:flex-row"
 				} `}
 			>

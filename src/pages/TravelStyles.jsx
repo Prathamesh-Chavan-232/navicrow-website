@@ -10,6 +10,7 @@ import { PackageCards } from "../components/PackageCards";
 import Aos from "aos";
 import { useEffect } from "react";
 import { useState } from "react";
+import img from "../assets/landscapes/kedarnath.png";
 
 export const TravelStyles = () => {
 	const [floating, setFloating] = useState(true);
@@ -25,6 +26,7 @@ export const TravelStyles = () => {
 			<Main
 				heading="TRANSFORMATIVE SPIRTUAL JOURNEY "
 				title="Pilgrimage Tour"
+				img={img}
 			/>
 			<InfoComponent />
 			{/* Section 2 - About us (Why Niarra?) */}
