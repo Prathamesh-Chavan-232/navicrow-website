@@ -81,8 +81,12 @@ export const Footer = () => {
 	];
 
 	return (
-		<div id="footer" className="mt-auto text-white">
-			<footer>
+		<div id="footer" className="z-[2] mt-auto text-white absolute">
+			<footer
+				style={{
+					width:"100vw"
+				}}
+			>
 				{/* Contact Form */}
 				<ContactForm />
 

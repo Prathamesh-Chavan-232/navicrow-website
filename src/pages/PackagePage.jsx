@@ -64,7 +64,7 @@ export const PackagePage = () => {
 	return (
 		<div>
 			{/* Section 1 - Navbar + Hero */}
-			<Header clr="white" toggleFloating={toggleFloating} />
+			{/* <Header clr="white" toggleFloating={toggleFloating} /> */}
 			<Main
 				heading={`${packages[id].duration} DAY-TRIP`}
 				title={packages[id].title}

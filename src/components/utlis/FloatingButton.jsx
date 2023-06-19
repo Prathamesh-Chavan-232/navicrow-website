@@ -5,7 +5,7 @@ export const FloatingButton = () => {
 	return (
 		<a
 			href="https://wa.me/+918954766781"
-			className="float flex items-center justify-center bg-olive-green"
+			className="z-[99] float flex items-center justify-center bg-olive-green"
 		>
 			<FontAwesomeIcon
 				icon="fa-brands fa-whatsapp"
