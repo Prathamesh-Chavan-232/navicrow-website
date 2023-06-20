@@ -10,7 +10,7 @@ import { far } from "@fortawesome/free-regular-svg-icons";
 // npm packages
 import { Route, Routes, useParams } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 // Routes
 import { Destinations } from "./pages/Destinations";
@@ -22,9 +22,13 @@ import { Dev } from "./pages/Dev";
 import { Footer } from "./components/footer/Footer";
 import { Terms } from "./pages/Terms";
 import { ComingSoon } from "./components/ComingSoon";
+import { Header } from "./components/navbar/Header";
 
 function App() {
 	const id = useParams();
+	
+	const [floating, setFloating] = useState(true);
+
 	useEffect(() => {
 		console.log(id);
 	}, []);
@@ -36,6 +40,8 @@ function App() {
 	return (
 		<div className="flex flex-col min-h-screen overflow-x-hidden">
 			<AnimatePresence mode={"wait"}>
+			<Header clr="black" toggleFloating={toggleFloating} />
+			<div className="temp absolute">
 				<Routes location={location} key={location.pathname}>
 					<Route index element={<Home />} />
 					<Route exact path="/dev" element={<Dev />} />
@@ -51,8 +57,9 @@ function App() {
 					<Route exact path="/terms" element={<Terms id={"terms"} />} />
 					<Route path="/policy" element={<Terms id="privacy" />} />
 				</Routes>
+				<Footer />
+			</div>
 			</AnimatePresence>
-			<Footer />
 		</div>
 	);
 }

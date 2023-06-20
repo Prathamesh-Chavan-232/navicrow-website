@@ -22,7 +22,7 @@ export const TravelStyles = () => {
 		<div>
 			{/* Section 1 - Navbar + Hero */}
 			<div className="travel-style"></div>
-			<Header clr="white" toggleFloating={toggleFloating} />
+			{/* <Header clr="white" toggleFloating={toggleFloating} /> */}
 			<Main
 				heading="TRANSFORMATIVE SPIRTUAL JOURNEY "
 				title="Pilgrimage Tour"
