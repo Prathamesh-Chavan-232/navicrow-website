@@ -16,7 +16,7 @@ export const Terms = ({ id }) => {
 
 	return (
 		<div>
-			<Header clr="black" toggleFloating={() => {}} />
+			{/* <Header clr="black" toggleFloating={() => {}} /> */}
 			<div className="flex text-black flex-col px-4 py-36 gap-8 items-center text-center lg:px-12">
 				<h1 className="text-7xl lg:text-8xl font-fancy">{title}</h1>
 			</div>

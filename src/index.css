@@ -23,6 +23,7 @@ html:focus-within {
 html,
 body {
 	height: 100%;
+	overflow-x: hidden;
 }
 
 /* Set core body defaults */
@@ -158,3 +159,25 @@ ul.round li::before {
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 }
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #03451c #012802;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #012802;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #03451c;
+    border-radius: 15px;
+    border: 3px none #001f05;
+  }

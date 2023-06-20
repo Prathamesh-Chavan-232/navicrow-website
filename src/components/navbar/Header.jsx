@@ -38,9 +38,17 @@ export function Header({ clr, toggleFloating }) {
 
 	return (
 		<div
+<<<<<<< HEAD
 			className={`z-[99] sticky nav ${
+=======
+			className={`z-[80] sticky nav ${
+>>>>>>> 5f067dbf8b71dd0ca48bb332050cc4a3e85210f8
 				scrollDirection === "down" ? "" : "top-0"
 			} h-24 transition-all duration-200`}
+			style={{
+				backdropFilter:"blur(7px)",
+				background:"transparent"
+			}}
 		>
 			<m.div
 				initial="initial"

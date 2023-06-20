@@ -39,7 +39,7 @@ export const Destinations = () => {
 				className="lg:text-black"
 			>
 				{/* Section 1 - Navbar + Hero */}
-				<Header clr="white" toggleFloating={toggleFloating} />
+				{/* <Header clr="white" toggleFloating={toggleFloating} /> */}
 				<Main
 					img={
 						id === "char-dham"
