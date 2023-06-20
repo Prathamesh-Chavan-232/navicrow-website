@@ -1,5 +1,6 @@
 import Aos from "aos";
 import { useEffect } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export const Card = ({ img, title, subtitle, link, isCenter = false }) => {
 	useEffect(() => {
@@ -25,7 +26,11 @@ export const Card = ({ img, title, subtitle, link, isCenter = false }) => {
 				>
 					{title}
 				</span>
-				<img src={img} alt="" className="h-[600px]" />
+				<LazyLoadImage 
+					src={img}
+					className={"h-[600px]"}
+					effect="black-and-white"
+				/>
 			</div>
 			<span className="text-center text-lg font-thin">{subtitle}</span>
 			<a

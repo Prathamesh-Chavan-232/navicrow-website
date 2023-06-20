@@ -3,6 +3,7 @@ import { Card } from "./utlis/Card";
 import travelCard1 from "../assets/landscapes/mountains-5.jpg";
 import travelCard3 from "../assets/landscapes/mountains-4.jpg";
 import travelCard2 from "../assets/landscapes/travel-style-1.jpg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import Aos from "aos";
 
 export const TravelStyleCards = () => {
@@ -28,7 +29,12 @@ export const TravelStyleCards = () => {
 							<span className="text-white font-fancy text-2xl text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:text-6xl lg:text-8xl">
 								Pilgrimage
 							</span>
-							<img src={travelCard2} alt="" />
+							{/* <img src={travelCard2} alt="" /> */}
+							<LazyLoadImage
+								key={"Image-travel-card-2"}
+								src={travelCard2}
+								effect="black-white"
+							/>
 						</div>
 						<span data-aos="fade" className="text-lg text-center lg:text-3xl">
 							Embark on a transformative spiritual journey with our immersive

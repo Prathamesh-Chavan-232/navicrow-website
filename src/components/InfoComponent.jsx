@@ -2,6 +2,7 @@ import React from "react";
 import Aos from "aos";
 import { useEffect } from "react";
 import charDhamTemple from "../assets/landscapes/char-dham-1.jpg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export const InfoComponent = () => {
 	useEffect(() => {
@@ -18,7 +19,11 @@ export const InfoComponent = () => {
 					</div>
 					<div className="flex flex-col gap-12 items-center justify-center xl:gap-64 xl:flex-row">
 						<div className="max-w-[500px]">
-							<img src={charDhamTemple} alt="" />
+							<LazyLoadImage
+								key={"Image-char-dham-temple"}
+								src={charDhamTemple}
+								effect="black-white"
+							/>
 						</div>
 						<div className="space-y-4  xl:max-w-xl text-md">
 							<p className="text-3xl">
