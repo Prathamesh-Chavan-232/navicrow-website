@@ -36,7 +36,7 @@ const Arrow = ({ onClick, className, children }) => {
 	);
 };
 
-export const Carousel = () => {
+export const CarouselSlider = () => {
 	const [index, setIndex] = useState(0);
 
 	const slideLeft = () => {

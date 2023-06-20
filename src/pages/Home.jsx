@@ -25,8 +25,10 @@ export const Home = () => {
 			className="text-white"
 		>
 			{/* Section 1 - Navbar + Hero */}
-			<Header clr="black" toggleFloating={toggleFloating} />
-			<Main heading={"CONNECTING YOUR JOURNEY WITH PURPOSE"} img={img} />
+			<div className="hero">
+				<Header clr="black" toggleFloating={toggleFloating} />
+				<Main heading={"CONNECTING YOUR JOURNEY WITH PURPOSE"} img={img} />
+			</div>
 			{/* Section 2 - About us (Why Niarra?) */}
 			<WhyUs clr="green" />
 

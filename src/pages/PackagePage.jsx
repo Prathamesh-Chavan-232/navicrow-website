@@ -1,3 +1,4 @@
+import { Carousel } from "../components/Carousel";
 import { useEffect, useState } from "react";
 import { Header } from "../components/navbar/Header";
 import { TravelStyleCards } from "../components/TravelStyleCards";
@@ -65,12 +66,14 @@ export const PackagePage = () => {
 		<div>
 			{/* Section 1 - Navbar + Hero */}
 			<Header clr="white" toggleFloating={toggleFloating} />
+			<Carousel />
 			<Main
 				heading={`${packages[id].duration} DAY-TRIP`}
 				title={packages[id].title}
 				price={`₹ ${packages[id].price} /-`}
 				img={img}
 			/>
+
 			<AboutPackage
 				id={id}
 				tripHighlights={
