@@ -4,7 +4,6 @@ import dest2 from "../assets/landscapes/dodham.png";
 import dest3 from "../assets/landscapes/mountains-5.jpg";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 
-
 import { AnimatePresence, motion } from "framer-motion";
 import "../styles/carousel.css";
 
@@ -195,6 +194,7 @@ export const Carousel = () => {
 					</AnimatePresence>
 				</div>
 				
+
 			<Arrow onClick={slideRight} className={"z-[50] right-2 lg:right-10"}>
 				<BsChevronCompactRight />
 			</Arrow>

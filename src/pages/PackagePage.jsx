@@ -1,3 +1,4 @@
+import { Carousel } from "../components/Carousel";
 import { useEffect, useState } from "react";
 import { TravelStyleCards } from "../components/TravelStyleCards";
 import { WhyUs } from "../components/WhyUs";
@@ -33,7 +34,7 @@ const Img = ({ id = "", align, img = img2 }) => {
 				<img
 					src={img}
 					alt=""
-					className={`px-6 lg:px-0 h-[500px] w-[600px] lg:h-[800px] absolute -top-[5%] ${
+					className={`px-6 lg:px-0 h-[500px] w-[600px] lg:h-[800px] absolute -top-[10%] ${
 						align === "left" ? "lg:left-[10%]" : "lg:right-[10%]"
 					}`}
 				/>
@@ -70,6 +71,7 @@ export const PackagePage = () => {
 				price={`₹ ${packages[id].price} /-`}
 				img={img}
 			/>
+
 			<AboutPackage
 				id={id}
 				tripHighlights={
@@ -104,7 +106,7 @@ export const PackagePage = () => {
 							id={id}
 						/>
 						<div className="py-20 flex items-center justify-center bg-light-gray">
-							<Slider></Slider>
+							<Slider />
 						</div>
 					</div>
 				);

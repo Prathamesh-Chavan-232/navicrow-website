@@ -55,7 +55,7 @@ export const HamburgerMenu = ({ toggleFloating }) => {
 		<div>
 			<MenuToggle toggle={toggleMenu} isOpen={isOpen}></MenuToggle>
 			<m.div
-				className="!overflow-y-scroll pb-8 h-full w-full max-w-[95%] min-w-[350px] z-50 fixed top-0 right-0 md:max-w-[50%] bg-olive-green shadow-2xl select-none text-white"
+				className="z-[999] !overflow-y-scroll pb-8 h-screen w-full max-w-[95%] min-w-[350px] fixed top-0 right-0 md:max-w-[50%] bg-olive-green shadow-2xl select-none text-white"
 				initial={false}
 				animate={isOpen ? "open" : "closed"}
 				variants={menuVariants}
