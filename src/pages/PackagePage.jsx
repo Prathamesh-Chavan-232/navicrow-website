@@ -1,6 +1,5 @@
 import { Carousel } from "../components/Carousel";
 import { useEffect, useState } from "react";
-import { Header } from "../components/navbar/Header";
 import { TravelStyleCards } from "../components/TravelStyleCards";
 import { WhyUs } from "../components/WhyUs";
 import { FloatingButton } from "../components/utlis/FloatingButton";

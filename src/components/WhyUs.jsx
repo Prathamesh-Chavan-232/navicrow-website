@@ -5,6 +5,7 @@ import icon1 from "../assets/logos/map.png";
 import icon2 from "../assets/logos/world-health-day.png";
 import icon3 from "../assets/logos/people.png";
 import temple3 from "../assets/landscapes/temple-3.jpg";
+import {LazyLoadImage} from 'react-lazy-load-image-component'
 
 const BulletPoint = ({ icon, title, subtitle, clr }) => {
 	return (
@@ -70,11 +71,13 @@ export const WhyUs = ({ clr }) => {
 						/>
 					</div>
 				</div>
-				<img
-					src={temple3}
-					alt=""
-					className="hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-96 xl:block"
-				/>
+					<LazyLoadImage
+						key={"Image-temple-3"}
+						src={temple3}
+						className={"hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-96 xl:block"}
+						effect="black-white"
+					/>
+
 				<div className="px-4 flex flex-col gap-3 text-left xl:px-0 xl:w-96">
 					<p className="text-lg leading-relaxed">
 						Navicrow Travels is an innovative tour and travel company, offering
@@ -96,7 +99,13 @@ export const WhyUs = ({ clr }) => {
 					</p>
 				</div>
 				<div className="flex w-full xl:hidden justify-center items-center">
-					<img src={temple3} alt="" className="w-64 h-96 xl:hidden" />
+
+					<LazyLoadImage
+						key={"Image-temple-3"}
+						src={temple3}
+						className={"w-64 h-96 xl:hidden"}
+						effect="black-white"
+					/>
 				</div>
 			</div>
 		</div>
