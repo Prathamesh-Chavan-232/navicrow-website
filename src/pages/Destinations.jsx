@@ -38,8 +38,6 @@ export const Destinations = () => {
 				transition={{ duration: 0.75, ease: "easeOut" }}
 				className="lg:text-black"
 			>
-				{/* Section 1 - Navbar + Hero */}
-				{/* <Header clr="white" toggleFloating={toggleFloating} /> */}
 				<Main
 					img={
 						id === "char-dham"

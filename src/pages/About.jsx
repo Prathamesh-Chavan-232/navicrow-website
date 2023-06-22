@@ -6,23 +6,20 @@ import { motion as m } from "framer-motion";
 import { useState } from "react";
 import { FloatingButton } from "../components/utlis/FloatingButton";
 
-export const About = () => {
-  
+export const About = (toggleClr) => {
 	const [floating, setFloating] = useState(true);
-	
-  function toggleFloating() {
+
+	function toggleFloating() {
 		setFloating(!floating);
 	}
-  
+
 	return (
 		<m.main
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			transition={{ duration: 0.75, ease: "easeOut" }}
-			className="text-gray-900"
+			className="pt-24 w-screen"
 		>
-			{/* Section 1 - Navbar + Hero */}
-			{/* <Header clr="black" toggleFloating={toggleFloating}/> */}
 			<Main />
 			<section className="p-8 flex flex-col items-center justify-center gap-6">
 				<p className=" lg:w-[40rem] text-xl">
@@ -78,14 +75,18 @@ export const About = () => {
 					leave an indelible mark on your soul.
 				</p>
 			</section>
-			<section className="py-40 flex flex-col items-center justify-center gap-8 bg-olive-green text-white">
-				<h1 className="text-5xl font-fancy text-center">
+			<section className="px-8 py-40 flex flex-col items-center justify-center gap-8 bg-olive-green text-white">
+				<h1 className="text-3xl lg:text-5xl font-fancy text-center">
 					Recognised By Government of India
 				</h1>
-				<img src={cert} alt="" className="w-[800px] h-[500px]" />
+				<img
+					src={cert}
+					alt=""
+					className="lg:w-[800px] lg:h-[500px] object-fit"
+				/>
 			</section>
 			<div className={`${floating ? "block" : "hidden"}`}>
-					<FloatingButton />
+				<FloatingButton />
 			</div>
 		</m.main>
 	);

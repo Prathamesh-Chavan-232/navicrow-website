@@ -75,7 +75,7 @@ export const HamburgerMenu = ({ toggleFloating }) => {
 						<h2 className="px-10 text-2xl text-center font-fancy lg:px-0 lg:text-4xl">
 							Contact a Travel Researcher
 						</h2>
-						<div className="flex gap-6 font-fancy">
+						<div className="flex flex-col lg:flex-row gap-6 font-fancy">
 							<RotatingBorder clr={"#fff"} border="2px" size="180px">
 								<div className="flex flex-col text-lg text-center">
 									<span>Call us</span>

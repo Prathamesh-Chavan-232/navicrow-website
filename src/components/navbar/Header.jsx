@@ -41,10 +41,6 @@ export function Header({ clr, toggleFloating }) {
 			className={`z-[80] sticky nav ${
 				scrollDirection === "down" ? "" : "top-0"
 			} h-24 transition-all duration-200`}
-			style={{
-				backdropFilter: "blur(7px)",
-				background: "transparent",
-			}}
 		>
 			<m.div
 				initial="initial"
@@ -92,7 +88,7 @@ const Navbar = ({ clr, toggleFloating }) => {
 	};
 
 	return (
-		<nav className={`text-black`}>
+		<nav className={`${clr === "black" ? "text-black" : "text-white"} `}>
 			{/* Z index 50 - to Display on Navmenu */}
 			<div className="z-[999] mx-auto px-8 py-6 relative container">
 				<div className="flex items-center justify-between">
