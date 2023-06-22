@@ -28,7 +28,7 @@ function App() {
 	const id = useParams();
 
 	const [floating, setFloating] = useState(true);
-
+	const [clr, setClr] = useState("white");
 	useEffect(() => {
 		console.log(id);
 	}, []);
@@ -37,13 +37,17 @@ function App() {
 		setFloating(!floating);
 	}
 
-	function toggleClr() {
-		setFloating(!floating);
+	function toggleClr(newClr) {
+		setClr(newClr);
 	}
 	return (
 		<div className="flex flex-col min-h-screen overflow-x-hidden">
 			<AnimatePresence mode={"wait"}>
-				<Header clr="about" toggleFloating={toggleFloating} />
+				<Header
+					clr={`${clr === "black" ? "black" : "white"}`}
+					toggleFloating={toggleFloating}
+					toggleClr={toggleClr}
+				/>
 				<div className="temp absolute">
 					<Routes location={location} key={location.pathname}>
 						<Route index element={<Home />} />

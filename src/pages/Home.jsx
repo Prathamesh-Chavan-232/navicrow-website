@@ -9,6 +9,28 @@ import { motion as m } from "framer-motion";
 import { useState } from "react";
 import img from "../assets/landscapes/mountains-3.jpg";
 
+import dest1 from "../assets/landscapes/chardham.png";
+import dest2 from "../assets/landscapes/dodham.png";
+import dest3 from "../assets/landscapes/kedarnath.png";
+
+const carousel = [
+	{
+		title: "Char Dham",
+		img: dest1,
+		link: "/destinations/char-dham",
+	},
+	{
+		title: "Do Dham",
+		img: dest2,
+		link: "/destinations/do-dham",
+	},
+	{
+		title: "Kedarnath",
+		img: dest3,
+		link: "/destinations/kedarnath",
+	},
+];
+
 export const Home = () => {
 	const [floating, setFloating] = useState(true);
 
@@ -32,7 +54,7 @@ export const Home = () => {
 			{/* Packages Card */}
 			<PackageCards id="char-dham" />
 			{/* Section 3 - Carousel */}
-			<Carousel />
+			<Carousel carousel={carousel} />
 			{/* Section 4 - Travel Styles */}
 			<TravelStyleCards />
 			<div className={`${floating ? "block" : "hidden"}`}>

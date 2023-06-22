@@ -81,15 +81,16 @@ export const Footer = () => {
 	];
 
 	return (
-		<div id="footer" 
-		className="z-[2] mt-auto text-white absolute"
+		<div
+			id="footer"
+			className="z-[2] mt-auto text-white w-screen"
 			style={{
-				overflowX:"hidden"
+				overflowX: "hidden",
 			}}
 		>
 			<footer
 				style={{
-					width:"100vw"
+					width: "100vw",
 				}}
 			>
 				{/* Contact Form */}
@@ -100,20 +101,20 @@ export const Footer = () => {
 
 				{/* Footer */}
 				<div className="flex flex-col bg-olive-green">
-					<div className="px-4 py-20 grid grid-cols-1 justify-items-start gap-20 lg:px-12 xl:grid-cols-2 2xl:grid-cols-3">
+					<div className="px-4 py-20 grid grid-cols-1 justify-items-start gap-32 lg:px-12 xl:grid-cols-2 2xl:grid-cols-3">
 						<div className="flex flex-col gap-6">
 							{/* Description  */}
 							<div className="space-y-4">
-								<div className="font-fancy text-4xl hover:text-gray-green">
+								<div className="font-fancy text-3xl lg:text-4xl hover:text-gray-green">
 									NAVICROW
 									<span className="text-light-green hover:text-gray-green">
 										HOLIDAYS
 									</span>
 								</div>
-								<p className="">
+								<p className="whitespace-nowrap">
 									Our Agency is in a class of its own.
-									<br /> A full service agency, both leisure and corporate
-									travel,
+									<br /> A full service agency, with both liesure <br />
+									and corporate travel,
 									<br /> with many specialty areas.
 								</p>
 							</div>

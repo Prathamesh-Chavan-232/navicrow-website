@@ -3,15 +3,16 @@ import { Header } from "../components/navbar/Header";
 import { Footer } from "../components/footer/Footer";
 import cert from "../assets/logos/certificate.jpg";
 import { motion as m } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FloatingButton } from "../components/utlis/FloatingButton";
 
-export const About = (toggleClr) => {
+export const About = ({ toggleClr }) => {
 	const [floating, setFloating] = useState(true);
 
 	function toggleFloating() {
 		setFloating(!floating);
 	}
+	useEffect(() => toggleClr("black"));
 
 	return (
 		<m.main

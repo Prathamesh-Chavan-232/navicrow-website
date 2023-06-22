@@ -16,7 +16,7 @@ import { destinations, travelStyles, about } from "/src/data.js";
 import logo from "../../assets/NH-logo.png";
 import "/src/styles/nav.css";
 
-export function Header({ clr, toggleFloating }) {
+export function Header({ clr, toggleFloating, toggleClr }) {
 	const scrollDirection = useScrollDirection();
 	const content = {
 		animate: {
@@ -49,13 +49,17 @@ export function Header({ clr, toggleFloating }) {
 				className="space-y-12"
 			>
 				<m.div variants={nav}>
-					<Navbar clr={clr} toggleFloating={toggleFloating} />
+					<Navbar
+						clr={clr}
+						toggleFloating={toggleFloating}
+						toggleClr={toggleClr}
+					/>
 				</m.div>
 			</m.div>
 		</div>
 	);
 }
-const Navbar = ({ clr, toggleFloating }) => {
+const Navbar = ({ clr, toggleFloating, toggleClr }) => {
 	const [active, setActive] = useState(-1);
 
 	const [open, setOpen] = useState(false);
@@ -65,12 +69,14 @@ const Navbar = ({ clr, toggleFloating }) => {
 
 	const handleMenuActions = (index) => {
 		if (!open) {
+			toggleClr("black");
 			setOpen(true);
 			lockScroll();
 			setActive(index);
 		} else if (active !== index) {
 			setActive(index);
 		} else {
+			toggleClr("white");
 			setOpen(false);
 			unlockScroll();
 			setActive(-1);
