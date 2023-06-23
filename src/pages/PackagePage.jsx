@@ -19,6 +19,28 @@ import {
 } from "../data";
 import { Slider } from "../components/utlis/Slider";
 
+import dest1 from "../assets/landscapes/chardham.png";
+import dest2 from "../assets/landscapes/dodham.png";
+import dest3 from "../assets/landscapes/kedarnath.png";
+
+const slides = [
+	{
+		title: "Char Dham",
+		img: dest1,
+		link: "/destinations/char-dham",
+	},
+	{
+		title: "Do Dham",
+		img: dest2,
+		link: "/destinations/do-dham",
+	},
+	{
+		title: "Kedarnath",
+		img: dest3,
+		link: "/destinations/kedarnath",
+	},
+];
+
 const Img = ({ id = "", align, img = img2 }) => {
 	return (
 		<div className="relative bg-light-gray">
@@ -72,6 +94,7 @@ export const PackagePage = () => {
 				img={img}
 			/>
 
+			<Carousel carousel={slides} />
 			<AboutPackage
 				id={id}
 				tripHighlights={

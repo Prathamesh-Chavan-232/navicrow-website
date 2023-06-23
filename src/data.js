@@ -1,6 +1,7 @@
 import img from "./assets/landscapes/char-dham-1.jpg";
 import img2 from "./assets/landscapes/travel-style-1.jpg";
 import img3 from "./assets/landscapes/mountains-4.jpg";
+import img4 from "./assets/landscapes/card1.jpeg";
 import heli from "./assets/landscapes/kedarnath-helicopter.png";
 
 export const destinations = [
@@ -91,14 +92,14 @@ export const chardhamPackages = [
 		title: "Char Dham via Chopta",
 		subtitle:
 			"Embark on a transformative spiritual journey with our immersive pilgrimage travel style package.",
-		img: img,
+		img: img4,
 		link: "/package/chardham-via-chopta",
 	},
 	{
 		title: "Char Dham via Helicopter",
 		subtitle:
 			"Embark on a transformative spiritual journey with our immersive pilgrimage travel style package.",
-		img: img3,
+		img: heli,
 		link: "/package/chardham-via-helicopter",
 	},
 ];
@@ -122,7 +123,7 @@ export const dodhamPackages = [
 		title: "Do Dham via Chopta",
 		subtitle:
 			"Embark on a transformative spiritual journey with our immersive pilgrimage travel style package.",
-		img: img,
+		img: img4,
 		link: "/package/dodham-via-chopta",
 	},
 	{
@@ -153,7 +154,7 @@ export const kedarnathPackages = [
 		title: "Kedarnath via Tempo",
 		subtitle:
 			"Embark on a transformative spiritual journey with our immersive pilgrimage travel style package.",
-		img: img,
+		img: img4,
 		link: "/package/kedarnath-via-tempo",
 	},
 	{
