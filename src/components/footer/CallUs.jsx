@@ -17,15 +17,18 @@ export const CallUs = () => {
 				</h3>
 			</div>
 			<div className="flex flex-col gap-12 font-fancy lg:flex-row">
-				<RotatingBorder border={"1px"} clr={"black"} size="200px">
-					<div className="flex flex-col text-center">
-						<span>Call us</span>
-						<a href="tel:+918954766781"></a>
-					</div>
-				</RotatingBorder>
-				<RotatingBorder border={"1px"} clr={"black"} size="200px">
-					<div className="text-center">Send us an enquiry</div>
-				</RotatingBorder>
+				<a href="tel:+918954766781">
+					<RotatingBorder border={"1px"} clr={"black"} size="200px">
+						<div className="flex flex-col text-center">
+							<span>Call us</span>
+						</div>
+					</RotatingBorder>
+				</a>
+				<a href="mailto:info@navicrowholidays.com">
+					<RotatingBorder border={"1px"} clr={"black"} size="200px">
+						<div className="text-center">Send us an enquiry</div>
+					</RotatingBorder>
+				</a>
 			</div>
 		</div>
 	);
