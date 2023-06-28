@@ -84,7 +84,7 @@ export const PackagePage = () => {
 	}, []);
 
 	return (
-		<div>
+		<div className="w-screen">
 			{/* Section 1 - Navbar + Hero */}
 			{/* <Header clr="white" toggleFloating={toggleFloating} /> */}
 			<Main

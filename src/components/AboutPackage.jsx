@@ -9,7 +9,7 @@ export const AboutPackage = ({ id, packageData, tripHighlights }) => {
 	}, []);
 
 	return (
-		<div className="bg-olive-green space-y-20 py-20">
+		<div className="bg-olive-green w-screen space-y-20 py-20">
 			<div className="px-4 lg:px-20 space-y-20 text-white">
 				<div className="text-center space-y-4">
 					<span className="font-medium">OVERVIEW</span>
