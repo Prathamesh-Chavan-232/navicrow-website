@@ -161,13 +161,13 @@ ul.round li::before {
 }
 
 /* ===== Scrollbar CSS ===== */
-  /* Firefox */
+
+/* 
   * {
     scrollbar-width: thin;
     scrollbar-color: #03451c #012802;
   }
 
-  /* Chrome, Edge, and Safari */
   *::-webkit-scrollbar {
     width: 10px;
   }
@@ -181,3 +181,4 @@ ul.round li::before {
     border-radius: 15px;
     border: 3px none #001f05;
   }
+*/
