@@ -43,7 +43,7 @@ const slides = [
 
 const Img = ({ id = "", align, img = img2 }) => {
 	return (
-		<div className="relative bg-light-gray">
+		<div className="relative bg-light-gray w-screen">
 			<div
 				className={`h-screen lg:block ${
 					align == "left"
