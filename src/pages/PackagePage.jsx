@@ -94,7 +94,7 @@ export const PackagePage = () => {
 				img={img}
 			/>
 
-			<Carousel carousel={slides} />
+			{/* <Carousel carousel={slides} /> */}
 			<AboutPackage
 				id={id}
 				tripHighlights={
