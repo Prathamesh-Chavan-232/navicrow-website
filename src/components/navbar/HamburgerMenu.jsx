@@ -4,15 +4,17 @@ import { RotatingBorder } from "../utlis/RotatingBorder";
 import { TextField } from "../utlis/TextField";
 import useScrollLock from "../../hooks/scrollLock";
 
-const MenuToggle = ({ toggle, isOpen }) => {
+const MenuToggle = ({ clr, toggle, isOpen }) => {
 	return (
 		<div>
-			<button onClick={toggle} className="font-semibold lg:hidden">
+			<button onClick={toggle} className="font-semibold lg:hidden text-white">
 				Enquire
 			</button>
 			<button
 				onClick={toggle}
-				className="hidden pointer px-8 py-3 bg-olive-green text-white text-sm rounded-full baseline lg:block hover:bg-brightRed"
+				className={`${
+					clr === "white" ? "text-white" : "text-black"
+				} hidden pointer px-8 py-3 bg-olive-green text-sm rounded-full baseline lg:block hover:bg-brightRed`}
 			>
 				Enquire
 			</button>
@@ -36,7 +38,7 @@ const menuTransition = {
 	delay: 0.1,
 };
 
-export const HamburgerMenu = ({ toggleFloating }) => {
+export const HamburgerMenu = ({ clr, toggleFloating }) => {
 	const [subject, setSubject] = useState("Enquiry about Navicrow Holidays");
 	const [body, setBody] = useState("I wish to Enquire About navicrow");
 	const [isOpen, setIsOpen] = useState(false);
@@ -53,7 +55,7 @@ export const HamburgerMenu = ({ toggleFloating }) => {
 	};
 	return (
 		<div>
-			<MenuToggle toggle={toggleMenu} isOpen={isOpen}></MenuToggle>
+			<MenuToggle toggle={toggleMenu} isOpen={isOpen} clr={clr}></MenuToggle>
 			<m.div
 				className="z-[999] !overflow-y-scroll pb-8 h-screen w-full max-w-[95%] min-w-[350px] fixed top-0 right-0 md:max-w-[50%] bg-olive-green shadow-2xl select-none text-white"
 				initial={false}

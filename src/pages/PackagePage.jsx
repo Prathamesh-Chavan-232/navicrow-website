@@ -106,34 +106,6 @@ export const PackagePage = () => {
 				}
 				packageData={packages[id]}
 			/>
-			{packages[id].itinerary.map((item, i) => {
-				return (
-					<div key={i}>
-						<DaysHeading
-							anim="zoom-out-left"
-							days={packages[id].days[i]}
-							title={packages[id].titles[i]}
-							desc={packages[id].desc[i]}
-							reverse={i % 2}
-							id={id}
-						/>
-						<Img
-							id={id}
-							align={i % 2 ? "left" : "right"}
-							img={i % 2 ? img1 : img2}
-						/>
-						<Dayplan
-							packageData={packages[id]}
-							days={2 * i + 1}
-							itinerary={item}
-							id={id}
-						/>
-						<div className="py-20 flex items-center justify-center bg-light-gray">
-							<Slider />
-						</div>
-					</div>
-				);
-			})}
 			<TravelStyleCards />
 			<WhyUs />
 			<div className={`${floating ? "block" : "hidden"}`}>

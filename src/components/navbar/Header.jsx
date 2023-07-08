@@ -149,7 +149,7 @@ const Navbar = ({ clr, toggleFloating, toggleClr }) => {
 					</div>
 					<div className="flex gap-8 items-center justify-center">
 						{/* Sliding Menu & Sliding Menu Buttons */}
-						<HamburgerMenu toggleFloating={toggleFloating} />
+						<HamburgerMenu toggleFloating={toggleFloating} clr={clr} />
 
 						{/* Nav-menu Button For mobile  */}
 						<div className="lg:hidden">
