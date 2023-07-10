@@ -109,14 +109,14 @@ export const PackagePage = () => {
 			{packages[id].itinerary.map((item, i) => {
 				return (
 					<div key={i}>
-						<DaysHeading
+						{/* <DaysHeading
 							anim="zoom-out"
 							days={packages[id].days[i]}
 							title={packages[id].titles[i]}
 							desc={packages[id].desc[i]}
 							reverse={i % 2}
 							id={id}
-						/>
+						/> */}
 						<Img
 							id={id}
 							align={i % 2 ? "left" : "right"}
@@ -128,13 +128,13 @@ export const PackagePage = () => {
 							itinerary={item}
 							id={id}
 						/>
-						{/* <div className="px-4 py-[20%] lg:py-40 flex flex-col items-center justify-center gap-6 bg-light-gray">
+						<div className="px-4 py-[20%] lg:py-40 flex flex-col items-center justify-center gap-6 bg-light-gray">
 							<Slider />
 							<p className="text-lg text-center lg:text-2xl">
 								Embark on a transformative spiritual journey with our immersive
 								pilgrimage travel style package.
 							</p>
-						</div> */}
+						</div>
 					</div>
 				);
 			})}
