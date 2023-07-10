@@ -56,7 +56,7 @@ const Img = ({ id = "", align, img = img2 }) => {
 				<img
 					src={img}
 					alt=""
-					className={`px-6 lg:px-0 h-[500px] w-[600px] lg:h-[800px] absolute -top-[10%] ${
+					className={`px-6 lg:px-0 h-[600px] absolute -top-[5%] ${
 						align === "left" ? "lg:left-[10%]" : "lg:right-[10%]"
 					}`}
 				/>
@@ -106,6 +106,38 @@ export const PackagePage = () => {
 				}
 				packageData={packages[id]}
 			/>
+			{packages[id].itinerary.map((item, i) => {
+				return (
+					<div key={i}>
+						<DaysHeading
+							anim="zoom-out"
+							days={packages[id].days[i]}
+							title={packages[id].titles[i]}
+							desc={packages[id].desc[i]}
+							reverse={i % 2}
+							id={id}
+						/>
+						<Img
+							id={id}
+							align={i % 2 ? "left" : "right"}
+							img={i % 2 ? img1 : img2}
+						/>
+						<Dayplan
+							packageData={packages[id]}
+							days={2 * i + 1}
+							itinerary={item}
+							id={id}
+						/>
+						<div className="px-4 py-[20%] lg:py-40 flex flex-col items-center justify-center gap-6 bg-light-gray">
+							<Slider />
+							<p className="text-lg text-center lg:text-2xl">
+								Embark on a transformative spiritual journey with our immersive
+								pilgrimage travel style package.
+							</p>
+						</div>
+					</div>
+				);
+			})}
 			<TravelStyleCards />
 			<WhyUs />
 			<div className={`${floating ? "block" : "hidden"}`}>

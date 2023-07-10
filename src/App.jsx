@@ -42,42 +42,40 @@ function App() {
 	}
 	return (
 		<div className="flex flex-col min-h-screen overflow-x-hidden">
-			<AnimatePresence mode={"wait"}>
-				<Header
-					clr={`${clr === "black" ? "black" : "white"}`}
-					toggleFloating={toggleFloating}
-					toggleClr={toggleClr}
-				/>
-				<div className="temp absolute">
-					<Routes location={location} key={location.pathname}>
-						<Route index element={<Home />} />
-						<Route exact path="/dev" element={<Dev />} />
-						<Route exact path="/package/:id" element={<PackagePage />} />
-						<Route exact path="/destinations/:id" element={<Destinations />} />
-						<Route
-							exact
-							path="/travel-styles/pilgrimage-tour"
-							element={<TravelStyles />}
-						/>
-						<Route exact path="/travel-styles/:id" element={<ComingSoon />} />
-						<Route
-							exact
-							path="/about"
-							element={<About toggleClr={toggleClr} />}
-						/>
-						<Route
-							exact
-							path="/terms"
-							element={<Terms id={"terms"} toggleClr={toggleClr} />}
-						/>
-						<Route
-							path="/policy"
-							element={<Terms id="privacy" toggleClr={toggleClr} />}
-						/>
-					</Routes>
-					<Footer />
-				</div>
-			</AnimatePresence>
+			<Header
+				clr={`${clr === "black" ? "black" : "white"}`}
+				toggleFloating={toggleFloating}
+				toggleClr={toggleClr}
+			/>
+			<div className="temp absolute">
+				<Routes location={location} key={location.pathname}>
+					<Route index element={<Home />} />
+					<Route exact path="/dev" element={<Dev />} />
+					<Route exact path="/package/:id" element={<PackagePage />} />
+					<Route exact path="/destinations/:id" element={<Destinations />} />
+					<Route
+						exact
+						path="/travel-styles/pilgrimage-tour"
+						element={<TravelStyles />}
+					/>
+					<Route exact path="/travel-styles/:id" element={<ComingSoon />} />
+					<Route
+						exact
+						path="/about"
+						element={<About toggleClr={toggleClr} />}
+					/>
+					<Route
+						exact
+						path="/terms"
+						element={<Terms id={"terms"} toggleClr={toggleClr} />}
+					/>
+					<Route
+						path="/policy"
+						element={<Terms id="privacy" toggleClr={toggleClr} />}
+					/>
+				</Routes>
+				<Footer />
+			</div>
 		</div>
 	);
 }

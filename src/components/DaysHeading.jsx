@@ -1,18 +1,24 @@
 import Aos from "aos";
 import { useEffect } from "react";
 
-export const DaysHeading = ({ reverse, anim, days, title, desc, id }) => {
+export const DaysHeading = ({
+	reverse = false,
+	anim,
+	days,
+	title,
+	desc,
+	id,
+}) => {
 	useEffect(() => {
 		Aos.init({ duration: 1200 });
 	}, []);
 	return (
-		<div className="bg-light-gray w-screen">
-			<div
-				className={`px-8 py-40 flex flex-col gap-6 items-center justify-center lg:gap-[20rem] ${
-					reverse ? "lg:flex-row-reverse" : "lg:flex-row"
-				} `}
-			>
-				{/* <div className="absolute" data-aos={anim}>
+		<div
+			className={`bg-light-gray px-8 py-[20%] md:py-40 flex flex-col gap-6 items-center justify-center lg:gap-[20rem] ${
+				reverse ? "lg:flex-row-reverse" : "lg:flex-row"
+			} `}
+		>
+			{/* <div className="absolute" data-aos={anim}>
 					<svg
 						width="358"
 						height="357"
@@ -28,23 +34,22 @@ export const DaysHeading = ({ reverse, anim, days, title, desc, id }) => {
 					</svg>
 				</div> */}
 
-				<div data-aos={anim} className="text-center lg:text-left">
-					<span>
-						{id.endsWith("helicopter") ||
-						id === "kedarnath" ||
-						id.endsWith("tempo")
-							? "DAY "
-							: "DAYS "}
-						{days}
-					</span>
-					<h1 className="px-20 font-fancy text-4xl lg:text-5xl font-medium italic lg:px-0 lg:w-96">
-						{title}
-					</h1>
-				</div>
+			<div data-aos={anim} className="text-center lg:text-left">
+				<span>
+					{id.endsWith("helicopter") ||
+					id === "kedarnath" ||
+					id.endsWith("tempo")
+						? "DAY "
+						: "DAYS "}
+					{days}
+				</span>
+				<h1 className="px-20 font-fancy text-4xl lg:text-5xl font-medium italic lg:px-0 lg:w-96">
+					{title}
+				</h1>
+			</div>
 
-				<div className="flex flex-col gap-4 max-w-[30rem] text-xl whitespace-pre-line">
-					{desc}
-				</div>
+			<div className="flex flex-col gap-4 max-w-[30rem] text-xl whitespace-pre-line">
+				{desc}
 			</div>
 		</div>
 	);
