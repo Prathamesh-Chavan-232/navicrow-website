@@ -47,7 +47,7 @@ function App() {
 				toggleFloating={toggleFloating}
 				toggleClr={toggleClr}
 			/>
-			<div className="temp absolute">
+			<div className="absolute">
 				<Routes location={location} key={location.pathname}>
 					<Route index element={<Home />} />
 					<Route exact path="/dev" element={<Dev />} />
