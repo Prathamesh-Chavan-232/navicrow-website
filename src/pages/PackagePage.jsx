@@ -95,7 +95,7 @@ export const PackagePage = () => {
 			/>
 
 			{/* <Carousel carousel={slides} /> */}
-			<AboutPackage
+			{/* <AboutPackage
 				id={id}
 				tripHighlights={
 					id.startsWith("chardham")
@@ -105,7 +105,7 @@ export const PackagePage = () => {
 						: kedarnathHighlights
 				}
 				packageData={packages[id]}
-			/>
+			/> */}
 			{packages[id].itinerary.map((item, i) => {
 				return (
 					<div key={i}>
@@ -122,12 +122,12 @@ export const PackagePage = () => {
 							align={i % 2 ? "left" : "right"}
 							img={i % 2 ? img1 : img2}
 						/>
-						{/* <Dayplan
+						<Dayplan
 							packageData={packages[id]}
 							days={2 * i + 1}
 							itinerary={item}
 							id={id}
-						/> */}
+						/>
 						<div className="px-4 py-[20%] lg:py-40 flex flex-col items-center justify-center gap-6 bg-light-gray">
 							<Slider />
 							<p className="text-lg text-center lg:text-2xl">
