@@ -87,12 +87,12 @@ export const PackagePage = () => {
 		<div className="w-screen">
 			{/* Section 1 - Navbar + Hero */}
 			{/* <Header clr="white" toggleFloating={toggleFloating} /> */}
-			{/* <Main
+			<Main
 				heading={`${packages[id].duration} DAY-TRIP`}
 				title={packages[id].title}
 				price={`₹ ${packages[id].price} /-`}
 				img={img}
-			/> */}
+			/>
 
 			{/* <Carousel carousel={slides} /> */}
 			{/* <AboutPackage
