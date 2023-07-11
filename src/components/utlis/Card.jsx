@@ -26,7 +26,7 @@ export const Card = ({ img, title, subtitle, link, isCenter = false }) => {
 				>
 					{title}
 				</span>
-				<LazyLoadImage 
+				<LazyLoadImage
 					src={img}
 					className={"h-[600px]"}
 					effect="black-and-white"

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Header } from "../components/navbar/Header";
 import { terms, policy } from "../data";
 
 export const Terms = ({ id }) => {

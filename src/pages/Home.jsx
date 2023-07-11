@@ -1,6 +1,5 @@
 import { WhyUs } from "../components/WhyUs";
 import { Main } from "../components/Main";
-import { Header } from "/src/components/navbar/Header";
 import { Carousel } from "../components/Carousel";
 import { TravelStyleCards } from "../components/TravelStyleCards";
 import { FloatingButton } from "../components/utlis/FloatingButton";

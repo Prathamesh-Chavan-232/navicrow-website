@@ -34,9 +34,13 @@ export const TravelStyleCards = () => {
 								key={"Image-travel-card-2"}
 								src={travelCard2}
 								effect="black-white"
+								className="h-[40%]"
 							/>
 						</div>
-						<span data-aos="fade" className="text-lg text-center lg:text-3xl">
+						<span
+							data-aos="fade"
+							className="text-lg text-center lg:text-3xl font-thin"
+						>
 							Embark on a transformative spiritual journey with our immersive
 							pilgrimage travel style package.
 						</span>

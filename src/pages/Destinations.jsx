@@ -1,4 +1,3 @@
-import { Header } from "../components/navbar/Header";
 import { Main } from "../components/Main";
 import { WhyUs } from "../components/WhyUs";
 import { TravelStyleCards } from "../components/TravelStyleCards";

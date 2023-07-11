@@ -22,7 +22,7 @@ import { Dev } from "./pages/Dev";
 import { Footer } from "./components/footer/Footer";
 import { Terms } from "./pages/Terms";
 import { ComingSoon } from "./components/ComingSoon";
-import { Header } from "./components/navbar/Header";
+import { Navbar } from "./components/navbar/Navbar";
 
 function App() {
 	const id = useParams();
@@ -42,7 +42,7 @@ function App() {
 	}
 	return (
 		<div className="flex flex-col min-h-screen overflow-x-hidden">
-			<Header
+			<Navbar
 				clr={`${clr === "black" ? "black" : "white"}`}
 				toggleFloating={toggleFloating}
 				toggleClr={toggleClr}

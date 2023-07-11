@@ -128,12 +128,18 @@ h6 {
 	position: fixed;
 	width: 80px;
 	height: 80px;
-	bottom: 40px;
-	right: 40px;
+	bottom: 20%;
+	right: 20px;
 	border-radius: 50px;
 	text-align: center;
 }
 
+.float-bar {
+	position: fixed;
+	width: 100%;
+	bottom: 0px;
+	text-align: center;
+}
 /* Bullet Point */
 ul {
 	line-height: 1.5em;

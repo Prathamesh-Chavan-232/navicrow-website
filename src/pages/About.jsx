@@ -1,6 +1,4 @@
 import { Main } from "../components/about/Main";
-import { Header } from "../components/navbar/Header";
-import { Footer } from "../components/footer/Footer";
 import cert from "../assets/logos/certificate.jpg";
 import { motion as m } from "framer-motion";
 import { useEffect, useState } from "react";
