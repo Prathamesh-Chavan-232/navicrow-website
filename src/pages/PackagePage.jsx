@@ -95,7 +95,7 @@ export const PackagePage = () => {
 			/>
 
 			{/* <Carousel carousel={slides} /> */}
-			{/* <AboutPackage
+			<AboutPackage
 				id={id}
 				tripHighlights={
 					id.startsWith("chardham")
@@ -105,7 +105,7 @@ export const PackagePage = () => {
 						: kedarnathHighlights
 				}
 				packageData={packages[id]}
-			/> */}
+			/>
 			{packages[id].itinerary.map((item, i) => {
 				return (
 					<div key={i}>
