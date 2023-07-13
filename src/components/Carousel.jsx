@@ -68,8 +68,21 @@ export const Carousel = ({ carousel }) => {
 		},
 	};
 
+	const style = {
+		background: `linear-gradient(
+			rgba(0, 0, 0, 0.6),
+			rgba(0, 0, 0, 0.3),
+			rgba(0, 0, 0, 0.6)
+		),
+		url(${carousel[index].img})`,
+		backgroundSize: "cover",
+		backgroundPosition: "center",
+		backgroundRepeat: "no-repeat",
+		objectFit: "cover",
+	};
+
 	return (
-		<div className="relative h-[400px] lg:h-screen bg-light-gray group">
+		<div className="relative bg-light-gray group">
 			<Arrow onClick={slideLeft} className={"z-[50] left-2 lg:left-10"}>
 				<BsChevronCompactLeft />
 			</Arrow>
@@ -77,10 +90,6 @@ export const Carousel = ({ carousel }) => {
 			<div className="primary-header">
 				<AnimatePresence initial={false} custom={direction}>
 					<motion.div
-						// initial={{clipPath:"circle(0% at 0% 50%)", zIndex:3}}
-						// animate={{clipPath:"circle(150% at 0% 50%)", zIndex:3}}
-						// exit={{clipPath:"circle(0% at 100% 50%)",zIndex:3}}
-
 						custom={direction}
 						variants={variants}
 						initial="enter"
@@ -90,14 +99,8 @@ export const Carousel = ({ carousel }) => {
 							opacity: { duration: 0.2 },
 						}}
 						key={"Carousel-item-holder-" + index}
-						className="customId_obj w-screen h-[400px] lg:h-screen object-cover duration-500 bg-center bg-cover bg-no-repeat "
-						style={{
-							background: `linear-gradient(
-			rgba(0, 0, 0, 0.6),
-			rgba(0, 0, 0, 0.3),
-			rgba(0, 0, 0, 0.6)
-		), url(${carousel[index].img})`,
-						}}
+						className="w-screen h-[600px] md:h-screen"
+						style={style}
 					>
 						<div className="flex flex-col items-center justify-center gap-4 text-white absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
 							<motion.h1
@@ -119,66 +122,6 @@ export const Carousel = ({ carousel }) => {
 							</a>
 						</div>
 					</motion.div>
-
-					{/* {index === 1 && (
-							<motion.div
-								initial={{clipPath:"circle(0% at 0% 50%)", zIndex:3}}
-								animate={{clipPath:"circle(150% at 0% 50%)", zIndex:3}}
-								exit={{clipPath:"circle(0% at 100% 50%)",zIndex:3}}
-
-							key={"Carousel-item-holder-"+index}
-								className="customId_obj w-screen h-[400px] lg:h-screen object-cover duration-500 bg-center bg-cover bg-no-repeat "
-								style={{ backgroundImage: `url(${carousel[1].img})` }}>
-								<div className="flex flex-col items-center justify-center gap-4 text-white absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-									<motion.h1
-									initial={{opacity:0}}
-									animate={{opacity:1}}
-									exit={{opacity:0}}
-									transition={{duration:0.6}}  
-									className="text-4xl lg:text-6xl font-fancy"
-									key={"Carousel-item-header-text-holder-"+index}
-									>
-										{carousel[1].title}
-									</motion.h1>
-									<a
-										key={"Carousel-item-linked-text-holder-"+index}
-										href={carousel[1].link}
-										className="px-10 py-4 border border-white bg-transparent text-md lg:text-2xl text-white rounded-full baseline transition-color duration-200 hover:text-olive-green hover:bg-white"
-									>
-										Discover more
-									</a>
-								</div>
-							</motion.div>
-						)}
-						{index === 2 && (
-							<motion.div
-								initial={{clipPath:"circle(0% at 0% 50%)", zIndex:3}}
-								animate={{clipPath:"circle(150% at 0% 50%)", zIndex:3}}
-								exit={{clipPath:"circle(0% at 100% 50%)",zIndex:3}}
-
-							key={"Carousel-item-holder-"+index}
-								className="customId_obj w-screen h-[400px] lg:h-screen object-cover duration-500 bg-center bg-cover bg-no-repeat "
-								style={{ backgroundImage: `url(${carousel[2].img})` }}>
-								<div className="flex flex-col items-center justify-center gap-4 text-white absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-									<motion.h1
-									initial={{opacity:0}}
-									animate={{opacity:1}}
-									exit={{opacity:0}}
-									transition={{duration:0.6}}  
-									className="text-4xl lg:text-6xl font-fancy"
-									key={"Carousel-item-header-text-holder-"+index}>
-										{carousel[2].title}
-									</motion.h1>
-									<a
-										key={"Carousel-item-linked-text-holder-"+index}
-										href={carousel[2].link}
-										className="px-10 py-4 border border-white bg-transparent text-md lg:text-2xl text-white rounded-full baseline transition-color duration-200 hover:text-olive-green hover:bg-white"
-									>
-										Discover more
-									</a>
-								</div>
-							</motion.div>
-						)} */}
 				</AnimatePresence>
 			</div>
 

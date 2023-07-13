@@ -2,7 +2,6 @@
 import { motion as m } from "framer-motion";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import useScrollDirection from "/src/hooks/scrollDirection";
 import useScrollLock from "../../hooks/scrollLock";
 
 // Components
@@ -34,6 +33,7 @@ export const Navbar = ({ clr, toggleFloating, toggleClr }) => {
 			},
 		},
 	};
+
 	const [active, setActive] = useState(-1);
 
 	const [open, setOpen] = useState(false);

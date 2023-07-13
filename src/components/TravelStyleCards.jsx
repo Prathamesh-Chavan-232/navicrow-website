@@ -34,7 +34,7 @@ export const TravelStyleCards = () => {
 								key={"Image-travel-card-2"}
 								src={travelCard2}
 								effect="black-white"
-								className="h-[40%]"
+								// className="h-[40%]"
 							/>
 						</div>
 						<span
